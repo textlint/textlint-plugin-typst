@@ -25,8 +25,8 @@
 		"update-fixtures": "bun ./test/update-fixtures.ts && biome check --write ./test/fixtures"
 	},
 	"dependencies": {
-		"@myriaddreamin/typst-ts-web-compiler": "^0.5.0-rc7",
-		"@myriaddreamin/typst.ts": "^0.5.0-rc7",
+		"@myriaddreamin/typst-ts-web-compiler": "^0.5.1",
+		"@myriaddreamin/typst.ts": "^0.5.1",
 		"yaml": "^2.5.1"
 	},
 	"devDependencies": {
