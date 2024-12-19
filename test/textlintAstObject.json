@@ -2,7 +2,6 @@
 	"children": [
 		{
 			"value": "#",
-			"type": "Kw::Hash",
 			"raw": "#",
 			"range": [0, 1],
 			"loc": {
@@ -14,13 +13,13 @@
 					"line": 1,
 					"column": 1
 				}
-			}
+			},
+			"type": "Kw::Hash"
 		},
 		{
 			"children": [
 				{
 					"value": "set",
-					"type": "Kw::Set",
 					"raw": "set",
 					"range": [1, 4],
 					"loc": {
@@ -32,7 +31,8 @@
 							"line": 1,
 							"column": 4
 						}
-					}
+					},
+					"type": "Kw::Set"
 				},
 				{
 					"type": "Str",
@@ -52,7 +52,6 @@
 				},
 				{
 					"value": "page",
-					"type": "Fn::(Ident: &quot;page&quot;)",
 					"raw": "page",
 					"range": [5, 9],
 					"loc": {
@@ -64,13 +63,13 @@
 							"line": 1,
 							"column": 9
 						}
-					}
+					},
+					"type": "Fn::(Ident: &quot;page&quot;)"
 				},
 				{
 					"children": [
 						{
 							"value": "(",
-							"type": "Punc::LeftParen",
 							"raw": "(",
 							"range": [9, 10],
 							"loc": {
@@ -82,13 +81,13 @@
 									"line": 1,
 									"column": 10
 								}
-							}
+							},
+							"type": "Punc::LeftParen"
 						},
 						{
 							"children": [
 								{
 									"value": "width",
-									"type": "Marked::(Ident: &quot;width&quot;)",
 									"raw": "width",
 									"range": [10, 15],
 									"loc": {
@@ -100,11 +99,11 @@
 											"line": 1,
 											"column": 15
 										}
-									}
+									},
+									"type": "Marked::(Ident: &quot;width&quot;)"
 								},
 								{
 									"value": ":",
-									"type": "Punc::Colon",
 									"raw": ":",
 									"range": [15, 16],
 									"loc": {
@@ -116,7 +115,8 @@
 											"line": 1,
 											"column": 16
 										}
-									}
+									},
+									"type": "Punc::Colon"
 								},
 								{
 									"type": "Str",
@@ -136,7 +136,6 @@
 								},
 								{
 									"value": "10cm",
-									"type": "Num(Numeric, 10Cm)",
 									"raw": "10cm",
 									"range": [17, 21],
 									"loc": {
@@ -148,10 +147,10 @@
 											"line": 1,
 											"column": 21
 										}
-									}
+									},
+									"type": "Num(Numeric, 10Cm)"
 								}
 							],
-							"type": "Marked::Named",
 							"raw": "width: 10cm",
 							"range": [10, 21],
 							"loc": {
@@ -163,11 +162,11 @@
 									"line": 1,
 									"column": 21
 								}
-							}
+							},
+							"type": "Marked::Named"
 						},
 						{
 							"value": ",",
-							"type": "Punc::Comma",
 							"raw": ",",
 							"range": [21, 22],
 							"loc": {
@@ -179,7 +178,8 @@
 									"line": 1,
 									"column": 22
 								}
-							}
+							},
+							"type": "Punc::Comma"
 						},
 						{
 							"type": "Str",
@@ -201,7 +201,6 @@
 							"children": [
 								{
 									"value": "height",
-									"type": "Marked::(Ident: &quot;height&quot;)",
 									"raw": "height",
 									"range": [23, 29],
 									"loc": {
@@ -213,11 +212,11 @@
 											"line": 1,
 											"column": 29
 										}
-									}
+									},
+									"type": "Marked::(Ident: &quot;height&quot;)"
 								},
 								{
 									"value": ":",
-									"type": "Punc::Colon",
 									"raw": ":",
 									"range": [29, 30],
 									"loc": {
@@ -229,7 +228,8 @@
 											"line": 1,
 											"column": 30
 										}
-									}
+									},
+									"type": "Punc::Colon"
 								},
 								{
 									"type": "Str",
@@ -249,7 +249,6 @@
 								},
 								{
 									"value": "auto",
-									"type": "Kw::Auto",
 									"raw": "auto",
 									"range": [31, 35],
 									"loc": {
@@ -261,10 +260,10 @@
 											"line": 1,
 											"column": 35
 										}
-									}
+									},
+									"type": "Kw::Auto"
 								}
 							],
-							"type": "Marked::Named",
 							"raw": "height: auto",
 							"range": [23, 35],
 							"loc": {
@@ -276,11 +275,11 @@
 									"line": 1,
 									"column": 35
 								}
-							}
+							},
+							"type": "Marked::Named"
 						},
 						{
 							"value": ")",
-							"type": "Punc::RightParen",
 							"raw": ")",
 							"range": [35, 36],
 							"loc": {
@@ -292,10 +291,10 @@
 									"line": 1,
 									"column": 36
 								}
-							}
+							},
+							"type": "Punc::RightParen"
 						}
 					],
-					"type": "Marked::Args",
 					"raw": "(width: 10cm, height: auto)",
 					"range": [9, 36],
 					"loc": {
@@ -307,10 +306,10 @@
 							"line": 1,
 							"column": 36
 						}
-					}
+					},
+					"type": "Marked::Args"
 				}
 			],
-			"type": "Marked::SetRule",
 			"raw": "set page(width: 10cm, height: auto)",
 			"range": [1, 36],
 			"loc": {
@@ -322,7 +321,8 @@
 					"line": 1,
 					"column": 36
 				}
-			}
+			},
+			"type": "Marked::SetRule"
 		},
 		{
 			"type": "Str",
@@ -342,7 +342,6 @@
 		},
 		{
 			"value": "#",
-			"type": "Kw::Hash",
 			"raw": "#",
 			"range": [37, 38],
 			"loc": {
@@ -354,13 +353,13 @@
 					"line": 2,
 					"column": 1
 				}
-			}
+			},
+			"type": "Kw::Hash"
 		},
 		{
 			"children": [
 				{
 					"value": "set",
-					"type": "Kw::Set",
 					"raw": "set",
 					"range": [38, 41],
 					"loc": {
@@ -372,7 +371,8 @@
 							"line": 2,
 							"column": 4
 						}
-					}
+					},
+					"type": "Kw::Set"
 				},
 				{
 					"type": "Str",
@@ -392,7 +392,6 @@
 				},
 				{
 					"value": "heading",
-					"type": "Fn::(Ident: &quot;heading&quot;)",
 					"raw": "heading",
 					"range": [42, 49],
 					"loc": {
@@ -404,13 +403,13 @@
 							"line": 2,
 							"column": 12
 						}
-					}
+					},
+					"type": "Fn::(Ident: &quot;heading&quot;)"
 				},
 				{
 					"children": [
 						{
 							"value": "(",
-							"type": "Punc::LeftParen",
 							"raw": "(",
 							"range": [49, 50],
 							"loc": {
@@ -422,13 +421,13 @@
 									"line": 2,
 									"column": 13
 								}
-							}
+							},
+							"type": "Punc::LeftParen"
 						},
 						{
 							"children": [
 								{
 									"value": "numbering",
-									"type": "Marked::(Ident: &quot;numbering&quot;)",
 									"raw": "numbering",
 									"range": [50, 59],
 									"loc": {
@@ -440,11 +439,11 @@
 											"line": 2,
 											"column": 22
 										}
-									}
+									},
+									"type": "Marked::(Ident: &quot;numbering&quot;)"
 								},
 								{
 									"value": ":",
-									"type": "Punc::Colon",
 									"raw": ":",
 									"range": [59, 60],
 									"loc": {
@@ -456,7 +455,8 @@
 											"line": 2,
 											"column": 23
 										}
-									}
+									},
+									"type": "Punc::Colon"
 								},
 								{
 									"type": "Str",
@@ -476,7 +476,6 @@
 								},
 								{
 									"value": "\"1.\"",
-									"type": "Str(&quot;1.&quot;)",
 									"raw": "\"1.\"",
 									"range": [61, 65],
 									"loc": {
@@ -488,10 +487,10 @@
 											"line": 2,
 											"column": 28
 										}
-									}
+									},
+									"type": "Str(&quot;1.&quot;)"
 								}
 							],
-							"type": "Marked::Named",
 							"raw": "numbering: \"1.\"",
 							"range": [50, 65],
 							"loc": {
@@ -503,11 +502,11 @@
 									"line": 2,
 									"column": 28
 								}
-							}
+							},
+							"type": "Marked::Named"
 						},
 						{
 							"value": ")",
-							"type": "Punc::RightParen",
 							"raw": ")",
 							"range": [65, 66],
 							"loc": {
@@ -519,10 +518,10 @@
 									"line": 2,
 									"column": 29
 								}
-							}
+							},
+							"type": "Punc::RightParen"
 						}
 					],
-					"type": "Marked::Args",
 					"raw": "(numbering: \"1.\")",
 					"range": [49, 66],
 					"loc": {
@@ -534,10 +533,10 @@
 							"line": 2,
 							"column": 29
 						}
-					}
+					},
+					"type": "Marked::Args"
 				}
 			],
-			"type": "Marked::SetRule",
 			"raw": "set heading(numbering: \"1.\")",
 			"range": [38, 66],
 			"loc": {
@@ -549,11 +548,11 @@
 					"line": 2,
 					"column": 29
 				}
-			}
+			},
+			"type": "Marked::SetRule"
 		},
 		{
 			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
 			"range": [66, 68],
 			"loc": {
@@ -565,13 +564,13 @@
 					"line": 4,
 					"column": 0
 				}
-			}
+			},
+			"type": "Break"
 		},
 		{
 			"children": [
 				{
 					"value": "=",
-					"type": "Marked::HeadingMarker",
 					"raw": "=",
 					"range": [68, 69],
 					"loc": {
@@ -583,7 +582,8 @@
 							"line": 4,
 							"column": 1
 						}
-					}
+					},
+					"type": "Marked::HeadingMarker"
 				},
 				{
 					"type": "Str",
@@ -605,7 +605,6 @@
 					"children": [
 						{
 							"value": "Fibonacci sequence",
-							"type": "Str",
 							"raw": "Fibonacci sequence",
 							"range": [70, 88],
 							"loc": {
@@ -617,10 +616,10 @@
 									"line": 4,
 									"column": 20
 								}
-							}
+							},
+							"type": "Str"
 						}
 					],
-					"type": "Marked::Markup",
 					"raw": "Fibonacci sequence",
 					"range": [70, 88],
 					"loc": {
@@ -632,10 +631,10 @@
 							"line": 4,
 							"column": 20
 						}
-					}
+					},
+					"type": "Marked::Markup"
 				}
 			],
-			"type": "Header",
 			"raw": "= Fibonacci sequence",
 			"range": [68, 88],
 			"loc": {
@@ -647,7 +646,8 @@
 					"line": 4,
 					"column": 20
 				}
-			}
+			},
+			"type": "Header"
 		},
 		{
 			"type": "Str",
@@ -667,7 +667,6 @@
 		},
 		{
 			"value": "The Fibonacci sequence is defined through the",
-			"type": "Str",
 			"raw": "The Fibonacci sequence is defined through the",
 			"range": [89, 134],
 			"loc": {
@@ -679,7 +678,8 @@
 					"line": 5,
 					"column": 45
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"type": "Str",
@@ -699,7 +699,6 @@
 		},
 		{
 			"value": "recurrence relation",
-			"type": "Str",
 			"raw": "recurrence relation",
 			"range": [135, 154],
 			"loc": {
@@ -711,7 +710,8 @@
 					"line": 6,
 					"column": 19
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"type": "Str",
@@ -733,7 +733,6 @@
 			"children": [
 				{
 					"value": "$",
-					"type": "Marked::Dollar",
 					"raw": "$",
 					"range": [155, 156],
 					"loc": {
@@ -745,7 +744,8 @@
 							"line": 6,
 							"column": 21
 						}
-					}
+					},
+					"type": "Marked::Dollar"
 				},
 				{
 					"children": [
@@ -753,7 +753,6 @@
 							"children": [
 								{
 									"value": "F",
-									"type": "Str",
 									"raw": "F",
 									"range": [156, 157],
 									"loc": {
@@ -765,11 +764,11 @@
 											"line": 6,
 											"column": 22
 										}
-									}
+									},
+									"type": "Str"
 								},
 								{
 									"value": "_",
-									"type": "Marked::Underscore",
 									"raw": "_",
 									"range": [157, 158],
 									"loc": {
@@ -781,11 +780,11 @@
 											"line": 6,
 											"column": 23
 										}
-									}
+									},
+									"type": "Marked::Underscore"
 								},
 								{
 									"value": "n",
-									"type": "Str",
 									"raw": "n",
 									"range": [158, 159],
 									"loc": {
@@ -797,10 +796,10 @@
 											"line": 6,
 											"column": 24
 										}
-									}
+									},
+									"type": "Str"
 								}
 							],
-							"type": "Marked::MathAttach",
 							"raw": "F_n",
 							"range": [156, 159],
 							"loc": {
@@ -812,7 +811,8 @@
 									"line": 6,
 									"column": 24
 								}
-							}
+							},
+							"type": "Marked::MathAttach"
 						},
 						{
 							"type": "Str",
@@ -832,7 +832,6 @@
 						},
 						{
 							"value": "=",
-							"type": "Str",
 							"raw": "=",
 							"range": [160, 161],
 							"loc": {
@@ -844,7 +843,8 @@
 									"line": 6,
 									"column": 26
 								}
-							}
+							},
+							"type": "Str"
 						},
 						{
 							"type": "Str",
@@ -866,7 +866,6 @@
 							"children": [
 								{
 									"value": "F",
-									"type": "Str",
 									"raw": "F",
 									"range": [162, 163],
 									"loc": {
@@ -878,11 +877,11 @@
 											"line": 6,
 											"column": 28
 										}
-									}
+									},
+									"type": "Str"
 								},
 								{
 									"value": "_",
-									"type": "Marked::Underscore",
 									"raw": "_",
 									"range": [163, 164],
 									"loc": {
@@ -894,13 +893,13 @@
 											"line": 6,
 											"column": 29
 										}
-									}
+									},
+									"type": "Marked::Underscore"
 								},
 								{
 									"children": [
 										{
 											"value": "(",
-											"type": "Punc::LeftParen",
 											"raw": "(",
 											"range": [164, 165],
 											"loc": {
@@ -912,13 +911,13 @@
 													"line": 6,
 													"column": 30
 												}
-											}
+											},
+											"type": "Punc::LeftParen"
 										},
 										{
 											"children": [
 												{
 													"value": "n",
-													"type": "Str",
 													"raw": "n",
 													"range": [165, 166],
 													"loc": {
@@ -930,11 +929,11 @@
 															"line": 6,
 															"column": 31
 														}
-													}
+													},
+													"type": "Str"
 												},
 												{
 													"value": "-",
-													"type": "Escape::Shorthand &lt;6:31~6:32&gt;",
 													"raw": "-",
 													"range": [166, 167],
 													"loc": {
@@ -946,11 +945,11 @@
 															"line": 6,
 															"column": 32
 														}
-													}
+													},
+													"type": "Escape::MathShorthand &lt;6:31~6:32&gt;"
 												},
 												{
 													"value": "1",
-													"type": "Str",
 													"raw": "1",
 													"range": [167, 168],
 													"loc": {
@@ -962,10 +961,10 @@
 															"line": 6,
 															"column": 33
 														}
-													}
+													},
+													"type": "Str"
 												}
 											],
-											"type": "Marked::Math",
 											"raw": "n-1",
 											"range": [165, 168],
 											"loc": {
@@ -977,11 +976,11 @@
 													"line": 6,
 													"column": 33
 												}
-											}
+											},
+											"type": "Marked::Math"
 										},
 										{
 											"value": ")",
-											"type": "Punc::RightParen",
 											"raw": ")",
 											"range": [168, 169],
 											"loc": {
@@ -993,10 +992,10 @@
 													"line": 6,
 													"column": 34
 												}
-											}
+											},
+											"type": "Punc::RightParen"
 										}
 									],
-									"type": "Marked::Math",
 									"raw": "(n-1)",
 									"range": [164, 169],
 									"loc": {
@@ -1008,10 +1007,10 @@
 											"line": 6,
 											"column": 34
 										}
-									}
+									},
+									"type": "Marked::Math"
 								}
 							],
-							"type": "Marked::MathAttach",
 							"raw": "F_(n-1)",
 							"range": [162, 169],
 							"loc": {
@@ -1023,7 +1022,8 @@
 									"line": 6,
 									"column": 34
 								}
-							}
+							},
+							"type": "Marked::MathAttach"
 						},
 						{
 							"type": "Str",
@@ -1043,7 +1043,6 @@
 						},
 						{
 							"value": "+",
-							"type": "Str",
 							"raw": "+",
 							"range": [170, 171],
 							"loc": {
@@ -1055,7 +1054,8 @@
 									"line": 6,
 									"column": 36
 								}
-							}
+							},
+							"type": "Str"
 						},
 						{
 							"type": "Str",
@@ -1077,7 +1077,6 @@
 							"children": [
 								{
 									"value": "F",
-									"type": "Str",
 									"raw": "F",
 									"range": [172, 173],
 									"loc": {
@@ -1089,11 +1088,11 @@
 											"line": 6,
 											"column": 38
 										}
-									}
+									},
+									"type": "Str"
 								},
 								{
 									"value": "_",
-									"type": "Marked::Underscore",
 									"raw": "_",
 									"range": [173, 174],
 									"loc": {
@@ -1105,13 +1104,13 @@
 											"line": 6,
 											"column": 39
 										}
-									}
+									},
+									"type": "Marked::Underscore"
 								},
 								{
 									"children": [
 										{
 											"value": "(",
-											"type": "Punc::LeftParen",
 											"raw": "(",
 											"range": [174, 175],
 											"loc": {
@@ -1123,13 +1122,13 @@
 													"line": 6,
 													"column": 40
 												}
-											}
+											},
+											"type": "Punc::LeftParen"
 										},
 										{
 											"children": [
 												{
 													"value": "n",
-													"type": "Str",
 													"raw": "n",
 													"range": [175, 176],
 													"loc": {
@@ -1141,11 +1140,11 @@
 															"line": 6,
 															"column": 41
 														}
-													}
+													},
+													"type": "Str"
 												},
 												{
 													"value": "-",
-													"type": "Escape::Shorthand &lt;6:41~6:42&gt;",
 													"raw": "-",
 													"range": [176, 177],
 													"loc": {
@@ -1157,11 +1156,11 @@
 															"line": 6,
 															"column": 42
 														}
-													}
+													},
+													"type": "Escape::MathShorthand &lt;6:41~6:42&gt;"
 												},
 												{
 													"value": "2",
-													"type": "Str",
 													"raw": "2",
 													"range": [177, 178],
 													"loc": {
@@ -1173,10 +1172,10 @@
 															"line": 6,
 															"column": 43
 														}
-													}
+													},
+													"type": "Str"
 												}
 											],
-											"type": "Marked::Math",
 											"raw": "n-2",
 											"range": [175, 178],
 											"loc": {
@@ -1188,11 +1187,11 @@
 													"line": 6,
 													"column": 43
 												}
-											}
+											},
+											"type": "Marked::Math"
 										},
 										{
 											"value": ")",
-											"type": "Punc::RightParen",
 											"raw": ")",
 											"range": [178, 179],
 											"loc": {
@@ -1204,10 +1203,10 @@
 													"line": 6,
 													"column": 44
 												}
-											}
+											},
+											"type": "Punc::RightParen"
 										}
 									],
-									"type": "Marked::Math",
 									"raw": "(n-2)",
 									"range": [174, 179],
 									"loc": {
@@ -1219,10 +1218,10 @@
 											"line": 6,
 											"column": 44
 										}
-									}
+									},
+									"type": "Marked::Math"
 								}
 							],
-							"type": "Marked::MathAttach",
 							"raw": "F_(n-2)",
 							"range": [172, 179],
 							"loc": {
@@ -1234,10 +1233,10 @@
 									"line": 6,
 									"column": 44
 								}
-							}
+							},
+							"type": "Marked::MathAttach"
 						}
 					],
-					"type": "Marked::Math",
 					"raw": "F_n = F_(n-1) + F_(n-2)",
 					"range": [156, 179],
 					"loc": {
@@ -1249,11 +1248,11 @@
 							"line": 6,
 							"column": 44
 						}
-					}
+					},
+					"type": "Marked::Math"
 				},
 				{
 					"value": "$",
-					"type": "Marked::Dollar",
 					"raw": "$",
 					"range": [179, 180],
 					"loc": {
@@ -1265,10 +1264,10 @@
 							"line": 6,
 							"column": 45
 						}
-					}
+					},
+					"type": "Marked::Dollar"
 				}
 			],
-			"type": "Marked::Equation",
 			"raw": "$F_n = F_(n-1) + F_(n-2)$",
 			"range": [155, 180],
 			"loc": {
@@ -1280,11 +1279,11 @@
 					"line": 6,
 					"column": 45
 				}
-			}
+			},
+			"type": "Marked::Equation"
 		},
 		{
 			"value": ".",
-			"type": "Str",
 			"raw": ".",
 			"range": [180, 181],
 			"loc": {
@@ -1296,7 +1295,8 @@
 					"line": 6,
 					"column": 46
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"type": "Str",
@@ -1316,7 +1316,6 @@
 		},
 		{
 			"value": "It can also be expressed in",
-			"type": "Str",
 			"raw": "It can also be expressed in",
 			"range": [182, 209],
 			"loc": {
@@ -1328,7 +1327,8 @@
 					"line": 7,
 					"column": 27
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"type": "Str",
@@ -1350,7 +1350,6 @@
 			"children": [
 				{
 					"value": "_",
-					"type": "Marked::Underscore",
 					"raw": "_",
 					"range": [210, 211],
 					"loc": {
@@ -1362,10 +1361,10 @@
 							"line": 7,
 							"column": 29
 						}
-					}
+					},
+					"type": "Marked::Underscore"
 				},
 				{
-					"type": "Str",
 					"raw": "closed form:",
 					"range": [211, 223],
 					"loc": {
@@ -1378,11 +1377,11 @@
 							"column": 41
 						}
 					},
+					"type": "Str",
 					"value": "closed form"
 				},
 				{
 					"value": "_",
-					"type": "Marked::Underscore",
 					"raw": "_",
 					"range": [223, 224],
 					"loc": {
@@ -1394,10 +1393,10 @@
 							"line": 7,
 							"column": 42
 						}
-					}
+					},
+					"type": "Marked::Underscore"
 				}
 			],
-			"type": "Emphasis",
 			"raw": "_closed form:_",
 			"range": [210, 224],
 			"loc": {
@@ -1409,11 +1408,11 @@
 					"line": 7,
 					"column": 42
 				}
-			}
+			},
+			"type": "Emphasis"
 		},
 		{
 			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
 			"range": [224, 226],
 			"loc": {
@@ -1425,13 +1424,13 @@
 					"line": 9,
 					"column": 0
 				}
-			}
+			},
+			"type": "Break"
 		},
 		{
 			"children": [
 				{
 					"value": "$",
-					"type": "Marked::Dollar",
 					"raw": "$",
 					"range": [226, 227],
 					"loc": {
@@ -1443,7 +1442,8 @@
 							"line": 9,
 							"column": 1
 						}
-					}
+					},
+					"type": "Marked::Dollar"
 				},
 				{
 					"type": "Str",
@@ -1467,7 +1467,6 @@
 							"children": [
 								{
 									"value": "F",
-									"type": "Str",
 									"raw": "F",
 									"range": [228, 229],
 									"loc": {
@@ -1479,11 +1478,11 @@
 											"line": 9,
 											"column": 3
 										}
-									}
+									},
+									"type": "Str"
 								},
 								{
 									"value": "_",
-									"type": "Marked::Underscore",
 									"raw": "_",
 									"range": [229, 230],
 									"loc": {
@@ -1495,11 +1494,11 @@
 											"line": 9,
 											"column": 4
 										}
-									}
+									},
+									"type": "Marked::Underscore"
 								},
 								{
 									"value": "n",
-									"type": "Str",
 									"raw": "n",
 									"range": [230, 231],
 									"loc": {
@@ -1511,10 +1510,10 @@
 											"line": 9,
 											"column": 5
 										}
-									}
+									},
+									"type": "Str"
 								}
 							],
-							"type": "Marked::MathAttach",
 							"raw": "F_n",
 							"range": [228, 231],
 							"loc": {
@@ -1526,7 +1525,8 @@
 									"line": 9,
 									"column": 5
 								}
-							}
+							},
+							"type": "Marked::MathAttach"
 						},
 						{
 							"type": "Str",
@@ -1546,7 +1546,6 @@
 						},
 						{
 							"value": "=",
-							"type": "Str",
 							"raw": "=",
 							"range": [232, 233],
 							"loc": {
@@ -1558,7 +1557,8 @@
 									"line": 9,
 									"column": 7
 								}
-							}
+							},
+							"type": "Str"
 						},
 						{
 							"type": "Str",
@@ -1580,7 +1580,6 @@
 							"children": [
 								{
 									"value": "round",
-									"type": "Fn::(MathIdent: &quot;round&quot;)",
 									"raw": "round",
 									"range": [234, 239],
 									"loc": {
@@ -1592,13 +1591,13 @@
 											"line": 9,
 											"column": 13
 										}
-									}
+									},
+									"type": "Fn::(MathIdent: &quot;round&quot;)"
 								},
 								{
 									"children": [
 										{
 											"value": "(",
-											"type": "Punc::LeftParen",
 											"raw": "(",
 											"range": [239, 240],
 											"loc": {
@@ -1610,7 +1609,8 @@
 													"line": 9,
 													"column": 14
 												}
-											}
+											},
+											"type": "Punc::LeftParen"
 										},
 										{
 											"children": [
@@ -1618,7 +1618,6 @@
 													"children": [
 														{
 															"value": "1",
-															"type": "Str",
 															"raw": "1",
 															"range": [240, 241],
 															"loc": {
@@ -1630,7 +1629,8 @@
 																	"line": 9,
 																	"column": 15
 																}
-															}
+															},
+															"type": "Str"
 														},
 														{
 															"type": "Str",
@@ -1650,7 +1650,6 @@
 														},
 														{
 															"value": "/",
-															"type": "Marked::Slash",
 															"raw": "/",
 															"range": [242, 243],
 															"loc": {
@@ -1662,7 +1661,8 @@
 																	"line": 9,
 																	"column": 17
 																}
-															}
+															},
+															"type": "Marked::Slash"
 														},
 														{
 															"type": "Str",
@@ -1684,7 +1684,6 @@
 															"children": [
 																{
 																	"value": "sqrt",
-																	"type": "Fn::(MathIdent: &quot;sqrt&quot;)",
 																	"raw": "sqrt",
 																	"range": [244, 248],
 																	"loc": {
@@ -1696,13 +1695,13 @@
 																			"line": 9,
 																			"column": 22
 																		}
-																	}
+																	},
+																	"type": "Fn::(MathIdent: &quot;sqrt&quot;)"
 																},
 																{
 																	"children": [
 																		{
 																			"value": "(",
-																			"type": "Punc::LeftParen",
 																			"raw": "(",
 																			"range": [248, 249],
 																			"loc": {
@@ -1714,11 +1713,11 @@
 																					"line": 9,
 																					"column": 23
 																				}
-																			}
+																			},
+																			"type": "Punc::LeftParen"
 																		},
 																		{
 																			"value": "5",
-																			"type": "Str",
 																			"raw": "5",
 																			"range": [249, 250],
 																			"loc": {
@@ -1730,11 +1729,11 @@
 																					"line": 9,
 																					"column": 24
 																				}
-																			}
+																			},
+																			"type": "Str"
 																		},
 																		{
 																			"value": ")",
-																			"type": "Punc::RightParen",
 																			"raw": ")",
 																			"range": [250, 251],
 																			"loc": {
@@ -1746,10 +1745,10 @@
 																					"line": 9,
 																					"column": 25
 																				}
-																			}
+																			},
+																			"type": "Punc::RightParen"
 																		}
 																	],
-																	"type": "Marked::Args",
 																	"raw": "(5)",
 																	"range": [248, 251],
 																	"loc": {
@@ -1761,10 +1760,10 @@
 																			"line": 9,
 																			"column": 25
 																		}
-																	}
+																	},
+																	"type": "Marked::Args"
 																}
 															],
-															"type": "Marked::FuncCall",
 															"raw": "sqrt(5)",
 															"range": [244, 251],
 															"loc": {
@@ -1776,10 +1775,10 @@
 																	"line": 9,
 																	"column": 25
 																}
-															}
+															},
+															"type": "Marked::FuncCall"
 														}
 													],
-													"type": "Marked::MathFrac",
 													"raw": "1 / sqrt(5)",
 													"range": [240, 251],
 													"loc": {
@@ -1791,7 +1790,8 @@
 															"line": 9,
 															"column": 25
 														}
-													}
+													},
+													"type": "Marked::MathFrac"
 												},
 												{
 													"type": "Str",
@@ -1815,7 +1815,6 @@
 															"children": [
 																{
 																	"value": "phi",
-																	"type": "Var::(MathIdent: &quot;phi&quot;)",
 																	"raw": "phi",
 																	"range": [252, 255],
 																	"loc": {
@@ -1827,11 +1826,11 @@
 																			"line": 9,
 																			"column": 29
 																		}
-																	}
+																	},
+																	"type": "Var::(MathIdent: &quot;phi&quot;)"
 																},
 																{
 																	"value": ".",
-																	"type": "Punc::Dot",
 																	"raw": ".",
 																	"range": [255, 256],
 																	"loc": {
@@ -1843,11 +1842,11 @@
 																			"line": 9,
 																			"column": 30
 																		}
-																	}
+																	},
+																	"type": "Punc::Dot"
 																},
 																{
 																	"value": "alt",
-																	"type": "Var::(Ident: &quot;alt&quot;)",
 																	"raw": "alt",
 																	"range": [256, 259],
 																	"loc": {
@@ -1859,10 +1858,10 @@
 																			"line": 9,
 																			"column": 33
 																		}
-																	}
+																	},
+																	"type": "Var::(Ident: &quot;alt&quot;)"
 																}
 															],
-															"type": "Marked::FieldAccess",
 															"raw": "phi.alt",
 															"range": [252, 259],
 															"loc": {
@@ -1874,11 +1873,11 @@
 																	"line": 9,
 																	"column": 33
 																}
-															}
+															},
+															"type": "Marked::FieldAccess"
 														},
 														{
 															"value": "^",
-															"type": "Marked::Hat",
 															"raw": "^",
 															"range": [259, 260],
 															"loc": {
@@ -1890,11 +1889,11 @@
 																	"line": 9,
 																	"column": 34
 																}
-															}
+															},
+															"type": "Marked::Hat"
 														},
 														{
 															"value": "n",
-															"type": "Str",
 															"raw": "n",
 															"range": [260, 261],
 															"loc": {
@@ -1906,10 +1905,10 @@
 																	"line": 9,
 																	"column": 35
 																}
-															}
+															},
+															"type": "Str"
 														}
 													],
-													"type": "Marked::MathAttach",
 													"raw": "phi.alt^n",
 													"range": [252, 261],
 													"loc": {
@@ -1921,10 +1920,10 @@
 															"line": 9,
 															"column": 35
 														}
-													}
+													},
+													"type": "Marked::MathAttach"
 												}
 											],
-											"type": "Marked::Math",
 											"raw": "1 / sqrt(5) phi.alt^n",
 											"range": [240, 261],
 											"loc": {
@@ -1936,11 +1935,11 @@
 													"line": 9,
 													"column": 35
 												}
-											}
+											},
+											"type": "Marked::Math"
 										},
 										{
 											"value": ")",
-											"type": "Punc::RightParen",
 											"raw": ")",
 											"range": [261, 262],
 											"loc": {
@@ -1952,10 +1951,10 @@
 													"line": 9,
 													"column": 36
 												}
-											}
+											},
+											"type": "Punc::RightParen"
 										}
 									],
-									"type": "Marked::Args",
 									"raw": "(1 / sqrt(5) phi.alt^n)",
 									"range": [239, 262],
 									"loc": {
@@ -1967,10 +1966,10 @@
 											"line": 9,
 											"column": 36
 										}
-									}
+									},
+									"type": "Marked::Args"
 								}
 							],
-							"type": "Marked::FuncCall",
 							"raw": "round(1 / sqrt(5) phi.alt^n)",
 							"range": [234, 262],
 							"loc": {
@@ -1982,11 +1981,11 @@
 									"line": 9,
 									"column": 36
 								}
-							}
+							},
+							"type": "Marked::FuncCall"
 						},
 						{
 							"value": ",",
-							"type": "Str",
 							"raw": ",",
 							"range": [262, 263],
 							"loc": {
@@ -1998,7 +1997,8 @@
 									"line": 9,
 									"column": 37
 								}
-							}
+							},
+							"type": "Str"
 						},
 						{
 							"type": "Str",
@@ -2018,7 +2018,6 @@
 						},
 						{
 							"value": "quad",
-							"type": "Var::(MathIdent: &quot;quad&quot;)",
 							"raw": "quad",
 							"range": [264, 268],
 							"loc": {
@@ -2030,7 +2029,8 @@
 									"line": 9,
 									"column": 42
 								}
-							}
+							},
+							"type": "Var::(MathIdent: &quot;quad&quot;)"
 						},
 						{
 							"type": "Str",
@@ -2052,7 +2052,6 @@
 							"children": [
 								{
 									"value": "phi",
-									"type": "Var::(MathIdent: &quot;phi&quot;)",
 									"raw": "phi",
 									"range": [269, 272],
 									"loc": {
@@ -2064,11 +2063,11 @@
 											"line": 10,
 											"column": 5
 										}
-									}
+									},
+									"type": "Var::(MathIdent: &quot;phi&quot;)"
 								},
 								{
 									"value": ".",
-									"type": "Punc::Dot",
 									"raw": ".",
 									"range": [272, 273],
 									"loc": {
@@ -2080,11 +2079,11 @@
 											"line": 10,
 											"column": 6
 										}
-									}
+									},
+									"type": "Punc::Dot"
 								},
 								{
 									"value": "alt",
-									"type": "Var::(Ident: &quot;alt&quot;)",
 									"raw": "alt",
 									"range": [273, 276],
 									"loc": {
@@ -2096,10 +2095,10 @@
 											"line": 10,
 											"column": 9
 										}
-									}
+									},
+									"type": "Var::(Ident: &quot;alt&quot;)"
 								}
 							],
-							"type": "Marked::FieldAccess",
 							"raw": "phi.alt",
 							"range": [269, 276],
 							"loc": {
@@ -2111,7 +2110,8 @@
 									"line": 10,
 									"column": 9
 								}
-							}
+							},
+							"type": "Marked::FieldAccess"
 						},
 						{
 							"type": "Str",
@@ -2131,7 +2131,6 @@
 						},
 						{
 							"value": "=",
-							"type": "Str",
 							"raw": "=",
 							"range": [277, 278],
 							"loc": {
@@ -2143,7 +2142,8 @@
 									"line": 10,
 									"column": 11
 								}
-							}
+							},
+							"type": "Str"
 						},
 						{
 							"type": "Str",
@@ -2167,7 +2167,6 @@
 									"children": [
 										{
 											"value": "(",
-											"type": "Punc::LeftParen",
 											"raw": "(",
 											"range": [279, 280],
 											"loc": {
@@ -2179,13 +2178,13 @@
 													"line": 10,
 													"column": 13
 												}
-											}
+											},
+											"type": "Punc::LeftParen"
 										},
 										{
 											"children": [
 												{
 													"value": "1",
-													"type": "Str",
 													"raw": "1",
 													"range": [280, 281],
 													"loc": {
@@ -2197,7 +2196,8 @@
 															"line": 10,
 															"column": 14
 														}
-													}
+													},
+													"type": "Str"
 												},
 												{
 													"type": "Str",
@@ -2217,7 +2217,6 @@
 												},
 												{
 													"value": "+",
-													"type": "Str",
 													"raw": "+",
 													"range": [282, 283],
 													"loc": {
@@ -2229,7 +2228,8 @@
 															"line": 10,
 															"column": 16
 														}
-													}
+													},
+													"type": "Str"
 												},
 												{
 													"type": "Str",
@@ -2251,7 +2251,6 @@
 													"children": [
 														{
 															"value": "sqrt",
-															"type": "Fn::(MathIdent: &quot;sqrt&quot;)",
 															"raw": "sqrt",
 															"range": [284, 288],
 															"loc": {
@@ -2263,13 +2262,13 @@
 																	"line": 10,
 																	"column": 21
 																}
-															}
+															},
+															"type": "Fn::(MathIdent: &quot;sqrt&quot;)"
 														},
 														{
 															"children": [
 																{
 																	"value": "(",
-																	"type": "Punc::LeftParen",
 																	"raw": "(",
 																	"range": [288, 289],
 																	"loc": {
@@ -2281,11 +2280,11 @@
 																			"line": 10,
 																			"column": 22
 																		}
-																	}
+																	},
+																	"type": "Punc::LeftParen"
 																},
 																{
 																	"value": "5",
-																	"type": "Str",
 																	"raw": "5",
 																	"range": [289, 290],
 																	"loc": {
@@ -2297,11 +2296,11 @@
 																			"line": 10,
 																			"column": 23
 																		}
-																	}
+																	},
+																	"type": "Str"
 																},
 																{
 																	"value": ")",
-																	"type": "Punc::RightParen",
 																	"raw": ")",
 																	"range": [290, 291],
 																	"loc": {
@@ -2313,10 +2312,10 @@
 																			"line": 10,
 																			"column": 24
 																		}
-																	}
+																	},
+																	"type": "Punc::RightParen"
 																}
 															],
-															"type": "Marked::Args",
 															"raw": "(5)",
 															"range": [288, 291],
 															"loc": {
@@ -2328,10 +2327,10 @@
 																	"line": 10,
 																	"column": 24
 																}
-															}
+															},
+															"type": "Marked::Args"
 														}
 													],
-													"type": "Marked::FuncCall",
 													"raw": "sqrt(5)",
 													"range": [284, 291],
 													"loc": {
@@ -2343,10 +2342,10 @@
 															"line": 10,
 															"column": 24
 														}
-													}
+													},
+													"type": "Marked::FuncCall"
 												}
 											],
-											"type": "Marked::Math",
 											"raw": "1 + sqrt(5)",
 											"range": [280, 291],
 											"loc": {
@@ -2358,11 +2357,11 @@
 													"line": 10,
 													"column": 24
 												}
-											}
+											},
+											"type": "Marked::Math"
 										},
 										{
 											"value": ")",
-											"type": "Punc::RightParen",
 											"raw": ")",
 											"range": [291, 292],
 											"loc": {
@@ -2374,10 +2373,10 @@
 													"line": 10,
 													"column": 25
 												}
-											}
+											},
+											"type": "Punc::RightParen"
 										}
 									],
-									"type": "Marked::Math",
 									"raw": "(1 + sqrt(5))",
 									"range": [279, 292],
 									"loc": {
@@ -2389,7 +2388,8 @@
 											"line": 10,
 											"column": 25
 										}
-									}
+									},
+									"type": "Marked::Math"
 								},
 								{
 									"type": "Str",
@@ -2409,7 +2409,6 @@
 								},
 								{
 									"value": "/",
-									"type": "Marked::Slash",
 									"raw": "/",
 									"range": [293, 294],
 									"loc": {
@@ -2421,7 +2420,8 @@
 											"line": 10,
 											"column": 27
 										}
-									}
+									},
+									"type": "Marked::Slash"
 								},
 								{
 									"type": "Str",
@@ -2441,7 +2441,6 @@
 								},
 								{
 									"value": "2",
-									"type": "Str",
 									"raw": "2",
 									"range": [295, 296],
 									"loc": {
@@ -2453,10 +2452,10 @@
 											"line": 10,
 											"column": 29
 										}
-									}
+									},
+									"type": "Str"
 								}
 							],
-							"type": "Marked::MathFrac",
 							"raw": "(1 + sqrt(5)) / 2",
 							"range": [279, 296],
 							"loc": {
@@ -2468,10 +2467,10 @@
 									"line": 10,
 									"column": 29
 								}
-							}
+							},
+							"type": "Marked::MathFrac"
 						}
 					],
-					"type": "Marked::Math",
 					"raw": "F_n = round(1 / sqrt(5) phi.alt^n), quad\n  phi.alt = (1 + sqrt(5)) / 2",
 					"range": [228, 298],
 					"loc": {
@@ -2483,7 +2482,8 @@
 							"line": 10,
 							"column": 29
 						}
-					}
+					},
+					"type": "Marked::Math"
 				},
 				{
 					"type": "Str",
@@ -2503,7 +2503,6 @@
 				},
 				{
 					"value": "$",
-					"type": "Marked::Dollar",
 					"raw": "$",
 					"range": [299, 300],
 					"loc": {
@@ -2515,10 +2514,10 @@
 							"line": 10,
 							"column": 31
 						}
-					}
+					},
+					"type": "Marked::Dollar"
 				}
 			],
-			"type": "Marked::Equation",
 			"raw": "$ F_n = round(1 / sqrt(5) phi.alt^n), quad\n  phi.alt = (1 + sqrt(5)) / 2 $",
 			"range": [226, 300],
 			"loc": {
@@ -2530,11 +2529,11 @@
 					"line": 10,
 					"column": 31
 				}
-			}
+			},
+			"type": "Marked::Equation"
 		},
 		{
 			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
 			"range": [300, 302],
 			"loc": {
@@ -2546,11 +2545,11 @@
 					"line": 12,
 					"column": 0
 				}
-			}
+			},
+			"type": "Break"
 		},
 		{
 			"value": "#",
-			"type": "Kw::Hash",
 			"raw": "#",
 			"range": [302, 303],
 			"loc": {
@@ -2562,13 +2561,13 @@
 					"line": 12,
 					"column": 1
 				}
-			}
+			},
+			"type": "Kw::Hash"
 		},
 		{
 			"children": [
 				{
 					"value": "let",
-					"type": "Kw::Let",
 					"raw": "let",
 					"range": [303, 306],
 					"loc": {
@@ -2580,7 +2579,8 @@
 							"line": 12,
 							"column": 4
 						}
-					}
+					},
+					"type": "Kw::Let"
 				},
 				{
 					"type": "Str",
@@ -2600,7 +2600,6 @@
 				},
 				{
 					"value": "count",
-					"type": "Marked::(Ident: &quot;count&quot;)",
 					"raw": "count",
 					"range": [307, 312],
 					"loc": {
@@ -2612,7 +2611,8 @@
 							"line": 12,
 							"column": 10
 						}
-					}
+					},
+					"type": "Marked::(Ident: &quot;count&quot;)"
 				},
 				{
 					"type": "Str",
@@ -2632,7 +2632,6 @@
 				},
 				{
 					"value": "=",
-					"type": "Op::Eq",
 					"raw": "=",
 					"range": [313, 314],
 					"loc": {
@@ -2644,7 +2643,8 @@
 							"line": 12,
 							"column": 12
 						}
-					}
+					},
+					"type": "Op::Eq"
 				},
 				{
 					"type": "Str",
@@ -2664,7 +2664,6 @@
 				},
 				{
 					"value": "8",
-					"type": "Num(Int, 8)",
 					"raw": "8",
 					"range": [315, 316],
 					"loc": {
@@ -2676,10 +2675,10 @@
 							"line": 12,
 							"column": 14
 						}
-					}
+					},
+					"type": "Num(Int, 8)"
 				}
 			],
-			"type": "Marked::LetBinding",
 			"raw": "let count = 8",
 			"range": [303, 316],
 			"loc": {
@@ -2691,7 +2690,8 @@
 					"line": 12,
 					"column": 14
 				}
-			}
+			},
+			"type": "Marked::LetBinding"
 		},
 		{
 			"type": "Str",
@@ -2711,7 +2711,6 @@
 		},
 		{
 			"value": "#",
-			"type": "Kw::Hash",
 			"raw": "#",
 			"range": [317, 318],
 			"loc": {
@@ -2723,13 +2722,13 @@
 					"line": 13,
 					"column": 1
 				}
-			}
+			},
+			"type": "Kw::Hash"
 		},
 		{
 			"children": [
 				{
 					"value": "let",
-					"type": "Kw::Let",
 					"raw": "let",
 					"range": [318, 321],
 					"loc": {
@@ -2741,7 +2740,8 @@
 							"line": 13,
 							"column": 4
 						}
-					}
+					},
+					"type": "Kw::Let"
 				},
 				{
 					"type": "Str",
@@ -2761,7 +2761,6 @@
 				},
 				{
 					"value": "nums",
-					"type": "Marked::(Ident: &quot;nums&quot;)",
 					"raw": "nums",
 					"range": [322, 326],
 					"loc": {
@@ -2773,7 +2772,8 @@
 							"line": 13,
 							"column": 9
 						}
-					}
+					},
+					"type": "Marked::(Ident: &quot;nums&quot;)"
 				},
 				{
 					"type": "Str",
@@ -2793,7 +2793,6 @@
 				},
 				{
 					"value": "=",
-					"type": "Op::Eq",
 					"raw": "=",
 					"range": [327, 328],
 					"loc": {
@@ -2805,7 +2804,8 @@
 							"line": 13,
 							"column": 11
 						}
-					}
+					},
+					"type": "Op::Eq"
 				},
 				{
 					"type": "Str",
@@ -2827,7 +2827,6 @@
 					"children": [
 						{
 							"value": "range",
-							"type": "Fn::(Ident: &quot;range&quot;)",
 							"raw": "range",
 							"range": [329, 334],
 							"loc": {
@@ -2839,13 +2838,13 @@
 									"line": 13,
 									"column": 17
 								}
-							}
+							},
+							"type": "Fn::(Ident: &quot;range&quot;)"
 						},
 						{
 							"children": [
 								{
 									"value": "(",
-									"type": "Punc::LeftParen",
 									"raw": "(",
 									"range": [334, 335],
 									"loc": {
@@ -2857,11 +2856,11 @@
 											"line": 13,
 											"column": 18
 										}
-									}
+									},
+									"type": "Punc::LeftParen"
 								},
 								{
 									"value": "1",
-									"type": "Num(Int, 1)",
 									"raw": "1",
 									"range": [335, 336],
 									"loc": {
@@ -2873,11 +2872,11 @@
 											"line": 13,
 											"column": 19
 										}
-									}
+									},
+									"type": "Num(Int, 1)"
 								},
 								{
 									"value": ",",
-									"type": "Punc::Comma",
 									"raw": ",",
 									"range": [336, 337],
 									"loc": {
@@ -2889,7 +2888,8 @@
 											"line": 13,
 											"column": 20
 										}
-									}
+									},
+									"type": "Punc::Comma"
 								},
 								{
 									"type": "Str",
@@ -2911,7 +2911,6 @@
 									"children": [
 										{
 											"value": "count",
-											"type": "Marked::(Ident: &quot;count&quot;)",
 											"raw": "count",
 											"range": [338, 343],
 											"loc": {
@@ -2923,7 +2922,8 @@
 													"line": 13,
 													"column": 26
 												}
-											}
+											},
+											"type": "Marked::(Ident: &quot;count&quot;)"
 										},
 										{
 											"type": "Str",
@@ -2943,7 +2943,6 @@
 										},
 										{
 											"value": "+",
-											"type": "Op::Plus",
 											"raw": "+",
 											"range": [344, 345],
 											"loc": {
@@ -2955,7 +2954,8 @@
 													"line": 13,
 													"column": 28
 												}
-											}
+											},
+											"type": "Op::Plus"
 										},
 										{
 											"type": "Str",
@@ -2975,7 +2975,6 @@
 										},
 										{
 											"value": "1",
-											"type": "Num(Int, 1)",
 											"raw": "1",
 											"range": [346, 347],
 											"loc": {
@@ -2987,10 +2986,10 @@
 													"line": 13,
 													"column": 30
 												}
-											}
+											},
+											"type": "Num(Int, 1)"
 										}
 									],
-									"type": "Marked::Binary",
 									"raw": "count + 1",
 									"range": [338, 347],
 									"loc": {
@@ -3002,11 +3001,11 @@
 											"line": 13,
 											"column": 30
 										}
-									}
+									},
+									"type": "Marked::Binary"
 								},
 								{
 									"value": ")",
-									"type": "Punc::RightParen",
 									"raw": ")",
 									"range": [347, 348],
 									"loc": {
@@ -3018,10 +3017,10 @@
 											"line": 13,
 											"column": 31
 										}
-									}
+									},
+									"type": "Punc::RightParen"
 								}
 							],
-							"type": "Marked::Args",
 							"raw": "(1, count + 1)",
 							"range": [334, 348],
 							"loc": {
@@ -3033,10 +3032,10 @@
 									"line": 13,
 									"column": 31
 								}
-							}
+							},
+							"type": "Marked::Args"
 						}
 					],
-					"type": "Marked::FuncCall",
 					"raw": "range(1, count + 1)",
 					"range": [329, 348],
 					"loc": {
@@ -3048,10 +3047,10 @@
 							"line": 13,
 							"column": 31
 						}
-					}
+					},
+					"type": "Marked::FuncCall"
 				}
 			],
-			"type": "Marked::LetBinding",
 			"raw": "let nums = range(1, count + 1)",
 			"range": [318, 348],
 			"loc": {
@@ -3063,7 +3062,8 @@
 					"line": 13,
 					"column": 31
 				}
-			}
+			},
+			"type": "Marked::LetBinding"
 		},
 		{
 			"type": "Str",
@@ -3083,7 +3083,6 @@
 		},
 		{
 			"value": "#",
-			"type": "Kw::Hash",
 			"raw": "#",
 			"range": [349, 350],
 			"loc": {
@@ -3095,13 +3094,13 @@
 					"line": 14,
 					"column": 1
 				}
-			}
+			},
+			"type": "Kw::Hash"
 		},
 		{
 			"children": [
 				{
 					"value": "let",
-					"type": "Kw::Let",
 					"raw": "let",
 					"range": [350, 353],
 					"loc": {
@@ -3113,7 +3112,8 @@
 							"line": 14,
 							"column": 4
 						}
-					}
+					},
+					"type": "Kw::Let"
 				},
 				{
 					"type": "Str",
@@ -3135,7 +3135,6 @@
 					"children": [
 						{
 							"value": "fib",
-							"type": "Fn::(Ident: &quot;fib&quot;)",
 							"raw": "fib",
 							"range": [354, 357],
 							"loc": {
@@ -3147,13 +3146,13 @@
 									"line": 14,
 									"column": 8
 								}
-							}
+							},
+							"type": "Fn::(Ident: &quot;fib&quot;)"
 						},
 						{
 							"children": [
 								{
 									"value": "(",
-									"type": "Punc::LeftParen",
 									"raw": "(",
 									"range": [357, 358],
 									"loc": {
@@ -3165,11 +3164,11 @@
 											"line": 14,
 											"column": 9
 										}
-									}
+									},
+									"type": "Punc::LeftParen"
 								},
 								{
 									"value": "n",
-									"type": "Marked::(Ident: &quot;n&quot;)",
 									"raw": "n",
 									"range": [358, 359],
 									"loc": {
@@ -3181,11 +3180,11 @@
 											"line": 14,
 											"column": 10
 										}
-									}
+									},
+									"type": "Marked::(Ident: &quot;n&quot;)"
 								},
 								{
 									"value": ")",
-									"type": "Punc::RightParen",
 									"raw": ")",
 									"range": [359, 360],
 									"loc": {
@@ -3197,10 +3196,10 @@
 											"line": 14,
 											"column": 11
 										}
-									}
+									},
+									"type": "Punc::RightParen"
 								}
 							],
-							"type": "Marked::Params",
 							"raw": "(n)",
 							"range": [357, 360],
 							"loc": {
@@ -3212,7 +3211,8 @@
 									"line": 14,
 									"column": 11
 								}
-							}
+							},
+							"type": "Marked::Params"
 						},
 						{
 							"type": "Str",
@@ -3232,7 +3232,6 @@
 						},
 						{
 							"value": "=",
-							"type": "Op::Eq",
 							"raw": "=",
 							"range": [361, 362],
 							"loc": {
@@ -3244,7 +3243,8 @@
 									"line": 14,
 									"column": 13
 								}
-							}
+							},
+							"type": "Op::Eq"
 						},
 						{
 							"type": "Str",
@@ -3266,7 +3266,6 @@
 							"children": [
 								{
 									"value": "(",
-									"type": "Punc::LeftParen",
 									"raw": "(",
 									"range": [363, 364],
 									"loc": {
@@ -3278,7 +3277,8 @@
 											"line": 14,
 											"column": 15
 										}
-									}
+									},
+									"type": "Punc::LeftParen"
 								},
 								{
 									"type": "Str",
@@ -3300,7 +3300,6 @@
 									"children": [
 										{
 											"value": "if",
-											"type": "Kw::If",
 											"raw": "if",
 											"range": [365, 367],
 											"loc": {
@@ -3312,7 +3311,8 @@
 													"line": 15,
 													"column": 4
 												}
-											}
+											},
+											"type": "Kw::If"
 										},
 										{
 											"type": "Str",
@@ -3334,7 +3334,6 @@
 											"children": [
 												{
 													"value": "n",
-													"type": "Marked::(Ident: &quot;n&quot;)",
 													"raw": "n",
 													"range": [368, 369],
 													"loc": {
@@ -3346,7 +3345,8 @@
 															"line": 15,
 															"column": 6
 														}
-													}
+													},
+													"type": "Marked::(Ident: &quot;n&quot;)"
 												},
 												{
 													"type": "Str",
@@ -3366,7 +3366,6 @@
 												},
 												{
 													"value": "<=",
-													"type": "Op::LtEq",
 													"raw": "<=",
 													"range": [370, 372],
 													"loc": {
@@ -3378,7 +3377,8 @@
 															"line": 15,
 															"column": 9
 														}
-													}
+													},
+													"type": "Op::LtEq"
 												},
 												{
 													"type": "Str",
@@ -3398,7 +3398,6 @@
 												},
 												{
 													"value": "2",
-													"type": "Num(Int, 2)",
 													"raw": "2",
 													"range": [373, 374],
 													"loc": {
@@ -3410,10 +3409,10 @@
 															"line": 15,
 															"column": 11
 														}
-													}
+													},
+													"type": "Num(Int, 2)"
 												}
 											],
-											"type": "Marked::Binary",
 											"raw": "n <= 2",
 											"range": [368, 374],
 											"loc": {
@@ -3425,7 +3424,8 @@
 													"line": 15,
 													"column": 11
 												}
-											}
+											},
+											"type": "Marked::Binary"
 										},
 										{
 											"type": "Str",
@@ -3447,7 +3447,6 @@
 											"children": [
 												{
 													"value": "{",
-													"type": "Punc::LeftBrace",
 													"raw": "{",
 													"range": [375, 376],
 													"loc": {
@@ -3459,7 +3458,8 @@
 															"line": 15,
 															"column": 13
 														}
-													}
+													},
+													"type": "Punc::LeftBrace"
 												},
 												{
 													"type": "Str",
@@ -3481,7 +3481,6 @@
 													"children": [
 														{
 															"value": "1",
-															"type": "Num(Int, 1)",
 															"raw": "1",
 															"range": [377, 378],
 															"loc": {
@@ -3493,10 +3492,10 @@
 																	"line": 15,
 																	"column": 15
 																}
-															}
+															},
+															"type": "Num(Int, 1)"
 														}
 													],
-													"type": "Marked::Code",
 													"raw": "1",
 													"range": [377, 378],
 													"loc": {
@@ -3508,7 +3507,8 @@
 															"line": 15,
 															"column": 15
 														}
-													}
+													},
+													"type": "Marked::Code"
 												},
 												{
 													"type": "Str",
@@ -3528,7 +3528,6 @@
 												},
 												{
 													"value": "}",
-													"type": "Punc::RightBrace",
 													"raw": "}",
 													"range": [379, 380],
 													"loc": {
@@ -3540,10 +3539,10 @@
 															"line": 15,
 															"column": 17
 														}
-													}
+													},
+													"type": "Punc::RightBrace"
 												}
 											],
-											"type": "Marked::CodeBlock",
 											"raw": "{ 1 }",
 											"range": [375, 380],
 											"loc": {
@@ -3555,7 +3554,8 @@
 													"line": 15,
 													"column": 17
 												}
-											}
+											},
+											"type": "Marked::CodeBlock"
 										},
 										{
 											"type": "Str",
@@ -3575,7 +3575,6 @@
 										},
 										{
 											"value": "else",
-											"type": "Kw::Else",
 											"raw": "else",
 											"range": [381, 385],
 											"loc": {
@@ -3587,7 +3586,8 @@
 													"line": 16,
 													"column": 6
 												}
-											}
+											},
+											"type": "Kw::Else"
 										},
 										{
 											"type": "Str",
@@ -3609,7 +3609,6 @@
 											"children": [
 												{
 													"value": "{",
-													"type": "Punc::LeftBrace",
 													"raw": "{",
 													"range": [386, 387],
 													"loc": {
@@ -3621,7 +3620,8 @@
 															"line": 16,
 															"column": 8
 														}
-													}
+													},
+													"type": "Punc::LeftBrace"
 												},
 												{
 													"type": "Str",
@@ -3647,7 +3647,6 @@
 																	"children": [
 																		{
 																			"value": "fib",
-																			"type": "Fn::(Ident: &quot;fib&quot;)",
 																			"raw": "fib",
 																			"range": [388, 391],
 																			"loc": {
@@ -3659,13 +3658,13 @@
 																					"line": 16,
 																					"column": 12
 																				}
-																			}
+																			},
+																			"type": "Fn::(Ident: &quot;fib&quot;)"
 																		},
 																		{
 																			"children": [
 																				{
 																					"value": "(",
-																					"type": "Punc::LeftParen",
 																					"raw": "(",
 																					"range": [391, 392],
 																					"loc": {
@@ -3677,13 +3676,13 @@
 																							"line": 16,
 																							"column": 13
 																						}
-																					}
+																					},
+																					"type": "Punc::LeftParen"
 																				},
 																				{
 																					"children": [
 																						{
 																							"value": "n",
-																							"type": "Marked::(Ident: &quot;n&quot;)",
 																							"raw": "n",
 																							"range": [392, 393],
 																							"loc": {
@@ -3695,7 +3694,8 @@
 																									"line": 16,
 																									"column": 14
 																								}
-																							}
+																							},
+																							"type": "Marked::(Ident: &quot;n&quot;)"
 																						},
 																						{
 																							"type": "Str",
@@ -3715,7 +3715,6 @@
 																						},
 																						{
 																							"value": "-",
-																							"type": "Op::Minus",
 																							"raw": "-",
 																							"range": [394, 395],
 																							"loc": {
@@ -3727,7 +3726,8 @@
 																									"line": 16,
 																									"column": 16
 																								}
-																							}
+																							},
+																							"type": "Op::Minus"
 																						},
 																						{
 																							"type": "Str",
@@ -3747,7 +3747,6 @@
 																						},
 																						{
 																							"value": "1",
-																							"type": "Num(Int, 1)",
 																							"raw": "1",
 																							"range": [396, 397],
 																							"loc": {
@@ -3759,10 +3758,10 @@
 																									"line": 16,
 																									"column": 18
 																								}
-																							}
+																							},
+																							"type": "Num(Int, 1)"
 																						}
 																					],
-																					"type": "Marked::Binary",
 																					"raw": "n - 1",
 																					"range": [392, 397],
 																					"loc": {
@@ -3774,11 +3773,11 @@
 																							"line": 16,
 																							"column": 18
 																						}
-																					}
+																					},
+																					"type": "Marked::Binary"
 																				},
 																				{
 																					"value": ")",
-																					"type": "Punc::RightParen",
 																					"raw": ")",
 																					"range": [397, 398],
 																					"loc": {
@@ -3790,10 +3789,10 @@
 																							"line": 16,
 																							"column": 19
 																						}
-																					}
+																					},
+																					"type": "Punc::RightParen"
 																				}
 																			],
-																			"type": "Marked::Args",
 																			"raw": "(n - 1)",
 																			"range": [391, 398],
 																			"loc": {
@@ -3805,10 +3804,10 @@
 																					"line": 16,
 																					"column": 19
 																				}
-																			}
+																			},
+																			"type": "Marked::Args"
 																		}
 																	],
-																	"type": "Marked::FuncCall",
 																	"raw": "fib(n - 1)",
 																	"range": [388, 398],
 																	"loc": {
@@ -3820,7 +3819,8 @@
 																			"line": 16,
 																			"column": 19
 																		}
-																	}
+																	},
+																	"type": "Marked::FuncCall"
 																},
 																{
 																	"type": "Str",
@@ -3840,7 +3840,6 @@
 																},
 																{
 																	"value": "+",
-																	"type": "Op::Plus",
 																	"raw": "+",
 																	"range": [399, 400],
 																	"loc": {
@@ -3852,7 +3851,8 @@
 																			"line": 16,
 																			"column": 21
 																		}
-																	}
+																	},
+																	"type": "Op::Plus"
 																},
 																{
 																	"type": "Str",
@@ -3874,7 +3874,6 @@
 																	"children": [
 																		{
 																			"value": "fib",
-																			"type": "Fn::(Ident: &quot;fib&quot;)",
 																			"raw": "fib",
 																			"range": [401, 404],
 																			"loc": {
@@ -3886,13 +3885,13 @@
 																					"line": 16,
 																					"column": 25
 																				}
-																			}
+																			},
+																			"type": "Fn::(Ident: &quot;fib&quot;)"
 																		},
 																		{
 																			"children": [
 																				{
 																					"value": "(",
-																					"type": "Punc::LeftParen",
 																					"raw": "(",
 																					"range": [404, 405],
 																					"loc": {
@@ -3904,13 +3903,13 @@
 																							"line": 16,
 																							"column": 26
 																						}
-																					}
+																					},
+																					"type": "Punc::LeftParen"
 																				},
 																				{
 																					"children": [
 																						{
 																							"value": "n",
-																							"type": "Marked::(Ident: &quot;n&quot;)",
 																							"raw": "n",
 																							"range": [405, 406],
 																							"loc": {
@@ -3922,7 +3921,8 @@
 																									"line": 16,
 																									"column": 27
 																								}
-																							}
+																							},
+																							"type": "Marked::(Ident: &quot;n&quot;)"
 																						},
 																						{
 																							"type": "Str",
@@ -3942,7 +3942,6 @@
 																						},
 																						{
 																							"value": "-",
-																							"type": "Op::Minus",
 																							"raw": "-",
 																							"range": [407, 408],
 																							"loc": {
@@ -3954,7 +3953,8 @@
 																									"line": 16,
 																									"column": 29
 																								}
-																							}
+																							},
+																							"type": "Op::Minus"
 																						},
 																						{
 																							"type": "Str",
@@ -3974,7 +3974,6 @@
 																						},
 																						{
 																							"value": "2",
-																							"type": "Num(Int, 2)",
 																							"raw": "2",
 																							"range": [409, 410],
 																							"loc": {
@@ -3986,10 +3985,10 @@
 																									"line": 16,
 																									"column": 31
 																								}
-																							}
+																							},
+																							"type": "Num(Int, 2)"
 																						}
 																					],
-																					"type": "Marked::Binary",
 																					"raw": "n - 2",
 																					"range": [405, 410],
 																					"loc": {
@@ -4001,11 +4000,11 @@
 																							"line": 16,
 																							"column": 31
 																						}
-																					}
+																					},
+																					"type": "Marked::Binary"
 																				},
 																				{
 																					"value": ")",
-																					"type": "Punc::RightParen",
 																					"raw": ")",
 																					"range": [410, 411],
 																					"loc": {
@@ -4017,10 +4016,10 @@
 																							"line": 16,
 																							"column": 32
 																						}
-																					}
+																					},
+																					"type": "Punc::RightParen"
 																				}
 																			],
-																			"type": "Marked::Args",
 																			"raw": "(n - 2)",
 																			"range": [404, 411],
 																			"loc": {
@@ -4032,10 +4031,10 @@
 																					"line": 16,
 																					"column": 32
 																				}
-																			}
+																			},
+																			"type": "Marked::Args"
 																		}
 																	],
-																	"type": "Marked::FuncCall",
 																	"raw": "fib(n - 2)",
 																	"range": [401, 411],
 																	"loc": {
@@ -4047,10 +4046,10 @@
 																			"line": 16,
 																			"column": 32
 																		}
-																	}
+																	},
+																	"type": "Marked::FuncCall"
 																}
 															],
-															"type": "Marked::Binary",
 															"raw": "fib(n - 1) + fib(n - 2)",
 															"range": [388, 411],
 															"loc": {
@@ -4062,10 +4061,10 @@
 																	"line": 16,
 																	"column": 32
 																}
-															}
+															},
+															"type": "Marked::Binary"
 														}
 													],
-													"type": "Marked::Code",
 													"raw": "fib(n - 1) + fib(n - 2)",
 													"range": [388, 411],
 													"loc": {
@@ -4077,7 +4076,8 @@
 															"line": 16,
 															"column": 32
 														}
-													}
+													},
+													"type": "Marked::Code"
 												},
 												{
 													"type": "Str",
@@ -4097,7 +4097,6 @@
 												},
 												{
 													"value": "}",
-													"type": "Punc::RightBrace",
 													"raw": "}",
 													"range": [412, 413],
 													"loc": {
@@ -4109,10 +4108,10 @@
 															"line": 16,
 															"column": 34
 														}
-													}
+													},
+													"type": "Punc::RightBrace"
 												}
 											],
-											"type": "Marked::CodeBlock",
 											"raw": "{ fib(n - 1) + fib(n - 2) }",
 											"range": [386, 413],
 											"loc": {
@@ -4124,10 +4123,10 @@
 													"line": 16,
 													"column": 34
 												}
-											}
+											},
+											"type": "Marked::CodeBlock"
 										}
 									],
-									"type": "Marked::Conditional",
 									"raw": "if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }",
 									"range": [365, 415],
 									"loc": {
@@ -4139,7 +4138,8 @@
 											"line": 16,
 											"column": 34
 										}
-									}
+									},
+									"type": "Marked::Conditional"
 								},
 								{
 									"type": "Str",
@@ -4159,7 +4159,6 @@
 								},
 								{
 									"value": ")",
-									"type": "Punc::RightParen",
 									"raw": ")",
 									"range": [416, 417],
 									"loc": {
@@ -4171,10 +4170,10 @@
 											"line": 17,
 											"column": 1
 										}
-									}
+									},
+									"type": "Punc::RightParen"
 								}
 							],
-							"type": "Marked::Parenthesized",
 							"raw": "(\n  if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }\n)",
 							"range": [363, 419],
 							"loc": {
@@ -4186,10 +4185,10 @@
 									"line": 17,
 									"column": 1
 								}
-							}
+							},
+							"type": "Marked::Parenthesized"
 						}
 					],
-					"type": "Marked::Closure",
 					"raw": "fib(n) = (\n  if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }\n)",
 					"range": [354, 419],
 					"loc": {
@@ -4201,10 +4200,10 @@
 							"line": 17,
 							"column": 1
 						}
-					}
+					},
+					"type": "Marked::Closure"
 				}
 			],
-			"type": "Marked::LetBinding",
 			"raw": "let fib(n) = (\n  if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }\n)",
 			"range": [350, 419],
 			"loc": {
@@ -4216,11 +4215,11 @@
 					"line": 17,
 					"column": 1
 				}
-			}
+			},
+			"type": "Marked::LetBinding"
 		},
 		{
 			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
 			"range": [419, 421],
 			"loc": {
@@ -4232,11 +4231,11 @@
 					"line": 19,
 					"column": 0
 				}
-			}
+			},
+			"type": "Break"
 		},
 		{
 			"value": "The first",
-			"type": "Str",
 			"raw": "The first",
 			"range": [421, 430],
 			"loc": {
@@ -4248,7 +4247,8 @@
 					"line": 19,
 					"column": 9
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"type": "Str",
@@ -4268,7 +4268,6 @@
 		},
 		{
 			"value": "#",
-			"type": "Var::(Hash: &quot;#&quot;)",
 			"raw": "#",
 			"range": [431, 432],
 			"loc": {
@@ -4280,11 +4279,11 @@
 					"line": 19,
 					"column": 11
 				}
-			}
+			},
+			"type": "Var::(Hash: &quot;#&quot;)"
 		},
 		{
 			"value": "count",
-			"type": "Var::(Ident: &quot;count&quot;)",
 			"raw": "count",
 			"range": [432, 437],
 			"loc": {
@@ -4296,7 +4295,8 @@
 					"line": 19,
 					"column": 16
 				}
-			}
+			},
+			"type": "Var::(Ident: &quot;count&quot;)"
 		},
 		{
 			"type": "Str",
@@ -4316,7 +4316,6 @@
 		},
 		{
 			"value": "numbers of the sequence are",
-			"type": "Str",
 			"raw": "numbers of the sequence are",
 			"range": [438, 465],
 			"loc": {
@@ -4328,11 +4327,11 @@
 					"line": 19,
 					"column": 44
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"value": ":",
-			"type": "Str",
 			"raw": ":",
 			"range": [465, 466],
 			"loc": {
@@ -4344,11 +4343,11 @@
 					"line": 19,
 					"column": 45
 				}
-			}
+			},
+			"type": "Str"
 		},
 		{
 			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
 			"range": [466, 468],
 			"loc": {
@@ -4360,11 +4359,11 @@
 					"line": 21,
 					"column": 0
 				}
-			}
+			},
+			"type": "Break"
 		},
 		{
 			"value": "#",
-			"type": "Fn::(Hash: &quot;#&quot;)",
 			"raw": "#",
 			"range": [468, 469],
 			"loc": {
@@ -4376,13 +4375,13 @@
 					"line": 21,
 					"column": 1
 				}
-			}
+			},
+			"type": "Fn::(Hash: &quot;#&quot;)"
 		},
 		{
 			"children": [
 				{
 					"value": "align",
-					"type": "Fn::(Ident: &quot;align&quot;)",
 					"raw": "align",
 					"range": [469, 474],
 					"loc": {
@@ -4394,13 +4393,13 @@
 							"line": 21,
 							"column": 6
 						}
-					}
+					},
+					"type": "Fn::(Ident: &quot;align&quot;)"
 				},
 				{
 					"children": [
 						{
 							"value": "(",
-							"type": "Punc::LeftParen",
 							"raw": "(",
 							"range": [474, 475],
 							"loc": {
@@ -4412,11 +4411,11 @@
 									"line": 21,
 									"column": 7
 								}
-							}
+							},
+							"type": "Punc::LeftParen"
 						},
 						{
 							"value": "center",
-							"type": "Marked::(Ident: &quot;center&quot;)",
 							"raw": "center",
 							"range": [475, 481],
 							"loc": {
@@ -4428,11 +4427,11 @@
 									"line": 21,
 									"column": 13
 								}
-							}
+							},
+							"type": "Marked::(Ident: &quot;center&quot;)"
 						},
 						{
 							"value": ",",
-							"type": "Punc::Comma",
 							"raw": ",",
 							"range": [481, 482],
 							"loc": {
@@ -4444,7 +4443,8 @@
 									"line": 21,
 									"column": 14
 								}
-							}
+							},
+							"type": "Punc::Comma"
 						},
 						{
 							"type": "Str",
@@ -4466,7 +4466,6 @@
 							"children": [
 								{
 									"value": "table",
-									"type": "Fn::(Ident: &quot;table&quot;)",
 									"raw": "table",
 									"range": [483, 488],
 									"loc": {
@@ -4478,13 +4477,13 @@
 											"line": 21,
 											"column": 20
 										}
-									}
+									},
+									"type": "Fn::(Ident: &quot;table&quot;)"
 								},
 								{
 									"children": [
 										{
 											"value": "(",
-											"type": "Punc::LeftParen",
 											"raw": "(",
 											"range": [488, 489],
 											"loc": {
@@ -4496,7 +4495,8 @@
 													"line": 21,
 													"column": 21
 												}
-											}
+											},
+											"type": "Punc::LeftParen"
 										},
 										{
 											"type": "Str",
@@ -4518,7 +4518,6 @@
 											"children": [
 												{
 													"value": "columns",
-													"type": "Marked::(Ident: &quot;columns&quot;)",
 													"raw": "columns",
 													"range": [490, 497],
 													"loc": {
@@ -4530,11 +4529,11 @@
 															"line": 22,
 															"column": 9
 														}
-													}
+													},
+													"type": "Marked::(Ident: &quot;columns&quot;)"
 												},
 												{
 													"value": ":",
-													"type": "Punc::Colon",
 													"raw": ":",
 													"range": [497, 498],
 													"loc": {
@@ -4546,7 +4545,8 @@
 															"line": 22,
 															"column": 10
 														}
-													}
+													},
+													"type": "Punc::Colon"
 												},
 												{
 													"type": "Str",
@@ -4566,7 +4566,6 @@
 												},
 												{
 													"value": "count",
-													"type": "Marked::(Ident: &quot;count&quot;)",
 													"raw": "count",
 													"range": [499, 504],
 													"loc": {
@@ -4578,10 +4577,10 @@
 															"line": 22,
 															"column": 16
 														}
-													}
+													},
+													"type": "Marked::(Ident: &quot;count&quot;)"
 												}
 											],
-											"type": "Marked::Named",
 											"raw": "columns: count",
 											"range": [490, 504],
 											"loc": {
@@ -4593,11 +4592,11 @@
 													"line": 22,
 													"column": 16
 												}
-											}
+											},
+											"type": "Marked::Named"
 										},
 										{
 											"value": ",",
-											"type": "Punc::Comma",
 											"raw": ",",
 											"range": [504, 505],
 											"loc": {
@@ -4609,7 +4608,8 @@
 													"line": 22,
 													"column": 17
 												}
-											}
+											},
+											"type": "Punc::Comma"
 										},
 										{
 											"type": "Str",
@@ -4631,7 +4631,6 @@
 											"children": [
 												{
 													"value": "..",
-													"type": "Op::Dots",
 													"raw": "..",
 													"range": [506, 508],
 													"loc": {
@@ -4643,7 +4642,8 @@
 															"line": 23,
 															"column": 4
 														}
-													}
+													},
+													"type": "Op::Dots"
 												},
 												{
 													"children": [
@@ -4651,7 +4651,6 @@
 															"children": [
 																{
 																	"value": "nums",
-																	"type": "Marked::(Ident: &quot;nums&quot;)",
 																	"raw": "nums",
 																	"range": [508, 512],
 																	"loc": {
@@ -4663,11 +4662,11 @@
 																			"line": 23,
 																			"column": 8
 																		}
-																	}
+																	},
+																	"type": "Marked::(Ident: &quot;nums&quot;)"
 																},
 																{
 																	"value": ".",
-																	"type": "Punc::Dot",
 																	"raw": ".",
 																	"range": [512, 513],
 																	"loc": {
@@ -4679,11 +4678,11 @@
 																			"line": 23,
 																			"column": 9
 																		}
-																	}
+																	},
+																	"type": "Punc::Dot"
 																},
 																{
 																	"value": "map",
-																	"type": "Fn::(Ident: &quot;map&quot;)",
 																	"raw": "map",
 																	"range": [513, 516],
 																	"loc": {
@@ -4695,10 +4694,10 @@
 																			"line": 23,
 																			"column": 12
 																		}
-																	}
+																	},
+																	"type": "Fn::(Ident: &quot;map&quot;)"
 																}
 															],
-															"type": "Marked::FieldAccess",
 															"raw": "nums.map",
 															"range": [508, 516],
 															"loc": {
@@ -4710,13 +4709,13 @@
 																	"line": 23,
 																	"column": 12
 																}
-															}
+															},
+															"type": "Marked::FieldAccess"
 														},
 														{
 															"children": [
 																{
 																	"value": "(",
-																	"type": "Punc::LeftParen",
 																	"raw": "(",
 																	"range": [516, 517],
 																	"loc": {
@@ -4728,7 +4727,8 @@
 																			"line": 23,
 																			"column": 13
 																		}
-																	}
+																	},
+																	"type": "Punc::LeftParen"
 																},
 																{
 																	"children": [
@@ -4736,7 +4736,6 @@
 																			"children": [
 																				{
 																					"value": "n",
-																					"type": "Marked::(Ident: &quot;n&quot;)",
 																					"raw": "n",
 																					"range": [517, 518],
 																					"loc": {
@@ -4748,10 +4747,10 @@
 																							"line": 23,
 																							"column": 14
 																						}
-																					}
+																					},
+																					"type": "Marked::(Ident: &quot;n&quot;)"
 																				}
 																			],
-																			"type": "Marked::Params",
 																			"raw": "n",
 																			"range": [517, 518],
 																			"loc": {
@@ -4763,7 +4762,8 @@
 																					"line": 23,
 																					"column": 14
 																				}
-																			}
+																			},
+																			"type": "Marked::Params"
 																		},
 																		{
 																			"type": "Str",
@@ -4783,7 +4783,6 @@
 																		},
 																		{
 																			"value": "=>",
-																			"type": "Op::Arrow",
 																			"raw": "=>",
 																			"range": [519, 521],
 																			"loc": {
@@ -4795,7 +4794,8 @@
 																					"line": 23,
 																					"column": 17
 																				}
-																			}
+																			},
+																			"type": "Op::Arrow"
 																		},
 																		{
 																			"type": "Str",
@@ -4817,7 +4817,6 @@
 																			"children": [
 																				{
 																					"value": "$",
-																					"type": "Marked::Dollar",
 																					"raw": "$",
 																					"range": [522, 523],
 																					"loc": {
@@ -4829,7 +4828,8 @@
 																							"line": 23,
 																							"column": 19
 																						}
-																					}
+																					},
+																					"type": "Marked::Dollar"
 																				},
 																				{
 																					"children": [
@@ -4837,7 +4837,6 @@
 																							"children": [
 																								{
 																									"value": "F",
-																									"type": "Str",
 																									"raw": "F",
 																									"range": [523, 524],
 																									"loc": {
@@ -4849,11 +4848,11 @@
 																											"line": 23,
 																											"column": 20
 																										}
-																									}
+																									},
+																									"type": "Str"
 																								},
 																								{
 																									"value": "_",
-																									"type": "Marked::Underscore",
 																									"raw": "_",
 																									"range": [524, 525],
 																									"loc": {
@@ -4865,11 +4864,11 @@
 																											"line": 23,
 																											"column": 21
 																										}
-																									}
+																									},
+																									"type": "Marked::Underscore"
 																								},
 																								{
 																									"value": "#",
-																									"type": "Var::(Hash: &quot;#&quot;)",
 																									"raw": "#",
 																									"range": [525, 526],
 																									"loc": {
@@ -4881,11 +4880,11 @@
 																											"line": 23,
 																											"column": 22
 																										}
-																									}
+																									},
+																									"type": "Var::(Hash: &quot;#&quot;)"
 																								},
 																								{
 																									"value": "n",
-																									"type": "Var::(Ident: &quot;n&quot;)",
 																									"raw": "n",
 																									"range": [526, 527],
 																									"loc": {
@@ -4897,10 +4896,10 @@
 																											"line": 23,
 																											"column": 23
 																										}
-																									}
+																									},
+																									"type": "Var::(Ident: &quot;n&quot;)"
 																								}
 																							],
-																							"type": "Marked::MathAttach",
 																							"raw": "F_#n",
 																							"range": [523, 527],
 																							"loc": {
@@ -4912,10 +4911,10 @@
 																									"line": 23,
 																									"column": 23
 																								}
-																							}
+																							},
+																							"type": "Marked::MathAttach"
 																						}
 																					],
-																					"type": "Marked::Math",
 																					"raw": "F_#n",
 																					"range": [523, 527],
 																					"loc": {
@@ -4927,11 +4926,11 @@
 																							"line": 23,
 																							"column": 23
 																						}
-																					}
+																					},
+																					"type": "Marked::Math"
 																				},
 																				{
 																					"value": "$",
-																					"type": "Marked::Dollar",
 																					"raw": "$",
 																					"range": [527, 528],
 																					"loc": {
@@ -4943,10 +4942,10 @@
 																							"line": 23,
 																							"column": 24
 																						}
-																					}
+																					},
+																					"type": "Marked::Dollar"
 																				}
 																			],
-																			"type": "Marked::Equation",
 																			"raw": "$F_#n$",
 																			"range": [522, 528],
 																			"loc": {
@@ -4958,10 +4957,10 @@
 																					"line": 23,
 																					"column": 24
 																				}
-																			}
+																			},
+																			"type": "Marked::Equation"
 																		}
 																	],
-																	"type": "Marked::Closure",
 																	"raw": "n => $F_#n$",
 																	"range": [517, 528],
 																	"loc": {
@@ -4973,11 +4972,11 @@
 																			"line": 23,
 																			"column": 24
 																		}
-																	}
+																	},
+																	"type": "Marked::Closure"
 																},
 																{
 																	"value": ")",
-																	"type": "Punc::RightParen",
 																	"raw": ")",
 																	"range": [528, 529],
 																	"loc": {
@@ -4989,10 +4988,10 @@
 																			"line": 23,
 																			"column": 25
 																		}
-																	}
+																	},
+																	"type": "Punc::RightParen"
 																}
 															],
-															"type": "Marked::Args",
 															"raw": "(n => $F_#n$)",
 															"range": [516, 529],
 															"loc": {
@@ -5004,10 +5003,10 @@
 																	"line": 23,
 																	"column": 25
 																}
-															}
+															},
+															"type": "Marked::Args"
 														}
 													],
-													"type": "Marked::FuncCall",
 													"raw": "nums.map(n => $F_#n$)",
 													"range": [508, 529],
 													"loc": {
@@ -5019,10 +5018,10 @@
 															"line": 23,
 															"column": 25
 														}
-													}
+													},
+													"type": "Marked::FuncCall"
 												}
 											],
-											"type": "Marked::Spread",
 											"raw": "..nums.map(n => $F_#n$)",
 											"range": [506, 529],
 											"loc": {
@@ -5034,11 +5033,11 @@
 													"line": 23,
 													"column": 25
 												}
-											}
+											},
+											"type": "Marked::Spread"
 										},
 										{
 											"value": ",",
-											"type": "Punc::Comma",
 											"raw": ",",
 											"range": [529, 530],
 											"loc": {
@@ -5050,7 +5049,8 @@
 													"line": 23,
 													"column": 26
 												}
-											}
+											},
+											"type": "Punc::Comma"
 										},
 										{
 											"type": "Str",
@@ -5072,7 +5072,6 @@
 											"children": [
 												{
 													"value": "..",
-													"type": "Op::Dots",
 													"raw": "..",
 													"range": [531, 533],
 													"loc": {
@@ -5084,7 +5083,8 @@
 															"line": 24,
 															"column": 4
 														}
-													}
+													},
+													"type": "Op::Dots"
 												},
 												{
 													"children": [
@@ -5092,7 +5092,6 @@
 															"children": [
 																{
 																	"value": "nums",
-																	"type": "Marked::(Ident: &quot;nums&quot;)",
 																	"raw": "nums",
 																	"range": [533, 537],
 																	"loc": {
@@ -5104,11 +5103,11 @@
 																			"line": 24,
 																			"column": 8
 																		}
-																	}
+																	},
+																	"type": "Marked::(Ident: &quot;nums&quot;)"
 																},
 																{
 																	"value": ".",
-																	"type": "Punc::Dot",
 																	"raw": ".",
 																	"range": [537, 538],
 																	"loc": {
@@ -5120,11 +5119,11 @@
 																			"line": 24,
 																			"column": 9
 																		}
-																	}
+																	},
+																	"type": "Punc::Dot"
 																},
 																{
 																	"value": "map",
-																	"type": "Fn::(Ident: &quot;map&quot;)",
 																	"raw": "map",
 																	"range": [538, 541],
 																	"loc": {
@@ -5136,10 +5135,10 @@
 																			"line": 24,
 																			"column": 12
 																		}
-																	}
+																	},
+																	"type": "Fn::(Ident: &quot;map&quot;)"
 																}
 															],
-															"type": "Marked::FieldAccess",
 															"raw": "nums.map",
 															"range": [533, 541],
 															"loc": {
@@ -5151,13 +5150,13 @@
 																	"line": 24,
 																	"column": 12
 																}
-															}
+															},
+															"type": "Marked::FieldAccess"
 														},
 														{
 															"children": [
 																{
 																	"value": "(",
-																	"type": "Punc::LeftParen",
 																	"raw": "(",
 																	"range": [541, 542],
 																	"loc": {
@@ -5169,7 +5168,8 @@
 																			"line": 24,
 																			"column": 13
 																		}
-																	}
+																	},
+																	"type": "Punc::LeftParen"
 																},
 																{
 																	"children": [
@@ -5177,7 +5177,6 @@
 																			"children": [
 																				{
 																					"value": "n",
-																					"type": "Marked::(Ident: &quot;n&quot;)",
 																					"raw": "n",
 																					"range": [542, 543],
 																					"loc": {
@@ -5189,10 +5188,10 @@
 																							"line": 24,
 																							"column": 14
 																						}
-																					}
+																					},
+																					"type": "Marked::(Ident: &quot;n&quot;)"
 																				}
 																			],
-																			"type": "Marked::Params",
 																			"raw": "n",
 																			"range": [542, 543],
 																			"loc": {
@@ -5204,7 +5203,8 @@
 																					"line": 24,
 																					"column": 14
 																				}
-																			}
+																			},
+																			"type": "Marked::Params"
 																		},
 																		{
 																			"type": "Str",
@@ -5224,7 +5224,6 @@
 																		},
 																		{
 																			"value": "=>",
-																			"type": "Op::Arrow",
 																			"raw": "=>",
 																			"range": [544, 546],
 																			"loc": {
@@ -5236,7 +5235,8 @@
 																					"line": 24,
 																					"column": 17
 																				}
-																			}
+																			},
+																			"type": "Op::Arrow"
 																		},
 																		{
 																			"type": "Str",
@@ -5258,7 +5258,6 @@
 																			"children": [
 																				{
 																					"value": "str",
-																					"type": "Fn::(Ident: &quot;str&quot;)",
 																					"raw": "str",
 																					"range": [547, 550],
 																					"loc": {
@@ -5270,13 +5269,13 @@
 																							"line": 24,
 																							"column": 21
 																						}
-																					}
+																					},
+																					"type": "Fn::(Ident: &quot;str&quot;)"
 																				},
 																				{
 																					"children": [
 																						{
 																							"value": "(",
-																							"type": "Punc::LeftParen",
 																							"raw": "(",
 																							"range": [550, 551],
 																							"loc": {
@@ -5288,13 +5287,13 @@
 																									"line": 24,
 																									"column": 22
 																								}
-																							}
+																							},
+																							"type": "Punc::LeftParen"
 																						},
 																						{
 																							"children": [
 																								{
 																									"value": "fib",
-																									"type": "Fn::(Ident: &quot;fib&quot;)",
 																									"raw": "fib",
 																									"range": [551, 554],
 																									"loc": {
@@ -5306,13 +5305,13 @@
 																											"line": 24,
 																											"column": 25
 																										}
-																									}
+																									},
+																									"type": "Fn::(Ident: &quot;fib&quot;)"
 																								},
 																								{
 																									"children": [
 																										{
 																											"value": "(",
-																											"type": "Punc::LeftParen",
 																											"raw": "(",
 																											"range": [554, 555],
 																											"loc": {
@@ -5324,11 +5323,11 @@
 																													"line": 24,
 																													"column": 26
 																												}
-																											}
+																											},
+																											"type": "Punc::LeftParen"
 																										},
 																										{
 																											"value": "n",
-																											"type": "Marked::(Ident: &quot;n&quot;)",
 																											"raw": "n",
 																											"range": [555, 556],
 																											"loc": {
@@ -5340,11 +5339,11 @@
 																													"line": 24,
 																													"column": 27
 																												}
-																											}
+																											},
+																											"type": "Marked::(Ident: &quot;n&quot;)"
 																										},
 																										{
 																											"value": ")",
-																											"type": "Punc::RightParen",
 																											"raw": ")",
 																											"range": [556, 557],
 																											"loc": {
@@ -5356,10 +5355,10 @@
 																													"line": 24,
 																													"column": 28
 																												}
-																											}
+																											},
+																											"type": "Punc::RightParen"
 																										}
 																									],
-																									"type": "Marked::Args",
 																									"raw": "(n)",
 																									"range": [554, 557],
 																									"loc": {
@@ -5371,10 +5370,10 @@
 																											"line": 24,
 																											"column": 28
 																										}
-																									}
+																									},
+																									"type": "Marked::Args"
 																								}
 																							],
-																							"type": "Marked::FuncCall",
 																							"raw": "fib(n)",
 																							"range": [551, 557],
 																							"loc": {
@@ -5386,11 +5385,11 @@
 																									"line": 24,
 																									"column": 28
 																								}
-																							}
+																							},
+																							"type": "Marked::FuncCall"
 																						},
 																						{
 																							"value": ")",
-																							"type": "Punc::RightParen",
 																							"raw": ")",
 																							"range": [557, 558],
 																							"loc": {
@@ -5402,10 +5401,10 @@
 																									"line": 24,
 																									"column": 29
 																								}
-																							}
+																							},
+																							"type": "Punc::RightParen"
 																						}
 																					],
-																					"type": "Marked::Args",
 																					"raw": "(fib(n))",
 																					"range": [550, 558],
 																					"loc": {
@@ -5417,10 +5416,10 @@
 																							"line": 24,
 																							"column": 29
 																						}
-																					}
+																					},
+																					"type": "Marked::Args"
 																				}
 																			],
-																			"type": "Marked::FuncCall",
 																			"raw": "str(fib(n))",
 																			"range": [547, 558],
 																			"loc": {
@@ -5432,10 +5431,10 @@
 																					"line": 24,
 																					"column": 29
 																				}
-																			}
+																			},
+																			"type": "Marked::FuncCall"
 																		}
 																	],
-																	"type": "Marked::Closure",
 																	"raw": "n => str(fib(n))",
 																	"range": [542, 558],
 																	"loc": {
@@ -5447,11 +5446,11 @@
 																			"line": 24,
 																			"column": 29
 																		}
-																	}
+																	},
+																	"type": "Marked::Closure"
 																},
 																{
 																	"value": ")",
-																	"type": "Punc::RightParen",
 																	"raw": ")",
 																	"range": [558, 559],
 																	"loc": {
@@ -5463,10 +5462,10 @@
 																			"line": 24,
 																			"column": 30
 																		}
-																	}
+																	},
+																	"type": "Punc::RightParen"
 																}
 															],
-															"type": "Marked::Args",
 															"raw": "(n => str(fib(n)))",
 															"range": [541, 559],
 															"loc": {
@@ -5478,10 +5477,10 @@
 																	"line": 24,
 																	"column": 30
 																}
-															}
+															},
+															"type": "Marked::Args"
 														}
 													],
-													"type": "Marked::FuncCall",
 													"raw": "nums.map(n => str(fib(n)))",
 													"range": [533, 559],
 													"loc": {
@@ -5493,10 +5492,10 @@
 															"line": 24,
 															"column": 30
 														}
-													}
+													},
+													"type": "Marked::FuncCall"
 												}
 											],
-											"type": "Marked::Spread",
 											"raw": "..nums.map(n => str(fib(n)))",
 											"range": [531, 559],
 											"loc": {
@@ -5508,11 +5507,11 @@
 													"line": 24,
 													"column": 30
 												}
-											}
+											},
+											"type": "Marked::Spread"
 										},
 										{
 											"value": ",",
-											"type": "Punc::Comma",
 											"raw": ",",
 											"range": [559, 560],
 											"loc": {
@@ -5524,7 +5523,8 @@
 													"line": 24,
 													"column": 31
 												}
-											}
+											},
+											"type": "Punc::Comma"
 										},
 										{
 											"type": "Str",
@@ -5544,7 +5544,6 @@
 										},
 										{
 											"value": ")",
-											"type": "Punc::RightParen",
 											"raw": ")",
 											"range": [561, 562],
 											"loc": {
@@ -5556,10 +5555,10 @@
 													"line": 25,
 													"column": 1
 												}
-											}
+											},
+											"type": "Punc::RightParen"
 										}
 									],
-									"type": "Marked::Args",
 									"raw": "(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n)",
 									"range": [488, 568],
 									"loc": {
@@ -5571,10 +5570,10 @@
 											"line": 25,
 											"column": 1
 										}
-									}
+									},
+									"type": "Marked::Args"
 								}
 							],
-							"type": "Marked::FuncCall",
 							"raw": "table(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n)",
 							"range": [483, 568],
 							"loc": {
@@ -5586,11 +5585,11 @@
 									"line": 25,
 									"column": 1
 								}
-							}
+							},
+							"type": "Marked::FuncCall"
 						},
 						{
 							"value": ")",
-							"type": "Punc::RightParen",
 							"raw": ")",
 							"range": [568, 569],
 							"loc": {
@@ -5602,10 +5601,10 @@
 									"line": 25,
 									"column": 2
 								}
-							}
+							},
+							"type": "Punc::RightParen"
 						}
 					],
-					"type": "Marked::Args",
 					"raw": "(center, table(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n))",
 					"range": [474, 569],
 					"loc": {
@@ -5617,10 +5616,10 @@
 							"line": 25,
 							"column": 2
 						}
-					}
+					},
+					"type": "Marked::Args"
 				}
 			],
-			"type": "Marked::FuncCall",
 			"raw": "align(center, table(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n))",
 			"range": [469, 569],
 			"loc": {
@@ -5632,11 +5631,11 @@
 					"line": 25,
 					"column": 2
 				}
-			}
+			},
+			"type": "Marked::FuncCall"
 		},
 		{
 			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
 			"range": [569, 571],
 			"loc": {
@@ -5648,11 +5647,11 @@
 					"line": 27,
 					"column": 0
 				}
-			}
+			},
+			"type": "Break"
 		},
 		{
 			"value": "https://github.com/typst/typst/blob/main/README.md",
-			"type": "Comment",
 			"raw": "// https://github.com/typst/typst/blob/main/README.md",
 			"range": [571, 624],
 			"loc": {
@@ -5664,10 +5663,10 @@
 					"line": 27,
 					"column": 53
 				}
-			}
+			},
+			"type": "Comment"
 		}
 	],
-	"type": "Document",
 	"raw": "#set page(width: 10cm, height: auto)\n#set heading(numbering: \"1.\")\n\n= Fibonacci sequence\nThe Fibonacci sequence is defined through the\nrecurrence relation $F_n = F_(n-1) + F_(n-2)$.\nIt can also be expressed in _closed form:_\n\n$ F_n = round(1 / sqrt(5) phi.alt^n), quad\n  phi.alt = (1 + sqrt(5)) / 2 $\n\n#let count = 8\n#let nums = range(1, count + 1)\n#let fib(n) = (\n  if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }\n)\n\nThe first #count numbers of the sequence are:\n\n#align(center, table(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n))\n\n// https://github.com/typst/typst/blob/main/README.md",
 	"range": [0, 624],
 	"loc": {
@@ -5679,5 +5678,6 @@
 			"line": 27,
 			"column": 53
 		}
-	}
+	},
+	"type": "Document"
 }

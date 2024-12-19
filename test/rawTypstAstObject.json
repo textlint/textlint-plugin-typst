@@ -169,7 +169,7 @@
 													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:30~6:31&gt;"
 												},
 												{
-													"s": "Escape::Shorthand &lt;6:31~6:32&gt;"
+													"s": "Escape::MathShorthand &lt;6:31~6:32&gt;"
 												},
 												{
 													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:32~6:33&gt;"
@@ -208,7 +208,7 @@
 													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:40~6:41&gt;"
 												},
 												{
-													"s": "Escape::Shorthand &lt;6:41~6:42&gt;"
+													"s": "Escape::MathShorthand &lt;6:41~6:42&gt;"
 												},
 												{
 													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:42~6:43&gt;"
