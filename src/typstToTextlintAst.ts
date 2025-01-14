@@ -371,6 +371,20 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		return endOffset;
 	};
 
+	// If the source code starts with a single newline, add a Break node before the first node.
+	if (textlintAstObject.c) {
+		const rootChildrenStartLocation = extractLocation(
+			textlintAstObject.c[0].s,
+			textlintAstObject.c[0].c,
+		);
+		if (rootChildrenStartLocation.start.line === 2) {
+			// @ts-expect-error
+			textlintAstObject.c.unshift({
+				s: "<span style='color:#7dcfff'>Marked::Parbreak</span> &lt;1:0~2:0&gt;",
+			});
+		}
+	}
+
 	calculateOffsets(textlintAstObject);
 
 	// Root node is always `Document` node
