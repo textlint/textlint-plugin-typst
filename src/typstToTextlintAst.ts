@@ -66,6 +66,12 @@ export const convertRawTypstAstStringToObject = (rawTypstAstString: string) => {
 	);
 
 	const parsed = parse(escapedRawTypstAstYamlString);
+
+	// Handle empty file case
+	if (parsed.ast.c === null) {
+		parsed.ast.c = [];
+	}
+
 	return parsed.ast as TypstAstNode;
 };
 
@@ -164,6 +170,14 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		if (!match) {
 			if (c !== undefined) {
 				// If root node
+
+				if (c.length === 0) {
+					return {
+						start: { line: 1, column: 0 },
+						end: { line: 1, column: 0 },
+					};
+				}
+
 				const rootChildrenStartLocation = extractLocation(c[0].s, c[0].c);
 				const rootChildrenEndLocation = extractLocation(
 					c[c.length - 1].s,
@@ -193,7 +207,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		const nodeRawText = extractRawSourceByLocation(typstSource, location);
 		const nodeLength = nodeRawText.length;
 
-		if (node.c && node.c.length > 0) {
+		if (node.c) {
 			// If TxtParentNode
 			let childOffset = startOffset;
 			const whitespaceNodes: TxtTextNode[] = [];
@@ -372,7 +386,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 	};
 
 	// If the source code starts with a single newline, add a Break node before the first node.
-	if (textlintAstObject.c) {
+	if (textlintAstObject.c && textlintAstObject.c.length > 0) {
 		const rootChildrenStartLocation = extractLocation(
 			textlintAstObject.c[0].s,
 			textlintAstObject.c[0].c,
