@@ -134,24 +134,24 @@
 							"s": "<span style='color:#7dcfff'>Marked::MathAttach</span> &lt;6:21~6:24&gt;",
 							"c": [
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:21~6:22&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:21~6:22&gt;"
 								},
 								{
 									"s": "<span style='color:#7dcfff'>Marked::Underscore</span> &lt;6:22~6:23&gt;"
 								},
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:23~6:24&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:23~6:24&gt;"
 								}
 							]
 						},
 						{
-							"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:25~6:26&gt;"
+							"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:25~6:26&gt;"
 						},
 						{
 							"s": "<span style='color:#7dcfff'>Marked::MathAttach</span> &lt;6:27~6:34&gt;",
 							"c": [
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:27~6:28&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:27~6:28&gt;"
 								},
 								{
 									"s": "<span style='color:#7dcfff'>Marked::Underscore</span> &lt;6:28~6:29&gt;"
@@ -166,13 +166,13 @@
 											"s": "<span style='color:#7dcfff'>Marked::Math</span> &lt;6:30~6:33&gt;",
 											"c": [
 												{
-													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:30~6:31&gt;"
+													"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:30~6:31&gt;"
 												},
 												{
 													"s": "Escape::MathShorthand &lt;6:31~6:32&gt;"
 												},
 												{
-													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:32~6:33&gt;"
+													"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:32~6:33&gt;"
 												}
 											]
 										},
@@ -184,13 +184,13 @@
 							]
 						},
 						{
-							"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:35~6:36&gt;"
+							"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:35~6:36&gt;"
 						},
 						{
 							"s": "<span style='color:#7dcfff'>Marked::MathAttach</span> &lt;6:37~6:44&gt;",
 							"c": [
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:37~6:38&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:37~6:38&gt;"
 								},
 								{
 									"s": "<span style='color:#7dcfff'>Marked::Underscore</span> &lt;6:38~6:39&gt;"
@@ -205,13 +205,13 @@
 											"s": "<span style='color:#7dcfff'>Marked::Math</span> &lt;6:40~6:43&gt;",
 											"c": [
 												{
-													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:40~6:41&gt;"
+													"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:40~6:41&gt;"
 												},
 												{
 													"s": "Escape::MathShorthand &lt;6:41~6:42&gt;"
 												},
 												{
-													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;6:42~6:43&gt;"
+													"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;6:42~6:43&gt;"
 												}
 											]
 										},
@@ -273,18 +273,18 @@
 							"s": "<span style='color:#7dcfff'>Marked::MathAttach</span> &lt;9:2~9:5&gt;",
 							"c": [
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:2~9:3&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:2~9:3&gt;"
 								},
 								{
 									"s": "<span style='color:#7dcfff'>Marked::Underscore</span> &lt;9:3~9:4&gt;"
 								},
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:4~9:5&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:4~9:5&gt;"
 								}
 							]
 						},
 						{
-							"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:6~9:7&gt;"
+							"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:6~9:7&gt;"
 						},
 						{
 							"s": "<span style='color:#7dcfff'>Marked::FuncCall</span> &lt;9:8~9:36&gt;",
@@ -305,7 +305,7 @@
 													"s": "<span style='color:#7dcfff'>Marked::MathFrac</span> &lt;9:14~9:25&gt;",
 													"c": [
 														{
-															"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:14~9:15&gt;"
+															"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:14~9:15&gt;"
 														},
 														{
 															"s": "<span style='color:#7dcfff'>Marked::Slash</span> &lt;9:16~9:17&gt;"
@@ -323,7 +323,7 @@
 																			"s": "<span style='color:#c0caf5'>Punc::LeftParen</span> &lt;9:22~9:23&gt;"
 																		},
 																		{
-																			"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:23~9:24&gt;"
+																			"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:23~9:24&gt;"
 																		},
 																		{
 																			"s": "<span style='color:#c0caf5'>Punc::RightParen</span> &lt;9:24~9:25&gt;"
@@ -355,7 +355,7 @@
 															"s": "<span style='color:#7dcfff'>Marked::Hat</span> &lt;9:33~9:34&gt;"
 														},
 														{
-															"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:34~9:35&gt;"
+															"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:34~9:35&gt;"
 														}
 													]
 												}
@@ -369,7 +369,7 @@
 							]
 						},
 						{
-							"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;9:36~9:37&gt;"
+							"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;9:36~9:37&gt;"
 						},
 						{
 							"s": "<span style='color:#0f4b6e'>Var::(MathIdent: &quot;quad&quot;)</span> &lt;9:38~9:42&gt;"
@@ -389,7 +389,7 @@
 							]
 						},
 						{
-							"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;10:10~10:11&gt;"
+							"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;10:10~10:11&gt;"
 						},
 						{
 							"s": "<span style='color:#7dcfff'>Marked::MathFrac</span> &lt;10:12~10:29&gt;",
@@ -404,10 +404,10 @@
 											"s": "<span style='color:#7dcfff'>Marked::Math</span> &lt;10:13~10:24&gt;",
 											"c": [
 												{
-													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;10:13~10:14&gt;"
+													"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;10:13~10:14&gt;"
 												},
 												{
-													"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;10:15~10:16&gt;"
+													"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;10:15~10:16&gt;"
 												},
 												{
 													"s": "<span style='color:#7dcfff'>Marked::FuncCall</span> &lt;10:17~10:24&gt;",
@@ -422,7 +422,7 @@
 																	"s": "<span style='color:#c0caf5'>Punc::LeftParen</span> &lt;10:21~10:22&gt;"
 																},
 																{
-																	"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;10:22~10:23&gt;"
+																	"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;10:22~10:23&gt;"
 																},
 																{
 																	"s": "<span style='color:#c0caf5'>Punc::RightParen</span> &lt;10:23~10:24&gt;"
@@ -442,7 +442,7 @@
 									"s": "<span style='color:#7dcfff'>Marked::Slash</span> &lt;10:26~10:27&gt;"
 								},
 								{
-									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;10:28~10:29&gt;"
+									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;10:28~10:29&gt;"
 								}
 							]
 						}
@@ -840,7 +840,7 @@
 																							"s": "<span style='color:#7dcfff'>Marked::MathAttach</span> &lt;23:19~23:23&gt;",
 																							"c": [
 																								{
-																									"s": "<span style='color:#7dcfff'>Marked::Text</span> &lt;23:19~23:20&gt;"
+																									"s": "<span style='color:#7dcfff'>Marked::MathText</span> &lt;23:19~23:20&gt;"
 																								},
 																								{
 																									"s": "<span style='color:#7dcfff'>Marked::Underscore</span> &lt;23:20~23:21&gt;"

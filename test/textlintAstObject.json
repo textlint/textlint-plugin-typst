@@ -765,7 +765,7 @@
 											"column": 22
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								},
 								{
 									"value": "_",
@@ -797,7 +797,7 @@
 											"column": 24
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								}
 							],
 							"raw": "F_n",
@@ -844,7 +844,7 @@
 									"column": 26
 								}
 							},
-							"type": "Str"
+							"type": "Marked::MathText"
 						},
 						{
 							"type": "Str",
@@ -878,7 +878,7 @@
 											"column": 28
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								},
 								{
 									"value": "_",
@@ -930,7 +930,7 @@
 															"column": 31
 														}
 													},
-													"type": "Str"
+													"type": "Marked::MathText"
 												},
 												{
 													"value": "-",
@@ -962,7 +962,7 @@
 															"column": 33
 														}
 													},
-													"type": "Str"
+													"type": "Marked::MathText"
 												}
 											],
 											"raw": "n-1",
@@ -1055,7 +1055,7 @@
 									"column": 36
 								}
 							},
-							"type": "Str"
+							"type": "Marked::MathText"
 						},
 						{
 							"type": "Str",
@@ -1089,7 +1089,7 @@
 											"column": 38
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								},
 								{
 									"value": "_",
@@ -1141,7 +1141,7 @@
 															"column": 41
 														}
 													},
-													"type": "Str"
+													"type": "Marked::MathText"
 												},
 												{
 													"value": "-",
@@ -1173,7 +1173,7 @@
 															"column": 43
 														}
 													},
-													"type": "Str"
+													"type": "Marked::MathText"
 												}
 											],
 											"raw": "n-2",
@@ -1479,7 +1479,7 @@
 											"column": 3
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								},
 								{
 									"value": "_",
@@ -1511,7 +1511,7 @@
 											"column": 5
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								}
 							],
 							"raw": "F_n",
@@ -1558,7 +1558,7 @@
 									"column": 7
 								}
 							},
-							"type": "Str"
+							"type": "Marked::MathText"
 						},
 						{
 							"type": "Str",
@@ -1630,7 +1630,7 @@
 																	"column": 15
 																}
 															},
-															"type": "Str"
+															"type": "Marked::MathText"
 														},
 														{
 															"type": "Str",
@@ -1730,7 +1730,7 @@
 																					"column": 24
 																				}
 																			},
-																			"type": "Str"
+																			"type": "Marked::MathText"
 																		},
 																		{
 																			"value": ")",
@@ -1906,7 +1906,7 @@
 																	"column": 35
 																}
 															},
-															"type": "Str"
+															"type": "Marked::MathText"
 														}
 													],
 													"raw": "phi.alt^n",
@@ -1998,7 +1998,7 @@
 									"column": 37
 								}
 							},
-							"type": "Str"
+							"type": "Marked::MathText"
 						},
 						{
 							"type": "Str",
@@ -2143,7 +2143,7 @@
 									"column": 11
 								}
 							},
-							"type": "Str"
+							"type": "Marked::MathText"
 						},
 						{
 							"type": "Str",
@@ -2197,7 +2197,7 @@
 															"column": 14
 														}
 													},
-													"type": "Str"
+													"type": "Marked::MathText"
 												},
 												{
 													"type": "Str",
@@ -2229,7 +2229,7 @@
 															"column": 16
 														}
 													},
-													"type": "Str"
+													"type": "Marked::MathText"
 												},
 												{
 													"type": "Str",
@@ -2297,7 +2297,7 @@
 																			"column": 23
 																		}
 																	},
-																	"type": "Str"
+																	"type": "Marked::MathText"
 																},
 																{
 																	"value": ")",
@@ -2453,7 +2453,7 @@
 											"column": 29
 										}
 									},
-									"type": "Str"
+									"type": "Marked::MathText"
 								}
 							],
 							"raw": "(1 + sqrt(5)) / 2",
@@ -4849,7 +4849,7 @@
 																											"column": 20
 																										}
 																									},
-																									"type": "Str"
+																									"type": "Marked::MathText"
 																								},
 																								{
 																									"value": "_",
