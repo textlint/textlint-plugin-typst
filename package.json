@@ -39,7 +39,6 @@
 		"esbuild": "^0.20.2",
 		"textlint-scripts": "^14.0.4",
 		"textlint-tester": "^14.0.4",
-		"tsc": "^2.0.4",
 		"typescript": "^5.4.3",
 		"vitest": "^1.4.0"
 	}
