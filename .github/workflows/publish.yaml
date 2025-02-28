@@ -11,8 +11,10 @@ jobs:
         with:
           node-version-file: ".tool-versions"
           registry-url: "https://registry.npmjs.org"
-      - run: npm install
-      - run: npm run check
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: ".tool-versions"
+      - run: bun install --frozen-lockfile
       - run: npm run build
       - run: npm publish
         env:
