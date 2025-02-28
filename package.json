@@ -21,6 +21,7 @@
 		"lint:apply": "biome lint --apply .",
 		"check": "biome check .",
 		"check:write": "biome check --write .",
+		"ci": "biome ci .",
 		"test": "vitest",
 		"update-fixtures": "bun ./test/update-fixtures.ts && biome check --write ./test/fixtures"
 	},
