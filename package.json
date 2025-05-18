@@ -37,6 +37,7 @@
 		"@types/node": "^20.12.2",
 		"bun-types": "latest",
 		"esbuild": "^0.20.2",
+		"textlint-rule-preset-ja-technical-writing": "^12.0.2",
 		"textlint-scripts": "^14.0.4",
 		"textlint-tester": "^14.0.4",
 		"typescript": "^5.4.3",
