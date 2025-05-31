@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { test } from "@textlint/ast-tester";
-import { convertTypstSourceToTextlintAstObject } from "../src/typstToTextlintAst";
+import { convertTypstSourceToTextlintAstObject } from "../../src/typstToTextlintAst";
 
 const fixtureDir = path.join(__dirname, "fixtures");
 for (const filePath of fs.readdirSync(fixtureDir)) {
