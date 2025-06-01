@@ -304,7 +304,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		if (/^Escape::Linebreak/.test(node.type)) {
 			node.type = ASTNodeTypes.Break;
 		}
-		if (/^Marked::ListItem$/.test(node.type)) {
+		if (/^Marked::(ListItem|EnumItem)$/.test(node.type)) {
 			node.type = ASTNodeTypes.ListItem;
 			// @ts-expect-error
 			node.spread = false;
@@ -312,92 +312,84 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 			node.checked = null;
 
 			if (node.children && node.children.length > 0) {
-				// Remove list marker and empty Str nodes.
 				const contentChildren = node.children.filter(
 					(child) =>
-						// @ts-expect-error
-						child.type !== "Marked::ListMarker" &&
-						!(child.type === "Str" && child.raw?.trim() === ""),
+						!["Marked::ListMarker", "Marked::EnumMarker"].includes(child.type),
 				);
 
-				// Use the children of Marked::Markup nodes if they exist.
-				const actualContent: Content[] = [];
+				const flattenedContent: Content[] = [];
 				for (const child of contentChildren) {
 					// @ts-expect-error
 					if (child.type === "Marked::Markup" && child.children) {
 						// @ts-expect-error
-						actualContent.push(...child.children);
+						flattenedContent.push(...child.children);
 					} else {
-						actualContent.push(child);
+						flattenedContent.push(child);
 					}
 				}
 
-				if (actualContent.length > 0) {
-					const firstContentChild = actualContent[0];
-					const lastContentChild = actualContent[actualContent.length - 1];
+				const textContent: Content[] = [];
+				const nestedListItems: Content[] = [];
 
-					node.children = [
-						{
-							type: ASTNodeTypes.Paragraph,
-							// @ts-expect-error
-							children: actualContent,
-							loc: {
-								start: firstContentChild.loc.start,
-								end: lastContentChild.loc.end,
-							},
-							range: [firstContentChild.range[0], lastContentChild.range[1]],
-							raw: actualContent.map((child) => child.raw).join(""),
-						},
-					];
-				}
-			}
-		}
-		if (/^Marked::EnumItem$/.test(node.type)) {
-			node.type = ASTNodeTypes.ListItem;
-			// @ts-expect-error
-			node.spread = false;
-			// @ts-expect-error
-			node.checked = null;
-
-			if (node.children && node.children.length > 0) {
-				// Remove enum marker and empty Str nodes.
-				const contentChildren = node.children.filter(
-					(child) =>
-						// @ts-expect-error
-						child.type !== "Marked::EnumMarker" &&
-						!(child.type === "Str" && child.raw?.trim() === ""),
-				);
-
-				// Use the children of Marked::Markup nodes if they exist.
-				const actualContent: Content[] = [];
-				for (const child of contentChildren) {
-					// @ts-expect-error
-					if (child.type === "Marked::Markup" && child.children) {
-						// @ts-expect-error
-						actualContent.push(...child.children);
+				for (const child of flattenedContent) {
+					if (child.type === ASTNodeTypes.ListItem) {
+						nestedListItems.push(child);
 					} else {
-						actualContent.push(child);
+						textContent.push(child);
 					}
 				}
 
-				if (actualContent.length > 0) {
-					const firstContentChild = actualContent[0];
-					const lastContentChild = actualContent[actualContent.length - 1];
+				const processedChildren: Content[] = [];
 
-					node.children = [
-						{
+				if (textContent.length > 0) {
+					const validTextContent = textContent.filter(
+						(child) =>
+							!(child.type === ASTNodeTypes.Str && child.raw?.trim() === ""),
+					);
+
+					if (validTextContent.length > 0) {
+						const firstChild = validTextContent[0];
+						const lastChild = validTextContent[validTextContent.length - 1];
+
+						processedChildren.push({
 							type: ASTNodeTypes.Paragraph,
 							// @ts-expect-error
-							children: actualContent,
+							children: validTextContent,
 							loc: {
-								start: firstContentChild.loc.start,
-								end: lastContentChild.loc.end,
+								start: firstChild.loc.start,
+								end: lastChild.loc.end,
 							},
-							range: [firstContentChild.range[0], lastContentChild.range[1]],
-							raw: actualContent.map((child) => child.raw).join(""),
-						},
-					];
+							range: [firstChild.range[0], lastChild.range[1]],
+							raw: validTextContent.map((c) => c.raw).join(""),
+						});
+					}
 				}
+
+				if (nestedListItems.length > 0) {
+					const isOrdered = nestedListItems.some((item) =>
+						/^\d+\./.test(item.raw?.trim() || ""),
+					);
+
+					const firstNestedItem = nestedListItems[0];
+					const lastNestedItem = nestedListItems[nestedListItems.length - 1];
+
+					processedChildren.push({
+						type: ASTNodeTypes.List,
+						ordered: isOrdered,
+						start: isOrdered ? 1 : null,
+						spread: false,
+						// @ts-expect-error
+						children: nestedListItems,
+						loc: {
+							start: firstNestedItem.loc.start,
+							end: lastNestedItem.loc.end,
+						},
+						range: [firstNestedItem.range[0], lastNestedItem.range[1]],
+						raw: nestedListItems.map((item) => item.raw).join("\n"),
+					});
+				}
+
+				node.children = processedChildren;
 			}
 		}
 		if (node.type === "Marked::Raw") {
