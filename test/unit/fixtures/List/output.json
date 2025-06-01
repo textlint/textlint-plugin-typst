@@ -1,0 +1,193 @@
+{
+	"children": [
+		{
+			"type": "List",
+			"ordered": false,
+			"start": null,
+			"spread": false,
+			"children": [
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "a",
+									"raw": "a",
+									"range": [2, 3],
+									"loc": {
+										"start": {
+											"line": 1,
+											"column": 2
+										},
+										"end": {
+											"line": 1,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 1,
+									"column": 2
+								},
+								"end": {
+									"line": 1,
+									"column": 3
+								}
+							},
+							"range": [2, 3],
+							"raw": "a"
+						}
+					],
+					"raw": "- a",
+					"range": [0, 3],
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 0
+						},
+						"end": {
+							"line": 1,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				},
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "b",
+									"raw": "b",
+									"range": [6, 7],
+									"loc": {
+										"start": {
+											"line": 2,
+											"column": 2
+										},
+										"end": {
+											"line": 2,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 2,
+									"column": 2
+								},
+								"end": {
+									"line": 2,
+									"column": 3
+								}
+							},
+							"range": [6, 7],
+							"raw": "b"
+						}
+					],
+					"raw": "- b",
+					"range": [4, 7],
+					"loc": {
+						"start": {
+							"line": 2,
+							"column": 0
+						},
+						"end": {
+							"line": 2,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				},
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "c",
+									"raw": "c",
+									"range": [10, 11],
+									"loc": {
+										"start": {
+											"line": 3,
+											"column": 2
+										},
+										"end": {
+											"line": 3,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 3,
+									"column": 2
+								},
+								"end": {
+									"line": 3,
+									"column": 3
+								}
+							},
+							"range": [10, 11],
+							"raw": "c"
+						}
+					],
+					"raw": "- c",
+					"range": [8, 11],
+					"loc": {
+						"start": {
+							"line": 3,
+							"column": 0
+						},
+						"end": {
+							"line": 3,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 3,
+					"column": 3
+				}
+			},
+			"range": [0, 11],
+			"raw": "- a\n- b\n- c"
+		}
+	],
+	"raw": "- a\n- b\n- c",
+	"range": [0, 11],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 3,
+			"column": 3
+		}
+	},
+	"type": "Document"
+}
