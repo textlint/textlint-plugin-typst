@@ -6,7 +6,7 @@ import {
 	type TextlintResult,
 } from "@textlint/kernel";
 // @ts-expect-error
-import { rules } from "textlint-rule-preset-ja-technical-writing";
+import { rules, rulesConfig } from "textlint-rule-preset-ja-technical-writing";
 
 import { beforeAll, describe, expect, it } from "vitest";
 
@@ -42,6 +42,7 @@ describe("linting", () => {
 									({
 										ruleId: `ja-technical-writing/${id}`,
 										rule: rule,
+										options: rulesConfig[id] || true,
 									}) as TextlintKernelRule,
 							),
 						],
@@ -61,11 +62,11 @@ describe("linting", () => {
 				},
 				{
 					ruleId: "max-kanji-continuous-len",
-					expectedMessage: "漢字が6つ以上連続",
+					expectedMessage: "漢字が7つ以上連続",
 				},
 				{
 					ruleId: "no-mix-dearu-desumasu",
-					expectedMessage: 'である"調 と "ですます"調 が混在',
+					expectedMessage: '"ですます"調 でなければなりません',
 				},
 				{
 					ruleId: "ja-no-mixed-period",
