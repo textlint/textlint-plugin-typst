@@ -1,0 +1,330 @@
+{
+	"children": [
+		{
+			"type": "List",
+			"ordered": false,
+			"start": null,
+			"spread": false,
+			"children": [
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "a",
+									"raw": "a",
+									"range": [2, 3],
+									"loc": {
+										"start": {
+											"line": 1,
+											"column": 2
+										},
+										"end": {
+											"line": 1,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 1,
+									"column": 2
+								},
+								"end": {
+									"line": 1,
+									"column": 3
+								}
+							},
+							"range": [2, 3],
+							"raw": "a"
+						}
+					],
+					"raw": "- a",
+					"range": [0, 3],
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 0
+						},
+						"end": {
+							"line": 1,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				},
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "b",
+									"raw": "b",
+									"range": [6, 7],
+									"loc": {
+										"start": {
+											"line": 2,
+											"column": 2
+										},
+										"end": {
+											"line": 2,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 2,
+									"column": 2
+								},
+								"end": {
+									"line": 2,
+									"column": 3
+								}
+							},
+							"range": [6, 7],
+							"raw": "b"
+						}
+					],
+					"raw": "- b",
+					"range": [4, 7],
+					"loc": {
+						"start": {
+							"line": 2,
+							"column": 0
+						},
+						"end": {
+							"line": 2,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 2,
+					"column": 3
+				}
+			},
+			"range": [0, 7],
+			"raw": "- a\n- b"
+		},
+		{
+			"value": "\n\n",
+			"raw": "\n\n",
+			"range": [7, 9],
+			"loc": {
+				"start": {
+					"line": 2,
+					"column": 3
+				},
+				"end": {
+					"line": 4,
+					"column": 0
+				}
+			},
+			"type": "Break"
+		},
+		{
+			"loc": {
+				"start": {
+					"line": 4,
+					"column": 0
+				},
+				"end": {
+					"line": 4,
+					"column": 10
+				}
+			},
+			"range": [9, 19],
+			"raw": "paragraph.",
+			"type": "Paragraph",
+			"children": [
+				{
+					"value": "paragraph.",
+					"raw": "paragraph.",
+					"range": [9, 19],
+					"loc": {
+						"start": {
+							"line": 4,
+							"column": 0
+						},
+						"end": {
+							"line": 4,
+							"column": 10
+						}
+					},
+					"type": "Str"
+				}
+			]
+		},
+		{
+			"value": "\n\n",
+			"raw": "\n\n",
+			"range": [19, 21],
+			"loc": {
+				"start": {
+					"line": 4,
+					"column": 10
+				},
+				"end": {
+					"line": 6,
+					"column": 0
+				}
+			},
+			"type": "Break"
+		},
+		{
+			"type": "List",
+			"ordered": false,
+			"start": null,
+			"spread": false,
+			"children": [
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "c",
+									"raw": "c",
+									"range": [23, 24],
+									"loc": {
+										"start": {
+											"line": 6,
+											"column": 2
+										},
+										"end": {
+											"line": 6,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 6,
+									"column": 2
+								},
+								"end": {
+									"line": 6,
+									"column": 3
+								}
+							},
+							"range": [23, 24],
+							"raw": "c"
+						}
+					],
+					"raw": "- c",
+					"range": [21, 24],
+					"loc": {
+						"start": {
+							"line": 6,
+							"column": 0
+						},
+						"end": {
+							"line": 6,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				},
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "d",
+									"raw": "d",
+									"range": [27, 28],
+									"loc": {
+										"start": {
+											"line": 7,
+											"column": 2
+										},
+										"end": {
+											"line": 7,
+											"column": 3
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 7,
+									"column": 2
+								},
+								"end": {
+									"line": 7,
+									"column": 3
+								}
+							},
+							"range": [27, 28],
+							"raw": "d"
+						}
+					],
+					"raw": "- d",
+					"range": [25, 28],
+					"loc": {
+						"start": {
+							"line": 7,
+							"column": 0
+						},
+						"end": {
+							"line": 7,
+							"column": 3
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 6,
+					"column": 0
+				},
+				"end": {
+					"line": 7,
+					"column": 3
+				}
+			},
+			"range": [21, 28],
+			"raw": "- c\n- d"
+		}
+	],
+	"raw": "- a\n- b\n\nparagraph.\n\n- c\n- d",
+	"range": [0, 28],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 7,
+			"column": 3
+		}
+	},
+	"type": "Document"
+}
