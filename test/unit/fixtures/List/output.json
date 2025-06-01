@@ -175,18 +175,210 @@
 			},
 			"range": [0, 11],
 			"raw": "- a\n- b\n- c"
+		},
+		{
+			"value": "\n\n",
+			"raw": "\n\n",
+			"range": [11, 13],
+			"loc": {
+				"start": {
+					"line": 3,
+					"column": 3
+				},
+				"end": {
+					"line": 5,
+					"column": 0
+				}
+			},
+			"type": "Break"
+		},
+		{
+			"type": "List",
+			"ordered": true,
+			"start": 1,
+			"spread": false,
+			"children": [
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "x",
+									"raw": "x",
+									"range": [16, 17],
+									"loc": {
+										"start": {
+											"line": 5,
+											"column": 3
+										},
+										"end": {
+											"line": 5,
+											"column": 4
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 5,
+									"column": 3
+								},
+								"end": {
+									"line": 5,
+									"column": 4
+								}
+							},
+							"range": [16, 17],
+							"raw": "x"
+						}
+					],
+					"raw": "1. x",
+					"range": [13, 17],
+					"loc": {
+						"start": {
+							"line": 5,
+							"column": 0
+						},
+						"end": {
+							"line": 5,
+							"column": 4
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				},
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "y",
+									"raw": "y",
+									"range": [21, 22],
+									"loc": {
+										"start": {
+											"line": 6,
+											"column": 3
+										},
+										"end": {
+											"line": 6,
+											"column": 4
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 6,
+									"column": 3
+								},
+								"end": {
+									"line": 6,
+									"column": 4
+								}
+							},
+							"range": [21, 22],
+							"raw": "y"
+						}
+					],
+					"raw": "2. y",
+					"range": [18, 22],
+					"loc": {
+						"start": {
+							"line": 6,
+							"column": 0
+						},
+						"end": {
+							"line": 6,
+							"column": 4
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				},
+				{
+					"children": [
+						{
+							"type": "Paragraph",
+							"children": [
+								{
+									"value": "z",
+									"raw": "z",
+									"range": [26, 27],
+									"loc": {
+										"start": {
+											"line": 7,
+											"column": 3
+										},
+										"end": {
+											"line": 7,
+											"column": 4
+										}
+									},
+									"type": "Str"
+								}
+							],
+							"loc": {
+								"start": {
+									"line": 7,
+									"column": 3
+								},
+								"end": {
+									"line": 7,
+									"column": 4
+								}
+							},
+							"range": [26, 27],
+							"raw": "z"
+						}
+					],
+					"raw": "3. z",
+					"range": [23, 27],
+					"loc": {
+						"start": {
+							"line": 7,
+							"column": 0
+						},
+						"end": {
+							"line": 7,
+							"column": 4
+						}
+					},
+					"type": "ListItem",
+					"spread": false,
+					"checked": null
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 5,
+					"column": 0
+				},
+				"end": {
+					"line": 7,
+					"column": 4
+				}
+			},
+			"range": [13, 27],
+			"raw": "1. x\n2. y\n3. z"
 		}
 	],
-	"raw": "- a\n- b\n- c",
-	"range": [0, 11],
+	"raw": "- a\n- b\n- c\n\n1. x\n2. y\n3. z",
+	"range": [0, 27],
 	"loc": {
 		"start": {
 			"line": 1,
 			"column": 0
 		},
 		"end": {
-			"line": 3,
-			"column": 3
+			"line": 7,
+			"column": 4
 		}
 	},
 	"type": "Document"
