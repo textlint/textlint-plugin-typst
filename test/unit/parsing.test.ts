@@ -3,7 +3,7 @@ import path from "node:path";
 // parse all fixture and should has
 import { test } from "@textlint/ast-tester";
 import { describe, expect, it } from "vitest";
-import { convertTypstSourceToTextlintAstObject } from "../src/typstToTextlintAst";
+import { convertTypstSourceToTextlintAstObject } from "../../src/typstToTextlintAst";
 
 describe("parsing", () => {
 	const fixtureDir = path.join(__dirname, "fixtures");

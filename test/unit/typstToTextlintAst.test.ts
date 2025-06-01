@@ -9,7 +9,7 @@ import {
 	extractRawSourceByLocation,
 	getRawTypstAstString,
 	paragraphizeTextlintAstObject,
-} from "../src/typstToTextlintAst";
+} from "../../src/typstToTextlintAst";
 
 const typstSource = fs.readFileSync(
 	path.join(__dirname, "example.typ"),
