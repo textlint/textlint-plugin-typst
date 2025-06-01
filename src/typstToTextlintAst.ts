@@ -302,6 +302,54 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		if (/^Escape::Linebreak/.test(node.type)) {
 			node.type = ASTNodeTypes.Break;
 		}
+		if (/^Marked::ListItem$/.test(node.type)) {
+			node.type = ASTNodeTypes.ListItem;
+			// @ts-expect-error
+			node.spread = false;
+			// @ts-expect-error
+			node.checked = null;
+
+			if (node.children && node.children.length > 0) {
+				// Remove list marker and empty Str nodes.
+				const contentChildren = node.children.filter(
+					(child) =>
+						// @ts-expect-error
+						child.type !== "Marked::ListMarker" &&
+						!(child.type === "Str" && child.raw?.trim() === ""),
+				);
+
+				// Use the children of Marked::Markup nodes if they exist.
+				const actualContent: Content[] = [];
+				for (const child of contentChildren) {
+					// @ts-expect-error
+					if (child.type === "Marked::Markup" && child.children) {
+						// @ts-expect-error
+						actualContent.push(...child.children);
+					} else {
+						actualContent.push(child);
+					}
+				}
+
+				if (actualContent.length > 0) {
+					const firstContentChild = actualContent[0];
+					const lastContentChild = actualContent[actualContent.length - 1];
+
+					node.children = [
+						{
+							type: ASTNodeTypes.Paragraph,
+							// @ts-expect-error
+							children: actualContent,
+							loc: {
+								start: firstContentChild.loc.start,
+								end: lastContentChild.loc.end,
+							},
+							range: [firstContentChild.range[0], lastContentChild.range[1]],
+							raw: actualContent.map((child) => child.raw).join(""),
+						},
+					];
+				}
+			}
+		}
 		if (node.type === "Marked::Raw") {
 			if (node.loc.start.line === node.loc.end.line) {
 				// If Code
@@ -416,46 +464,143 @@ export const paragraphizeTextlintAstObject = (
 	rootNode: TxtDocumentNode,
 ): TxtDocumentNode => {
 	const children: Content[] = [];
-	let paragraph: Content[] = [];
+	let i = 0;
 
-	const pushChild = (paragraph: Content[]) => {
-		if (paragraph.length === 0) return;
+	while (i < rootNode.children.length) {
+		const node = rootNode.children[i];
 
-		const headNode = paragraph[0];
-		const lastNode = paragraph[paragraph.length - 1];
+		// Collect consecutive ListItems into a single List node.
+		if (node.type === ASTNodeTypes.ListItem) {
+			const listItems: Content[] = [node];
+			i++;
 
-		if (["Kw::Hash", "Fn::(Hash: &quot;#&quot;)"].includes(headNode.type)) {
-			children.push(...paragraph);
-			return;
-		}
+			// Collect consecutive ListItems including those separated by line breaks.
+			while (i < rootNode.children.length) {
+				const currentNode = rootNode.children[i];
 
-		children.push({
-			loc: {
-				start: headNode.loc.start,
-				end: lastNode.loc.end,
-			},
-			range: [headNode.range[0], lastNode.range[1]],
-			raw: paragraph.map((node) => node.raw).join(""),
-			type: ASTNodeTypes.Paragraph,
-			// @ts-expect-error
-			children: paragraph,
-		});
-	};
+				if (currentNode.type === ASTNodeTypes.ListItem) {
+					listItems.push(currentNode);
+					i++;
+					continue;
+				}
 
-	for (const node of rootNode.children) {
-		switch (node.type) {
-			case ASTNodeTypes.Header:
-			case ASTNodeTypes.Break:
-			case ASTNodeTypes.CodeBlock:
-				pushChild(paragraph);
-				paragraph = [];
-				children.push(node);
+				// Skip line breaks between ListItems.
+				if (currentNode.type === ASTNodeTypes.Str && currentNode.raw === "\n") {
+					if (
+						i + 1 < rootNode.children.length &&
+						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
+					) {
+						i++;
+						continue;
+					}
+				}
+
+				// Skip line-break-only Paragraphs between ListItems.
+				if (
+					currentNode.type === ASTNodeTypes.Paragraph &&
+					currentNode.children.length === 1 &&
+					currentNode.children[0].type === ASTNodeTypes.Str &&
+					currentNode.children[0].raw === "\n"
+				) {
+					if (
+						i + 1 < rootNode.children.length &&
+						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
+					) {
+						i++;
+						continue;
+					}
+				}
+
 				break;
-			default:
+			}
+
+			// Create List node from collected ListItems.
+			const firstItem = listItems[0];
+			const lastItem = listItems[listItems.length - 1];
+
+			children.push({
+				type: ASTNodeTypes.List,
+				ordered: false,
+				start: null,
+				spread: false,
+				// @ts-expect-error
+				children: [...listItems],
+				loc: {
+					start: firstItem.loc.start,
+					end: lastItem.loc.end,
+				},
+				range: [firstItem.range[0], lastItem.range[1]],
+				raw: listItems.map((item) => item.raw).join("\n"),
+			});
+		}
+		// Skip line-break-only Paragraphs.
+		else if (
+			node.type === ASTNodeTypes.Paragraph &&
+			node.children.length === 1 &&
+			node.children[0].type === ASTNodeTypes.Str &&
+			node.children[0].raw === "\n"
+		) {
+			i++;
+		} else {
+			const paragraph: Content[] = [];
+
+			// Add standalone nodes directly without wrapping in Paragraph.
+			if (
+				node.type === ASTNodeTypes.Header ||
+				node.type === ASTNodeTypes.CodeBlock ||
+				node.type === ASTNodeTypes.Break
+			) {
+				children.push(node);
+				i++;
+			}
+			// Group other nodes into paragraphs.
+			else {
 				paragraph.push(node);
+				i++;
+
+				// Collect consecutive nodes for paragraph grouping.
+				while (i < rootNode.children.length) {
+					const currentNode = rootNode.children[i];
+
+					if (
+						currentNode.type === ASTNodeTypes.Header ||
+						currentNode.type === ASTNodeTypes.CodeBlock ||
+						currentNode.type === ASTNodeTypes.Break ||
+						currentNode.type === ASTNodeTypes.ListItem
+					) {
+						break;
+					}
+
+					paragraph.push(currentNode);
+					i++;
+				}
+
+				if (paragraph.length > 0) {
+					const headNode = paragraph[0];
+					const lastNode = paragraph[paragraph.length - 1];
+
+					// Special handling for hash symbols.
+					if (
+						["Kw::Hash", "Fn::(Hash: &quot;#&quot;)"].includes(headNode.type)
+					) {
+						children.push(...paragraph);
+					} else {
+						children.push({
+							loc: {
+								start: headNode.loc.start,
+								end: lastNode.loc.end,
+							},
+							range: [headNode.range[0], lastNode.range[1]],
+							raw: paragraph.map((node) => node.raw).join(""),
+							type: ASTNodeTypes.Paragraph,
+							// @ts-expect-error
+							children: paragraph,
+						});
+					}
+				}
+			}
 		}
 	}
-	pushChild(paragraph);
 
 	return { ...rootNode, children };
 };
