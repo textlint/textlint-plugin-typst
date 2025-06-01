@@ -44,8 +44,10 @@ export const convertRawTypstAstStringToObject = (rawTypstAstString: string) => {
 				// NOTE: If the line does not match the pattern, it is considered a continuation of the previous value.
 				if (!/^\s*(path:|ast:|- s: |s: |c:)/.test(line)) {
 					if (acc.length > 0) {
-						acc[acc.length - 1] =
-							`${acc[acc.length - 1].slice(0, -1)}\\n${line}"`;
+						acc[acc.length - 1] = `${acc[acc.length - 1].slice(
+							0,
+							-1,
+						)}\\n${line}"`;
 					}
 					return acc;
 				}
@@ -350,6 +352,54 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 				}
 			}
 		}
+		if (/^Marked::EnumItem$/.test(node.type)) {
+			node.type = ASTNodeTypes.ListItem;
+			// @ts-expect-error
+			node.spread = false;
+			// @ts-expect-error
+			node.checked = null;
+
+			if (node.children && node.children.length > 0) {
+				// Remove enum marker and empty Str nodes.
+				const contentChildren = node.children.filter(
+					(child) =>
+						// @ts-expect-error
+						child.type !== "Marked::EnumMarker" &&
+						!(child.type === "Str" && child.raw?.trim() === ""),
+				);
+
+				// Use the children of Marked::Markup nodes if they exist.
+				const actualContent: Content[] = [];
+				for (const child of contentChildren) {
+					// @ts-expect-error
+					if (child.type === "Marked::Markup" && child.children) {
+						// @ts-expect-error
+						actualContent.push(...child.children);
+					} else {
+						actualContent.push(child);
+					}
+				}
+
+				if (actualContent.length > 0) {
+					const firstContentChild = actualContent[0];
+					const lastContentChild = actualContent[actualContent.length - 1];
+
+					node.children = [
+						{
+							type: ASTNodeTypes.Paragraph,
+							// @ts-expect-error
+							children: actualContent,
+							loc: {
+								start: firstContentChild.loc.start,
+								end: lastContentChild.loc.end,
+							},
+							range: [firstContentChild.range[0], lastContentChild.range[1]],
+							raw: actualContent.map((child) => child.raw).join(""),
+						},
+					];
+				}
+			}
+		}
 		if (node.type === "Marked::Raw") {
 			if (node.loc.start.line === node.loc.end.line) {
 				// If Code
@@ -474,14 +524,24 @@ export const paragraphizeTextlintAstObject = (
 			const listItems: Content[] = [node];
 			i++;
 
+			// Determine if this is an ordered list by checking the original node type.
+			// Look at the raw content to determine if it's ordered.
+			const isOrdered = /^\d+\./.test(node.raw?.trim() || "");
+
 			// Collect consecutive ListItems including those separated by line breaks.
 			while (i < rootNode.children.length) {
 				const currentNode = rootNode.children[i];
 
 				if (currentNode.type === ASTNodeTypes.ListItem) {
-					listItems.push(currentNode);
-					i++;
-					continue;
+					// Check if the current item matches the list type (ordered/unordered).
+					const currentIsOrdered = /^\d+\./.test(currentNode.raw?.trim() || "");
+					if (currentIsOrdered === isOrdered) {
+						listItems.push(currentNode);
+						i++;
+						continue;
+					}
+					// Different list type, break here.
+					break;
 				}
 
 				// Skip line breaks between ListItems.
@@ -490,8 +550,13 @@ export const paragraphizeTextlintAstObject = (
 						i + 1 < rootNode.children.length &&
 						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
 					) {
-						i++;
-						continue;
+						const nextIsOrdered = /^\d+\./.test(
+							rootNode.children[i + 1].raw?.trim() || "",
+						);
+						if (nextIsOrdered === isOrdered) {
+							i++;
+							continue;
+						}
 					}
 				}
 
@@ -506,8 +571,13 @@ export const paragraphizeTextlintAstObject = (
 						i + 1 < rootNode.children.length &&
 						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
 					) {
-						i++;
-						continue;
+						const nextIsOrdered = /^\d+\./.test(
+							rootNode.children[i + 1].raw?.trim() || "",
+						);
+						if (nextIsOrdered === isOrdered) {
+							i++;
+							continue;
+						}
 					}
 				}
 
@@ -520,8 +590,8 @@ export const paragraphizeTextlintAstObject = (
 
 			children.push({
 				type: ASTNodeTypes.List,
-				ordered: false,
-				start: null,
+				ordered: isOrdered,
+				start: isOrdered ? 1 : null,
 				spread: false,
 				// @ts-expect-error
 				children: [...listItems],
@@ -553,8 +623,95 @@ export const paragraphizeTextlintAstObject = (
 				children.push(node);
 				i++;
 			}
-			// Group other nodes into paragraphs.
+			// Group other nodes into paragraphs, but handle EnumItems specially.
 			else {
+				// Check if this paragraph contains EnumItems that should be converted to a List.
+				if (node.type === ASTNodeTypes.Paragraph) {
+					const enumItems: Content[] =
+						node.children?.filter(
+							// @ts-expect-error
+							(child) => child.type === "Marked::EnumItem",
+						) || [];
+
+					if (enumItems.length > 0) {
+						// Convert EnumItems to ListItems.
+						const listItems = enumItems.map((enumItem) => {
+							// Remove enum marker and empty Str nodes.
+							const contentChildren =
+								// @ts-expect-error
+								enumItem.children?.filter(
+									// @ts-expect-error
+									(child) =>
+										child.type !== "Marked::EnumMarker" &&
+										!(child.type === "Str" && child.raw?.trim() === ""),
+								) || [];
+
+							// Use the children of Marked::Markup nodes if they exist.
+							const actualContent: Content[] = [];
+							for (const child of contentChildren) {
+								if (child.type === "Marked::Markup" && child.children) {
+									actualContent.push(...child.children);
+								} else {
+									actualContent.push(child);
+								}
+							}
+
+							const firstContentChild = actualContent[0];
+							const lastContentChild = actualContent[actualContent.length - 1];
+
+							return {
+								type: ASTNodeTypes.ListItem,
+								spread: false,
+								checked: null,
+								children:
+									actualContent.length > 0
+										? [
+												{
+													type: ASTNodeTypes.Paragraph,
+													children: actualContent,
+													loc: {
+														start:
+															firstContentChild?.loc?.start ||
+															enumItem.loc.start,
+														end: lastContentChild?.loc?.end || enumItem.loc.end,
+													},
+													range: [
+														firstContentChild?.range?.[0] || enumItem.range[0],
+														lastContentChild?.range?.[1] || enumItem.range[1],
+													],
+													raw: actualContent.map((child) => child.raw).join(""),
+												},
+											]
+										: [],
+								loc: enumItem.loc,
+								range: enumItem.range,
+								raw: enumItem.raw,
+							};
+						});
+
+						const firstItem = listItems[0];
+						const lastItem = listItems[listItems.length - 1];
+
+						children.push({
+							type: ASTNodeTypes.List,
+							ordered: true,
+							start: 1,
+							spread: false,
+							// @ts-expect-error
+							children: listItems,
+							loc: {
+								start: firstItem.loc.start,
+								end: lastItem.loc.end,
+							},
+							range: [firstItem.range[0], lastItem.range[1]],
+							raw: listItems.map((item) => item.raw).join("\n"),
+						});
+
+						i++;
+						continue;
+					}
+				}
+
 				paragraph.push(node);
 				i++;
 
