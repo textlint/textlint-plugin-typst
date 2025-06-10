@@ -6,7 +6,12 @@ import {
 	type TextlintResult,
 } from "@textlint/kernel";
 // @ts-expect-error
-import { rules, rulesConfig } from "textlint-rule-preset-ja-technical-writing";
+import textlintRulePeriodInListItem from "textlint-rule-period-in-list-item";
+import {
+	rules as textlintRulePresetJaTechnicalWritingRules,
+	rulesConfig as textlintRulePresetJaTechnicalWritingRulesConfig,
+	// @ts-expect-error
+} from "textlint-rule-preset-ja-technical-writing";
 
 import { beforeAll, describe, expect, it } from "vitest";
 
@@ -37,12 +42,14 @@ describe("linting", () => {
 						],
 						rules: [
 							// Set each rule in the preset individually
-							...Object.entries(rules).map(
+							...Object.entries(textlintRulePresetJaTechnicalWritingRules).map(
 								([id, rule]) =>
 									({
 										ruleId: `ja-technical-writing/${id}`,
 										rule: rule,
-										options: rulesConfig[id] || true,
+										options:
+											textlintRulePresetJaTechnicalWritingRulesConfig[id] ||
+											true,
 									}) as TextlintKernelRule,
 							),
 						],
@@ -169,6 +176,90 @@ describe("linting", () => {
 					}
 				});
 			}
+		});
+		describe("textlint-rule-period-in-list-item", () => {
+			let textlintResult: TextlintResult;
+
+			beforeAll(async () => {
+				const kernel = new TextlintKernel();
+				textlintResult = await kernel.lintText(
+					fs.readFileSync(
+						path.join(
+							__dirname,
+							"./fixtures/smoke/textlint-rule-period-in-list-item/main.typ",
+						),
+						"utf-8",
+					),
+					{
+						ext: ".typ",
+						plugins: [
+							{
+								pluginId: "typst",
+								plugin: typstPlugin,
+							},
+						],
+						rules: [
+							{
+								ruleId: "period-in-list-item",
+								rule: textlintRulePeriodInListItem,
+							},
+						],
+					},
+				);
+			});
+			const getViolations = () => {
+				return textlintResult.messages.filter(
+					(message) => message.ruleId === "period-in-list-item",
+				);
+			};
+
+			it("should detect period in single line bullet list items", () => {
+				const violations = getViolations();
+
+				const singleLineBulletViolation = violations.find(
+					(v) => v.loc.start.line === 6,
+				);
+				expect(singleLineBulletViolation).toBeDefined();
+				expect(singleLineBulletViolation?.message).toBe(
+					'Should remove period mark(".") at end of list item.',
+				);
+			});
+
+			it("should detect period in multiple lines bullet list items", () => {
+				const violations = getViolations();
+
+				const multipleLinesBulletViolation = violations.find(
+					(v) => v.loc.start.line === 12,
+				);
+				expect(multipleLinesBulletViolation).toBeDefined();
+				expect(multipleLinesBulletViolation?.message).toBe(
+					'Should remove period mark(".") at end of list item.',
+				);
+			});
+
+			it("should detect period in single line numbered list items", () => {
+				const violations = getViolations();
+
+				const singleLineNumberedViolation = violations.find(
+					(v) => v.loc.start.line === 27,
+				);
+				expect(singleLineNumberedViolation).toBeDefined();
+				expect(singleLineNumberedViolation?.message).toBe(
+					'Should remove period mark(".") at end of list item.',
+				);
+			});
+
+			it("should detect period in multiple lines numbered list items", () => {
+				const violations = getViolations();
+
+				const multipleLineNumberedViolation = violations.find(
+					(v) => v.loc.start.line === 41,
+				);
+				expect(multipleLineNumberedViolation).toBeDefined();
+				expect(multipleLineNumberedViolation?.message).toBe(
+					'Should remove period mark(".") at end of list item.',
+				);
+			});
 		});
 	});
 });
