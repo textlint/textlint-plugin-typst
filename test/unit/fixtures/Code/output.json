@@ -1,613 +1,613 @@
 {
 	"children": [
 		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 13],
+					"raw": "`inline code`",
+					"type": "Code",
+					"value": "inline code"
+				}
+			],
 			"loc": {
-				"start": {
-					"line": 1,
-					"column": 0
-				},
 				"end": {
-					"line": 1,
-					"column": 13
+					"column": 13,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
 				}
 			},
 			"range": [0, 13],
 			"raw": "`inline code`",
-			"type": "Paragraph",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 3
+				},
+				"start": {
+					"column": 13,
+					"line": 1
+				}
+			},
+			"range": [13, 15],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
 			"children": [
 				{
-					"type": "Code",
-					"raw": "`inline code`",
-					"range": [0, 13],
 					"loc": {
-						"start": {
-							"line": 1,
-							"column": 0
-						},
 						"end": {
-							"line": 1,
-							"column": 13
+							"column": 3,
+							"line": 3
+						},
+						"start": {
+							"column": 0,
+							"line": 3
 						}
 					},
+					"range": [15, 18],
+					"raw": "aaa",
+					"type": "Str",
+					"value": "aaa"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 3
+						},
+						"start": {
+							"column": 3,
+							"line": 3
+						}
+					},
+					"range": [18, 19],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 3
+						},
+						"start": {
+							"column": 4,
+							"line": 3
+						}
+					},
+					"range": [19, 32],
+					"raw": "`inline code`",
+					"type": "Code",
 					"value": "inline code"
-				}
-			]
-		},
-		{
-			"value": "\n\n",
-			"type": "Break",
-			"raw": "\n\n",
-			"range": [13, 15],
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 13
 				},
-				"end": {
-					"line": 3,
-					"column": 0
-				}
-			}
-		},
-		{
-			"loc": {
-				"start": {
-					"line": 3,
-					"column": 0
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 3
+						},
+						"start": {
+							"column": 17,
+							"line": 3
+						}
+					},
+					"range": [32, 33],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
 				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 3
+						},
+						"start": {
+							"column": 18,
+							"line": 3
+						}
+					},
+					"range": [33, 36],
+					"raw": "bbb",
+					"type": "Str",
+					"value": "bbb"
+				}
+			],
+			"loc": {
 				"end": {
-					"line": 3,
-					"column": 21
+					"column": 21,
+					"line": 3
+				},
+				"start": {
+					"column": 0,
+					"line": 3
 				}
 			},
 			"range": [15, 36],
 			"raw": "aaa `inline code` bbb",
-			"type": "Paragraph",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 5
+				},
+				"start": {
+					"column": 21,
+					"line": 3
+				}
+			},
+			"range": [36, 38],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
 			"children": [
 				{
-					"value": "aaa",
-					"type": "Str",
-					"raw": "aaa",
-					"range": [15, 18],
 					"loc": {
-						"start": {
-							"line": 3,
-							"column": 0
-						},
 						"end": {
-							"line": 3,
-							"column": 3
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [18, 19],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 3
+							"column": 7,
+							"line": 5
 						},
-						"end": {
-							"line": 3,
-							"column": 4
-						}
-					}
-				},
-				{
-					"type": "Code",
-					"raw": "`inline code`",
-					"range": [19, 32],
-					"loc": {
 						"start": {
-							"line": 3,
-							"column": 4
-						},
-						"end": {
-							"line": 3,
-							"column": 17
+							"column": 0,
+							"line": 5
 						}
 					},
-					"value": "inline code"
+					"range": [38, 45],
+					"raw": "What is",
+					"type": "Str",
+					"value": "What is"
 				},
 				{
-					"type": "Str",
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 5
+						},
+						"start": {
+							"column": 7,
+							"line": 5
+						}
+					},
+					"range": [45, 46],
 					"raw": " ",
-					"value": " ",
-					"range": [32, 33],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 17
-						},
-						"end": {
-							"line": 3,
-							"column": 18
-						}
-					}
+					"type": "Str",
+					"value": " "
 				},
 				{
-					"value": "bbb",
-					"type": "Str",
-					"raw": "bbb",
-					"range": [33, 36],
 					"loc": {
-						"start": {
-							"line": 3,
-							"column": 18
-						},
 						"end": {
-							"line": 3,
-							"column": 21
+							"column": 28,
+							"line": 5
+						},
+						"start": {
+							"column": 8,
+							"line": 5
 						}
-					}
-				}
-			]
-		},
-		{
-			"value": "\n\n",
-			"type": "Break",
-			"raw": "\n\n",
-			"range": [36, 38],
-			"loc": {
-				"start": {
-					"line": 3,
-					"column": 21
+					},
+					"range": [46, 66],
+					"raw": "```rust fn main()```",
+					"type": "Code",
+					"value": "fn main()"
 				},
-				"end": {
-					"line": 5,
-					"column": 0
-				}
-			}
-		},
-		{
-			"loc": {
-				"start": {
-					"line": 5,
-					"column": 0
+				{
+					"loc": {
+						"end": {
+							"column": 29,
+							"line": 5
+						},
+						"start": {
+							"column": 28,
+							"line": 5
+						}
+					},
+					"range": [66, 67],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
 				},
+				{
+					"loc": {
+						"end": {
+							"column": 36,
+							"line": 5
+						},
+						"start": {
+							"column": 29,
+							"line": 5
+						}
+					},
+					"range": [67, 74],
+					"raw": "in Rust",
+					"type": "Str",
+					"value": "in Rust"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 6
+						},
+						"start": {
+							"column": 36,
+							"line": 5
+						}
+					},
+					"range": [74, 75],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 6
+						},
+						"start": {
+							"column": 0,
+							"line": 6
+						}
+					},
+					"range": [75, 83],
+					"raw": "would be",
+					"type": "Str",
+					"value": "would be"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 9,
+							"line": 6
+						},
+						"start": {
+							"column": 8,
+							"line": 6
+						}
+					},
+					"range": [83, 84],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 27,
+							"line": 6
+						},
+						"start": {
+							"column": 9,
+							"line": 6
+						}
+					},
+					"range": [84, 102],
+					"raw": "```c int main()```",
+					"type": "Code",
+					"value": "int main()"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 28,
+							"line": 6
+						},
+						"start": {
+							"column": 27,
+							"line": 6
+						}
+					},
+					"range": [102, 103],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 33,
+							"line": 6
+						},
+						"start": {
+							"column": 28,
+							"line": 6
+						}
+					},
+					"range": [103, 108],
+					"raw": "in C.",
+					"type": "Str",
+					"value": "in C."
+				}
+			],
+			"loc": {
 				"end": {
-					"line": 6,
-					"column": 33
+					"column": 33,
+					"line": 6
+				},
+				"start": {
+					"column": 0,
+					"line": 5
 				}
 			},
 			"range": [38, 108],
 			"raw": "What is ```rust fn main()``` in Rust\nwould be ```c int main()``` in C.",
-			"type": "Paragraph",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 8
+				},
+				"start": {
+					"column": 33,
+					"line": 6
+				}
+			},
+			"range": [108, 110],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
 			"children": [
 				{
-					"value": "What is",
-					"type": "Str",
-					"raw": "What is",
-					"range": [38, 45],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 0
-						},
 						"end": {
-							"line": 5,
-							"column": 7
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [45, 46],
-					"loc": {
-						"start": {
-							"line": 5,
-							"column": 7
+							"column": 8,
+							"line": 8
 						},
-						"end": {
-							"line": 5,
-							"column": 8
-						}
-					}
-				},
-				{
-					"type": "Code",
-					"raw": "```rust fn main()```",
-					"range": [46, 66],
-					"loc": {
 						"start": {
-							"line": 5,
-							"column": 8
-						},
-						"end": {
-							"line": 5,
-							"column": 28
+							"column": 0,
+							"line": 8
 						}
 					},
-					"value": "fn main()"
+					"range": [110, 118],
+					"raw": "This has",
+					"type": "Str",
+					"value": "This has"
 				},
 				{
-					"type": "Str",
+					"loc": {
+						"end": {
+							"column": 9,
+							"line": 8
+						},
+						"start": {
+							"column": 8,
+							"line": 8
+						}
+					},
+					"range": [118, 119],
 					"raw": " ",
-					"value": " ",
-					"range": [66, 67],
-					"loc": {
-						"start": {
-							"line": 5,
-							"column": 28
-						},
-						"end": {
-							"line": 5,
-							"column": 29
-						}
-					}
+					"type": "Str",
+					"value": " "
 				},
 				{
-					"value": "in Rust",
-					"type": "Str",
-					"raw": "in Rust",
-					"range": [67, 74],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 29
-						},
 						"end": {
-							"line": 5,
-							"column": 36
+							"column": 28,
+							"line": 8
+						},
+						"start": {
+							"column": 9,
+							"line": 8
 						}
-					}
+					},
+					"range": [119, 138],
+					"raw": "``` `backticks` ```",
+					"type": "Code",
+					"value": "`backticks`"
 				},
 				{
+					"loc": {
+						"end": {
+							"column": 29,
+							"line": 8
+						},
+						"start": {
+							"column": 28,
+							"line": 8
+						}
+					},
+					"range": [138, 139],
+					"raw": " ",
 					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 34,
+							"line": 8
+						},
+						"start": {
+							"column": 29,
+							"line": 8
+						}
+					},
+					"range": [139, 144],
+					"raw": "in it",
+					"type": "Str",
+					"value": "in it"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 9
+						},
+						"start": {
+							"column": 34,
+							"line": 8
+						}
+					},
+					"range": [144, 145],
 					"raw": "\n",
-					"value": "\n",
-					"range": [74, 75],
-					"loc": {
-						"start": {
-							"line": 5,
-							"column": 36
-						},
-						"end": {
-							"line": 6,
-							"column": 0
-						}
-					}
-				},
-				{
-					"value": "would be",
 					"type": "Str",
-					"raw": "would be",
-					"range": [75, 83],
-					"loc": {
-						"start": {
-							"line": 6,
-							"column": 0
-						},
-						"end": {
-							"line": 6,
-							"column": 8
-						}
-					}
+					"value": "\n"
 				},
 				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [83, 84],
 					"loc": {
-						"start": {
-							"line": 6,
-							"column": 8
-						},
 						"end": {
-							"line": 6,
-							"column": 9
-						}
-					}
-				},
-				{
-					"type": "Code",
-					"raw": "```c int main()```",
-					"range": [84, 102],
-					"loc": {
-						"start": {
-							"line": 6,
-							"column": 9
+							"column": 33,
+							"line": 9
 						},
-						"end": {
-							"line": 6,
-							"column": 27
+						"start": {
+							"column": 0,
+							"line": 9
 						}
 					},
-					"value": "int main()"
+					"range": [145, 178],
+					"raw": "(but the spaces are trimmed). And",
+					"type": "Str",
+					"value": "(but the spaces are trimmed). And"
 				},
 				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 10
+						},
+						"start": {
+							"column": 33,
+							"line": 9
+						}
+					},
+					"range": [178, 179],
+					"raw": "\n",
 					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 10
+						},
+						"start": {
+							"column": 0,
+							"line": 10
+						}
+					},
+					"range": [179, 190],
+					"raw": "``` here```",
+					"type": "Code",
+					"value": "here"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 10
+						},
+						"start": {
+							"column": 11,
+							"line": 10
+						}
+					},
+					"range": [190, 191],
 					"raw": " ",
-					"value": " ",
-					"range": [102, 103],
-					"loc": {
-						"start": {
-							"line": 6,
-							"column": 27
-						},
-						"end": {
-							"line": 6,
-							"column": 28
-						}
-					}
+					"type": "Str",
+					"value": " "
 				},
 				{
-					"value": "in C.",
-					"type": "Str",
-					"raw": "in C.",
-					"range": [103, 108],
 					"loc": {
-						"start": {
-							"line": 6,
-							"column": 28
-						},
 						"end": {
-							"line": 6,
-							"column": 33
+							"column": 32,
+							"line": 10
+						},
+						"start": {
+							"column": 12,
+							"line": 10
 						}
-					}
-				}
-			]
-		},
-		{
-			"value": "\n\n",
-			"type": "Break",
-			"raw": "\n\n",
-			"range": [108, 110],
-			"loc": {
-				"start": {
-					"line": 6,
-					"column": 33
+					},
+					"range": [191, 211],
+					"raw": "the leading space is",
+					"type": "Str",
+					"value": "the leading space is"
 				},
-				"end": {
-					"line": 8,
-					"column": 0
-				}
-			}
-		},
-		{
-			"loc": {
-				"start": {
-					"line": 8,
-					"column": 0
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 11
+						},
+						"start": {
+							"column": 32,
+							"line": 10
+						}
+					},
+					"range": [211, 212],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
 				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 11
+						},
+						"start": {
+							"column": 0,
+							"line": 11
+						}
+					},
+					"range": [212, 225],
+					"raw": "also trimmed.",
+					"type": "Str",
+					"value": "also trimmed."
+				}
+			],
+			"loc": {
 				"end": {
-					"line": 11,
-					"column": 13
+					"column": 13,
+					"line": 11
+				},
+				"start": {
+					"column": 0,
+					"line": 8
 				}
 			},
 			"range": [110, 225],
 			"raw": "This has ``` `backticks` ``` in it\n(but the spaces are trimmed). And\n``` here``` the leading space is\nalso trimmed.",
-			"type": "Paragraph",
-			"children": [
-				{
-					"value": "This has",
-					"type": "Str",
-					"raw": "This has",
-					"range": [110, 118],
-					"loc": {
-						"start": {
-							"line": 8,
-							"column": 0
-						},
-						"end": {
-							"line": 8,
-							"column": 8
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [118, 119],
-					"loc": {
-						"start": {
-							"line": 8,
-							"column": 8
-						},
-						"end": {
-							"line": 8,
-							"column": 9
-						}
-					}
-				},
-				{
-					"type": "Code",
-					"raw": "``` `backticks` ```",
-					"range": [119, 138],
-					"loc": {
-						"start": {
-							"line": 8,
-							"column": 9
-						},
-						"end": {
-							"line": 8,
-							"column": 28
-						}
-					},
-					"value": "`backticks`"
-				},
-				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [138, 139],
-					"loc": {
-						"start": {
-							"line": 8,
-							"column": 28
-						},
-						"end": {
-							"line": 8,
-							"column": 29
-						}
-					}
-				},
-				{
-					"value": "in it",
-					"type": "Str",
-					"raw": "in it",
-					"range": [139, 144],
-					"loc": {
-						"start": {
-							"line": 8,
-							"column": 29
-						},
-						"end": {
-							"line": 8,
-							"column": 34
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [144, 145],
-					"loc": {
-						"start": {
-							"line": 8,
-							"column": 34
-						},
-						"end": {
-							"line": 9,
-							"column": 0
-						}
-					}
-				},
-				{
-					"value": "(but the spaces are trimmed). And",
-					"type": "Str",
-					"raw": "(but the spaces are trimmed). And",
-					"range": [145, 178],
-					"loc": {
-						"start": {
-							"line": 9,
-							"column": 0
-						},
-						"end": {
-							"line": 9,
-							"column": 33
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [178, 179],
-					"loc": {
-						"start": {
-							"line": 9,
-							"column": 33
-						},
-						"end": {
-							"line": 10,
-							"column": 0
-						}
-					}
-				},
-				{
-					"type": "Code",
-					"raw": "``` here```",
-					"range": [179, 190],
-					"loc": {
-						"start": {
-							"line": 10,
-							"column": 0
-						},
-						"end": {
-							"line": 10,
-							"column": 11
-						}
-					},
-					"value": "here"
-				},
-				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [190, 191],
-					"loc": {
-						"start": {
-							"line": 10,
-							"column": 11
-						},
-						"end": {
-							"line": 10,
-							"column": 12
-						}
-					}
-				},
-				{
-					"value": "the leading space is",
-					"type": "Str",
-					"raw": "the leading space is",
-					"range": [191, 211],
-					"loc": {
-						"start": {
-							"line": 10,
-							"column": 12
-						},
-						"end": {
-							"line": 10,
-							"column": 32
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [211, 212],
-					"loc": {
-						"start": {
-							"line": 10,
-							"column": 32
-						},
-						"end": {
-							"line": 11,
-							"column": 0
-						}
-					}
-				},
-				{
-					"value": "also trimmed.",
-					"type": "Str",
-					"raw": "also trimmed.",
-					"range": [212, 225],
-					"loc": {
-						"start": {
-							"line": 11,
-							"column": 0
-						},
-						"end": {
-							"line": 11,
-							"column": 13
-						}
-					}
-				}
-			]
+			"type": "Paragraph"
 		}
 	],
-	"type": "Document",
-	"raw": "`inline code`\n\naaa `inline code` bbb\n\nWhat is ```rust fn main()``` in Rust\nwould be ```c int main()``` in C.\n\nThis has ``` `backticks` ``` in it\n(but the spaces are trimmed). And\n``` here``` the leading space is\nalso trimmed.",
-	"range": [0, 225],
 	"loc": {
-		"start": {
-			"line": 1,
-			"column": 0
-		},
 		"end": {
-			"line": 11,
-			"column": 13
+			"column": 13,
+			"line": 11
+		},
+		"start": {
+			"column": 0,
+			"line": 1
 		}
-	}
+	},
+	"range": [0, 225],
+	"raw": "`inline code`\n\naaa `inline code` bbb\n\nWhat is ```rust fn main()``` in Rust\nwould be ```c int main()``` in C.\n\nThis has ``` `backticks` ``` in it\n(but the spaces are trimmed). And\n``` here``` the leading space is\nalso trimmed.",
+	"type": "Document"
 }
