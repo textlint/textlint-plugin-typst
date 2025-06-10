@@ -59,8 +59,8 @@ Legend for syntax support:
 | Label | | 🚫 | 🚫 |
 | Reference | | 🚫 | 🚫 |
 | Heading | Header | ✅ | 🚫 |
-| Bullet list | List / ListItem | 🚫 | 🚫 |
-| Numbered list | List / ListItem | 🚫 | 🚫 |
+| Bullet list | List / ListItem | ✅ | 🚫 |
+| Numbered list | List / ListItem | ✅ | 🚫 |
 | Term list | | 🚫 | 🚫 |
 | Math | | 🚫 | 🚫 |
 | Line break | Break | ✅ | 🚫 |
