@@ -1,67 +1,67 @@
 {
 	"children": [
 		{
-			"type": "CodeBlock",
-			"raw": "```rust\nfn main() {\n    println!(\"Hello World!\");\n}\n```",
+			"lang": "rust",
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 5
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
 			"range": [0, 55],
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 0
-				},
-				"end": {
-					"line": 5,
-					"column": 3
-				}
-			},
-			"value": "fn main() {\n    println!(\"Hello World!\");\n}",
-			"lang": "rust"
-		},
-		{
-			"value": "\n\n",
-			"type": "Break",
-			"raw": "\n\n",
-			"range": [55, 57],
-			"loc": {
-				"start": {
-					"line": 5,
-					"column": 3
-				},
-				"end": {
-					"line": 7,
-					"column": 0
-				}
-			}
-		},
-		{
+			"raw": "```rust\nfn main() {\n    println!(\"Hello World!\");\n}\n```",
 			"type": "CodeBlock",
-			"raw": "```\nlanguage is undefined.\n```",
-			"range": [57, 87],
+			"value": "fn main() {\n    println!(\"Hello World!\");\n}"
+		},
+		{
 			"loc": {
-				"start": {
-					"line": 7,
-					"column": 0
-				},
 				"end": {
-					"line": 9,
-					"column": 3
+					"column": 0,
+					"line": 7
+				},
+				"start": {
+					"column": 3,
+					"line": 5
 				}
 			},
-			"value": "language is undefined.",
-			"lang": null
+			"range": [55, 57],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"lang": null,
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 9
+				},
+				"start": {
+					"column": 0,
+					"line": 7
+				}
+			},
+			"range": [57, 87],
+			"raw": "```\nlanguage is undefined.\n```",
+			"type": "CodeBlock",
+			"value": "language is undefined."
 		}
 	],
-	"type": "Document",
-	"raw": "```rust\nfn main() {\n    println!(\"Hello World!\");\n}\n```\n\n```\nlanguage is undefined.\n```",
-	"range": [0, 87],
 	"loc": {
-		"start": {
-			"line": 1,
-			"column": 0
-		},
 		"end": {
-			"line": 9,
-			"column": 3
+			"column": 3,
+			"line": 9
+		},
+		"start": {
+			"column": 0,
+			"line": 1
 		}
-	}
+	},
+	"range": [0, 87],
+	"raw": "```rust\nfn main() {\n    println!(\"Hello World!\");\n}\n```\n\n```\nlanguage is undefined.\n```",
+	"type": "Document"
 }

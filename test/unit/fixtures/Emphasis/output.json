@@ -1,359 +1,359 @@
 {
 	"children": [
 		{
+			"children": [
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 1
+								},
+								"start": {
+									"column": 0,
+									"line": 1
+								}
+							},
+							"range": [0, 1],
+							"raw": "_",
+							"type": "Marked::Underscore",
+							"value": "_"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 1
+								},
+								"start": {
+									"column": 1,
+									"line": 1
+								}
+							},
+							"range": [1, 9],
+							"raw": "emphasis",
+							"type": "Str",
+							"value": "emphasis"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 10,
+									"line": 1
+								},
+								"start": {
+									"column": 9,
+									"line": 1
+								}
+							},
+							"range": [9, 10],
+							"raw": "_",
+							"type": "Marked::Underscore",
+							"value": "_"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 10,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 10],
+					"raw": "_emphasis_",
+					"type": "Emphasis"
+				}
+			],
 			"loc": {
-				"start": {
-					"line": 1,
-					"column": 0
-				},
 				"end": {
-					"line": 1,
-					"column": 10
+					"column": 10,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
 				}
 			},
 			"range": [0, 10],
 			"raw": "_emphasis_",
-			"type": "Paragraph",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 3
+				},
+				"start": {
+					"column": 10,
+					"line": 1
+				}
+			},
+			"range": [10, 12],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
 			"children": [
 				{
 					"children": [
 						{
-							"value": "_",
-							"type": "Marked::Underscore",
-							"raw": "_",
-							"range": [0, 1],
 							"loc": {
-								"start": {
-									"line": 1,
-									"column": 0
-								},
 								"end": {
-									"line": 1,
-									"column": 1
-								}
-							}
-						},
-						{
-							"type": "Str",
-							"raw": "emphasis",
-							"range": [1, 9],
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 1
+									"column": 1,
+									"line": 3
 								},
-								"end": {
-									"line": 1,
-									"column": 9
+								"start": {
+									"column": 0,
+									"line": 3
 								}
 							},
-							"value": "emphasis"
+							"range": [12, 13],
+							"raw": "_",
+							"type": "Marked::Underscore",
+							"value": "_"
 						},
 						{
-							"value": "_",
-							"type": "Marked::Underscore",
-							"raw": "_",
-							"range": [9, 10],
 							"loc": {
-								"start": {
-									"line": 1,
-									"column": 9
-								},
 								"end": {
-									"line": 1,
-									"column": 10
+									"column": 8,
+									"line": 3
+								},
+								"start": {
+									"column": 1,
+									"line": 3
 								}
-							}
+							},
+							"range": [13, 20],
+							"raw": " a b c ",
+							"type": "Str",
+							"value": "a b c"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 3
+								},
+								"start": {
+									"column": 8,
+									"line": 3
+								}
+							},
+							"range": [20, 21],
+							"raw": "_",
+							"type": "Marked::Underscore",
+							"value": "_"
 						}
 					],
-					"type": "Emphasis",
-					"raw": "_emphasis_",
-					"range": [0, 10],
 					"loc": {
-						"start": {
-							"line": 1,
-							"column": 0
-						},
 						"end": {
-							"line": 1,
-							"column": 10
+							"column": 9,
+							"line": 3
+						},
+						"start": {
+							"column": 0,
+							"line": 3
 						}
-					}
-				}
-			]
-		},
-		{
-			"value": "\n\n",
-			"type": "Break",
-			"raw": "\n\n",
-			"range": [10, 12],
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 10
+					},
+					"range": [12, 21],
+					"raw": "_ a b c _",
+					"type": "Emphasis"
 				},
-				"end": {
-					"line": 3,
-					"column": 0
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 4
+						},
+						"start": {
+							"column": 9,
+							"line": 3
+						}
+					},
+					"range": [21, 22],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
 				}
-			}
-		},
-		{
+			],
 			"loc": {
-				"start": {
-					"line": 3,
-					"column": 0
-				},
 				"end": {
-					"line": 4,
-					"column": 0
+					"column": 0,
+					"line": 4
+				},
+				"start": {
+					"column": 0,
+					"line": 3
 				}
 			},
 			"range": [12, 22],
 			"raw": "_ a b c _\n",
-			"type": "Paragraph",
-			"children": [
-				{
-					"children": [
-						{
-							"value": "_",
-							"type": "Marked::Underscore",
-							"raw": "_",
-							"range": [12, 13],
-							"loc": {
-								"start": {
-									"line": 3,
-									"column": 0
-								},
-								"end": {
-									"line": 3,
-									"column": 1
-								}
-							}
-						},
-						{
-							"type": "Str",
-							"raw": " a b c ",
-							"range": [13, 20],
-							"loc": {
-								"start": {
-									"line": 3,
-									"column": 1
-								},
-								"end": {
-									"line": 3,
-									"column": 8
-								}
-							},
-							"value": "a b c"
-						},
-						{
-							"value": "_",
-							"type": "Marked::Underscore",
-							"raw": "_",
-							"range": [20, 21],
-							"loc": {
-								"start": {
-									"line": 3,
-									"column": 8
-								},
-								"end": {
-									"line": 3,
-									"column": 9
-								}
-							}
-						}
-					],
-					"type": "Emphasis",
-					"raw": "_ a b c _",
-					"range": [12, 21],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 0
-						},
-						"end": {
-							"line": 3,
-							"column": 9
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [21, 22],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 9
-						},
-						"end": {
-							"line": 4,
-							"column": 0
-						}
-					}
-				}
-			]
-		},
-		{
-			"value": "\\",
-			"type": "Break",
-			"raw": "\\",
-			"range": [22, 23],
-			"loc": {
-				"start": {
-					"line": 4,
-					"column": 0
-				},
-				"end": {
-					"line": 4,
-					"column": 1
-				}
-			}
+			"type": "Paragraph"
 		},
 		{
 			"loc": {
-				"start": {
-					"line": 5,
-					"column": 0
-				},
 				"end": {
-					"line": 5,
-					"column": 21
+					"column": 1,
+					"line": 4
+				},
+				"start": {
+					"column": 0,
+					"line": 4
 				}
 			},
-			"range": [23, 44],
-			"raw": "This is _emphasized_.",
-			"type": "Paragraph",
+			"range": [22, 23],
+			"raw": "\\",
+			"type": "Break",
+			"value": "\\"
+		},
+		{
 			"children": [
 				{
-					"value": "This is",
-					"type": "Str",
-					"raw": "This is",
-					"range": [23, 30],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 0
-						},
 						"end": {
-							"line": 5,
-							"column": 7
+							"column": 7,
+							"line": 5
+						},
+						"start": {
+							"column": 0,
+							"line": 5
 						}
-					}
+					},
+					"range": [24, 31],
+					"raw": "This is",
+					"type": "Str",
+					"value": "This is"
 				},
 				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [30, 31],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 7
-						},
 						"end": {
-							"line": 5,
-							"column": 8
+							"column": 8,
+							"line": 5
+						},
+						"start": {
+							"column": 7,
+							"line": 5
 						}
-					}
+					},
+					"range": [31, 32],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
 				},
 				{
 					"children": [
 						{
-							"value": "_",
-							"type": "Marked::Underscore",
-							"raw": "_",
-							"range": [31, 32],
 							"loc": {
-								"start": {
-									"line": 5,
-									"column": 8
-								},
 								"end": {
-									"line": 5,
-									"column": 9
-								}
-							}
-						},
-						{
-							"type": "Str",
-							"raw": "emphasized",
-							"range": [32, 42],
-							"loc": {
-								"start": {
-									"line": 5,
-									"column": 9
+									"column": 9,
+									"line": 5
 								},
-								"end": {
-									"line": 5,
-									"column": 19
+								"start": {
+									"column": 8,
+									"line": 5
 								}
 							},
+							"range": [32, 33],
+							"raw": "_",
+							"type": "Marked::Underscore",
+							"value": "_"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 19,
+									"line": 5
+								},
+								"start": {
+									"column": 9,
+									"line": 5
+								}
+							},
+							"range": [33, 43],
+							"raw": "emphasized",
+							"type": "Str",
 							"value": "emphasized"
 						},
 						{
-							"value": "_",
-							"type": "Marked::Underscore",
-							"raw": "_",
-							"range": [42, 43],
 							"loc": {
-								"start": {
-									"line": 5,
-									"column": 19
-								},
 								"end": {
-									"line": 5,
-									"column": 20
+									"column": 20,
+									"line": 5
+								},
+								"start": {
+									"column": 19,
+									"line": 5
 								}
-							}
+							},
+							"range": [43, 44],
+							"raw": "_",
+							"type": "Marked::Underscore",
+							"value": "_"
 						}
 					],
-					"type": "Emphasis",
-					"raw": "_emphasized_",
-					"range": [31, 43],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 8
-						},
 						"end": {
-							"line": 5,
-							"column": 20
+							"column": 20,
+							"line": 5
+						},
+						"start": {
+							"column": 8,
+							"line": 5
 						}
-					}
+					},
+					"range": [32, 44],
+					"raw": "_emphasized_",
+					"type": "Emphasis"
 				},
 				{
-					"value": ".",
-					"type": "Str",
-					"raw": ".",
-					"range": [43, 44],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 20
-						},
 						"end": {
-							"line": 5,
-							"column": 21
+							"column": 21,
+							"line": 5
+						},
+						"start": {
+							"column": 20,
+							"line": 5
 						}
-					}
+					},
+					"range": [44, 45],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
 				}
-			]
+			],
+			"loc": {
+				"end": {
+					"column": 21,
+					"line": 5
+				},
+				"start": {
+					"column": 0,
+					"line": 5
+				}
+			},
+			"range": [24, 45],
+			"raw": "This is _emphasized_.",
+			"type": "Paragraph"
 		}
 	],
-	"type": "Document",
-	"raw": "_emphasis_\n\n_ a b c _\n\\\nThis is _emphasized_.",
-	"range": [0, 45],
 	"loc": {
-		"start": {
-			"line": 1,
-			"column": 0
-		},
 		"end": {
-			"line": 5,
-			"column": 21
+			"column": 21,
+			"line": 5
+		},
+		"start": {
+			"column": 0,
+			"line": 1
 		}
-	}
+	},
+	"range": [0, 45],
+	"raw": "_emphasis_\n\n_ a b c _\n\\\nThis is _emphasized_.",
+	"type": "Document"
 }

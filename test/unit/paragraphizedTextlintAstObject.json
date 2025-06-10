@@ -2085,7 +2085,7 @@
 										{
 											"value": "phi",
 											"raw": "phi",
-											"range": [269, 272],
+											"range": [271, 274],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2101,7 +2101,7 @@
 										{
 											"value": ".",
 											"raw": ".",
-											"range": [272, 273],
+											"range": [274, 275],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2117,7 +2117,7 @@
 										{
 											"value": "alt",
 											"raw": "alt",
-											"range": [273, 276],
+											"range": [275, 278],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2132,7 +2132,7 @@
 										}
 									],
 									"raw": "phi.alt",
-									"range": [269, 276],
+									"range": [271, 278],
 									"loc": {
 										"start": {
 											"line": 10,
@@ -2149,7 +2149,7 @@
 									"type": "Str",
 									"raw": " ",
 									"value": " ",
-									"range": [276, 277],
+									"range": [278, 279],
 									"loc": {
 										"start": {
 											"line": 10,
@@ -2164,7 +2164,7 @@
 								{
 									"value": "=",
 									"raw": "=",
-									"range": [277, 278],
+									"range": [279, 280],
 									"loc": {
 										"start": {
 											"line": 10,
@@ -2181,7 +2181,7 @@
 									"type": "Str",
 									"raw": " ",
 									"value": " ",
-									"range": [278, 279],
+									"range": [280, 281],
 									"loc": {
 										"start": {
 											"line": 10,
@@ -2200,7 +2200,7 @@
 												{
 													"value": "(",
 													"raw": "(",
-													"range": [279, 280],
+													"range": [281, 282],
 													"loc": {
 														"start": {
 															"line": 10,
@@ -2218,7 +2218,7 @@
 														{
 															"value": "1",
 															"raw": "1",
-															"range": [280, 281],
+															"range": [282, 283],
 															"loc": {
 																"start": {
 																	"line": 10,
@@ -2235,7 +2235,7 @@
 															"type": "Str",
 															"raw": " ",
 															"value": " ",
-															"range": [281, 282],
+															"range": [283, 284],
 															"loc": {
 																"start": {
 																	"line": 10,
@@ -2250,7 +2250,7 @@
 														{
 															"value": "+",
 															"raw": "+",
-															"range": [282, 283],
+															"range": [284, 285],
 															"loc": {
 																"start": {
 																	"line": 10,
@@ -2267,7 +2267,7 @@
 															"type": "Str",
 															"raw": " ",
 															"value": " ",
-															"range": [283, 284],
+															"range": [285, 286],
 															"loc": {
 																"start": {
 																	"line": 10,
@@ -2284,7 +2284,7 @@
 																{
 																	"value": "sqrt",
 																	"raw": "sqrt",
-																	"range": [284, 288],
+																	"range": [286, 290],
 																	"loc": {
 																		"start": {
 																			"line": 10,
@@ -2302,7 +2302,7 @@
 																		{
 																			"value": "(",
 																			"raw": "(",
-																			"range": [288, 289],
+																			"range": [290, 291],
 																			"loc": {
 																				"start": {
 																					"line": 10,
@@ -2318,7 +2318,7 @@
 																		{
 																			"value": "5",
 																			"raw": "5",
-																			"range": [289, 290],
+																			"range": [291, 292],
 																			"loc": {
 																				"start": {
 																					"line": 10,
@@ -2334,7 +2334,7 @@
 																		{
 																			"value": ")",
 																			"raw": ")",
-																			"range": [290, 291],
+																			"range": [292, 293],
 																			"loc": {
 																				"start": {
 																					"line": 10,
@@ -2349,7 +2349,7 @@
 																		}
 																	],
 																	"raw": "(5)",
-																	"range": [288, 291],
+																	"range": [290, 293],
 																	"loc": {
 																		"start": {
 																			"line": 10,
@@ -2364,7 +2364,7 @@
 																}
 															],
 															"raw": "sqrt(5)",
-															"range": [284, 291],
+															"range": [286, 293],
 															"loc": {
 																"start": {
 																	"line": 10,
@@ -2379,7 +2379,7 @@
 														}
 													],
 													"raw": "1 + sqrt(5)",
-													"range": [280, 291],
+													"range": [282, 293],
 													"loc": {
 														"start": {
 															"line": 10,
@@ -2395,7 +2395,7 @@
 												{
 													"value": ")",
 													"raw": ")",
-													"range": [291, 292],
+													"range": [293, 294],
 													"loc": {
 														"start": {
 															"line": 10,
@@ -2410,7 +2410,7 @@
 												}
 											],
 											"raw": "(1 + sqrt(5))",
-											"range": [279, 292],
+											"range": [281, 294],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2427,7 +2427,7 @@
 											"type": "Str",
 											"raw": " ",
 											"value": " ",
-											"range": [292, 293],
+											"range": [294, 295],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2442,7 +2442,7 @@
 										{
 											"value": "/",
 											"raw": "/",
-											"range": [293, 294],
+											"range": [295, 296],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2459,7 +2459,7 @@
 											"type": "Str",
 											"raw": " ",
 											"value": " ",
-											"range": [294, 295],
+											"range": [296, 297],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2474,7 +2474,7 @@
 										{
 											"value": "2",
 											"raw": "2",
-											"range": [295, 296],
+											"range": [297, 298],
 											"loc": {
 												"start": {
 													"line": 10,
@@ -2489,7 +2489,7 @@
 										}
 									],
 									"raw": "(1 + sqrt(5)) / 2",
-									"range": [279, 296],
+									"range": [281, 298],
 									"loc": {
 										"start": {
 											"line": 10,
@@ -3335,7 +3335,7 @@
 										{
 											"value": "if",
 											"raw": "if",
-											"range": [365, 367],
+											"range": [367, 369],
 											"loc": {
 												"start": {
 													"line": 15,
@@ -3352,7 +3352,7 @@
 											"type": "Str",
 											"raw": " ",
 											"value": " ",
-											"range": [367, 368],
+											"range": [369, 370],
 											"loc": {
 												"start": {
 													"line": 15,
@@ -3369,7 +3369,7 @@
 												{
 													"value": "n",
 													"raw": "n",
-													"range": [368, 369],
+													"range": [370, 371],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3386,7 +3386,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [369, 370],
+													"range": [371, 372],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3401,7 +3401,7 @@
 												{
 													"value": "<=",
 													"raw": "<=",
-													"range": [370, 372],
+													"range": [372, 374],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3418,7 +3418,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [372, 373],
+													"range": [374, 375],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3433,7 +3433,7 @@
 												{
 													"value": "2",
 													"raw": "2",
-													"range": [373, 374],
+													"range": [375, 376],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3448,7 +3448,7 @@
 												}
 											],
 											"raw": "n <= 2",
-											"range": [368, 374],
+											"range": [370, 376],
 											"loc": {
 												"start": {
 													"line": 15,
@@ -3465,7 +3465,7 @@
 											"type": "Str",
 											"raw": " ",
 											"value": " ",
-											"range": [374, 375],
+											"range": [376, 377],
 											"loc": {
 												"start": {
 													"line": 15,
@@ -3482,7 +3482,7 @@
 												{
 													"value": "{",
 													"raw": "{",
-													"range": [375, 376],
+													"range": [377, 378],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3499,7 +3499,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [376, 377],
+													"range": [378, 379],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3516,7 +3516,7 @@
 														{
 															"value": "1",
 															"raw": "1",
-															"range": [377, 378],
+															"range": [379, 380],
 															"loc": {
 																"start": {
 																	"line": 15,
@@ -3531,7 +3531,7 @@
 														}
 													],
 													"raw": "1",
-													"range": [377, 378],
+													"range": [379, 380],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3548,7 +3548,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [378, 379],
+													"range": [380, 381],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3563,7 +3563,7 @@
 												{
 													"value": "}",
 													"raw": "}",
-													"range": [379, 380],
+													"range": [381, 382],
 													"loc": {
 														"start": {
 															"line": 15,
@@ -3578,7 +3578,7 @@
 												}
 											],
 											"raw": "{ 1 }",
-											"range": [375, 380],
+											"range": [377, 382],
 											"loc": {
 												"start": {
 													"line": 15,
@@ -3595,7 +3595,7 @@
 											"type": "Str",
 											"raw": "\n",
 											"value": "\n",
-											"range": [380, 381],
+											"range": [382, 383],
 											"loc": {
 												"start": {
 													"line": 15,
@@ -3610,7 +3610,7 @@
 										{
 											"value": "else",
 											"raw": "else",
-											"range": [381, 385],
+											"range": [385, 389],
 											"loc": {
 												"start": {
 													"line": 16,
@@ -3627,7 +3627,7 @@
 											"type": "Str",
 											"raw": " ",
 											"value": " ",
-											"range": [385, 386],
+											"range": [389, 390],
 											"loc": {
 												"start": {
 													"line": 16,
@@ -3644,7 +3644,7 @@
 												{
 													"value": "{",
 													"raw": "{",
-													"range": [386, 387],
+													"range": [390, 391],
 													"loc": {
 														"start": {
 															"line": 16,
@@ -3661,7 +3661,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [387, 388],
+													"range": [391, 392],
 													"loc": {
 														"start": {
 															"line": 16,
@@ -3682,7 +3682,7 @@
 																		{
 																			"value": "fib",
 																			"raw": "fib",
-																			"range": [388, 391],
+																			"range": [392, 395],
 																			"loc": {
 																				"start": {
 																					"line": 16,
@@ -3700,7 +3700,7 @@
 																				{
 																					"value": "(",
 																					"raw": "(",
-																					"range": [391, 392],
+																					"range": [395, 396],
 																					"loc": {
 																						"start": {
 																							"line": 16,
@@ -3718,7 +3718,7 @@
 																						{
 																							"value": "n",
 																							"raw": "n",
-																							"range": [392, 393],
+																							"range": [396, 397],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3735,7 +3735,7 @@
 																							"type": "Str",
 																							"raw": " ",
 																							"value": " ",
-																							"range": [393, 394],
+																							"range": [397, 398],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3750,7 +3750,7 @@
 																						{
 																							"value": "-",
 																							"raw": "-",
-																							"range": [394, 395],
+																							"range": [398, 399],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3767,7 +3767,7 @@
 																							"type": "Str",
 																							"raw": " ",
 																							"value": " ",
-																							"range": [395, 396],
+																							"range": [399, 400],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3782,7 +3782,7 @@
 																						{
 																							"value": "1",
 																							"raw": "1",
-																							"range": [396, 397],
+																							"range": [400, 401],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3797,7 +3797,7 @@
 																						}
 																					],
 																					"raw": "n - 1",
-																					"range": [392, 397],
+																					"range": [396, 401],
 																					"loc": {
 																						"start": {
 																							"line": 16,
@@ -3813,7 +3813,7 @@
 																				{
 																					"value": ")",
 																					"raw": ")",
-																					"range": [397, 398],
+																					"range": [401, 402],
 																					"loc": {
 																						"start": {
 																							"line": 16,
@@ -3828,7 +3828,7 @@
 																				}
 																			],
 																			"raw": "(n - 1)",
-																			"range": [391, 398],
+																			"range": [395, 402],
 																			"loc": {
 																				"start": {
 																					"line": 16,
@@ -3843,7 +3843,7 @@
 																		}
 																	],
 																	"raw": "fib(n - 1)",
-																	"range": [388, 398],
+																	"range": [392, 402],
 																	"loc": {
 																		"start": {
 																			"line": 16,
@@ -3860,7 +3860,7 @@
 																	"type": "Str",
 																	"raw": " ",
 																	"value": " ",
-																	"range": [398, 399],
+																	"range": [402, 403],
 																	"loc": {
 																		"start": {
 																			"line": 16,
@@ -3875,7 +3875,7 @@
 																{
 																	"value": "+",
 																	"raw": "+",
-																	"range": [399, 400],
+																	"range": [403, 404],
 																	"loc": {
 																		"start": {
 																			"line": 16,
@@ -3892,7 +3892,7 @@
 																	"type": "Str",
 																	"raw": " ",
 																	"value": " ",
-																	"range": [400, 401],
+																	"range": [404, 405],
 																	"loc": {
 																		"start": {
 																			"line": 16,
@@ -3909,7 +3909,7 @@
 																		{
 																			"value": "fib",
 																			"raw": "fib",
-																			"range": [401, 404],
+																			"range": [405, 408],
 																			"loc": {
 																				"start": {
 																					"line": 16,
@@ -3927,7 +3927,7 @@
 																				{
 																					"value": "(",
 																					"raw": "(",
-																					"range": [404, 405],
+																					"range": [408, 409],
 																					"loc": {
 																						"start": {
 																							"line": 16,
@@ -3945,7 +3945,7 @@
 																						{
 																							"value": "n",
 																							"raw": "n",
-																							"range": [405, 406],
+																							"range": [409, 410],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3962,7 +3962,7 @@
 																							"type": "Str",
 																							"raw": " ",
 																							"value": " ",
-																							"range": [406, 407],
+																							"range": [410, 411],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3977,7 +3977,7 @@
 																						{
 																							"value": "-",
 																							"raw": "-",
-																							"range": [407, 408],
+																							"range": [411, 412],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -3994,7 +3994,7 @@
 																							"type": "Str",
 																							"raw": " ",
 																							"value": " ",
-																							"range": [408, 409],
+																							"range": [412, 413],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -4009,7 +4009,7 @@
 																						{
 																							"value": "2",
 																							"raw": "2",
-																							"range": [409, 410],
+																							"range": [413, 414],
 																							"loc": {
 																								"start": {
 																									"line": 16,
@@ -4024,7 +4024,7 @@
 																						}
 																					],
 																					"raw": "n - 2",
-																					"range": [405, 410],
+																					"range": [409, 414],
 																					"loc": {
 																						"start": {
 																							"line": 16,
@@ -4040,7 +4040,7 @@
 																				{
 																					"value": ")",
 																					"raw": ")",
-																					"range": [410, 411],
+																					"range": [414, 415],
 																					"loc": {
 																						"start": {
 																							"line": 16,
@@ -4055,7 +4055,7 @@
 																				}
 																			],
 																			"raw": "(n - 2)",
-																			"range": [404, 411],
+																			"range": [408, 415],
 																			"loc": {
 																				"start": {
 																					"line": 16,
@@ -4070,7 +4070,7 @@
 																		}
 																	],
 																	"raw": "fib(n - 2)",
-																	"range": [401, 411],
+																	"range": [405, 415],
 																	"loc": {
 																		"start": {
 																			"line": 16,
@@ -4085,7 +4085,7 @@
 																}
 															],
 															"raw": "fib(n - 1) + fib(n - 2)",
-															"range": [388, 411],
+															"range": [392, 415],
 															"loc": {
 																"start": {
 																	"line": 16,
@@ -4100,7 +4100,7 @@
 														}
 													],
 													"raw": "fib(n - 1) + fib(n - 2)",
-													"range": [388, 411],
+													"range": [392, 415],
 													"loc": {
 														"start": {
 															"line": 16,
@@ -4117,7 +4117,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [411, 412],
+													"range": [415, 416],
 													"loc": {
 														"start": {
 															"line": 16,
@@ -4132,7 +4132,7 @@
 												{
 													"value": "}",
 													"raw": "}",
-													"range": [412, 413],
+													"range": [416, 417],
 													"loc": {
 														"start": {
 															"line": 16,
@@ -4147,7 +4147,7 @@
 												}
 											],
 											"raw": "{ fib(n - 1) + fib(n - 2) }",
-											"range": [386, 413],
+											"range": [390, 417],
 											"loc": {
 												"start": {
 													"line": 16,
@@ -4162,7 +4162,7 @@
 										}
 									],
 									"raw": "if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }",
-									"range": [365, 415],
+									"range": [367, 417],
 									"loc": {
 										"start": {
 											"line": 15,
@@ -4179,7 +4179,7 @@
 									"type": "Str",
 									"raw": "\n",
 									"value": "\n",
-									"range": [415, 416],
+									"range": [417, 418],
 									"loc": {
 										"start": {
 											"line": 16,
@@ -4194,7 +4194,7 @@
 								{
 									"value": ")",
 									"raw": ")",
-									"range": [416, 417],
+									"range": [418, 419],
 									"loc": {
 										"start": {
 											"line": 17,
@@ -4570,7 +4570,7 @@
 												{
 													"value": "columns",
 													"raw": "columns",
-													"range": [490, 497],
+													"range": [492, 499],
 													"loc": {
 														"start": {
 															"line": 22,
@@ -4586,7 +4586,7 @@
 												{
 													"value": ":",
 													"raw": ":",
-													"range": [497, 498],
+													"range": [499, 500],
 													"loc": {
 														"start": {
 															"line": 22,
@@ -4603,7 +4603,7 @@
 													"type": "Str",
 													"raw": " ",
 													"value": " ",
-													"range": [498, 499],
+													"range": [500, 501],
 													"loc": {
 														"start": {
 															"line": 22,
@@ -4618,7 +4618,7 @@
 												{
 													"value": "count",
 													"raw": "count",
-													"range": [499, 504],
+													"range": [501, 506],
 													"loc": {
 														"start": {
 															"line": 22,
@@ -4633,7 +4633,7 @@
 												}
 											],
 											"raw": "columns: count",
-											"range": [490, 504],
+											"range": [492, 506],
 											"loc": {
 												"start": {
 													"line": 22,
@@ -4649,7 +4649,7 @@
 										{
 											"value": ",",
 											"raw": ",",
-											"range": [504, 505],
+											"range": [506, 507],
 											"loc": {
 												"start": {
 													"line": 22,
@@ -4666,7 +4666,7 @@
 											"type": "Str",
 											"raw": "\n",
 											"value": "\n",
-											"range": [505, 506],
+											"range": [507, 508],
 											"loc": {
 												"start": {
 													"line": 22,
@@ -4683,7 +4683,7 @@
 												{
 													"value": "..",
 													"raw": "..",
-													"range": [506, 508],
+													"range": [510, 512],
 													"loc": {
 														"start": {
 															"line": 23,
@@ -4703,7 +4703,7 @@
 																{
 																	"value": "nums",
 																	"raw": "nums",
-																	"range": [508, 512],
+																	"range": [512, 516],
 																	"loc": {
 																		"start": {
 																			"line": 23,
@@ -4719,7 +4719,7 @@
 																{
 																	"value": ".",
 																	"raw": ".",
-																	"range": [512, 513],
+																	"range": [516, 517],
 																	"loc": {
 																		"start": {
 																			"line": 23,
@@ -4735,7 +4735,7 @@
 																{
 																	"value": "map",
 																	"raw": "map",
-																	"range": [513, 516],
+																	"range": [517, 520],
 																	"loc": {
 																		"start": {
 																			"line": 23,
@@ -4750,7 +4750,7 @@
 																}
 															],
 															"raw": "nums.map",
-															"range": [508, 516],
+															"range": [512, 520],
 															"loc": {
 																"start": {
 																	"line": 23,
@@ -4768,7 +4768,7 @@
 																{
 																	"value": "(",
 																	"raw": "(",
-																	"range": [516, 517],
+																	"range": [520, 521],
 																	"loc": {
 																		"start": {
 																			"line": 23,
@@ -4788,7 +4788,7 @@
 																				{
 																					"value": "n",
 																					"raw": "n",
-																					"range": [517, 518],
+																					"range": [521, 522],
 																					"loc": {
 																						"start": {
 																							"line": 23,
@@ -4803,7 +4803,7 @@
 																				}
 																			],
 																			"raw": "n",
-																			"range": [517, 518],
+																			"range": [521, 522],
 																			"loc": {
 																				"start": {
 																					"line": 23,
@@ -4820,7 +4820,7 @@
 																			"type": "Str",
 																			"raw": " ",
 																			"value": " ",
-																			"range": [518, 519],
+																			"range": [522, 523],
 																			"loc": {
 																				"start": {
 																					"line": 23,
@@ -4835,7 +4835,7 @@
 																		{
 																			"value": "=>",
 																			"raw": "=>",
-																			"range": [519, 521],
+																			"range": [523, 525],
 																			"loc": {
 																				"start": {
 																					"line": 23,
@@ -4852,7 +4852,7 @@
 																			"type": "Str",
 																			"raw": " ",
 																			"value": " ",
-																			"range": [521, 522],
+																			"range": [525, 526],
 																			"loc": {
 																				"start": {
 																					"line": 23,
@@ -4869,7 +4869,7 @@
 																				{
 																					"value": "$",
 																					"raw": "$",
-																					"range": [522, 523],
+																					"range": [526, 527],
 																					"loc": {
 																						"start": {
 																							"line": 23,
@@ -4889,7 +4889,7 @@
 																								{
 																									"value": "F",
 																									"raw": "F",
-																									"range": [523, 524],
+																									"range": [527, 528],
 																									"loc": {
 																										"start": {
 																											"line": 23,
@@ -4905,7 +4905,7 @@
 																								{
 																									"value": "_",
 																									"raw": "_",
-																									"range": [524, 525],
+																									"range": [528, 529],
 																									"loc": {
 																										"start": {
 																											"line": 23,
@@ -4921,7 +4921,7 @@
 																								{
 																									"value": "#",
 																									"raw": "#",
-																									"range": [525, 526],
+																									"range": [529, 530],
 																									"loc": {
 																										"start": {
 																											"line": 23,
@@ -4937,7 +4937,7 @@
 																								{
 																									"value": "n",
 																									"raw": "n",
-																									"range": [526, 527],
+																									"range": [530, 531],
 																									"loc": {
 																										"start": {
 																											"line": 23,
@@ -4952,7 +4952,7 @@
 																								}
 																							],
 																							"raw": "F_#n",
-																							"range": [523, 527],
+																							"range": [527, 531],
 																							"loc": {
 																								"start": {
 																									"line": 23,
@@ -4967,7 +4967,7 @@
 																						}
 																					],
 																					"raw": "F_#n",
-																					"range": [523, 527],
+																					"range": [527, 531],
 																					"loc": {
 																						"start": {
 																							"line": 23,
@@ -4983,7 +4983,7 @@
 																				{
 																					"value": "$",
 																					"raw": "$",
-																					"range": [527, 528],
+																					"range": [531, 532],
 																					"loc": {
 																						"start": {
 																							"line": 23,
@@ -4998,7 +4998,7 @@
 																				}
 																			],
 																			"raw": "$F_#n$",
-																			"range": [522, 528],
+																			"range": [526, 532],
 																			"loc": {
 																				"start": {
 																					"line": 23,
@@ -5013,7 +5013,7 @@
 																		}
 																	],
 																	"raw": "n => $F_#n$",
-																	"range": [517, 528],
+																	"range": [521, 532],
 																	"loc": {
 																		"start": {
 																			"line": 23,
@@ -5029,7 +5029,7 @@
 																{
 																	"value": ")",
 																	"raw": ")",
-																	"range": [528, 529],
+																	"range": [532, 533],
 																	"loc": {
 																		"start": {
 																			"line": 23,
@@ -5044,7 +5044,7 @@
 																}
 															],
 															"raw": "(n => $F_#n$)",
-															"range": [516, 529],
+															"range": [520, 533],
 															"loc": {
 																"start": {
 																	"line": 23,
@@ -5059,7 +5059,7 @@
 														}
 													],
 													"raw": "nums.map(n => $F_#n$)",
-													"range": [508, 529],
+													"range": [512, 533],
 													"loc": {
 														"start": {
 															"line": 23,
@@ -5074,7 +5074,7 @@
 												}
 											],
 											"raw": "..nums.map(n => $F_#n$)",
-											"range": [506, 529],
+											"range": [510, 533],
 											"loc": {
 												"start": {
 													"line": 23,
@@ -5090,7 +5090,7 @@
 										{
 											"value": ",",
 											"raw": ",",
-											"range": [529, 530],
+											"range": [533, 534],
 											"loc": {
 												"start": {
 													"line": 23,
@@ -5107,7 +5107,7 @@
 											"type": "Str",
 											"raw": "\n",
 											"value": "\n",
-											"range": [530, 531],
+											"range": [534, 535],
 											"loc": {
 												"start": {
 													"line": 23,
@@ -5124,7 +5124,7 @@
 												{
 													"value": "..",
 													"raw": "..",
-													"range": [531, 533],
+													"range": [537, 539],
 													"loc": {
 														"start": {
 															"line": 24,
@@ -5144,7 +5144,7 @@
 																{
 																	"value": "nums",
 																	"raw": "nums",
-																	"range": [533, 537],
+																	"range": [539, 543],
 																	"loc": {
 																		"start": {
 																			"line": 24,
@@ -5160,7 +5160,7 @@
 																{
 																	"value": ".",
 																	"raw": ".",
-																	"range": [537, 538],
+																	"range": [543, 544],
 																	"loc": {
 																		"start": {
 																			"line": 24,
@@ -5176,7 +5176,7 @@
 																{
 																	"value": "map",
 																	"raw": "map",
-																	"range": [538, 541],
+																	"range": [544, 547],
 																	"loc": {
 																		"start": {
 																			"line": 24,
@@ -5191,7 +5191,7 @@
 																}
 															],
 															"raw": "nums.map",
-															"range": [533, 541],
+															"range": [539, 547],
 															"loc": {
 																"start": {
 																	"line": 24,
@@ -5209,7 +5209,7 @@
 																{
 																	"value": "(",
 																	"raw": "(",
-																	"range": [541, 542],
+																	"range": [547, 548],
 																	"loc": {
 																		"start": {
 																			"line": 24,
@@ -5229,7 +5229,7 @@
 																				{
 																					"value": "n",
 																					"raw": "n",
-																					"range": [542, 543],
+																					"range": [548, 549],
 																					"loc": {
 																						"start": {
 																							"line": 24,
@@ -5244,7 +5244,7 @@
 																				}
 																			],
 																			"raw": "n",
-																			"range": [542, 543],
+																			"range": [548, 549],
 																			"loc": {
 																				"start": {
 																					"line": 24,
@@ -5261,7 +5261,7 @@
 																			"type": "Str",
 																			"raw": " ",
 																			"value": " ",
-																			"range": [543, 544],
+																			"range": [549, 550],
 																			"loc": {
 																				"start": {
 																					"line": 24,
@@ -5276,7 +5276,7 @@
 																		{
 																			"value": "=>",
 																			"raw": "=>",
-																			"range": [544, 546],
+																			"range": [550, 552],
 																			"loc": {
 																				"start": {
 																					"line": 24,
@@ -5293,7 +5293,7 @@
 																			"type": "Str",
 																			"raw": " ",
 																			"value": " ",
-																			"range": [546, 547],
+																			"range": [552, 553],
 																			"loc": {
 																				"start": {
 																					"line": 24,
@@ -5310,7 +5310,7 @@
 																				{
 																					"value": "str",
 																					"raw": "str",
-																					"range": [547, 550],
+																					"range": [553, 556],
 																					"loc": {
 																						"start": {
 																							"line": 24,
@@ -5328,7 +5328,7 @@
 																						{
 																							"value": "(",
 																							"raw": "(",
-																							"range": [550, 551],
+																							"range": [556, 557],
 																							"loc": {
 																								"start": {
 																									"line": 24,
@@ -5346,7 +5346,7 @@
 																								{
 																									"value": "fib",
 																									"raw": "fib",
-																									"range": [551, 554],
+																									"range": [557, 560],
 																									"loc": {
 																										"start": {
 																											"line": 24,
@@ -5364,7 +5364,7 @@
 																										{
 																											"value": "(",
 																											"raw": "(",
-																											"range": [554, 555],
+																											"range": [560, 561],
 																											"loc": {
 																												"start": {
 																													"line": 24,
@@ -5380,7 +5380,7 @@
 																										{
 																											"value": "n",
 																											"raw": "n",
-																											"range": [555, 556],
+																											"range": [561, 562],
 																											"loc": {
 																												"start": {
 																													"line": 24,
@@ -5396,7 +5396,7 @@
 																										{
 																											"value": ")",
 																											"raw": ")",
-																											"range": [556, 557],
+																											"range": [562, 563],
 																											"loc": {
 																												"start": {
 																													"line": 24,
@@ -5411,7 +5411,7 @@
 																										}
 																									],
 																									"raw": "(n)",
-																									"range": [554, 557],
+																									"range": [560, 563],
 																									"loc": {
 																										"start": {
 																											"line": 24,
@@ -5426,7 +5426,7 @@
 																								}
 																							],
 																							"raw": "fib(n)",
-																							"range": [551, 557],
+																							"range": [557, 563],
 																							"loc": {
 																								"start": {
 																									"line": 24,
@@ -5442,7 +5442,7 @@
 																						{
 																							"value": ")",
 																							"raw": ")",
-																							"range": [557, 558],
+																							"range": [563, 564],
 																							"loc": {
 																								"start": {
 																									"line": 24,
@@ -5457,7 +5457,7 @@
 																						}
 																					],
 																					"raw": "(fib(n))",
-																					"range": [550, 558],
+																					"range": [556, 564],
 																					"loc": {
 																						"start": {
 																							"line": 24,
@@ -5472,7 +5472,7 @@
 																				}
 																			],
 																			"raw": "str(fib(n))",
-																			"range": [547, 558],
+																			"range": [553, 564],
 																			"loc": {
 																				"start": {
 																					"line": 24,
@@ -5487,7 +5487,7 @@
 																		}
 																	],
 																	"raw": "n => str(fib(n))",
-																	"range": [542, 558],
+																	"range": [548, 564],
 																	"loc": {
 																		"start": {
 																			"line": 24,
@@ -5503,7 +5503,7 @@
 																{
 																	"value": ")",
 																	"raw": ")",
-																	"range": [558, 559],
+																	"range": [564, 565],
 																	"loc": {
 																		"start": {
 																			"line": 24,
@@ -5518,7 +5518,7 @@
 																}
 															],
 															"raw": "(n => str(fib(n)))",
-															"range": [541, 559],
+															"range": [547, 565],
 															"loc": {
 																"start": {
 																	"line": 24,
@@ -5533,7 +5533,7 @@
 														}
 													],
 													"raw": "nums.map(n => str(fib(n)))",
-													"range": [533, 559],
+													"range": [539, 565],
 													"loc": {
 														"start": {
 															"line": 24,
@@ -5548,7 +5548,7 @@
 												}
 											],
 											"raw": "..nums.map(n => str(fib(n)))",
-											"range": [531, 559],
+											"range": [537, 565],
 											"loc": {
 												"start": {
 													"line": 24,
@@ -5564,7 +5564,7 @@
 										{
 											"value": ",",
 											"raw": ",",
-											"range": [559, 560],
+											"range": [565, 566],
 											"loc": {
 												"start": {
 													"line": 24,
@@ -5581,7 +5581,7 @@
 											"type": "Str",
 											"raw": "\n",
 											"value": "\n",
-											"range": [560, 561],
+											"range": [566, 567],
 											"loc": {
 												"start": {
 													"line": 24,
@@ -5596,7 +5596,7 @@
 										{
 											"value": ")",
 											"raw": ")",
-											"range": [561, 562],
+											"range": [567, 568],
 											"loc": {
 												"start": {
 													"line": 25,

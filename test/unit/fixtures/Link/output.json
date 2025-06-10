@@ -1,69 +1,69 @@
 {
 	"children": [
 		{
+			"children": [
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 19,
+									"line": 1
+								},
+								"start": {
+									"column": 0,
+									"line": 1
+								}
+							},
+							"range": [0, 19],
+							"raw": "https://example.com",
+							"type": "Str",
+							"value": "https://example.com"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 19,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 19],
+					"raw": "https://example.com",
+					"title": null,
+					"type": "Link",
+					"url": "https://example.com"
+				}
+			],
 			"loc": {
-				"start": {
-					"line": 1,
-					"column": 0
-				},
 				"end": {
-					"line": 1,
-					"column": 19
+					"column": 19,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
 				}
 			},
 			"range": [0, 19],
 			"raw": "https://example.com",
-			"type": "Paragraph",
-			"children": [
-				{
-					"type": "Link",
-					"raw": "https://example.com",
-					"range": [0, 19],
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 0
-						},
-						"end": {
-							"line": 1,
-							"column": 19
-						}
-					},
-					"title": null,
-					"url": "https://example.com",
-					"children": [
-						{
-							"type": "Str",
-							"value": "https://example.com",
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 0
-								},
-								"end": {
-									"line": 1,
-									"column": 19
-								}
-							},
-							"range": [0, 19],
-							"raw": "https://example.com"
-						}
-					]
-				}
-			]
+			"type": "Paragraph"
 		}
 	],
-	"type": "Document",
-	"raw": "https://example.com",
-	"range": [0, 19],
 	"loc": {
-		"start": {
-			"line": 1,
-			"column": 0
-		},
 		"end": {
-			"line": 1,
-			"column": 19
+			"column": 19,
+			"line": 1
+		},
+		"start": {
+			"column": 0,
+			"line": 1
 		}
-	}
+	},
+	"range": [0, 19],
+	"raw": "https://example.com",
+	"type": "Document"
 }

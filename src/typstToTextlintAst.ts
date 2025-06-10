@@ -44,8 +44,10 @@ export const convertRawTypstAstStringToObject = (rawTypstAstString: string) => {
 				// NOTE: If the line does not match the pattern, it is considered a continuation of the previous value.
 				if (!/^\s*(path:|ast:|- s: |s: |c:)/.test(line)) {
 					if (acc.length > 0) {
-						acc[acc.length - 1] =
-							`${acc[acc.length - 1].slice(0, -1)}\\n${line}"`;
+						acc[acc.length - 1] = `${acc[acc.length - 1].slice(
+							0,
+							-1,
+						)}\\n${line}"`;
 					}
 					return acc;
 				}
@@ -201,11 +203,21 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 	};
 
 	const calculateOffsets = (node: AstNode, currentOffset = 0): number => {
-		const startOffset = currentOffset;
-
+		const calculateOffsetFromLocation = (
+			location: TxtNodeLineLocation,
+		): number => {
+			const lines = typstSource.split("\n");
+			let offset = 0;
+			for (let i = 0; i < location.start.line - 1; i++) {
+				offset += lines[i].length + 1; // +1 for newline
+			}
+			offset += location.start.column;
+			return offset;
+		};
 		const location = extractLocation(node.s, node.c);
 		const nodeRawText = extractRawSourceByLocation(typstSource, location);
 		const nodeLength = nodeRawText.length;
+		const startOffset = calculateOffsetFromLocation(location);
 
 		if (node.c) {
 			// If TxtParentNode
@@ -284,7 +296,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 			node.value = extractRawSourceByLocation(typstSource, location);
 		}
 
-		const endOffset = currentOffset + nodeLength;
+		const endOffset = startOffset + nodeLength;
 
 		node.raw = extractRawSourceByLocation(typstSource, location);
 		node.range = [startOffset, endOffset];
@@ -301,6 +313,163 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		}
 		if (/^Escape::Linebreak/.test(node.type)) {
 			node.type = ASTNodeTypes.Break;
+		}
+		if (/^Marked::(ListItem|EnumItem)$/.test(node.type)) {
+			node.type = ASTNodeTypes.ListItem;
+			// @ts-expect-error
+			node.spread = false;
+			// @ts-expect-error
+			node.checked = null;
+
+			if (node.children && node.children.length > 0) {
+				const originalRange = node.range;
+				const originalLoc = node.loc;
+				const originalRaw = node.raw;
+
+				const contentChildren = node.children.filter(
+					(child) =>
+						!["Marked::ListMarker", "Marked::EnumMarker"].includes(child.type),
+				);
+
+				const flattenedContent: Content[] = [];
+				for (const child of contentChildren) {
+					// @ts-expect-error
+					if (child.type === "Marked::Markup" && child.children) {
+						// @ts-expect-error
+						flattenedContent.push(...child.children);
+					} else {
+						flattenedContent.push(child);
+					}
+				}
+
+				const textContent: Content[] = [];
+				const nestedListItems: Content[] = [];
+
+				for (const child of flattenedContent) {
+					if (child.type === ASTNodeTypes.ListItem) {
+						nestedListItems.push(child);
+					} else {
+						textContent.push(child);
+					}
+				}
+
+				const processedChildren: Content[] = [];
+
+				if (textContent.length > 0) {
+					const validTextContent = textContent.filter(
+						(child) =>
+							!(child.type === ASTNodeTypes.Str && child.raw?.trim() === ""),
+					);
+
+					if (validTextContent.length > 0) {
+						const firstChild = validTextContent[0];
+						const lastChild = validTextContent[validTextContent.length - 1];
+
+						processedChildren.push({
+							type: ASTNodeTypes.Paragraph,
+							// @ts-expect-error
+							children: validTextContent,
+							loc: {
+								start: firstChild.loc.start,
+								end: lastChild.loc.end,
+							},
+							range: [firstChild.range[0], lastChild.range[1]],
+							raw: validTextContent.map((c) => c.raw).join(""),
+						});
+					}
+				}
+
+				if (nestedListItems.length > 0) {
+					const isOrdered = nestedListItems.some((item) =>
+						/^\d+\./.test(item.raw?.trim() || ""),
+					);
+
+					const firstNestedItem = nestedListItems[0];
+					const lastNestedItem = nestedListItems[nestedListItems.length - 1];
+
+					processedChildren.push({
+						type: ASTNodeTypes.List,
+						ordered: isOrdered,
+						start: isOrdered ? 1 : null,
+						spread: false,
+						// @ts-expect-error
+						children: nestedListItems,
+						loc: {
+							start: firstNestedItem.loc.start,
+							end: lastNestedItem.loc.end,
+						},
+						range: [firstNestedItem.range[0], lastNestedItem.range[1]],
+						raw: nestedListItems.map((item) => item.raw).join("\n"),
+					});
+				}
+
+				for (const child of processedChildren) {
+					if (child.type === ASTNodeTypes.Paragraph) {
+						if (child.children && child.children.length > 0) {
+							const firstStr = child.children[0];
+							const lastStr = child.children[child.children.length - 1];
+
+							const actualStart = calculateOffsetFromLocation(firstStr.loc);
+							const actualEnd = calculateOffsetFromLocation({
+								start: lastStr.loc.end,
+								end: lastStr.loc.end,
+							});
+
+							child.range = [actualStart, actualEnd];
+
+							for (const strChild of child.children) {
+								if (strChild.type === ASTNodeTypes.Str) {
+									const strStart = calculateOffsetFromLocation(strChild.loc);
+									const strEnd = calculateOffsetFromLocation({
+										start: strChild.loc.end,
+										end: strChild.loc.end,
+									});
+									strChild.range = [strStart, strEnd];
+								}
+							}
+						}
+					} else if (child.type === ASTNodeTypes.List) {
+						if (child.children && child.children.length > 0) {
+							const firstListItem = child.children[0];
+							const lastListItem = child.children[child.children.length - 1];
+							if (firstListItem && lastListItem) {
+								child.range = [firstListItem.range[0], lastListItem.range[1]];
+							}
+						}
+					}
+				}
+
+				node.children = processedChildren;
+				if (processedChildren.length > 0) {
+					const firstChild = processedChildren[0];
+					const lastChild = processedChildren[processedChildren.length - 1];
+
+					const markerStart = calculateOffsetFromLocation(originalLoc);
+					const contentEnd = lastChild.range[1];
+
+					node.range = [markerStart, contentEnd];
+					node.loc = {
+						start: originalLoc.start,
+						end: lastChild.loc.end,
+					};
+
+					node.raw = extractRawSourceByLocation(typstSource, node.loc);
+				} else {
+					const nodeStart = calculateOffsetFromLocation(originalLoc);
+					const nodeEnd = nodeStart + originalRaw.length;
+					node.range = [nodeStart, nodeEnd];
+					node.loc = originalLoc;
+					node.raw = originalRaw;
+				}
+
+				// @ts-expect-error
+				// biome-ignore lint/performance/noDelete: Convert TxtParentNode to TxtTextNode
+				delete node.s;
+				// biome-ignore lint/performance/noDelete: Convert TxtParentNode to TxtTextNode
+				delete node.c;
+
+				return node.range[1];
+			}
 		}
 		if (node.type === "Marked::Raw") {
 			if (node.loc.start.line === node.loc.end.line) {
@@ -416,46 +585,250 @@ export const paragraphizeTextlintAstObject = (
 	rootNode: TxtDocumentNode,
 ): TxtDocumentNode => {
 	const children: Content[] = [];
-	let paragraph: Content[] = [];
+	let i = 0;
 
-	const pushChild = (paragraph: Content[]) => {
-		if (paragraph.length === 0) return;
+	while (i < rootNode.children.length) {
+		const node = rootNode.children[i];
 
-		const headNode = paragraph[0];
-		const lastNode = paragraph[paragraph.length - 1];
+		// Collect consecutive ListItems into a single List node.
+		if (node.type === ASTNodeTypes.ListItem) {
+			const listItems: Content[] = [node];
+			i++;
 
-		if (["Kw::Hash", "Fn::(Hash: &quot;#&quot;)"].includes(headNode.type)) {
-			children.push(...paragraph);
-			return;
-		}
+			// Determine if this is an ordered list by checking the original node type.
+			// Look at the raw content to determine if it's ordered.
+			const isOrdered = /^\d+\./.test(node.raw?.trim() || "");
 
-		children.push({
-			loc: {
-				start: headNode.loc.start,
-				end: lastNode.loc.end,
-			},
-			range: [headNode.range[0], lastNode.range[1]],
-			raw: paragraph.map((node) => node.raw).join(""),
-			type: ASTNodeTypes.Paragraph,
-			// @ts-expect-error
-			children: paragraph,
-		});
-	};
+			// Collect consecutive ListItems including those separated by line breaks.
+			while (i < rootNode.children.length) {
+				const currentNode = rootNode.children[i];
 
-	for (const node of rootNode.children) {
-		switch (node.type) {
-			case ASTNodeTypes.Header:
-			case ASTNodeTypes.Break:
-			case ASTNodeTypes.CodeBlock:
-				pushChild(paragraph);
-				paragraph = [];
-				children.push(node);
+				if (currentNode.type === ASTNodeTypes.ListItem) {
+					// Check if the current item matches the list type (ordered/unordered).
+					const currentIsOrdered = /^\d+\./.test(currentNode.raw?.trim() || "");
+					if (currentIsOrdered === isOrdered) {
+						listItems.push(currentNode);
+						i++;
+						continue;
+					}
+					// Different list type, break here.
+					break;
+				}
+
+				// Skip line breaks between ListItems.
+				if (currentNode.type === ASTNodeTypes.Str && currentNode.raw === "\n") {
+					if (
+						i + 1 < rootNode.children.length &&
+						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
+					) {
+						const nextIsOrdered = /^\d+\./.test(
+							rootNode.children[i + 1].raw?.trim() || "",
+						);
+						if (nextIsOrdered === isOrdered) {
+							i++;
+							continue;
+						}
+					}
+				}
+
+				// Skip line-break-only Paragraphs between ListItems.
+				if (
+					currentNode.type === ASTNodeTypes.Paragraph &&
+					currentNode.children.length === 1 &&
+					currentNode.children[0].type === ASTNodeTypes.Str &&
+					currentNode.children[0].raw === "\n"
+				) {
+					if (
+						i + 1 < rootNode.children.length &&
+						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
+					) {
+						const nextIsOrdered = /^\d+\./.test(
+							rootNode.children[i + 1].raw?.trim() || "",
+						);
+						if (nextIsOrdered === isOrdered) {
+							i++;
+							continue;
+						}
+					}
+				}
+
 				break;
-			default:
+			}
+
+			// Create List node from collected ListItems.
+			const firstItem = listItems[0];
+			const lastItem = listItems[listItems.length - 1];
+
+			children.push({
+				type: ASTNodeTypes.List,
+				ordered: isOrdered,
+				start: isOrdered ? 1 : null,
+				spread: false,
+				// @ts-expect-error
+				children: [...listItems],
+				loc: {
+					start: firstItem.loc.start,
+					end: lastItem.loc.end,
+				},
+				range: [firstItem.range[0], lastItem.range[1]],
+				raw: listItems.map((item) => item.raw).join("\n"),
+			});
+		}
+		// Skip line-break-only Paragraphs.
+		else if (
+			node.type === ASTNodeTypes.Paragraph &&
+			node.children.length === 1 &&
+			node.children[0].type === ASTNodeTypes.Str &&
+			node.children[0].raw === "\n"
+		) {
+			i++;
+		} else {
+			const paragraph: Content[] = [];
+
+			// Add standalone nodes directly without wrapping in Paragraph.
+			if (
+				node.type === ASTNodeTypes.Header ||
+				node.type === ASTNodeTypes.CodeBlock ||
+				node.type === ASTNodeTypes.Break
+			) {
+				children.push(node);
+				i++;
+			}
+			// Group other nodes into paragraphs, but handle EnumItems specially.
+			else {
+				// Check if this paragraph contains EnumItems that should be converted to a List.
+				if (node.type === ASTNodeTypes.Paragraph) {
+					const enumItems: Content[] =
+						node.children?.filter(
+							// @ts-expect-error
+							(child) => child.type === "Marked::EnumItem",
+						) || [];
+
+					if (enumItems.length > 0) {
+						// Convert EnumItems to ListItems.
+						const listItems = enumItems.map((enumItem) => {
+							// Remove enum marker and empty Str nodes.
+							const contentChildren =
+								// @ts-expect-error
+								enumItem.children?.filter(
+									// @ts-expect-error
+									(child) =>
+										child.type !== "Marked::EnumMarker" &&
+										!(child.type === "Str" && child.raw?.trim() === ""),
+								) || [];
+
+							// Use the children of Marked::Markup nodes if they exist.
+							const actualContent: Content[] = [];
+							for (const child of contentChildren) {
+								if (child.type === "Marked::Markup" && child.children) {
+									actualContent.push(...child.children);
+								} else {
+									actualContent.push(child);
+								}
+							}
+
+							const firstContentChild = actualContent[0];
+							const lastContentChild = actualContent[actualContent.length - 1];
+
+							return {
+								type: ASTNodeTypes.ListItem,
+								spread: false,
+								checked: null,
+								children:
+									actualContent.length > 0
+										? [
+												{
+													type: ASTNodeTypes.Paragraph,
+													children: actualContent,
+													loc: {
+														start:
+															firstContentChild?.loc?.start ||
+															enumItem.loc.start,
+														end: lastContentChild?.loc?.end || enumItem.loc.end,
+													},
+													range: [
+														firstContentChild?.range?.[0] || enumItem.range[0],
+														lastContentChild?.range?.[1] || enumItem.range[1],
+													],
+													raw: actualContent.map((child) => child.raw).join(""),
+												},
+											]
+										: [],
+								loc: enumItem.loc,
+								range: enumItem.range,
+								raw: enumItem.raw,
+							};
+						});
+
+						const firstItem = listItems[0];
+						const lastItem = listItems[listItems.length - 1];
+
+						children.push({
+							type: ASTNodeTypes.List,
+							ordered: true,
+							start: 1,
+							spread: false,
+							// @ts-expect-error
+							children: listItems,
+							loc: {
+								start: firstItem.loc.start,
+								end: lastItem.loc.end,
+							},
+							range: [firstItem.range[0], lastItem.range[1]],
+							raw: listItems.map((item) => item.raw).join("\n"),
+						});
+
+						i++;
+						continue;
+					}
+				}
+
 				paragraph.push(node);
+				i++;
+
+				// Collect consecutive nodes for paragraph grouping.
+				while (i < rootNode.children.length) {
+					const currentNode = rootNode.children[i];
+
+					if (
+						currentNode.type === ASTNodeTypes.Header ||
+						currentNode.type === ASTNodeTypes.CodeBlock ||
+						currentNode.type === ASTNodeTypes.Break ||
+						currentNode.type === ASTNodeTypes.ListItem
+					) {
+						break;
+					}
+
+					paragraph.push(currentNode);
+					i++;
+				}
+
+				if (paragraph.length > 0) {
+					const headNode = paragraph[0];
+					const lastNode = paragraph[paragraph.length - 1];
+
+					// Special handling for hash symbols.
+					if (
+						["Kw::Hash", "Fn::(Hash: &quot;#&quot;)"].includes(headNode.type)
+					) {
+						children.push(...paragraph);
+					} else {
+						children.push({
+							loc: {
+								start: headNode.loc.start,
+								end: lastNode.loc.end,
+							},
+							range: [headNode.range[0], lastNode.range[1]],
+							raw: paragraph.map((node) => node.raw).join(""),
+							type: ASTNodeTypes.Paragraph,
+							// @ts-expect-error
+							children: paragraph,
+						});
+					}
+				}
+			}
 		}
 	}
-	pushChild(paragraph);
 
 	return { ...rootNode, children };
 };

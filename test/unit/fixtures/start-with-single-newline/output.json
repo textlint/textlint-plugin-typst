@@ -1,66 +1,66 @@
 {
 	"children": [
 		{
-			"value": "\n",
-			"raw": "\n",
-			"range": [0, 1],
 			"loc": {
-				"start": {
-					"line": 1,
-					"column": 0
-				},
 				"end": {
-					"line": 2,
-					"column": 0
+					"column": 0,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 1
 				}
 			},
-			"type": "Break"
+			"range": [0, 1],
+			"raw": "\n",
+			"type": "Break",
+			"value": "\n"
 		},
 		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 47,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 2
+						}
+					},
+					"range": [1, 48],
+					"raw": "This is test that starts with a single newline.",
+					"type": "Str",
+					"value": "This is test that starts with a single newline."
+				}
+			],
 			"loc": {
-				"start": {
-					"line": 2,
-					"column": 0
-				},
 				"end": {
-					"line": 2,
-					"column": 47
+					"column": 47,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 2
 				}
 			},
 			"range": [1, 48],
 			"raw": "This is test that starts with a single newline.",
-			"type": "Paragraph",
-			"children": [
-				{
-					"value": "This is test that starts with a single newline.",
-					"raw": "This is test that starts with a single newline.",
-					"range": [1, 48],
-					"loc": {
-						"start": {
-							"line": 2,
-							"column": 0
-						},
-						"end": {
-							"line": 2,
-							"column": 47
-						}
-					},
-					"type": "Str"
-				}
-			]
+			"type": "Paragraph"
 		}
 	],
-	"raw": "\nThis is test that starts with a single newline.",
-	"range": [0, 48],
 	"loc": {
-		"start": {
-			"line": 1,
-			"column": 0
-		},
 		"end": {
-			"line": 2,
-			"column": 47
+			"column": 47,
+			"line": 2
+		},
+		"start": {
+			"column": 0,
+			"line": 1
 		}
 	},
+	"range": [0, 48],
+	"raw": "\nThis is test that starts with a single newline.",
 	"type": "Document"
 }

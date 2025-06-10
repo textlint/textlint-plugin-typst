@@ -3,293 +3,293 @@
 		{
 			"children": [
 				{
-					"value": "=",
-					"type": "Marked::HeadingMarker",
-					"raw": "=",
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
 					"range": [0, 1],
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 0
-						},
-						"end": {
-							"line": 1,
-							"column": 1
-						}
-					}
+					"raw": "=",
+					"type": "Marked::HeadingMarker",
+					"value": "="
 				},
 				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
+					"loc": {
+						"end": {
+							"column": 2,
+							"line": 1
+						},
+						"start": {
+							"column": 1,
+							"line": 1
+						}
+					},
 					"range": [1, 2],
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 1
-						},
-						"end": {
-							"line": 1,
-							"column": 2
-						}
-					}
+					"raw": " ",
+					"type": "Str",
+					"value": " "
 				},
 				{
 					"children": [
 						{
-							"value": "header 1",
-							"type": "Str",
-							"raw": "header 1",
+							"loc": {
+								"end": {
+									"column": 10,
+									"line": 1
+								},
+								"start": {
+									"column": 2,
+									"line": 1
+								}
+							},
 							"range": [2, 10],
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 2
-								},
-								"end": {
-									"line": 1,
-									"column": 10
-								}
-							}
+							"raw": "header 1",
+							"type": "Str",
+							"value": "header 1"
 						}
 					],
-					"type": "Marked::Markup",
-					"raw": "header 1",
+					"loc": {
+						"end": {
+							"column": 10,
+							"line": 1
+						},
+						"start": {
+							"column": 2,
+							"line": 1
+						}
+					},
 					"range": [2, 10],
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 2
-						},
-						"end": {
-							"line": 1,
-							"column": 10
-						}
-					}
+					"raw": "header 1",
+					"type": "Marked::Markup"
 				}
 			],
-			"type": "Header",
-			"raw": "= header 1",
+			"loc": {
+				"end": {
+					"column": 10,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
 			"range": [0, 10],
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 0
-				},
-				"end": {
-					"line": 1,
-					"column": 10
-				}
-			}
+			"raw": "= header 1",
+			"type": "Header"
 		},
 		{
-			"value": "\n\n",
-			"type": "Break",
-			"raw": "\n\n",
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 3
+				},
+				"start": {
+					"column": 10,
+					"line": 1
+				}
+			},
 			"range": [10, 12],
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 10
-				},
-				"end": {
-					"line": 3,
-					"column": 0
-				}
-			}
-		},
-		{
-			"children": [
-				{
-					"value": "==",
-					"type": "Marked::HeadingMarker",
-					"raw": "==",
-					"range": [12, 14],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 0
-						},
-						"end": {
-							"line": 3,
-							"column": 2
-						}
-					}
-				},
-				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [14, 15],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 2
-						},
-						"end": {
-							"line": 3,
-							"column": 3
-						}
-					}
-				},
-				{
-					"children": [
-						{
-							"value": "header 2",
-							"type": "Str",
-							"raw": "header 2",
-							"range": [15, 23],
-							"loc": {
-								"start": {
-									"line": 3,
-									"column": 3
-								},
-								"end": {
-									"line": 3,
-									"column": 11
-								}
-							}
-						}
-					],
-					"type": "Marked::Markup",
-					"raw": "header 2",
-					"range": [15, 23],
-					"loc": {
-						"start": {
-							"line": 3,
-							"column": 3
-						},
-						"end": {
-							"line": 3,
-							"column": 11
-						}
-					}
-				}
-			],
-			"type": "Header",
-			"raw": "== header 2",
-			"range": [12, 23],
-			"loc": {
-				"start": {
-					"line": 3,
-					"column": 0
-				},
-				"end": {
-					"line": 3,
-					"column": 11
-				}
-			}
-		},
-		{
-			"value": "\n\n",
-			"type": "Break",
 			"raw": "\n\n",
-			"range": [23, 25],
-			"loc": {
-				"start": {
-					"line": 3,
-					"column": 11
-				},
-				"end": {
-					"line": 5,
-					"column": 0
-				}
-			}
+			"type": "Break",
+			"value": "\n\n"
 		},
 		{
 			"children": [
 				{
-					"value": "===",
-					"type": "Marked::HeadingMarker",
-					"raw": "===",
-					"range": [25, 28],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 0
-						},
 						"end": {
-							"line": 5,
-							"column": 3
+							"column": 2,
+							"line": 3
+						},
+						"start": {
+							"column": 0,
+							"line": 3
 						}
-					}
+					},
+					"range": [12, 14],
+					"raw": "==",
+					"type": "Marked::HeadingMarker",
+					"value": "=="
 				},
 				{
-					"type": "Str",
-					"raw": " ",
-					"value": " ",
-					"range": [28, 29],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 3
-						},
 						"end": {
-							"line": 5,
-							"column": 4
+							"column": 3,
+							"line": 3
+						},
+						"start": {
+							"column": 2,
+							"line": 3
 						}
-					}
+					},
+					"range": [14, 15],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
 				},
 				{
 					"children": [
 						{
-							"value": "header 3",
-							"type": "Str",
-							"raw": "header 3",
-							"range": [29, 37],
 							"loc": {
-								"start": {
-									"line": 5,
-									"column": 4
-								},
 								"end": {
-									"line": 5,
-									"column": 12
+									"column": 11,
+									"line": 3
+								},
+								"start": {
+									"column": 3,
+									"line": 3
 								}
-							}
+							},
+							"range": [15, 23],
+							"raw": "header 2",
+							"type": "Str",
+							"value": "header 2"
 						}
 					],
-					"type": "Marked::Markup",
-					"raw": "header 3",
-					"range": [29, 37],
 					"loc": {
-						"start": {
-							"line": 5,
-							"column": 4
-						},
 						"end": {
-							"line": 5,
-							"column": 12
+							"column": 11,
+							"line": 3
+						},
+						"start": {
+							"column": 3,
+							"line": 3
 						}
-					}
+					},
+					"range": [15, 23],
+					"raw": "header 2",
+					"type": "Marked::Markup"
 				}
 			],
-			"type": "Header",
-			"raw": "=== header 3",
-			"range": [25, 37],
 			"loc": {
-				"start": {
-					"line": 5,
-					"column": 0
-				},
 				"end": {
-					"line": 5,
-					"column": 12
+					"column": 11,
+					"line": 3
+				},
+				"start": {
+					"column": 0,
+					"line": 3
 				}
-			}
+			},
+			"range": [12, 23],
+			"raw": "== header 2",
+			"type": "Header"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 5
+				},
+				"start": {
+					"column": 11,
+					"line": 3
+				}
+			},
+			"range": [23, 25],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 5
+						},
+						"start": {
+							"column": 0,
+							"line": 5
+						}
+					},
+					"range": [25, 28],
+					"raw": "===",
+					"type": "Marked::HeadingMarker",
+					"value": "==="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 5
+						},
+						"start": {
+							"column": 3,
+							"line": 5
+						}
+					},
+					"range": [28, 29],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 5
+								},
+								"start": {
+									"column": 4,
+									"line": 5
+								}
+							},
+							"range": [29, 37],
+							"raw": "header 3",
+							"type": "Str",
+							"value": "header 3"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 5
+						},
+						"start": {
+							"column": 4,
+							"line": 5
+						}
+					},
+					"range": [29, 37],
+					"raw": "header 3",
+					"type": "Marked::Markup"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 12,
+					"line": 5
+				},
+				"start": {
+					"column": 0,
+					"line": 5
+				}
+			},
+			"range": [25, 37],
+			"raw": "=== header 3",
+			"type": "Header"
 		}
 	],
-	"type": "Document",
-	"raw": "= header 1\n\n== header 2\n\n=== header 3",
-	"range": [0, 37],
 	"loc": {
-		"start": {
-			"line": 1,
-			"column": 0
-		},
 		"end": {
-			"line": 5,
-			"column": 12
+			"column": 12,
+			"line": 5
+		},
+		"start": {
+			"column": 0,
+			"line": 1
 		}
-	}
+	},
+	"range": [0, 37],
+	"raw": "= header 1\n\n== header 2\n\n=== header 3",
+	"type": "Document"
 }
