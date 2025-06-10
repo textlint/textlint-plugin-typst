@@ -40,7 +40,7 @@ bun add textlint-plugin-typst
 
 ## Syntax support
 
-This plugin supports the syntax of Typst [v0.13.0](https://github.com/typst/typst/releases/tag/v0.13.0).
+This plugin supports the syntax of Typst [v0.13.1](https://github.com/typst/typst/releases/tag/v0.13.1).
 
 Legend for syntax support:
 
