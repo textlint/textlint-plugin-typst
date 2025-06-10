@@ -203,11 +203,21 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 	};
 
 	const calculateOffsets = (node: AstNode, currentOffset = 0): number => {
-		const startOffset = currentOffset;
-
+		const calculateOffsetFromLocation = (
+			location: TxtNodeLineLocation,
+		): number => {
+			const lines = typstSource.split("\n");
+			let offset = 0;
+			for (let i = 0; i < location.start.line - 1; i++) {
+				offset += lines[i].length + 1; // +1 for newline
+			}
+			offset += location.start.column;
+			return offset;
+		};
 		const location = extractLocation(node.s, node.c);
 		const nodeRawText = extractRawSourceByLocation(typstSource, location);
 		const nodeLength = nodeRawText.length;
+		const startOffset = calculateOffsetFromLocation(location);
 
 		if (node.c) {
 			// If TxtParentNode
@@ -286,7 +296,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 			node.value = extractRawSourceByLocation(typstSource, location);
 		}
 
-		const endOffset = currentOffset + nodeLength;
+		const endOffset = startOffset + nodeLength;
 
 		node.raw = extractRawSourceByLocation(typstSource, location);
 		node.range = [startOffset, endOffset];
@@ -312,6 +322,10 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 			node.checked = null;
 
 			if (node.children && node.children.length > 0) {
+				const originalRange = node.range;
+				const originalLoc = node.loc;
+				const originalRaw = node.raw;
+
 				const contentChildren = node.children.filter(
 					(child) =>
 						!["Marked::ListMarker", "Marked::EnumMarker"].includes(child.type),
@@ -389,7 +403,72 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 					});
 				}
 
+				for (const child of processedChildren) {
+					if (child.type === ASTNodeTypes.Paragraph) {
+						if (child.children && child.children.length > 0) {
+							const firstStr = child.children[0];
+							const lastStr = child.children[child.children.length - 1];
+
+							const actualStart = calculateOffsetFromLocation(firstStr.loc);
+							const actualEnd = calculateOffsetFromLocation({
+								start: lastStr.loc.end,
+								end: lastStr.loc.end,
+							});
+
+							child.range = [actualStart, actualEnd];
+
+							for (const strChild of child.children) {
+								if (strChild.type === ASTNodeTypes.Str) {
+									const strStart = calculateOffsetFromLocation(strChild.loc);
+									const strEnd = calculateOffsetFromLocation({
+										start: strChild.loc.end,
+										end: strChild.loc.end,
+									});
+									strChild.range = [strStart, strEnd];
+								}
+							}
+						}
+					} else if (child.type === ASTNodeTypes.List) {
+						if (child.children && child.children.length > 0) {
+							const firstListItem = child.children[0];
+							const lastListItem = child.children[child.children.length - 1];
+							if (firstListItem && lastListItem) {
+								child.range = [firstListItem.range[0], lastListItem.range[1]];
+							}
+						}
+					}
+				}
+
 				node.children = processedChildren;
+				if (processedChildren.length > 0) {
+					const firstChild = processedChildren[0];
+					const lastChild = processedChildren[processedChildren.length - 1];
+
+					const markerStart = calculateOffsetFromLocation(originalLoc);
+					const contentEnd = lastChild.range[1];
+
+					node.range = [markerStart, contentEnd];
+					node.loc = {
+						start: originalLoc.start,
+						end: lastChild.loc.end,
+					};
+
+					node.raw = extractRawSourceByLocation(typstSource, node.loc);
+				} else {
+					const nodeStart = calculateOffsetFromLocation(originalLoc);
+					const nodeEnd = nodeStart + originalRaw.length;
+					node.range = [nodeStart, nodeEnd];
+					node.loc = originalLoc;
+					node.raw = originalRaw;
+				}
+
+				// @ts-expect-error
+				// biome-ignore lint/performance/noDelete: Convert TxtParentNode to TxtTextNode
+				delete node.s;
+				// biome-ignore lint/performance/noDelete: Convert TxtParentNode to TxtTextNode
+				delete node.c;
+
+				return node.range[1];
 			}
 		}
 		if (node.type === "Marked::Raw") {
