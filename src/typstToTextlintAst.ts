@@ -498,6 +498,38 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 			// biome-ignore lint/performance/noDelete: Convert TxtParentNode to TxtTextNode
 			delete node.children;
 		}
+		if (node.type === "Marked::Equation") {
+			const value = node.raw
+				.replace(/^[\s\n]*\$[\s\n]*/, "")
+				.replace(/[\s\n]*\$[\s\n]*$/, "");
+
+			const lineText = typstSource.split("\n")[node.loc.start.line - 1];
+			const isCodeBlock =
+				lineText.trim().startsWith("$") &&
+				lineText.trim().endsWith("$") &&
+				lineText.trim().length > 2 &&
+				lineText
+					.trim()
+					.replace(/^\$|\$$/g, "")
+					.trim().length > 0 &&
+				lineText
+					.trim()
+					.replace(/^\$|\$$/g, "")
+					.trim().length === value.length;
+
+			if (isCodeBlock) {
+				node.type = ASTNodeTypes.CodeBlock;
+				node.value = value;
+			} else if (node.loc.start.line === node.loc.end.line) {
+				node.type = ASTNodeTypes.Code;
+				node.value = value;
+			} else {
+				node.type = ASTNodeTypes.CodeBlock;
+				node.value = value;
+			}
+			// biome-ignore lint/performance/noDelete: Marked::Equation node have children property but textlint AST object does not.
+			delete node.children;
+		}
 		if (node.type === "Marked::Link") {
 			node.type = ASTNodeTypes.Link;
 			// @ts-expect-error

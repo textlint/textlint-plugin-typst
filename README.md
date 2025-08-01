@@ -62,7 +62,7 @@ Legend for syntax support:
 | Bullet list | List / ListItem | ✅ | 🚫 |
 | Numbered list | List / ListItem | ✅ | 🚫 |
 | Term list | | 🚫 | 🚫 |
-| Math | | 🚫 | 🚫 |
+| Math | Code / CodeBlock | ✅ | 🚫 |
 | Line break | Break | ✅ | 🚫 |
 | Smart quote | | 🚫 | 🚫 |
 | Symbol shorthand | | 🚫 | 🚫 |
