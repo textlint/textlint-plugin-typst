@@ -1,0 +1,419 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 3],
+					"raw": "Let",
+					"type": "Str",
+					"value": "Let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 1
+						},
+						"start": {
+							"column": 3,
+							"line": 1
+						}
+					},
+					"range": [3, 4],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 1
+						},
+						"start": {
+							"column": 4,
+							"line": 1
+						}
+					},
+					"range": [4, 7],
+					"raw": "$a$",
+					"type": "Code",
+					"value": "a"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 1
+						},
+						"start": {
+							"column": 7,
+							"line": 1
+						}
+					},
+					"range": [7, 8],
+					"raw": ",",
+					"type": "Str",
+					"value": ","
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 9,
+							"line": 1
+						},
+						"start": {
+							"column": 8,
+							"line": 1
+						}
+					},
+					"range": [8, 9],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 1
+						},
+						"start": {
+							"column": 9,
+							"line": 1
+						}
+					},
+					"range": [9, 12],
+					"raw": "$b$",
+					"type": "Code",
+					"value": "b"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 1
+						},
+						"start": {
+							"column": 12,
+							"line": 1
+						}
+					},
+					"range": [12, 17],
+					"raw": ", and",
+					"type": "Str",
+					"value": ", and"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 1
+						},
+						"start": {
+							"column": 17,
+							"line": 1
+						}
+					},
+					"range": [17, 18],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 1
+						},
+						"start": {
+							"column": 18,
+							"line": 1
+						}
+					},
+					"range": [18, 21],
+					"raw": "$c$",
+					"type": "Code",
+					"value": "c"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 1
+						},
+						"start": {
+							"column": 21,
+							"line": 1
+						}
+					},
+					"range": [21, 22],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 33,
+							"line": 1
+						},
+						"start": {
+							"column": 22,
+							"line": 1
+						}
+					},
+					"range": [22, 33],
+					"raw": "be the side",
+					"type": "Str",
+					"value": "be the side"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 2
+						},
+						"start": {
+							"column": 33,
+							"line": 1
+						}
+					},
+					"range": [33, 34],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 33,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 2
+						}
+					},
+					"range": [34, 67],
+					"raw": "lengths of right-angled triangle.",
+					"type": "Str",
+					"value": "lengths of right-angled triangle."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 3
+						},
+						"start": {
+							"column": 33,
+							"line": 2
+						}
+					},
+					"range": [67, 68],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 3
+						},
+						"start": {
+							"column": 0,
+							"line": 3
+						}
+					},
+					"range": [68, 86],
+					"raw": "Then, we know that",
+					"type": "Str",
+					"value": "Then, we know that"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 19,
+							"line": 3
+						},
+						"start": {
+							"column": 18,
+							"line": 3
+						}
+					},
+					"range": [86, 87],
+					"raw": ":",
+					"type": "Str",
+					"value": ":"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 4
+						},
+						"start": {
+							"column": 19,
+							"line": 3
+						}
+					},
+					"range": [87, 88],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 4
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 88],
+			"raw": "Let $a$, $b$, and $c$ be the side\nlengths of right-angled triangle.\nThen, we know that:\n",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 19,
+					"line": 4
+				},
+				"start": {
+					"column": 0,
+					"line": 4
+				}
+			},
+			"range": [88, 107],
+			"raw": "$ a^2 + b^2 = c^2 $",
+			"type": "CodeBlock",
+			"value": "a^2 + b^2 = c^2"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 6
+				},
+				"start": {
+					"column": 19,
+					"line": 4
+				}
+			},
+			"range": [107, 109],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 6
+						},
+						"start": {
+							"column": 0,
+							"line": 6
+						}
+					},
+					"range": [109, 127],
+					"raw": "Prove by induction",
+					"type": "Str",
+					"value": "Prove by induction"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 19,
+							"line": 6
+						},
+						"start": {
+							"column": 18,
+							"line": 6
+						}
+					},
+					"range": [127, 128],
+					"raw": ":",
+					"type": "Str",
+					"value": ":"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 7
+						},
+						"start": {
+							"column": 19,
+							"line": 6
+						}
+					},
+					"range": [128, 129],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 7
+				},
+				"start": {
+					"column": 0,
+					"line": 6
+				}
+			},
+			"range": [109, 129],
+			"raw": "Prove by induction:\n",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 32,
+					"line": 7
+				},
+				"start": {
+					"column": 0,
+					"line": 7
+				}
+			},
+			"range": [129, 161],
+			"raw": "$ sum_(k=1)^n k = (n(n+1)) / 2 $",
+			"type": "CodeBlock",
+			"value": "sum_(k=1)^n k = (n(n+1)) / 2"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 32,
+			"line": 7
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 161],
+	"raw": "Let $a$, $b$, and $c$ be the side\nlengths of right-angled triangle.\nThen, we know that:\n$ a^2 + b^2 = c^2 $\n\nProve by induction:\n$ sum_(k=1)^n k = (n(n+1)) / 2 $",
+	"type": "Document"
+}
