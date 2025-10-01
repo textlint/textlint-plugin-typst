@@ -186,8 +186,8 @@ const getAstChild = (node: AstNode, index: number): AstNode | undefined => {
 };
 
 // Type guard to check if a node has a Typst type (during conversion)
-const isTypstType = (type: string, pattern: string): boolean => {
-	return new RegExp(pattern).test(type);
+const isTypstType = (type: string, pattern: RegExp): boolean => {
+	return pattern.test(type);
 };
 
 type TxtNodeLineLocation = TxtNode["loc"];
@@ -446,7 +446,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 				for (const child of contentChildren) {
 					if (
 						typeof child.type === "string" &&
-						isTypstType(child.type, "^Marked::Markup$") &&
+						isTypstType(child.type, /^Marked::Markup$/) &&
 						isAstNode(child) &&
 						hasChildren(child)
 					) {
@@ -605,7 +605,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 					const langNode = node.children[1];
 					if (
 						isAstNode(langNode) &&
-						isTypstType(langNode.type, "^Marked::RawLang$") &&
+						isTypstType(langNode.type, /^Marked::RawLang$/) &&
 						hasValue(langNode)
 					) {
 						node.lang = langNode.value ?? null;
@@ -863,7 +863,7 @@ export const paragraphizeTextlintAstObject = (
 				) {
 					const enumItems = node.children.filter(
 						(child) =>
-							isAstNode(child) && isTypstType(child.type, "^Marked::EnumItem$"),
+							isAstNode(child) && isTypstType(child.type, /^Marked::EnumItem$/),
 					);
 					if (enumItems.length > 0) {
 						// Convert EnumItems to ListItems.
@@ -876,7 +876,7 @@ export const paragraphizeTextlintAstObject = (
 											return false;
 										}
 										return (
-											!isTypstType(child.type, "^Marked::EnumMarker$") &&
+											!isTypstType(child.type, /^Marked::EnumMarker$/) &&
 											!(
 												child.type === ASTNodeTypes.Str &&
 												child.raw?.trim() === ""
@@ -889,7 +889,7 @@ export const paragraphizeTextlintAstObject = (
 							for (const child of contentChildren) {
 								if (
 									typeof child.type === "string" &&
-									isTypstType(child.type, "^Marked::Markup$") &&
+									isTypstType(child.type, /^Marked::Markup$/) &&
 									isAstNode(child) &&
 									hasChildren(child)
 								) {
@@ -917,7 +917,7 @@ export const paragraphizeTextlintAstObject = (
 								raw: actualContent.map((childNode) => childNode.raw).join(""),
 							};
 
-							const listItemNode: AstNode = {
+							const listItemNode: Content = {
 								type: ASTNodeTypes.ListItem,
 								spread: false,
 								checked: null,
@@ -926,7 +926,7 @@ export const paragraphizeTextlintAstObject = (
 								loc: enumItemNode.loc,
 								range: enumItemNode.range,
 								raw: enumItemNode.raw,
-							};
+							} as Content;
 
 							return listItemNode;
 						});
@@ -934,19 +934,19 @@ export const paragraphizeTextlintAstObject = (
 						const firstItem = listItems[0];
 						const lastItem = listItems[listItems.length - 1];
 
-						const listNode: TxtListNode = {
+						const listNode: Content = {
 							type: ASTNodeTypes.List,
 							ordered: true,
 							start: 1,
 							spread: false,
-							children: listItems as Content[] as TxtListItemNode[],
+							children: listItems,
 							loc: {
 								start: firstItem.loc.start,
 								end: lastItem.loc.end,
 							},
 							range: [firstItem.range[0], lastItem.range[1]],
 							raw: listItems.map((item) => item.raw).join("\n"),
-						};
+						} as Content;
 
 						children.push(listNode);
 
