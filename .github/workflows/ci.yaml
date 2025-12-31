@@ -80,3 +80,29 @@ jobs:
         run: bun install --frozen-lockfile
       - name: Build
         run: bun run build
+
+  github-actions:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        task: ["actionlint", "ghalint", "zizmor"]
+      fail-fast: false
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+      - name: Setup toolchain
+        uses: jdx/mise-action@146a28175021df8ca24f8ee1828cc2a60f980bd5 # v3.5.1
+      - name: Run actionlint
+        if: matrix.task == 'actionlint'
+        run: actionlint
+      - name: Run ghalint
+        if: matrix.task == 'ghalint'
+        run: ghalint run
+      - name: Run zizmor
+        if: matrix.task == 'zizmor'
+        run: zizmor .
