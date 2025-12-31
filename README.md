@@ -66,7 +66,7 @@ Legend for syntax support:
 | Line break | Break | ✅ | 🚫 |
 | Smart quote | | 🚫 | 🚫 |
 | Symbol shorthand | | 🚫 | 🚫 |
-| Code expression | | 🚫 | 🚫 |
+| Code expression | | ✅ | ✅ |
 | Character escape | | 🚫 | 🚫 |
 | Comment | Comment | ✅ | 🚫 |
 

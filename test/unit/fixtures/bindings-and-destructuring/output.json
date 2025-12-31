@@ -1,0 +1,3244 @@
+{
+	"children": [
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 1],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 1
+						},
+						"start": {
+							"column": 1,
+							"line": 1
+						}
+					},
+					"range": [1, 4],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 1
+						},
+						"start": {
+							"column": 4,
+							"line": 1
+						}
+					},
+					"range": [4, 5],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 1
+								},
+								"start": {
+									"column": 5,
+									"line": 1
+								}
+							},
+							"range": [5, 6],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 7,
+									"line": 1
+								},
+								"start": {
+									"column": 6,
+									"line": 1
+								}
+							},
+							"range": [6, 7],
+							"raw": "x",
+							"type": "Marked::(Ident: &quot;x&quot;)",
+							"value": "x"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 1
+								},
+								"start": {
+									"column": 7,
+									"line": 1
+								}
+							},
+							"range": [7, 8],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 1
+								},
+								"start": {
+									"column": 8,
+									"line": 1
+								}
+							},
+							"range": [8, 9],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 10,
+									"line": 1
+								},
+								"start": {
+									"column": 9,
+									"line": 1
+								}
+							},
+							"range": [9, 10],
+							"raw": "y",
+							"type": "Marked::(Ident: &quot;y&quot;)",
+							"value": "y"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 1
+								},
+								"start": {
+									"column": 10,
+									"line": 1
+								}
+							},
+							"range": [10, 11],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 1
+						},
+						"start": {
+							"column": 5,
+							"line": 1
+						}
+					},
+					"range": [5, 11],
+					"raw": "(x, y)",
+					"type": "Marked::Destructuring"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 1
+						},
+						"start": {
+							"column": 11,
+							"line": 1
+						}
+					},
+					"range": [11, 12],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 1
+						},
+						"start": {
+							"column": 12,
+							"line": 1
+						}
+					},
+					"range": [12, 13],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 1
+						},
+						"start": {
+							"column": 13,
+							"line": 1
+						}
+					},
+					"range": [13, 14],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 1
+								},
+								"start": {
+									"column": 14,
+									"line": 1
+								}
+							},
+							"range": [14, 15],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 16,
+									"line": 1
+								},
+								"start": {
+									"column": 15,
+									"line": 1
+								}
+							},
+							"range": [15, 16],
+							"raw": "1",
+							"type": "Num(Int, 1)",
+							"value": "1"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 17,
+									"line": 1
+								},
+								"start": {
+									"column": 16,
+									"line": 1
+								}
+							},
+							"range": [16, 17],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 18,
+									"line": 1
+								},
+								"start": {
+									"column": 17,
+									"line": 1
+								}
+							},
+							"range": [17, 18],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 19,
+									"line": 1
+								},
+								"start": {
+									"column": 18,
+									"line": 1
+								}
+							},
+							"range": [18, 19],
+							"raw": "2",
+							"type": "Num(Int, 2)",
+							"value": "2"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 20,
+									"line": 1
+								},
+								"start": {
+									"column": 19,
+									"line": 1
+								}
+							},
+							"range": [19, 20],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 1
+						},
+						"start": {
+							"column": 14,
+							"line": 1
+						}
+					},
+					"range": [14, 20],
+					"raw": "(1, 2)",
+					"type": "Marked::Array"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 20,
+					"line": 1
+				},
+				"start": {
+					"column": 1,
+					"line": 1
+				}
+			},
+			"range": [1, 20],
+			"raw": "let (x, y) = (1, 2)",
+			"type": "Marked::LetBinding"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 2
+				},
+				"start": {
+					"column": 20,
+					"line": 1
+				}
+			},
+			"range": [20, 21],
+			"raw": "\n",
+			"type": "Str",
+			"value": "\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 19,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 2
+						}
+					},
+					"range": [21, 40],
+					"raw": "The coordinates are",
+					"type": "Str",
+					"value": "The coordinates are"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 2
+						},
+						"start": {
+							"column": 19,
+							"line": 2
+						}
+					},
+					"range": [40, 41],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 2
+						},
+						"start": {
+							"column": 20,
+							"line": 2
+						}
+					},
+					"range": [41, 42],
+					"raw": "#",
+					"type": "Var::(Hash: &quot;#&quot;)",
+					"value": "#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 2
+						},
+						"start": {
+							"column": 21,
+							"line": 2
+						}
+					},
+					"range": [42, 43],
+					"raw": "x",
+					"type": "Var::(Ident: &quot;x&quot;)",
+					"value": "x"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 2
+						},
+						"start": {
+							"column": 22,
+							"line": 2
+						}
+					},
+					"range": [43, 44],
+					"raw": ",",
+					"type": "Str",
+					"value": ","
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 24,
+							"line": 2
+						},
+						"start": {
+							"column": 23,
+							"line": 2
+						}
+					},
+					"range": [44, 45],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 25,
+							"line": 2
+						},
+						"start": {
+							"column": 24,
+							"line": 2
+						}
+					},
+					"range": [45, 46],
+					"raw": "#",
+					"type": "Var::(Hash: &quot;#&quot;)",
+					"value": "#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 26,
+							"line": 2
+						},
+						"start": {
+							"column": 25,
+							"line": 2
+						}
+					},
+					"range": [46, 47],
+					"raw": "y",
+					"type": "Var::(Ident: &quot;y&quot;)",
+					"value": "y"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 27,
+							"line": 2
+						},
+						"start": {
+							"column": 26,
+							"line": 2
+						}
+					},
+					"range": [47, 48],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 27,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 2
+				}
+			},
+			"range": [21, 48],
+			"raw": "The coordinates are #x, #y.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 4
+				},
+				"start": {
+					"column": 27,
+					"line": 2
+				}
+			},
+			"range": [48, 50],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 4
+				},
+				"start": {
+					"column": 0,
+					"line": 4
+				}
+			},
+			"range": [50, 51],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 4
+						},
+						"start": {
+							"column": 1,
+							"line": 4
+						}
+					},
+					"range": [51, 54],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 4
+						},
+						"start": {
+							"column": 4,
+							"line": 4
+						}
+					},
+					"range": [54, 55],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 4
+								},
+								"start": {
+									"column": 5,
+									"line": 4
+								}
+							},
+							"range": [55, 56],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 7,
+									"line": 4
+								},
+								"start": {
+									"column": 6,
+									"line": 4
+								}
+							},
+							"range": [56, 57],
+							"raw": "a",
+							"type": "Marked::(Ident: &quot;a&quot;)",
+							"value": "a"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 4
+								},
+								"start": {
+									"column": 7,
+									"line": 4
+								}
+							},
+							"range": [57, 58],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 4
+								},
+								"start": {
+									"column": 8,
+									"line": 4
+								}
+							},
+							"range": [58, 59],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 4
+										},
+										"start": {
+											"column": 9,
+											"line": 4
+										}
+									},
+									"range": [59, 61],
+									"raw": "..",
+									"type": "Op::Dots",
+									"value": ".."
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 4
+								},
+								"start": {
+									"column": 9,
+									"line": 4
+								}
+							},
+							"range": [59, 61],
+							"raw": "..",
+							"type": "Marked::Spread"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 4
+								},
+								"start": {
+									"column": 11,
+									"line": 4
+								}
+							},
+							"range": [61, 62],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 13,
+									"line": 4
+								},
+								"start": {
+									"column": 12,
+									"line": 4
+								}
+							},
+							"range": [62, 63],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 4
+								},
+								"start": {
+									"column": 13,
+									"line": 4
+								}
+							},
+							"range": [63, 64],
+							"raw": "b",
+							"type": "Marked::(Ident: &quot;b&quot;)",
+							"value": "b"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 4
+								},
+								"start": {
+									"column": 14,
+									"line": 4
+								}
+							},
+							"range": [64, 65],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 4
+						},
+						"start": {
+							"column": 5,
+							"line": 4
+						}
+					},
+					"range": [55, 65],
+					"raw": "(a, .., b)",
+					"type": "Marked::Destructuring"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 16,
+							"line": 4
+						},
+						"start": {
+							"column": 15,
+							"line": 4
+						}
+					},
+					"range": [65, 66],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 4
+						},
+						"start": {
+							"column": 16,
+							"line": 4
+						}
+					},
+					"range": [66, 67],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 4
+						},
+						"start": {
+							"column": 17,
+							"line": 4
+						}
+					},
+					"range": [67, 68],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 19,
+									"line": 4
+								},
+								"start": {
+									"column": 18,
+									"line": 4
+								}
+							},
+							"range": [68, 69],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 20,
+									"line": 4
+								},
+								"start": {
+									"column": 19,
+									"line": 4
+								}
+							},
+							"range": [69, 70],
+							"raw": "1",
+							"type": "Num(Int, 1)",
+							"value": "1"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 21,
+									"line": 4
+								},
+								"start": {
+									"column": 20,
+									"line": 4
+								}
+							},
+							"range": [70, 71],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 22,
+									"line": 4
+								},
+								"start": {
+									"column": 21,
+									"line": 4
+								}
+							},
+							"range": [71, 72],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 23,
+									"line": 4
+								},
+								"start": {
+									"column": 22,
+									"line": 4
+								}
+							},
+							"range": [72, 73],
+							"raw": "2",
+							"type": "Num(Int, 2)",
+							"value": "2"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 24,
+									"line": 4
+								},
+								"start": {
+									"column": 23,
+									"line": 4
+								}
+							},
+							"range": [73, 74],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 25,
+									"line": 4
+								},
+								"start": {
+									"column": 24,
+									"line": 4
+								}
+							},
+							"range": [74, 75],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 26,
+									"line": 4
+								},
+								"start": {
+									"column": 25,
+									"line": 4
+								}
+							},
+							"range": [75, 76],
+							"raw": "3",
+							"type": "Num(Int, 3)",
+							"value": "3"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 27,
+									"line": 4
+								},
+								"start": {
+									"column": 26,
+									"line": 4
+								}
+							},
+							"range": [76, 77],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 28,
+									"line": 4
+								},
+								"start": {
+									"column": 27,
+									"line": 4
+								}
+							},
+							"range": [77, 78],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 29,
+									"line": 4
+								},
+								"start": {
+									"column": 28,
+									"line": 4
+								}
+							},
+							"range": [78, 79],
+							"raw": "4",
+							"type": "Num(Int, 4)",
+							"value": "4"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 30,
+									"line": 4
+								},
+								"start": {
+									"column": 29,
+									"line": 4
+								}
+							},
+							"range": [79, 80],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 30,
+							"line": 4
+						},
+						"start": {
+							"column": 18,
+							"line": 4
+						}
+					},
+					"range": [68, 80],
+					"raw": "(1, 2, 3, 4)",
+					"type": "Marked::Array"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 30,
+					"line": 4
+				},
+				"start": {
+					"column": 1,
+					"line": 4
+				}
+			},
+			"range": [51, 80],
+			"raw": "let (a, .., b) = (1, 2, 3, 4)",
+			"type": "Marked::LetBinding"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 5
+				},
+				"start": {
+					"column": 30,
+					"line": 4
+				}
+			},
+			"range": [80, 81],
+			"raw": "\n",
+			"type": "Str",
+			"value": "\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 5
+						},
+						"start": {
+							"column": 0,
+							"line": 5
+						}
+					},
+					"range": [81, 101],
+					"raw": "The first element is",
+					"type": "Str",
+					"value": "The first element is"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 5
+						},
+						"start": {
+							"column": 20,
+							"line": 5
+						}
+					},
+					"range": [101, 102],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 5
+						},
+						"start": {
+							"column": 21,
+							"line": 5
+						}
+					},
+					"range": [102, 103],
+					"raw": "#",
+					"type": "Var::(Hash: &quot;#&quot;)",
+					"value": "#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 5
+						},
+						"start": {
+							"column": 22,
+							"line": 5
+						}
+					},
+					"range": [103, 104],
+					"raw": "a",
+					"type": "Var::(Ident: &quot;a&quot;)",
+					"value": "a"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 24,
+							"line": 5
+						},
+						"start": {
+							"column": 23,
+							"line": 5
+						}
+					},
+					"range": [104, 105],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 6
+						},
+						"start": {
+							"column": 24,
+							"line": 5
+						}
+					},
+					"range": [105, 106],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 19,
+							"line": 6
+						},
+						"start": {
+							"column": 0,
+							"line": 6
+						}
+					},
+					"range": [106, 125],
+					"raw": "The last element is",
+					"type": "Str",
+					"value": "The last element is"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 6
+						},
+						"start": {
+							"column": 19,
+							"line": 6
+						}
+					},
+					"range": [125, 126],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 6
+						},
+						"start": {
+							"column": 20,
+							"line": 6
+						}
+					},
+					"range": [126, 127],
+					"raw": "#",
+					"type": "Var::(Hash: &quot;#&quot;)",
+					"value": "#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 6
+						},
+						"start": {
+							"column": 21,
+							"line": 6
+						}
+					},
+					"range": [127, 128],
+					"raw": "b",
+					"type": "Var::(Ident: &quot;b&quot;)",
+					"value": "b"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 6
+						},
+						"start": {
+							"column": 22,
+							"line": 6
+						}
+					},
+					"range": [128, 129],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 23,
+					"line": 6
+				},
+				"start": {
+					"column": 0,
+					"line": 5
+				}
+			},
+			"range": [81, 129],
+			"raw": "The first element is #a.\nThe last element is #b.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 8
+				},
+				"start": {
+					"column": 23,
+					"line": 6
+				}
+			},
+			"range": [129, 131],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 8
+				},
+				"start": {
+					"column": 0,
+					"line": 8
+				}
+			},
+			"range": [131, 132],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 8
+						},
+						"start": {
+							"column": 1,
+							"line": 8
+						}
+					},
+					"range": [132, 135],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 8
+						},
+						"start": {
+							"column": 4,
+							"line": 8
+						}
+					},
+					"range": [135, 136],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 10,
+							"line": 8
+						},
+						"start": {
+							"column": 5,
+							"line": 8
+						}
+					},
+					"range": [136, 141],
+					"raw": "books",
+					"type": "Marked::(Ident: &quot;books&quot;)",
+					"value": "books"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 8
+						},
+						"start": {
+							"column": 10,
+							"line": 8
+						}
+					},
+					"range": [141, 142],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 8
+						},
+						"start": {
+							"column": 11,
+							"line": 8
+						}
+					},
+					"range": [142, 143],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 8
+						},
+						"start": {
+							"column": 12,
+							"line": 8
+						}
+					},
+					"range": [143, 144],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 8
+								},
+								"start": {
+									"column": 13,
+									"line": 8
+								}
+							},
+							"range": [144, 145],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 9
+								},
+								"start": {
+									"column": 14,
+									"line": 8
+								}
+							},
+							"range": [145, 146],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 13,
+											"line": 9
+										},
+										"start": {
+											"column": 2,
+											"line": 9
+										}
+									},
+									"range": [148, 159],
+									"raw": "Shakespeare",
+									"type": "Marked::(Ident: &quot;Shakespeare&quot;)",
+									"value": "Shakespeare"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 9
+										},
+										"start": {
+											"column": 13,
+											"line": 9
+										}
+									},
+									"range": [159, 160],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 15,
+											"line": 9
+										},
+										"start": {
+											"column": 14,
+											"line": 9
+										}
+									},
+									"range": [160, 161],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 23,
+											"line": 9
+										},
+										"start": {
+											"column": 15,
+											"line": 9
+										}
+									},
+									"range": [161, 169],
+									"raw": "\"Hamlet\"",
+									"type": "Str(&quot;Hamlet&quot;)",
+									"value": "\"Hamlet\""
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 23,
+									"line": 9
+								},
+								"start": {
+									"column": 2,
+									"line": 9
+								}
+							},
+							"range": [148, 169],
+							"raw": "Shakespeare: \"Hamlet\"",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 24,
+									"line": 9
+								},
+								"start": {
+									"column": 23,
+									"line": 9
+								}
+							},
+							"range": [169, 170],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 10
+								},
+								"start": {
+									"column": 24,
+									"line": 9
+								}
+							},
+							"range": [170, 171],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 7,
+											"line": 10
+										},
+										"start": {
+											"column": 2,
+											"line": 10
+										}
+									},
+									"range": [173, 178],
+									"raw": "Homer",
+									"type": "Marked::(Ident: &quot;Homer&quot;)",
+									"value": "Homer"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 8,
+											"line": 10
+										},
+										"start": {
+											"column": 7,
+											"line": 10
+										}
+									},
+									"range": [178, 179],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 9,
+											"line": 10
+										},
+										"start": {
+											"column": 8,
+											"line": 10
+										}
+									},
+									"range": [179, 180],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 22,
+											"line": 10
+										},
+										"start": {
+											"column": 9,
+											"line": 10
+										}
+									},
+									"range": [180, 193],
+									"raw": "\"The Odyssey\"",
+									"type": "Str(&quot;The Odyssey&quot;)",
+									"value": "\"The Odyssey\""
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 22,
+									"line": 10
+								},
+								"start": {
+									"column": 2,
+									"line": 10
+								}
+							},
+							"range": [173, 193],
+							"raw": "Homer: \"The Odyssey\"",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 23,
+									"line": 10
+								},
+								"start": {
+									"column": 22,
+									"line": 10
+								}
+							},
+							"range": [193, 194],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 11
+								},
+								"start": {
+									"column": 23,
+									"line": 10
+								}
+							},
+							"range": [194, 195],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 8,
+											"line": 11
+										},
+										"start": {
+											"column": 2,
+											"line": 11
+										}
+									},
+									"range": [197, 203],
+									"raw": "Austen",
+									"type": "Marked::(Ident: &quot;Austen&quot;)",
+									"value": "Austen"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 9,
+											"line": 11
+										},
+										"start": {
+											"column": 8,
+											"line": 11
+										}
+									},
+									"range": [203, 204],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 10,
+											"line": 11
+										},
+										"start": {
+											"column": 9,
+											"line": 11
+										}
+									},
+									"range": [204, 205],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 22,
+											"line": 11
+										},
+										"start": {
+											"column": 10,
+											"line": 11
+										}
+									},
+									"range": [205, 217],
+									"raw": "\"Persuasion\"",
+									"type": "Str(&quot;Persuasion&quot;)",
+									"value": "\"Persuasion\""
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 22,
+									"line": 11
+								},
+								"start": {
+									"column": 2,
+									"line": 11
+								}
+							},
+							"range": [197, 217],
+							"raw": "Austen: \"Persuasion\"",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 23,
+									"line": 11
+								},
+								"start": {
+									"column": 22,
+									"line": 11
+								}
+							},
+							"range": [217, 218],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 0,
+									"line": 12
+								},
+								"start": {
+									"column": 23,
+									"line": 11
+								}
+							},
+							"range": [218, 219],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 12
+								},
+								"start": {
+									"column": 0,
+									"line": 12
+								}
+							},
+							"range": [219, 220],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 12
+						},
+						"start": {
+							"column": 13,
+							"line": 8
+						}
+					},
+					"range": [144, 220],
+					"raw": "(\n  Shakespeare: \"Hamlet\",\n  Homer: \"The Odyssey\",\n  Austen: \"Persuasion\",\n)",
+					"type": "Marked::Dict"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 12
+				},
+				"start": {
+					"column": 1,
+					"line": 8
+				}
+			},
+			"range": [132, 220],
+			"raw": "let books = (\n  Shakespeare: \"Hamlet\",\n  Homer: \"The Odyssey\",\n  Austen: \"Persuasion\",\n)",
+			"type": "Marked::LetBinding"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 14
+				},
+				"start": {
+					"column": 1,
+					"line": 12
+				}
+			},
+			"range": [220, 222],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 14
+				},
+				"start": {
+					"column": 0,
+					"line": 14
+				}
+			},
+			"range": [222, 223],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 14
+						},
+						"start": {
+							"column": 1,
+							"line": 14
+						}
+					},
+					"range": [223, 226],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 14
+						},
+						"start": {
+							"column": 4,
+							"line": 14
+						}
+					},
+					"range": [226, 227],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 14
+								},
+								"start": {
+									"column": 5,
+									"line": 14
+								}
+							},
+							"range": [227, 228],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 14
+								},
+								"start": {
+									"column": 6,
+									"line": 14
+								}
+							},
+							"range": [228, 234],
+							"raw": "Austen",
+							"type": "Marked::(Ident: &quot;Austen&quot;)",
+							"value": "Austen"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 13,
+									"line": 14
+								},
+								"start": {
+									"column": 12,
+									"line": 14
+								}
+							},
+							"range": [234, 235],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 14
+								},
+								"start": {
+									"column": 13,
+									"line": 14
+								}
+							},
+							"range": [235, 236],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 14
+						},
+						"start": {
+							"column": 5,
+							"line": 14
+						}
+					},
+					"range": [227, 236],
+					"raw": "(Austen,)",
+					"type": "Marked::Destructuring"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 14
+						},
+						"start": {
+							"column": 14,
+							"line": 14
+						}
+					},
+					"range": [236, 237],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 16,
+							"line": 14
+						},
+						"start": {
+							"column": 15,
+							"line": 14
+						}
+					},
+					"range": [237, 238],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 14
+						},
+						"start": {
+							"column": 16,
+							"line": 14
+						}
+					},
+					"range": [238, 239],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 14
+						},
+						"start": {
+							"column": 17,
+							"line": 14
+						}
+					},
+					"range": [239, 244],
+					"raw": "books",
+					"type": "Marked::(Ident: &quot;books&quot;)",
+					"value": "books"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 22,
+					"line": 14
+				},
+				"start": {
+					"column": 1,
+					"line": 14
+				}
+			},
+			"range": [223, 244],
+			"raw": "let (Austen,) = books",
+			"type": "Marked::LetBinding"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 15
+				},
+				"start": {
+					"column": 22,
+					"line": 14
+				}
+			},
+			"range": [244, 245],
+			"raw": "\n",
+			"type": "Str",
+			"value": "\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 15
+						},
+						"start": {
+							"column": 0,
+							"line": 15
+						}
+					},
+					"range": [245, 257],
+					"raw": "Austen wrote",
+					"type": "Str",
+					"value": "Austen wrote"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 15
+						},
+						"start": {
+							"column": 12,
+							"line": 15
+						}
+					},
+					"range": [257, 258],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 15
+						},
+						"start": {
+							"column": 13,
+							"line": 15
+						}
+					},
+					"range": [258, 259],
+					"raw": "#",
+					"type": "Var::(Hash: &quot;#&quot;)",
+					"value": "#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 15
+						},
+						"start": {
+							"column": 14,
+							"line": 15
+						}
+					},
+					"range": [259, 265],
+					"raw": "Austen",
+					"type": "Var::(Ident: &quot;Austen&quot;)",
+					"value": "Austen"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 15
+						},
+						"start": {
+							"column": 20,
+							"line": 15
+						}
+					},
+					"range": [265, 266],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 21,
+					"line": 15
+				},
+				"start": {
+					"column": 0,
+					"line": 15
+				}
+			},
+			"range": [245, 266],
+			"raw": "Austen wrote #Austen.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 17
+				},
+				"start": {
+					"column": 21,
+					"line": 15
+				}
+			},
+			"range": [266, 268],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 17
+				},
+				"start": {
+					"column": 0,
+					"line": 17
+				}
+			},
+			"range": [268, 269],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 17
+						},
+						"start": {
+							"column": 1,
+							"line": 17
+						}
+					},
+					"range": [269, 272],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 17
+						},
+						"start": {
+							"column": 4,
+							"line": 17
+						}
+					},
+					"range": [272, 273],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 17
+								},
+								"start": {
+									"column": 5,
+									"line": 17
+								}
+							},
+							"range": [273, 274],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 17
+										},
+										"start": {
+											"column": 6,
+											"line": 17
+										}
+									},
+									"range": [274, 279],
+									"raw": "Homer",
+									"type": "Marked::(Ident: &quot;Homer&quot;)",
+									"value": "Homer"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 12,
+											"line": 17
+										},
+										"start": {
+											"column": 11,
+											"line": 17
+										}
+									},
+									"range": [279, 280],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 13,
+											"line": 17
+										},
+										"start": {
+											"column": 12,
+											"line": 17
+										}
+									},
+									"range": [280, 281],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 17
+										},
+										"start": {
+											"column": 13,
+											"line": 17
+										}
+									},
+									"range": [281, 282],
+									"raw": "h",
+									"type": "Marked::(Ident: &quot;h&quot;)",
+									"value": "h"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 17
+								},
+								"start": {
+									"column": 6,
+									"line": 17
+								}
+							},
+							"range": [274, 282],
+							"raw": "Homer: h",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 17
+								},
+								"start": {
+									"column": 14,
+									"line": 17
+								}
+							},
+							"range": [282, 283],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 17
+						},
+						"start": {
+							"column": 5,
+							"line": 17
+						}
+					},
+					"range": [273, 283],
+					"raw": "(Homer: h)",
+					"type": "Marked::Destructuring"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 16,
+							"line": 17
+						},
+						"start": {
+							"column": 15,
+							"line": 17
+						}
+					},
+					"range": [283, 284],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 17
+						},
+						"start": {
+							"column": 16,
+							"line": 17
+						}
+					},
+					"range": [284, 285],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 17
+						},
+						"start": {
+							"column": 17,
+							"line": 17
+						}
+					},
+					"range": [285, 286],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 17
+						},
+						"start": {
+							"column": 18,
+							"line": 17
+						}
+					},
+					"range": [286, 291],
+					"raw": "books",
+					"type": "Marked::(Ident: &quot;books&quot;)",
+					"value": "books"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 23,
+					"line": 17
+				},
+				"start": {
+					"column": 1,
+					"line": 17
+				}
+			},
+			"range": [269, 291],
+			"raw": "let (Homer: h) = books",
+			"type": "Marked::LetBinding"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 18
+				},
+				"start": {
+					"column": 23,
+					"line": 17
+				}
+			},
+			"range": [291, 292],
+			"raw": "\n",
+			"type": "Str",
+			"value": "\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 18
+						},
+						"start": {
+							"column": 0,
+							"line": 18
+						}
+					},
+					"range": [292, 303],
+					"raw": "Homer wrote",
+					"type": "Str",
+					"value": "Homer wrote"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 18
+						},
+						"start": {
+							"column": 11,
+							"line": 18
+						}
+					},
+					"range": [303, 304],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 18
+						},
+						"start": {
+							"column": 12,
+							"line": 18
+						}
+					},
+					"range": [304, 305],
+					"raw": "#",
+					"type": "Var::(Hash: &quot;#&quot;)",
+					"value": "#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 18
+						},
+						"start": {
+							"column": 13,
+							"line": 18
+						}
+					},
+					"range": [305, 306],
+					"raw": "h",
+					"type": "Var::(Ident: &quot;h&quot;)",
+					"value": "h"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 18
+						},
+						"start": {
+							"column": 14,
+							"line": 18
+						}
+					},
+					"range": [306, 307],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 15,
+					"line": 18
+				},
+				"start": {
+					"column": 0,
+					"line": 18
+				}
+			},
+			"range": [292, 307],
+			"raw": "Homer wrote #h.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 20
+				},
+				"start": {
+					"column": 15,
+					"line": 18
+				}
+			},
+			"range": [307, 309],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 20
+				},
+				"start": {
+					"column": 0,
+					"line": 20
+				}
+			},
+			"range": [309, 310],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 20
+						},
+						"start": {
+							"column": 1,
+							"line": 20
+						}
+					},
+					"range": [310, 313],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 20
+						},
+						"start": {
+							"column": 4,
+							"line": 20
+						}
+					},
+					"range": [313, 314],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 20
+								},
+								"start": {
+									"column": 5,
+									"line": 20
+								}
+							},
+							"range": [314, 315],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 20
+								},
+								"start": {
+									"column": 6,
+									"line": 20
+								}
+							},
+							"range": [315, 320],
+							"raw": "Homer",
+							"type": "Marked::(Ident: &quot;Homer&quot;)",
+							"value": "Homer"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 20
+								},
+								"start": {
+									"column": 11,
+									"line": 20
+								}
+							},
+							"range": [320, 321],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 13,
+									"line": 20
+								},
+								"start": {
+									"column": 12,
+									"line": 20
+								}
+							},
+							"range": [321, 322],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 15,
+											"line": 20
+										},
+										"start": {
+											"column": 13,
+											"line": 20
+										}
+									},
+									"range": [322, 324],
+									"raw": "..",
+									"type": "Op::Dots",
+									"value": ".."
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 20,
+											"line": 20
+										},
+										"start": {
+											"column": 15,
+											"line": 20
+										}
+									},
+									"range": [324, 329],
+									"raw": "other",
+									"type": "Marked::(Ident: &quot;other&quot;)",
+									"value": "other"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 20,
+									"line": 20
+								},
+								"start": {
+									"column": 13,
+									"line": 20
+								}
+							},
+							"range": [322, 329],
+							"raw": "..other",
+							"type": "Marked::Spread"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 21,
+									"line": 20
+								},
+								"start": {
+									"column": 20,
+									"line": 20
+								}
+							},
+							"range": [329, 330],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 20
+						},
+						"start": {
+							"column": 5,
+							"line": 20
+						}
+					},
+					"range": [314, 330],
+					"raw": "(Homer, ..other)",
+					"type": "Marked::Destructuring"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 20
+						},
+						"start": {
+							"column": 21,
+							"line": 20
+						}
+					},
+					"range": [330, 331],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 20
+						},
+						"start": {
+							"column": 22,
+							"line": 20
+						}
+					},
+					"range": [331, 332],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 24,
+							"line": 20
+						},
+						"start": {
+							"column": 23,
+							"line": 20
+						}
+					},
+					"range": [332, 333],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 29,
+							"line": 20
+						},
+						"start": {
+							"column": 24,
+							"line": 20
+						}
+					},
+					"range": [333, 338],
+					"raw": "books",
+					"type": "Marked::(Ident: &quot;books&quot;)",
+					"value": "books"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 29,
+					"line": 20
+				},
+				"start": {
+					"column": 1,
+					"line": 20
+				}
+			},
+			"range": [310, 338],
+			"raw": "let (Homer, ..other) = books",
+			"type": "Marked::LetBinding"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 21
+				},
+				"start": {
+					"column": 29,
+					"line": 20
+				}
+			},
+			"range": [338, 339],
+			"raw": "\n",
+			"type": "Str",
+			"value": "\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 21
+				},
+				"start": {
+					"column": 0,
+					"line": 21
+				}
+			},
+			"range": [339, 340],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 21
+						},
+						"start": {
+							"column": 1,
+							"line": 21
+						}
+					},
+					"range": [340, 343],
+					"raw": "for",
+					"type": "Kw::For",
+					"value": "for"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 21
+						},
+						"start": {
+							"column": 4,
+							"line": 21
+						}
+					},
+					"range": [343, 344],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 21
+								},
+								"start": {
+									"column": 5,
+									"line": 21
+								}
+							},
+							"range": [344, 345],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 21
+								},
+								"start": {
+									"column": 6,
+									"line": 21
+								}
+							},
+							"range": [345, 351],
+							"raw": "author",
+							"type": "Marked::(Ident: &quot;author&quot;)",
+							"value": "author"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 13,
+									"line": 21
+								},
+								"start": {
+									"column": 12,
+									"line": 21
+								}
+							},
+							"range": [351, 352],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 21
+								},
+								"start": {
+									"column": 13,
+									"line": 21
+								}
+							},
+							"range": [352, 353],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 19,
+									"line": 21
+								},
+								"start": {
+									"column": 14,
+									"line": 21
+								}
+							},
+							"range": [353, 358],
+							"raw": "title",
+							"type": "Marked::(Ident: &quot;title&quot;)",
+							"value": "title"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 20,
+									"line": 21
+								},
+								"start": {
+									"column": 19,
+									"line": 21
+								}
+							},
+							"range": [358, 359],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 21
+						},
+						"start": {
+							"column": 5,
+							"line": 21
+						}
+					},
+					"range": [344, 359],
+					"raw": "(author, title)",
+					"type": "Marked::Destructuring"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 21
+						},
+						"start": {
+							"column": 20,
+							"line": 21
+						}
+					},
+					"range": [359, 360],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 21
+						},
+						"start": {
+							"column": 21,
+							"line": 21
+						}
+					},
+					"range": [360, 362],
+					"raw": "in",
+					"type": "Kw::In",
+					"value": "in"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 24,
+							"line": 21
+						},
+						"start": {
+							"column": 23,
+							"line": 21
+						}
+					},
+					"range": [362, 363],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 29,
+							"line": 21
+						},
+						"start": {
+							"column": 24,
+							"line": 21
+						}
+					},
+					"range": [363, 368],
+					"raw": "other",
+					"type": "Marked::(Ident: &quot;other&quot;)",
+					"value": "other"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 30,
+							"line": 21
+						},
+						"start": {
+							"column": 29,
+							"line": 21
+						}
+					},
+					"range": [368, 369],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 22
+								},
+								"start": {
+									"column": 2,
+									"line": 22
+								}
+							},
+							"range": [373, 374],
+							"raw": "#",
+							"type": "Var::(Hash: &quot;#&quot;)",
+							"value": "#"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 22
+								},
+								"start": {
+									"column": 3,
+									"line": 22
+								}
+							},
+							"range": [374, 380],
+							"raw": "author",
+							"type": "Var::(Ident: &quot;author&quot;)",
+							"value": "author"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 10,
+									"line": 22
+								},
+								"start": {
+									"column": 9,
+									"line": 22
+								}
+							},
+							"range": [380, 381],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 22
+								},
+								"start": {
+									"column": 10,
+									"line": 22
+								}
+							},
+							"range": [381, 386],
+							"raw": "wrote",
+							"type": "Str",
+							"value": "wrote"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 16,
+									"line": 22
+								},
+								"start": {
+									"column": 15,
+									"line": 22
+								}
+							},
+							"range": [386, 387],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 17,
+									"line": 22
+								},
+								"start": {
+									"column": 16,
+									"line": 22
+								}
+							},
+							"range": [387, 388],
+							"raw": "#",
+							"type": "Var::(Hash: &quot;#&quot;)",
+							"value": "#"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 22,
+									"line": 22
+								},
+								"start": {
+									"column": 17,
+									"line": 22
+								}
+							},
+							"range": [388, 393],
+							"raw": "title",
+							"type": "Var::(Ident: &quot;title&quot;)",
+							"value": "title"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 23,
+									"line": 22
+								},
+								"start": {
+									"column": 22,
+									"line": 22
+								}
+							},
+							"range": [393, 394],
+							"raw": ".",
+							"type": "Str",
+							"value": "."
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 22
+						},
+						"start": {
+							"column": 2,
+							"line": 22
+						}
+					},
+					"range": [373, 394],
+					"raw": "#author wrote #title.",
+					"type": "Paragraph"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 23
+				},
+				"start": {
+					"column": 1,
+					"line": 21
+				}
+			},
+			"range": [340, 396],
+			"raw": "for (author, title) in other [\n  #author wrote #title.\n]",
+			"type": "Marked::ForLoop"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 1,
+			"line": 23
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 396],
+	"raw": "#let (x, y) = (1, 2)\nThe coordinates are #x, #y.\n\n#let (a, .., b) = (1, 2, 3, 4)\nThe first element is #a.\nThe last element is #b.\n\n#let books = (\n  Shakespeare: \"Hamlet\",\n  Homer: \"The Odyssey\",\n  Austen: \"Persuasion\",\n)\n\n#let (Austen,) = books\nAusten wrote #Austen.\n\n#let (Homer: h) = books\nHomer wrote #h.\n\n#let (Homer, ..other) = books\n#for (author, title) in other [\n  #author wrote #title.\n]",
+	"type": "Document"
+}
