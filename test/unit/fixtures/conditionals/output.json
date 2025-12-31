@@ -1,0 +1,309 @@
+{
+	"children": [
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 1],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 1
+						},
+						"start": {
+							"column": 1,
+							"line": 1
+						}
+					},
+					"range": [1, 3],
+					"raw": "if",
+					"type": "Kw::If",
+					"value": "if"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 1
+						},
+						"start": {
+							"column": 3,
+							"line": 1
+						}
+					},
+					"range": [3, 4],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 5,
+									"line": 1
+								},
+								"start": {
+									"column": 4,
+									"line": 1
+								}
+							},
+							"range": [4, 5],
+							"raw": "1",
+							"type": "Num(Int, 1)",
+							"value": "1"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 1
+								},
+								"start": {
+									"column": 5,
+									"line": 1
+								}
+							},
+							"range": [5, 6],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 7,
+									"line": 1
+								},
+								"start": {
+									"column": 6,
+									"line": 1
+								}
+							},
+							"range": [6, 7],
+							"raw": "<",
+							"type": "Op::Lt",
+							"value": "<"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 1
+								},
+								"start": {
+									"column": 7,
+									"line": 1
+								}
+							},
+							"range": [7, 8],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 1
+								},
+								"start": {
+									"column": 8,
+									"line": 1
+								}
+							},
+							"range": [8, 9],
+							"raw": "2",
+							"type": "Num(Int, 2)",
+							"value": "2"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 9,
+							"line": 1
+						},
+						"start": {
+							"column": 4,
+							"line": 1
+						}
+					},
+					"range": [4, 9],
+					"raw": "1 < 2",
+					"type": "Marked::Binary"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 10,
+							"line": 1
+						},
+						"start": {
+							"column": 9,
+							"line": 1
+						}
+					},
+					"range": [9, 10],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 2
+								},
+								"start": {
+									"column": 2,
+									"line": 2
+								}
+							},
+							"range": [14, 27],
+							"raw": "This is shown",
+							"type": "Str",
+							"value": "This is shown"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 2
+						},
+						"start": {
+							"column": 2,
+							"line": 2
+						}
+					},
+					"range": [14, 27],
+					"raw": "This is shown",
+					"type": "Paragraph"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 2,
+							"line": 3
+						},
+						"start": {
+							"column": 1,
+							"line": 3
+						}
+					},
+					"range": [29, 30],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 6,
+							"line": 3
+						},
+						"start": {
+							"column": 2,
+							"line": 3
+						}
+					},
+					"range": [30, 34],
+					"raw": "else",
+					"type": "Kw::Else",
+					"value": "else"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 3
+						},
+						"start": {
+							"column": 6,
+							"line": 3
+						}
+					},
+					"range": [34, 35],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 4
+								},
+								"start": {
+									"column": 2,
+									"line": 4
+								}
+							},
+							"range": [39, 51],
+							"raw": "This is not.",
+							"type": "Str",
+							"value": "This is not."
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 4
+						},
+						"start": {
+							"column": 2,
+							"line": 4
+						}
+					},
+					"range": [39, 51],
+					"raw": "This is not.",
+					"type": "Paragraph"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 5
+				},
+				"start": {
+					"column": 1,
+					"line": 1
+				}
+			},
+			"range": [1, 53],
+			"raw": "if 1 < 2 [\n  This is shown\n] else [\n  This is not.\n]",
+			"type": "Marked::Conditional"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 1,
+			"line": 5
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 53],
+	"raw": "#if 1 < 2 [\n  This is shown\n] else [\n  This is not.\n]",
+	"type": "Document"
+}

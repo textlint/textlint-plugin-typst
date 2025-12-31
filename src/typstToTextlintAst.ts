@@ -190,6 +190,64 @@ const isTypstType = (type: string, pattern: RegExp): boolean => {
 	return pattern.test(type);
 };
 
+const isTypstMarkupOrContentBlock = (node: AstNode): boolean => {
+	if (typeof node.type !== "string") {
+		return false;
+	}
+	return isTypstType(node.type, /^Marked::(Markup|ContentBlock)$/);
+};
+
+const isScriptBracketNode = (content: Content): boolean => {
+	if (!isAstNode(content)) {
+		return false;
+	}
+	const type = (content as unknown as AstNode).type;
+	return type === "Punc::LeftBracket" || type === "Punc::RightBracket";
+};
+
+const flattenTypstMarkupChildren = (content: Content): Content[] => {
+	if (!isAstNode(content) || !hasChildren(content)) {
+		return [content];
+	}
+	if (!isTypstMarkupOrContentBlock(content)) {
+		return [content];
+	}
+	return content.children
+		.filter((child) => !isScriptBracketNode(child))
+		.flatMap(flattenTypstMarkupChildren);
+};
+
+const convertScriptContentBlocksToParagraphs = (node: AstNode): void => {
+	if (hasChildren(node)) {
+		for (const child of node.children) {
+			if (isAstNode(child)) {
+				convertScriptContentBlocksToParagraphs(child);
+			}
+		}
+	}
+
+	if (node.type !== "Marked::ContentBlock") {
+		return;
+	}
+
+	const flattened = flattenTypstMarkupChildren(
+		node as unknown as Content,
+	).filter(isAstNode) as unknown as AstNode[];
+
+	node.type = ASTNodeTypes.Paragraph;
+	node.children = flattened as unknown as Content[];
+
+	if (flattened.length > 0) {
+		const firstChild = flattened[0];
+		const lastChild = flattened[flattened.length - 1];
+		node.loc = { start: firstChild.loc.start, end: lastChild.loc.end };
+		node.range = [firstChild.range[0], lastChild.range[1]];
+		node.raw = flattened.map((c) => c.raw).join("");
+	} else {
+		node.raw = "";
+	}
+};
+
 type TxtNodeLineLocation = TxtNode["loc"];
 
 /**
@@ -444,16 +502,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 
 				const flattenedContent: Content[] = [];
 				for (const child of contentChildren) {
-					if (
-						typeof child.type === "string" &&
-						isTypstType(child.type, /^Marked::Markup$/) &&
-						isAstNode(child) &&
-						hasChildren(child)
-					) {
-						flattenedContent.push(...child.children);
-					} else {
-						flattenedContent.push(child);
-					}
+					flattenedContent.push(...flattenTypstMarkupChildren(child));
 				}
 				const textContent: Content[] = [];
 				const nestedListItems: Content[] = [];
@@ -730,6 +779,9 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		calculateOffsets(textlintAstObject);
 	}
 
+	// Convert script-mode `[...]` blocks to Paragraph nodes (recursive markup mode).
+	convertScriptContentBlocksToParagraphs(textlintAstObject);
+
 	// Root node is always `Document` node
 	textlintAstObject.type = ASTNodeTypes.Document;
 
@@ -744,11 +796,148 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 export const paragraphizeTextlintAstObject = (
 	rootNode: TxtDocumentNode,
 ): TxtDocumentNode => {
+	const whitelist = new Set<string>();
+
+	const isHashNode = (n: Content): boolean =>
+		isAstNode(n) &&
+		["Kw::Hash", "Fn::(Hash: &quot;#&quot;)"].includes(
+			(n as unknown as AstNode).type,
+		);
+
+	const includesLineBreak = (n: Content): boolean => {
+		if (n.type === ASTNodeTypes.Str) {
+			return n.raw.includes("\n");
+		}
+		if (n.type === ASTNodeTypes.Break) {
+			return n.raw.includes("\n");
+		}
+		return false;
+	};
+
+	const isStatementBoundaryBefore = (
+		arr: Content[],
+		index: number,
+	): boolean => {
+		if (index === 0) {
+			return true;
+		}
+		return includesLineBreak(arr[index - 1]);
+	};
+
+	const extractFirstIdentifier = (n: Content): string | undefined => {
+		if (!isAstNode(n)) {
+			return undefined;
+		}
+		const node = n as unknown as AstNode;
+		if (typeof node.type === "string") {
+			if (node.type.startsWith("Kw::") && node.type !== "Kw::Hash") {
+				return node.type.slice("Kw::".length).toLowerCase();
+			}
+			if (node.type.includes("Ident:") && typeof node.value === "string") {
+				return node.value;
+			}
+		}
+		if (!hasChildren(node)) {
+			return undefined;
+		}
+		for (const child of node.children) {
+			const found = extractFirstIdentifier(child);
+			if (found) {
+				return found;
+			}
+		}
+		return undefined;
+	};
+
+	const getHashStatementName = (
+		arr: Content[],
+		index: number,
+	): string | undefined => {
+		for (let j = index + 1; j < arr.length; j++) {
+			const n = arr[j];
+			if (n.type === ASTNodeTypes.Str && n.raw.trim() === "") {
+				continue;
+			}
+			return extractFirstIdentifier(n);
+		}
+		return undefined;
+	};
+
+	const isHashStatementStartAt = (arr: Content[], index: number): boolean => {
+		if (!isHashNode(arr[index])) {
+			return false;
+		}
+		if (!isStatementBoundaryBefore(arr, index)) {
+			return false;
+		}
+		const name = getHashStatementName(arr, index);
+		if (name && whitelist.has(name)) {
+			return false;
+		}
+		return true;
+	};
+
+	const punctuationDepthDelta = (n: Content): number => {
+		if (!isAstNode(n)) {
+			return 0;
+		}
+		const type = (n as unknown as AstNode).type;
+		if (typeof type !== "string") {
+			return 0;
+		}
+		switch (type) {
+			case "Punc::LeftParen":
+			case "Punc::LeftBracket":
+			case "Punc::LeftBrace":
+				return 1;
+			case "Punc::RightParen":
+			case "Punc::RightBracket":
+			case "Punc::RightBrace":
+				return -1;
+			default:
+				return 0;
+		}
+	};
+
+	const collectHashStatement = (
+		arr: Content[],
+		startIndex: number,
+	): { nodes: Content[]; nextIndex: number } => {
+		const collected: Content[] = [];
+		let depth = 0;
+		let i = startIndex;
+		while (i < arr.length) {
+			const n = arr[i];
+			collected.push(n);
+			if (i !== startIndex) {
+				depth += punctuationDepthDelta(n);
+				if (depth < 0) {
+					depth = 0;
+				}
+				if (depth === 0 && includesLineBreak(n)) {
+					i++;
+					break;
+				}
+			}
+			i++;
+		}
+		return { nodes: collected, nextIndex: i };
+	};
+
+	const sourceChildren = rootNode.children;
+
 	const children: Content[] = [];
 	let i = 0;
 
-	while (i < rootNode.children.length) {
-		const node = rootNode.children[i];
+	while (i < sourceChildren.length) {
+		if (isHashStatementStartAt(sourceChildren, i)) {
+			const { nodes, nextIndex } = collectHashStatement(sourceChildren, i);
+			children.push(...nodes);
+			i = nextIndex;
+			continue;
+		}
+
+		const node = sourceChildren[i];
 
 		// Collect consecutive ListItems into a single List node.
 		if (node.type === ASTNodeTypes.ListItem) {
@@ -760,8 +949,8 @@ export const paragraphizeTextlintAstObject = (
 			const isOrdered = /^\d+\./.test(node.raw?.trim() || "");
 
 			// Collect consecutive ListItems including those separated by line breaks.
-			while (i < rootNode.children.length) {
-				const currentNode = rootNode.children[i];
+			while (i < sourceChildren.length) {
+				const currentNode = sourceChildren[i];
 
 				if (currentNode.type === ASTNodeTypes.ListItem) {
 					// Check if the current item matches the list type (ordered/unordered).
@@ -778,11 +967,11 @@ export const paragraphizeTextlintAstObject = (
 				// Skip line breaks between ListItems.
 				if (currentNode.type === ASTNodeTypes.Str && currentNode.raw === "\n") {
 					if (
-						i + 1 < rootNode.children.length &&
-						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
+						i + 1 < sourceChildren.length &&
+						sourceChildren[i + 1].type === ASTNodeTypes.ListItem
 					) {
 						const nextIsOrdered = /^\d+\./.test(
-							rootNode.children[i + 1].raw?.trim() || "",
+							sourceChildren[i + 1].raw?.trim() || "",
 						);
 						if (nextIsOrdered === isOrdered) {
 							i++;
@@ -799,11 +988,11 @@ export const paragraphizeTextlintAstObject = (
 					currentNode.children[0].raw === "\n"
 				) {
 					if (
-						i + 1 < rootNode.children.length &&
-						rootNode.children[i + 1].type === ASTNodeTypes.ListItem
+						i + 1 < sourceChildren.length &&
+						sourceChildren[i + 1].type === ASTNodeTypes.ListItem
 					) {
 						const nextIsOrdered = /^\d+\./.test(
-							rootNode.children[i + 1].raw?.trim() || "",
+							sourceChildren[i + 1].raw?.trim() || "",
 						);
 						if (nextIsOrdered === isOrdered) {
 							i++;
@@ -887,13 +1076,10 @@ export const paragraphizeTextlintAstObject = (
 							// Use the children of Marked::Markup nodes if they exist.
 							const actualContent: AstNode[] = [];
 							for (const child of contentChildren) {
-								if (
-									typeof child.type === "string" &&
-									isTypstType(child.type, /^Marked::Markup$/) &&
-									isAstNode(child) &&
-									hasChildren(child)
-								) {
-									actualContent.push(...child.children.filter(isAstNode));
+								const flattenedChildren =
+									flattenTypstMarkupChildren(child).filter(isAstNode);
+								if (flattenedChildren.length > 0) {
+									actualContent.push(...flattenedChildren);
 								} else if (isAstNode(child)) {
 									actualContent.push(child);
 								}
@@ -959,8 +1145,8 @@ export const paragraphizeTextlintAstObject = (
 				i++;
 
 				// Collect consecutive nodes for paragraph grouping.
-				while (i < rootNode.children.length) {
-					const currentNode = rootNode.children[i];
+				while (i < sourceChildren.length) {
+					const currentNode = sourceChildren[i];
 
 					if (
 						currentNode.type === ASTNodeTypes.Header ||

@@ -1,0 +1,765 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 1],
+					"raw": "#",
+					"type": "Punc::Hash",
+					"value": "#"
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 1
+								},
+								"start": {
+									"column": 1,
+									"line": 1
+								}
+							},
+							"range": [1, 2],
+							"raw": "{",
+							"type": "Punc::LeftBrace",
+							"value": "{"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 2
+								},
+								"start": {
+									"column": 2,
+									"line": 1
+								}
+							},
+							"range": [2, 3],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"children": [
+										{
+											"loc": {
+												"end": {
+													"column": 5,
+													"line": 2
+												},
+												"start": {
+													"column": 2,
+													"line": 2
+												}
+											},
+											"range": [5, 8],
+											"raw": "let",
+											"type": "Kw::Let",
+											"value": "let"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 6,
+													"line": 2
+												},
+												"start": {
+													"column": 5,
+													"line": 2
+												}
+											},
+											"range": [8, 9],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 7,
+													"line": 2
+												},
+												"start": {
+													"column": 6,
+													"line": 2
+												}
+											},
+											"range": [9, 10],
+											"raw": "a",
+											"type": "Marked::(Ident: &quot;a&quot;)",
+											"value": "a"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 8,
+													"line": 2
+												},
+												"start": {
+													"column": 7,
+													"line": 2
+												}
+											},
+											"range": [10, 11],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 9,
+													"line": 2
+												},
+												"start": {
+													"column": 8,
+													"line": 2
+												}
+											},
+											"range": [11, 12],
+											"raw": "=",
+											"type": "Op::Eq",
+											"value": "="
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 10,
+													"line": 2
+												},
+												"start": {
+													"column": 9,
+													"line": 2
+												}
+											},
+											"range": [12, 13],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"children": [
+												{
+													"loc": {
+														"end": {
+															"column": 15,
+															"line": 2
+														},
+														"start": {
+															"column": 11,
+															"line": 2
+														}
+													},
+													"range": [14, 18],
+													"raw": "from",
+													"type": "Str",
+													"value": "from"
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 15,
+													"line": 2
+												},
+												"start": {
+													"column": 11,
+													"line": 2
+												}
+											},
+											"range": [14, 18],
+											"raw": "from",
+											"type": "Paragraph"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 16,
+											"line": 2
+										},
+										"start": {
+											"column": 2,
+											"line": 2
+										}
+									},
+									"range": [5, 19],
+									"raw": "let a = [from]",
+									"type": "Marked::LetBinding"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 2,
+											"line": 3
+										},
+										"start": {
+											"column": 16,
+											"line": 2
+										}
+									},
+									"range": [19, 20],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
+									"children": [
+										{
+											"loc": {
+												"end": {
+													"column": 5,
+													"line": 3
+												},
+												"start": {
+													"column": 2,
+													"line": 3
+												}
+											},
+											"range": [22, 25],
+											"raw": "let",
+											"type": "Kw::Let",
+											"value": "let"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 6,
+													"line": 3
+												},
+												"start": {
+													"column": 5,
+													"line": 3
+												}
+											},
+											"range": [25, 26],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 7,
+													"line": 3
+												},
+												"start": {
+													"column": 6,
+													"line": 3
+												}
+											},
+											"range": [26, 27],
+											"raw": "b",
+											"type": "Marked::(Ident: &quot;b&quot;)",
+											"value": "b"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 8,
+													"line": 3
+												},
+												"start": {
+													"column": 7,
+													"line": 3
+												}
+											},
+											"range": [27, 28],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 9,
+													"line": 3
+												},
+												"start": {
+													"column": 8,
+													"line": 3
+												}
+											},
+											"range": [28, 29],
+											"raw": "=",
+											"type": "Op::Eq",
+											"value": "="
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 10,
+													"line": 3
+												},
+												"start": {
+													"column": 9,
+													"line": 3
+												}
+											},
+											"range": [29, 30],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"children": [
+												{
+													"children": [
+														{
+															"loc": {
+																"end": {
+																	"column": 12,
+																	"line": 3
+																},
+																"start": {
+																	"column": 11,
+																	"line": 3
+																}
+															},
+															"range": [31, 32],
+															"raw": "*",
+															"type": "Marked::Star",
+															"value": "*"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 17,
+																	"line": 3
+																},
+																"start": {
+																	"column": 12,
+																	"line": 3
+																}
+															},
+															"range": [32, 37],
+															"raw": "world",
+															"type": "Str",
+															"value": "world"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 18,
+																	"line": 3
+																},
+																"start": {
+																	"column": 17,
+																	"line": 3
+																}
+															},
+															"range": [37, 38],
+															"raw": "*",
+															"type": "Marked::Star",
+															"value": "*"
+														}
+													],
+													"loc": {
+														"end": {
+															"column": 18,
+															"line": 3
+														},
+														"start": {
+															"column": 11,
+															"line": 3
+														}
+													},
+													"range": [31, 38],
+													"raw": "*world*",
+													"type": "Strong"
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 18,
+													"line": 3
+												},
+												"start": {
+													"column": 11,
+													"line": 3
+												}
+											},
+											"range": [31, 38],
+											"raw": "*world*",
+											"type": "Paragraph"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 19,
+											"line": 3
+										},
+										"start": {
+											"column": 2,
+											"line": 3
+										}
+									},
+									"range": [22, 39],
+									"raw": "let b = [*world*]",
+									"type": "Marked::LetBinding"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 2,
+											"line": 4
+										},
+										"start": {
+											"column": 19,
+											"line": 3
+										}
+									},
+									"range": [39, 40],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
+									"children": [
+										{
+											"loc": {
+												"end": {
+													"column": 8,
+													"line": 4
+												},
+												"start": {
+													"column": 3,
+													"line": 4
+												}
+											},
+											"range": [43, 48],
+											"raw": "hello",
+											"type": "Str",
+											"value": "hello"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 8,
+											"line": 4
+										},
+										"start": {
+											"column": 3,
+											"line": 4
+										}
+									},
+									"range": [43, 48],
+									"raw": "hello",
+									"type": "Paragraph"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 2,
+											"line": 5
+										},
+										"start": {
+											"column": 10,
+											"line": 4
+										}
+									},
+									"range": [50, 51],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
+									"children": [
+										{
+											"children": [
+												{
+													"loc": {
+														"end": {
+															"column": 3,
+															"line": 5
+														},
+														"start": {
+															"column": 2,
+															"line": 5
+														}
+													},
+													"range": [53, 54],
+													"raw": "a",
+													"type": "Marked::(Ident: &quot;a&quot;)",
+													"value": "a"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 4,
+															"line": 5
+														},
+														"start": {
+															"column": 3,
+															"line": 5
+														}
+													},
+													"range": [54, 55],
+													"raw": " ",
+													"type": "Str",
+													"value": " "
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 5,
+															"line": 5
+														},
+														"start": {
+															"column": 4,
+															"line": 5
+														}
+													},
+													"range": [55, 56],
+													"raw": "+",
+													"type": "Op::Plus",
+													"value": "+"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 6,
+															"line": 5
+														},
+														"start": {
+															"column": 5,
+															"line": 5
+														}
+													},
+													"range": [56, 57],
+													"raw": " ",
+													"type": "Str",
+													"value": " "
+												},
+												{
+													"children": [
+														{
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 5
+																},
+																"start": {
+																	"column": 8,
+																	"line": 5
+																}
+															},
+															"range": [59, 62],
+															"raw": "the",
+															"type": "Str",
+															"value": "the"
+														}
+													],
+													"loc": {
+														"end": {
+															"column": 11,
+															"line": 5
+														},
+														"start": {
+															"column": 8,
+															"line": 5
+														}
+													},
+													"range": [59, 62],
+													"raw": "the",
+													"type": "Paragraph"
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 13,
+													"line": 5
+												},
+												"start": {
+													"column": 2,
+													"line": 5
+												}
+											},
+											"range": [53, 64],
+											"raw": "a + [ the ]",
+											"type": "Marked::Binary"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 14,
+													"line": 5
+												},
+												"start": {
+													"column": 13,
+													"line": 5
+												}
+											},
+											"range": [64, 65],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 15,
+													"line": 5
+												},
+												"start": {
+													"column": 14,
+													"line": 5
+												}
+											},
+											"range": [65, 66],
+											"raw": "+",
+											"type": "Op::Plus",
+											"value": "+"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 16,
+													"line": 5
+												},
+												"start": {
+													"column": 15,
+													"line": 5
+												}
+											},
+											"range": [66, 67],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 17,
+													"line": 5
+												},
+												"start": {
+													"column": 16,
+													"line": 5
+												}
+											},
+											"range": [67, 68],
+											"raw": "b",
+											"type": "Marked::(Ident: &quot;b&quot;)",
+											"value": "b"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 17,
+											"line": 5
+										},
+										"start": {
+											"column": 2,
+											"line": 5
+										}
+									},
+									"range": [53, 68],
+									"raw": "a + [ the ] + b",
+									"type": "Marked::Binary"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 17,
+									"line": 5
+								},
+								"start": {
+									"column": 2,
+									"line": 2
+								}
+							},
+							"range": [5, 68],
+							"raw": "let a = [from]\n  let b = [*world*]\n  [hello ]\n  a + [ the ] + b",
+							"type": "Marked::Code"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 0,
+									"line": 6
+								},
+								"start": {
+									"column": 17,
+									"line": 5
+								}
+							},
+							"range": [68, 69],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 6
+								},
+								"start": {
+									"column": 0,
+									"line": 6
+								}
+							},
+							"range": [69, 70],
+							"raw": "}",
+							"type": "Punc::RightBrace",
+							"value": "}"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 6
+						},
+						"start": {
+							"column": 1,
+							"line": 1
+						}
+					},
+					"range": [1, 70],
+					"raw": "{\n  let a = [from]\n  let b = [*world*]\n  [hello ]\n  a + [ the ] + b\n}",
+					"type": "Marked::CodeBlock"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 6
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 70],
+			"raw": "#{\n  let a = [from]\n  let b = [*world*]\n  [hello ]\n  a + [ the ] + b\n}",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 1,
+			"line": 6
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 70],
+	"raw": "#{\n  let a = [from]\n  let b = [*world*]\n  [hello ]\n  a + [ the ] + b\n}",
+	"type": "Document"
+}
