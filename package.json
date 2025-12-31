@@ -26,11 +26,11 @@
 		"update-fixtures": "bun ./test/update-fixtures.ts && biome check --write ./test/fixtures"
 	},
 	"dependencies": {
-		"@myriaddreamin/typst-ts-web-compiler": "0.6.0"
+		"@myriaddreamin/typst-ts-web-compiler": "0.7.0-rc2"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.2",
-		"@myriaddreamin/typst.ts": "0.6.0",
+		"@myriaddreamin/typst.ts": "0.7.0-rc2",
 		"@textlint/ast-node-types": "^14.0.4",
 		"@textlint/ast-tester": "^14.0.4",
 		"@textlint/types": "^14.0.4",

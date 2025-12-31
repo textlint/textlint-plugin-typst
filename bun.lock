@@ -4,11 +4,11 @@
     "": {
       "name": "textlint-plugin-mdx",
       "dependencies": {
-        "@myriaddreamin/typst-ts-web-compiler": "0.6.0",
+        "@myriaddreamin/typst-ts-web-compiler": "0.7.0-rc2",
       },
       "devDependencies": {
         "@biomejs/biome": "^1.9.2",
-        "@myriaddreamin/typst.ts": "0.6.0",
+        "@myriaddreamin/typst.ts": "0.7.0-rc2",
         "@textlint/ast-node-types": "^14.0.4",
         "@textlint/ast-tester": "^14.0.4",
         "@textlint/types": "^14.0.4",
@@ -340,9 +340,9 @@
 
     "@kvs/types": ["@kvs/types@2.1.4", "", {}, "sha512-XtTOUatnJrDcuYNPfN+9x1xuVp11IuyPi9zOLVJPpfnKp+vUCatka/Crp2cfz0uKt4QE1Pb4Dg/TNYgVYA2Org=="],
 
-    "@myriaddreamin/typst-ts-web-compiler": ["@myriaddreamin/typst-ts-web-compiler@0.6.0", "", {}, "sha512-P/eIJ5RnfElj0NYzn5PI296t/IwWtgqUyyTMi5Jm5X3V5kZfskkH+LI7mSQe8tEyxwgCvxbxvFe5adinA3K8Gg=="],
+    "@myriaddreamin/typst-ts-web-compiler": ["@myriaddreamin/typst-ts-web-compiler@0.7.0-rc2", "", {}, "sha512-WFO/ecKUfeclld5uDxyjgpnIafKpp2LrS6T1vY+CHaSxCm099AneAQIYFg+OtX+NbFpJsLGCBFSw/qppJJmBAw=="],
 
-    "@myriaddreamin/typst.ts": ["@myriaddreamin/typst.ts@0.6.0", "", { "dependencies": { "idb": "^7.1.1" }, "peerDependencies": { "@myriaddreamin/typst-ts-renderer": "^0.6.0", "@myriaddreamin/typst-ts-web-compiler": "^0.6.0" }, "optionalPeers": ["@myriaddreamin/typst-ts-renderer", "@myriaddreamin/typst-ts-web-compiler"] }, "sha512-IUpetG0NyF2H6eXRm4j+NsbanJHIvyrffHEijqYb6q128sLWQgT1FYJS+h7dtjXmrBEfnIl1mI80DyfDR6kB/w=="],
+    "@myriaddreamin/typst.ts": ["@myriaddreamin/typst.ts@0.7.0-rc2", "", { "dependencies": { "idb": "^7.1.1" }, "peerDependencies": { "@myriaddreamin/typst-ts-renderer": "^0.7.0-rc2", "@myriaddreamin/typst-ts-web-compiler": "^0.7.0-rc2" }, "optionalPeers": ["@myriaddreamin/typst-ts-renderer", "@myriaddreamin/typst-ts-web-compiler"] }, "sha512-VM8JqsRcL3AEJ5cuPBn/YvnGTXK/BRPlxdGB2bR48Of/8OIGaPiunv2QfZBIMBBrtbTygUOtAY9BZvkS1AFqgA=="],
 
     "@nicolo-ribaudo/chokidar-2": ["@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.3", "", {}, "sha512-s88O1aVtXftvp5bCPB7WnmXc5IwOZZ7YPuwNPt+GtOOXpPvad1LfbmjYv+qII7zP6RU2QGnqve27dnLycEnyEQ=="],
 
