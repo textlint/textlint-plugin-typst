@@ -3,7 +3,7 @@
 	"version": "1.3.0",
 	"description": "textlint plugin to lint Typst",
 	"keywords": ["textlint", "textlintplugin", "plugin", "lint", "typst"],
-	"repository": "https://github.com/3w36zj6/textlint-plugin-typst",
+	"repository": "https://github.com/textlint/textlint-plugin-typst",
 	"funding": {
 		"type": "github",
 		"url": "https://github.com/sponsors/3w36zj6"

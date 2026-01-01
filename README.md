@@ -2,8 +2,8 @@
 
 [![NPM Version](https://img.shields.io/npm/v/textlint-plugin-typst)](https://www.npmjs.com/package/textlint-plugin-typst?activeTab=versions)
 [![NPM Downloads](https://img.shields.io/npm/d18m/textlint-plugin-typst)](https://www.npmjs.com/package/textlint-plugin-typst)
-[![NPM License](https://img.shields.io/npm/l/textlint-plugin-typst)](https://github.com/3w36zj6/textlint-plugin-typst/blob/HEAD/LICENSE)
-[![CI](https://github.com/3w36zj6/textlint-plugin-typst/actions/workflows/ci.yaml/badge.svg?branch=main&event=push)](https://github.com/3w36zj6/textlint-plugin-typst/actions/workflows/ci.yaml)
+[![NPM License](https://img.shields.io/npm/l/textlint-plugin-typst)](https://github.com/textlint/textlint-plugin-typst/blob/HEAD/LICENSE)
+[![CI](https://github.com/textlint/textlint-plugin-typst/actions/workflows/ci.yaml/badge.svg?branch=main&event=push)](https://github.com/textlint/textlint-plugin-typst/actions/workflows/ci.yaml)
 
 [textlint](https://github.com/textlint/textlint) plugin to lint [Typst](https://typst.app/)
 
