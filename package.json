@@ -23,7 +23,7 @@
 		"check:write": "biome check --write .",
 		"ci": "biome ci .",
 		"test": "vitest",
-		"update-fixtures": "bun ./test/update-fixtures.ts && biome check --write ./test/fixtures"
+		"update-fixtures": "bun ./test/unit/update-fixtures.ts && biome check --write ./test/unit/fixtures"
 	},
 	"dependencies": {
 		"@myriaddreamin/typst-ts-web-compiler": "0.7.0-rc2"
