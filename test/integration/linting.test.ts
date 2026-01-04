@@ -7,6 +7,8 @@ import {
 } from "@textlint/kernel";
 // @ts-expect-error
 import textlintRulePeriodInListItem from "textlint-rule-period-in-list-item";
+// @ts-expect-error
+import textlintRuleSentenceLength from "textlint-rule-sentence-length";
 import {
 	rules as textlintRulePresetJaTechnicalWritingRules,
 	rulesConfig as textlintRulePresetJaTechnicalWritingRulesConfig,
@@ -259,6 +261,51 @@ describe("linting", () => {
 				expect(multipleLineNumberedViolation?.message).toBe(
 					'Should remove period mark(".") at end of list item.',
 				);
+			});
+		});
+		describe("textlint-rule-sentence-length", () => {
+			let textlintResult: TextlintResult;
+
+			beforeAll(async () => {
+				const kernel = new TextlintKernel();
+				textlintResult = await kernel.lintText(
+					fs.readFileSync(
+						path.join(
+							__dirname,
+							"./fixtures/smoke/textlint-rule-sentence-length/main.typ",
+						),
+						"utf-8",
+					),
+					{
+						ext: ".typ",
+						plugins: [
+							{
+								pluginId: "typst",
+								plugin: typstPlugin,
+							},
+						],
+						rules: [
+							{
+								ruleId: "sentence-length",
+								rule: textlintRuleSentenceLength,
+								options: {
+									max: 50,
+								},
+							},
+						],
+					},
+				);
+			});
+
+			const getViolations = () => {
+				return textlintResult.messages.filter(
+					(message) => message.ruleId === "sentence-length",
+				);
+			};
+
+			it("should ignore comments", () => {
+				const violations = getViolations();
+				expect(violations).toEqual([]);
 			});
 		});
 	});
