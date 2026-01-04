@@ -7,13 +7,13 @@ import {
 } from "@textlint/kernel";
 // @ts-expect-error
 import textlintRulePeriodInListItem from "textlint-rule-period-in-list-item";
-// @ts-expect-error
-import textlintRuleSentenceLength from "textlint-rule-sentence-length";
 import {
 	rules as textlintRulePresetJaTechnicalWritingRules,
 	rulesConfig as textlintRulePresetJaTechnicalWritingRulesConfig,
 	// @ts-expect-error
 } from "textlint-rule-preset-ja-technical-writing";
+// @ts-expect-error
+import textlintRuleSentenceLength from "textlint-rule-sentence-length";
 
 import { beforeAll, describe, expect, it } from "vitest";
 
