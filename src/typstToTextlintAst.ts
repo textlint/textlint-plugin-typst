@@ -1257,19 +1257,6 @@ export const paragraphizeTextlintAstObject = (
 					) {
 						children.push(...paragraph);
 					} else {
-						const isTermItem = (c: Content): boolean =>
-							isAstNode(c) && isTypstType(c.type, /^Marked::TermItem$/);
-						const createParagraph = (nodes: Content[]): Content => {
-							const first = nodes[0];
-							const last = nodes[nodes.length - 1];
-							return {
-								type: ASTNodeTypes.Paragraph,
-								children: nodes,
-								loc: { start: first.loc.start, end: last.loc.end },
-								range: [first.range[0], last.range[1]],
-								raw: nodes.map((n) => n.raw).join(""),
-							} as Content;
-						};
 						const innerParagraphWithTerms: AstNode | undefined = (() => {
 							if (paragraph.length !== 1) return undefined;
 							const only = paragraph[0];
