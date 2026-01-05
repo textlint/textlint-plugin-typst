@@ -924,6 +924,84 @@ export const paragraphizeTextlintAstObject = (
 		return { nodes: collected, nextIndex: i };
 	};
 
+	const splitParagraphTermlist = (paraNode: AstNode): Content[] => {
+		if (!hasChildren(paraNode)) return [];
+		const isBlankStr = (c: Content): boolean =>
+			c.type === ASTNodeTypes.Str && c.raw?.trim() === "";
+		const isTermItem = (c: Content): boolean =>
+			isAstNode(c) && isTypstType(c.type, /^Marked::TermItem$/);
+		const createParagraph = (nodes: Content[]): Content => {
+			const first = nodes[0];
+			const last = nodes[nodes.length - 1];
+			return {
+				type: ASTNodeTypes.Paragraph,
+				children: nodes,
+				loc: { start: first.loc.start, end: last.loc.end },
+				range: [first.range[0], last.range[1]],
+				raw: nodes.map((c) => c.raw).join(""),
+			} as Content;
+		};
+
+		const segments: { isTerm: boolean; nodes: Content[] }[] = [];
+		let current: { isTerm: boolean; nodes: Content[] } | null = null;
+		for (const child of paraNode.children) {
+			if (isBlankStr(child)) {
+				continue;
+			}
+			const isTerm = isTermItem(child);
+			if (!current || current.isTerm !== isTerm) {
+				if (current) segments.push(current);
+				current = { isTerm, nodes: [child] };
+			} else {
+				current.nodes.push(child);
+			}
+		}
+		if (current) segments.push(current);
+
+		const results: Content[] = [];
+		for (const seg of segments) {
+			if (seg.isTerm) {
+				results.push(...seg.nodes);
+				continue;
+			}
+
+			const nodes = seg.nodes.flatMap(flattenTypstMarkupChildren);
+			if (nodes.length === 0) continue;
+			results.push(createParagraph(nodes));
+		}
+		return results;
+	};
+
+	const collectConsecutiveRootTermItems = (
+		arr: Content[],
+		startIndex: number,
+	): { termItems: Content[]; nextIndex: number } => {
+		const termItems: Content[] = [];
+		let i = startIndex;
+		while (i < arr.length) {
+			const currentNode = arr[i];
+			if (
+				isAstNode(currentNode) &&
+				isTypstType(currentNode.type, /^Marked::TermItem$/)
+			) {
+				termItems.push(currentNode);
+				i++;
+				continue;
+			}
+			if (currentNode.type === ASTNodeTypes.Str && currentNode.raw === "\n") {
+				if (
+					i + 1 < arr.length &&
+					isAstNode(arr[i + 1]) &&
+					isTypstType(arr[i + 1].type, /^Marked::TermItem$/)
+				) {
+					i++;
+					continue;
+				}
+			}
+			break;
+		}
+		return { termItems, nextIndex: i };
+	};
 	const sourceChildren = rootNode.children;
 
 	const children: Content[] = [];
@@ -938,6 +1016,16 @@ export const paragraphizeTextlintAstObject = (
 		}
 
 		const node = sourceChildren[i];
+
+		if (isAstNode(node) && isTypstType(node.type, /^Marked::TermItem$/)) {
+			const { termItems, nextIndex } = collectConsecutiveRootTermItems(
+				sourceChildren,
+				i,
+			);
+			children.push(...termItems);
+			i = nextIndex;
+			continue;
+		}
 
 		// Collect consecutive ListItems into a single List node.
 		if (node.type === ASTNodeTypes.ListItem) {
@@ -1144,7 +1232,6 @@ export const paragraphizeTextlintAstObject = (
 				paragraph.push(node);
 				i++;
 
-				// Collect consecutive nodes for paragraph grouping.
 				while (i < sourceChildren.length) {
 					const currentNode = sourceChildren[i];
 
@@ -1164,23 +1251,48 @@ export const paragraphizeTextlintAstObject = (
 				if (paragraph.length > 0) {
 					const headNode = paragraph[0];
 					const lastNode = paragraph[paragraph.length - 1];
-
-					// Special handling for hash symbols.
 					if (
 						["Kw::Hash", "Fn::(Hash: &quot;#&quot;)"].includes(headNode.type)
 					) {
 						children.push(...paragraph);
 					} else {
-						children.push({
-							loc: {
-								start: headNode.loc.start,
-								end: lastNode.loc.end,
-							},
-							range: [headNode.range[0], lastNode.range[1]],
-							raw: paragraph.map((node) => node.raw).join(""),
-							type: ASTNodeTypes.Paragraph,
-							children: paragraph,
-						} as Content);
+						const isTermItem = (c: Content): boolean =>
+							isAstNode(c) && isTypstType(c.type, /^Marked::TermItem$/);
+						const createParagraph = (nodes: Content[]): Content => {
+							const first = nodes[0];
+							const last = nodes[nodes.length - 1];
+							return {
+								type: ASTNodeTypes.Paragraph,
+								children: nodes,
+								loc: { start: first.loc.start, end: last.loc.end },
+								range: [first.range[0], last.range[1]],
+								raw: nodes.map((n) => n.raw).join(""),
+							} as Content;
+						};
+						const innerParagraphWithTerms: AstNode | undefined = (() => {
+							if (paragraph.length !== 1) return undefined;
+							const only = paragraph[0];
+							if (only.type !== ASTNodeTypes.Paragraph) return undefined;
+							if (!isAstNode(only) || !hasChildren(only)) return undefined;
+							if (!only.children.some(isTermItem)) return undefined;
+							return only;
+						})();
+						if (innerParagraphWithTerms) {
+							children.push(...splitParagraphTermlist(innerParagraphWithTerms));
+							continue;
+						}
+						if (paragraph.some(isTermItem)) {
+							const paraNode: AstNode = {
+								type: ASTNodeTypes.Paragraph,
+								children: paragraph as Content[],
+								loc: { start: headNode.loc.start, end: lastNode.loc.end },
+								range: [headNode.range[0], lastNode.range[1]],
+								raw: paragraph.map((p: Content) => p.raw).join(""),
+							};
+							children.push(...splitParagraphTermlist(paraNode));
+							continue;
+						}
+						children.push(createParagraph(paragraph));
 					}
 				}
 			}
