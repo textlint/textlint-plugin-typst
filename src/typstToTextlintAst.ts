@@ -929,6 +929,10 @@ export const paragraphizeTextlintAstObject = (
 	const isTermItem = (c: Content): boolean =>
 		isAstNode(c) && isTypstType(c.type, /^Marked::TermItem$/);
 	const createParagraph = (nodes: Content[]): Content => {
+		if (!nodes || nodes.length === 0) {
+			throw new Error("Unexpected empty nodes array");
+		}
+
 		const first = nodes[0];
 		const last = nodes[nodes.length - 1];
 		return {
