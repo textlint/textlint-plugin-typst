@@ -1,6 +1,6 @@
 {
 	"name": "textlint-plugin-typst",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"description": "textlint plugin to lint Typst",
 	"keywords": ["textlint", "textlintplugin", "plugin", "lint", "typst"],
 	"repository": "https://github.com/textlint/textlint-plugin-typst",
