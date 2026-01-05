@@ -264,15 +264,13 @@ describe("linting", () => {
 			});
 		});
 		describe("textlint-rule-sentence-length", () => {
-			let textlintResult: TextlintResult;
-
-			beforeAll(async () => {
+			const lintFile = async (fileName: string) => {
 				const kernel = new TextlintKernel();
-				textlintResult = await kernel.lintText(
+				return await kernel.lintText(
 					fs.readFileSync(
 						path.join(
 							__dirname,
-							"./fixtures/smoke/textlint-rule-sentence-length/main.typ",
+							`./fixtures/smoke/textlint-rule-sentence-length/${fileName}`,
 						),
 						"utf-8",
 					),
@@ -295,17 +293,80 @@ describe("linting", () => {
 						],
 					},
 				);
-			});
+			};
 
-			const getViolations = () => {
-				return textlintResult.messages.filter(
+			const getViolations = (result: TextlintResult) => {
+				return result.messages.filter(
 					(message) => message.ruleId === "sentence-length",
 				);
 			};
 
-			it("should ignore comments", () => {
-				const violations = getViolations();
+			it("should ignore single line comments", async () => {
+				const result = await lintFile("single_line_comment_valid.typ");
+				const violations = getViolations(result);
 				expect(violations).toEqual([]);
+			});
+
+			it("should ignore multiline comments", async () => {
+				const result = await lintFile("multiline_comment_valid.typ");
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should handle elements immediately below comments", async () => {
+				const result = await lintFile(
+					"element_immediately_below_comment_valid.typ",
+				);
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should handle term lists", async () => {
+				const result = await lintFile("term_list_valid.typ");
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should handle nested lists", async () => {
+				const result = await lintFile("nested_list_valid.typ");
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should ignore math blocks", async () => {
+				const result = await lintFile("math_valid.typ");
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should handle figures", async () => {
+				const result = await lintFile("figure_valid.typ");
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should handle nested content blocks", async () => {
+				const result = await lintFile("nested_content_blocks_valid.typ");
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
+
+			it("should detect violations in lists", async () => {
+				const result = await lintFile("list_invalid.typ");
+				const violations = getViolations(result);
+				expect(
+					violations.length,
+					`Expected 1 violation but got ${violations.length}. Violations: ${JSON.stringify(violations, null, 2)}`,
+				).toBe(1);
+			});
+
+			it("should detect violations in term lists", async () => {
+				const result = await lintFile("term_list_invalid copy.typ");
+				const violations = getViolations(result);
+				expect(
+					violations.length,
+					`Expected 1 violation but got ${violations.length}. Violations: ${JSON.stringify(violations, null, 2)}`,
+				).toBe(1);
 			});
 		});
 	});
