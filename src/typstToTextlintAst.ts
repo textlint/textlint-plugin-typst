@@ -924,23 +924,24 @@ export const paragraphizeTextlintAstObject = (
 		return { nodes: collected, nextIndex: i };
 	};
 
+	const isBlankStr = (c: Content): boolean =>
+		c.type === ASTNodeTypes.Str && c.raw?.trim() === "";
+	const isTermItem = (c: Content): boolean =>
+		isAstNode(c) && isTypstType(c.type, /^Marked::TermItem$/);
+	const createParagraph = (nodes: Content[]): Content => {
+		const first = nodes[0];
+		const last = nodes[nodes.length - 1];
+		return {
+			type: ASTNodeTypes.Paragraph,
+			children: nodes,
+			loc: { start: first.loc.start, end: last.loc.end },
+			range: [first.range[0], last.range[1]],
+			raw: nodes.map((c) => c.raw).join(""),
+		} as Content;
+	};
+
 	const splitParagraphTermlist = (paraNode: AstNode): Content[] => {
 		if (!hasChildren(paraNode)) return [];
-		const isBlankStr = (c: Content): boolean =>
-			c.type === ASTNodeTypes.Str && c.raw?.trim() === "";
-		const isTermItem = (c: Content): boolean =>
-			isAstNode(c) && isTypstType(c.type, /^Marked::TermItem$/);
-		const createParagraph = (nodes: Content[]): Content => {
-			const first = nodes[0];
-			const last = nodes[nodes.length - 1];
-			return {
-				type: ASTNodeTypes.Paragraph,
-				children: nodes,
-				loc: { start: first.loc.start, end: last.loc.end },
-				range: [first.range[0], last.range[1]],
-				raw: nodes.map((c) => c.raw).join(""),
-			} as Content;
-		};
 
 		const segments: { isTerm: boolean; nodes: Content[] }[] = [];
 		let current: { isTerm: boolean; nodes: Content[] } | null = null;
@@ -975,8 +976,8 @@ export const paragraphizeTextlintAstObject = (
 	const collectConsecutiveRootTermItems = (
 		arr: Content[],
 		startIndex: number,
-	): { termItems: Content[]; nextIndex: number } => {
-		const termItems: Content[] = [];
+	): { nodes: Content[]; nextIndex: number } => {
+		const nodes: Content[] = [];
 		let i = startIndex;
 		while (i < arr.length) {
 			const currentNode = arr[i];
@@ -984,7 +985,7 @@ export const paragraphizeTextlintAstObject = (
 				isAstNode(currentNode) &&
 				isTypstType(currentNode.type, /^Marked::TermItem$/)
 			) {
-				termItems.push(currentNode);
+				nodes.push(currentNode);
 				i++;
 				continue;
 			}
@@ -1000,7 +1001,7 @@ export const paragraphizeTextlintAstObject = (
 			}
 			break;
 		}
-		return { termItems, nextIndex: i };
+		return { nodes, nextIndex: i };
 	};
 	const sourceChildren = rootNode.children;
 
@@ -1018,11 +1019,11 @@ export const paragraphizeTextlintAstObject = (
 		const node = sourceChildren[i];
 
 		if (isAstNode(node) && isTypstType(node.type, /^Marked::TermItem$/)) {
-			const { termItems, nextIndex } = collectConsecutiveRootTermItems(
+			const { nodes, nextIndex } = collectConsecutiveRootTermItems(
 				sourceChildren,
 				i,
 			);
-			children.push(...termItems);
+			children.push(...nodes);
 			i = nextIndex;
 			continue;
 		}
