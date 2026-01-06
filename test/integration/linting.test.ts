@@ -361,7 +361,7 @@ describe("linting", () => {
 			});
 
 			it("should detect violations in term lists", async () => {
-				const result = await lintFile("term_list_invalid copy.typ");
+				const result = await lintFile("term_list_invalid.typ");
 				const violations = getViolations(result);
 				expect(
 					violations.length,
