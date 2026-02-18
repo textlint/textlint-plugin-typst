@@ -156,6 +156,14 @@ const isAstNode = (value: unknown): value is AstNode => {
 	);
 };
 
+const isInlineAstNode = (node: AstNode): boolean =>
+	node.type === ASTNodeTypes.Str ||
+	node.type === ASTNodeTypes.Link ||
+	node.type === ASTNodeTypes.Code ||
+	node.type === ASTNodeTypes.Delete ||
+	node.type === ASTNodeTypes.Emphasis ||
+	node.type === ASTNodeTypes.Strong;
+
 const extractFirstTextValue = (node: AstNode): string | undefined => {
 	if (hasValue(node)) {
 		return node.value;
@@ -435,7 +443,9 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 					if (
 						currentEndLine !== nextStartLine &&
 						child.type !== ASTNodeTypes.Break &&
-						nextChild.type !== ASTNodeTypes.Break
+						nextChild.type !== ASTNodeTypes.Break &&
+						isInlineAstNode(child) &&
+						isInlineAstNode(nextChild)
 					) {
 						const breakNode: AstNode = {
 							type: "Str",
