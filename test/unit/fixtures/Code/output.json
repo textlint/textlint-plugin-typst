@@ -247,22 +247,6 @@
 				{
 					"loc": {
 						"end": {
-							"column": 0,
-							"line": 6
-						},
-						"start": {
-							"column": 36,
-							"line": 5
-						}
-					},
-					"range": [74, 75],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
-				},
-				{
-					"loc": {
-						"end": {
 							"column": 8,
 							"line": 6
 						},
@@ -352,7 +336,7 @@
 				}
 			},
 			"range": [38, 108],
-			"raw": "What is ```rust fn main()``` in Rust\nwould be ```c int main()``` in C.",
+			"raw": "What is ```rust fn main()``` in Rustwould be ```c int main()``` in C.",
 			"type": "Paragraph"
 		},
 		{
@@ -456,22 +440,6 @@
 				{
 					"loc": {
 						"end": {
-							"column": 0,
-							"line": 9
-						},
-						"start": {
-							"column": 34,
-							"line": 8
-						}
-					},
-					"range": [144, 145],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
-				},
-				{
-					"loc": {
-						"end": {
 							"column": 33,
 							"line": 9
 						},
@@ -484,22 +452,6 @@
 					"raw": "(but the spaces are trimmed). And",
 					"type": "Str",
 					"value": "(but the spaces are trimmed). And"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 0,
-							"line": 10
-						},
-						"start": {
-							"column": 33,
-							"line": 9
-						}
-					},
-					"range": [178, 179],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
 				},
 				{
 					"loc": {
@@ -552,22 +504,6 @@
 				{
 					"loc": {
 						"end": {
-							"column": 0,
-							"line": 11
-						},
-						"start": {
-							"column": 32,
-							"line": 10
-						}
-					},
-					"range": [211, 212],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
-				},
-				{
-					"loc": {
-						"end": {
 							"column": 13,
 							"line": 11
 						},
@@ -593,7 +529,7 @@
 				}
 			},
 			"range": [110, 225],
-			"raw": "This has ``` `backticks` ``` in it\n(but the spaces are trimmed). And\n``` here``` the leading space is\nalso trimmed.",
+			"raw": "This has ``` `backticks` ``` in it(but the spaces are trimmed). And``` here``` the leading space isalso trimmed.",
 			"type": "Paragraph"
 		}
 	],

@@ -342,179 +342,146 @@
 		{
 			"loc": {
 				"end": {
+					"column": 19,
+					"line": 2
+				},
+				"start": {
 					"column": 0,
+					"line": 2
+				}
+			},
+			"range": [21, 40],
+			"raw": "The coordinates are",
+			"type": "Str",
+			"value": "The coordinates are"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 20,
+					"line": 2
+				},
+				"start": {
+					"column": 19,
+					"line": 2
+				}
+			},
+			"range": [40, 41],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 21,
 					"line": 2
 				},
 				"start": {
 					"column": 20,
-					"line": 1
+					"line": 2
 				}
 			},
-			"range": [20, 21],
-			"raw": "\n",
-			"type": "Str",
-			"value": "\n"
+			"range": [41, 42],
+			"raw": "#",
+			"type": "Var::(Hash: &quot;#&quot;)",
+			"value": "#"
 		},
 		{
-			"children": [
-				{
-					"loc": {
-						"end": {
-							"column": 19,
-							"line": 2
-						},
-						"start": {
-							"column": 0,
-							"line": 2
-						}
-					},
-					"range": [21, 40],
-					"raw": "The coordinates are",
-					"type": "Str",
-					"value": "The coordinates are"
+			"loc": {
+				"end": {
+					"column": 22,
+					"line": 2
 				},
-				{
-					"loc": {
-						"end": {
-							"column": 20,
-							"line": 2
-						},
-						"start": {
-							"column": 19,
-							"line": 2
-						}
-					},
-					"range": [40, 41],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 21,
-							"line": 2
-						},
-						"start": {
-							"column": 20,
-							"line": 2
-						}
-					},
-					"range": [41, 42],
-					"raw": "#",
-					"type": "Var::(Hash: &quot;#&quot;)",
-					"value": "#"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 22,
-							"line": 2
-						},
-						"start": {
-							"column": 21,
-							"line": 2
-						}
-					},
-					"range": [42, 43],
-					"raw": "x",
-					"type": "Var::(Ident: &quot;x&quot;)",
-					"value": "x"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 23,
-							"line": 2
-						},
-						"start": {
-							"column": 22,
-							"line": 2
-						}
-					},
-					"range": [43, 44],
-					"raw": ",",
-					"type": "Str",
-					"value": ","
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 24,
-							"line": 2
-						},
-						"start": {
-							"column": 23,
-							"line": 2
-						}
-					},
-					"range": [44, 45],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 25,
-							"line": 2
-						},
-						"start": {
-							"column": 24,
-							"line": 2
-						}
-					},
-					"range": [45, 46],
-					"raw": "#",
-					"type": "Var::(Hash: &quot;#&quot;)",
-					"value": "#"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 26,
-							"line": 2
-						},
-						"start": {
-							"column": 25,
-							"line": 2
-						}
-					},
-					"range": [46, 47],
-					"raw": "y",
-					"type": "Var::(Ident: &quot;y&quot;)",
-					"value": "y"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 27,
-							"line": 2
-						},
-						"start": {
-							"column": 26,
-							"line": 2
-						}
-					},
-					"range": [47, 48],
-					"raw": ".",
-					"type": "Str",
-					"value": "."
+				"start": {
+					"column": 21,
+					"line": 2
 				}
-			],
+			},
+			"range": [42, 43],
+			"raw": "x",
+			"type": "Var::(Ident: &quot;x&quot;)",
+			"value": "x"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 23,
+					"line": 2
+				},
+				"start": {
+					"column": 22,
+					"line": 2
+				}
+			},
+			"range": [43, 44],
+			"raw": ",",
+			"type": "Str",
+			"value": ","
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 24,
+					"line": 2
+				},
+				"start": {
+					"column": 23,
+					"line": 2
+				}
+			},
+			"range": [44, 45],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 25,
+					"line": 2
+				},
+				"start": {
+					"column": 24,
+					"line": 2
+				}
+			},
+			"range": [45, 46],
+			"raw": "#",
+			"type": "Var::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 26,
+					"line": 2
+				},
+				"start": {
+					"column": 25,
+					"line": 2
+				}
+			},
+			"range": [46, 47],
+			"raw": "y",
+			"type": "Var::(Ident: &quot;y&quot;)",
+			"value": "y"
+		},
+		{
 			"loc": {
 				"end": {
 					"column": 27,
 					"line": 2
 				},
 				"start": {
-					"column": 0,
+					"column": 26,
 					"line": 2
 				}
 			},
-			"range": [21, 48],
-			"raw": "The coordinates are #x, #y.",
-			"type": "Paragraph"
+			"range": [47, 48],
+			"raw": ".",
+			"type": "Str",
+			"value": "."
 		},
 		{
 			"loc": {
@@ -1035,211 +1002,162 @@
 		{
 			"loc": {
 				"end": {
-					"column": 0,
+					"column": 20,
 					"line": 5
 				},
 				"start": {
-					"column": 30,
-					"line": 4
+					"column": 0,
+					"line": 5
 				}
 			},
-			"range": [80, 81],
-			"raw": "\n",
+			"range": [81, 101],
+			"raw": "The first element is",
 			"type": "Str",
-			"value": "\n"
+			"value": "The first element is"
 		},
 		{
-			"children": [
-				{
-					"loc": {
-						"end": {
-							"column": 20,
-							"line": 5
-						},
-						"start": {
-							"column": 0,
-							"line": 5
-						}
-					},
-					"range": [81, 101],
-					"raw": "The first element is",
-					"type": "Str",
-					"value": "The first element is"
+			"loc": {
+				"end": {
+					"column": 21,
+					"line": 5
 				},
-				{
-					"loc": {
-						"end": {
-							"column": 21,
-							"line": 5
-						},
-						"start": {
-							"column": 20,
-							"line": 5
-						}
-					},
-					"range": [101, 102],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 22,
-							"line": 5
-						},
-						"start": {
-							"column": 21,
-							"line": 5
-						}
-					},
-					"range": [102, 103],
-					"raw": "#",
-					"type": "Var::(Hash: &quot;#&quot;)",
-					"value": "#"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 23,
-							"line": 5
-						},
-						"start": {
-							"column": 22,
-							"line": 5
-						}
-					},
-					"range": [103, 104],
-					"raw": "a",
-					"type": "Var::(Ident: &quot;a&quot;)",
-					"value": "a"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 24,
-							"line": 5
-						},
-						"start": {
-							"column": 23,
-							"line": 5
-						}
-					},
-					"range": [104, 105],
-					"raw": ".",
-					"type": "Str",
-					"value": "."
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 0,
-							"line": 6
-						},
-						"start": {
-							"column": 24,
-							"line": 5
-						}
-					},
-					"range": [105, 106],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 19,
-							"line": 6
-						},
-						"start": {
-							"column": 0,
-							"line": 6
-						}
-					},
-					"range": [106, 125],
-					"raw": "The last element is",
-					"type": "Str",
-					"value": "The last element is"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 20,
-							"line": 6
-						},
-						"start": {
-							"column": 19,
-							"line": 6
-						}
-					},
-					"range": [125, 126],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 21,
-							"line": 6
-						},
-						"start": {
-							"column": 20,
-							"line": 6
-						}
-					},
-					"range": [126, 127],
-					"raw": "#",
-					"type": "Var::(Hash: &quot;#&quot;)",
-					"value": "#"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 22,
-							"line": 6
-						},
-						"start": {
-							"column": 21,
-							"line": 6
-						}
-					},
-					"range": [127, 128],
-					"raw": "b",
-					"type": "Var::(Ident: &quot;b&quot;)",
-					"value": "b"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 23,
-							"line": 6
-						},
-						"start": {
-							"column": 22,
-							"line": 6
-						}
-					},
-					"range": [128, 129],
-					"raw": ".",
-					"type": "Str",
-					"value": "."
+				"start": {
+					"column": 20,
+					"line": 5
 				}
-			],
+			},
+			"range": [101, 102],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 22,
+					"line": 5
+				},
+				"start": {
+					"column": 21,
+					"line": 5
+				}
+			},
+			"range": [102, 103],
+			"raw": "#",
+			"type": "Var::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 23,
+					"line": 5
+				},
+				"start": {
+					"column": 22,
+					"line": 5
+				}
+			},
+			"range": [103, 104],
+			"raw": "a",
+			"type": "Var::(Ident: &quot;a&quot;)",
+			"value": "a"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 24,
+					"line": 5
+				},
+				"start": {
+					"column": 23,
+					"line": 5
+				}
+			},
+			"range": [104, 105],
+			"raw": ".",
+			"type": "Str",
+			"value": "."
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 19,
+					"line": 6
+				},
+				"start": {
+					"column": 0,
+					"line": 6
+				}
+			},
+			"range": [106, 125],
+			"raw": "The last element is",
+			"type": "Str",
+			"value": "The last element is"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 20,
+					"line": 6
+				},
+				"start": {
+					"column": 19,
+					"line": 6
+				}
+			},
+			"range": [125, 126],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 21,
+					"line": 6
+				},
+				"start": {
+					"column": 20,
+					"line": 6
+				}
+			},
+			"range": [126, 127],
+			"raw": "#",
+			"type": "Var::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 22,
+					"line": 6
+				},
+				"start": {
+					"column": 21,
+					"line": 6
+				}
+			},
+			"range": [127, 128],
+			"raw": "b",
+			"type": "Var::(Ident: &quot;b&quot;)",
+			"value": "b"
+		},
+		{
 			"loc": {
 				"end": {
 					"column": 23,
 					"line": 6
 				},
 				"start": {
-					"column": 0,
-					"line": 5
+					"column": 22,
+					"line": 6
 				}
 			},
-			"range": [81, 129],
-			"raw": "The first element is #a.\nThe last element is #b.",
-			"type": "Paragraph"
+			"range": [128, 129],
+			"raw": ".",
+			"type": "Str",
+			"value": "."
 		},
 		{
 			"loc": {
@@ -1390,22 +1308,6 @@
 							"value": "("
 						},
 						{
-							"loc": {
-								"end": {
-									"column": 2,
-									"line": 9
-								},
-								"start": {
-									"column": 14,
-									"line": 8
-								}
-							},
-							"range": [145, 146],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
-						},
-						{
 							"children": [
 								{
 									"loc": {
@@ -1501,22 +1403,6 @@
 							"raw": ",",
 							"type": "Punc::Comma",
 							"value": ","
-						},
-						{
-							"loc": {
-								"end": {
-									"column": 2,
-									"line": 10
-								},
-								"start": {
-									"column": 24,
-									"line": 9
-								}
-							},
-							"range": [170, 171],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
 						},
 						{
 							"children": [
@@ -1616,22 +1502,6 @@
 							"value": ","
 						},
 						{
-							"loc": {
-								"end": {
-									"column": 2,
-									"line": 11
-								},
-								"start": {
-									"column": 23,
-									"line": 10
-								}
-							},
-							"range": [194, 195],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
-						},
-						{
 							"children": [
 								{
 									"loc": {
@@ -1727,22 +1597,6 @@
 							"raw": ",",
 							"type": "Punc::Comma",
 							"value": ","
-						},
-						{
-							"loc": {
-								"end": {
-									"column": 0,
-									"line": 12
-								},
-								"start": {
-									"column": 23,
-									"line": 11
-								}
-							},
-							"range": [218, 219],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
 						},
 						{
 							"loc": {
@@ -2019,115 +1873,82 @@
 		{
 			"loc": {
 				"end": {
-					"column": 0,
+					"column": 12,
 					"line": 15
 				},
 				"start": {
-					"column": 22,
-					"line": 14
+					"column": 0,
+					"line": 15
 				}
 			},
-			"range": [244, 245],
-			"raw": "\n",
+			"range": [245, 257],
+			"raw": "Austen wrote",
 			"type": "Str",
-			"value": "\n"
+			"value": "Austen wrote"
 		},
 		{
-			"children": [
-				{
-					"loc": {
-						"end": {
-							"column": 12,
-							"line": 15
-						},
-						"start": {
-							"column": 0,
-							"line": 15
-						}
-					},
-					"range": [245, 257],
-					"raw": "Austen wrote",
-					"type": "Str",
-					"value": "Austen wrote"
+			"loc": {
+				"end": {
+					"column": 13,
+					"line": 15
 				},
-				{
-					"loc": {
-						"end": {
-							"column": 13,
-							"line": 15
-						},
-						"start": {
-							"column": 12,
-							"line": 15
-						}
-					},
-					"range": [257, 258],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 14,
-							"line": 15
-						},
-						"start": {
-							"column": 13,
-							"line": 15
-						}
-					},
-					"range": [258, 259],
-					"raw": "#",
-					"type": "Var::(Hash: &quot;#&quot;)",
-					"value": "#"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 20,
-							"line": 15
-						},
-						"start": {
-							"column": 14,
-							"line": 15
-						}
-					},
-					"range": [259, 265],
-					"raw": "Austen",
-					"type": "Var::(Ident: &quot;Austen&quot;)",
-					"value": "Austen"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 21,
-							"line": 15
-						},
-						"start": {
-							"column": 20,
-							"line": 15
-						}
-					},
-					"range": [265, 266],
-					"raw": ".",
-					"type": "Str",
-					"value": "."
+				"start": {
+					"column": 12,
+					"line": 15
 				}
-			],
+			},
+			"range": [257, 258],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 14,
+					"line": 15
+				},
+				"start": {
+					"column": 13,
+					"line": 15
+				}
+			},
+			"range": [258, 259],
+			"raw": "#",
+			"type": "Var::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 20,
+					"line": 15
+				},
+				"start": {
+					"column": 14,
+					"line": 15
+				}
+			},
+			"range": [259, 265],
+			"raw": "Austen",
+			"type": "Var::(Ident: &quot;Austen&quot;)",
+			"value": "Austen"
+		},
+		{
 			"loc": {
 				"end": {
 					"column": 21,
 					"line": 15
 				},
 				"start": {
-					"column": 0,
+					"column": 20,
 					"line": 15
 				}
 			},
-			"range": [245, 266],
-			"raw": "Austen wrote #Austen.",
-			"type": "Paragraph"
+			"range": [265, 266],
+			"raw": ".",
+			"type": "Str",
+			"value": "."
 		},
 		{
 			"loc": {
@@ -2407,115 +2228,82 @@
 		{
 			"loc": {
 				"end": {
-					"column": 0,
+					"column": 11,
 					"line": 18
 				},
 				"start": {
-					"column": 23,
-					"line": 17
+					"column": 0,
+					"line": 18
 				}
 			},
-			"range": [291, 292],
-			"raw": "\n",
+			"range": [292, 303],
+			"raw": "Homer wrote",
 			"type": "Str",
-			"value": "\n"
+			"value": "Homer wrote"
 		},
 		{
-			"children": [
-				{
-					"loc": {
-						"end": {
-							"column": 11,
-							"line": 18
-						},
-						"start": {
-							"column": 0,
-							"line": 18
-						}
-					},
-					"range": [292, 303],
-					"raw": "Homer wrote",
-					"type": "Str",
-					"value": "Homer wrote"
+			"loc": {
+				"end": {
+					"column": 12,
+					"line": 18
 				},
-				{
-					"loc": {
-						"end": {
-							"column": 12,
-							"line": 18
-						},
-						"start": {
-							"column": 11,
-							"line": 18
-						}
-					},
-					"range": [303, 304],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 13,
-							"line": 18
-						},
-						"start": {
-							"column": 12,
-							"line": 18
-						}
-					},
-					"range": [304, 305],
-					"raw": "#",
-					"type": "Var::(Hash: &quot;#&quot;)",
-					"value": "#"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 14,
-							"line": 18
-						},
-						"start": {
-							"column": 13,
-							"line": 18
-						}
-					},
-					"range": [305, 306],
-					"raw": "h",
-					"type": "Var::(Ident: &quot;h&quot;)",
-					"value": "h"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 15,
-							"line": 18
-						},
-						"start": {
-							"column": 14,
-							"line": 18
-						}
-					},
-					"range": [306, 307],
-					"raw": ".",
-					"type": "Str",
-					"value": "."
+				"start": {
+					"column": 11,
+					"line": 18
 				}
-			],
+			},
+			"range": [303, 304],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 13,
+					"line": 18
+				},
+				"start": {
+					"column": 12,
+					"line": 18
+				}
+			},
+			"range": [304, 305],
+			"raw": "#",
+			"type": "Var::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 14,
+					"line": 18
+				},
+				"start": {
+					"column": 13,
+					"line": 18
+				}
+			},
+			"range": [305, 306],
+			"raw": "h",
+			"type": "Var::(Ident: &quot;h&quot;)",
+			"value": "h"
+		},
+		{
 			"loc": {
 				"end": {
 					"column": 15,
 					"line": 18
 				},
 				"start": {
-					"column": 0,
+					"column": 14,
 					"line": 18
 				}
 			},
-			"range": [292, 307],
-			"raw": "Homer wrote #h.",
-			"type": "Paragraph"
+			"range": [306, 307],
+			"raw": ".",
+			"type": "Str",
+			"value": "."
 		},
 		{
 			"loc": {
@@ -2807,22 +2595,6 @@
 			"range": [310, 338],
 			"raw": "let (Homer, ..other) = books",
 			"type": "Marked::LetBinding"
-		},
-		{
-			"loc": {
-				"end": {
-					"column": 0,
-					"line": 21
-				},
-				"start": {
-					"column": 29,
-					"line": 20
-				}
-			},
-			"range": [338, 339],
-			"raw": "\n",
-			"type": "Str",
-			"value": "\n"
 		},
 		{
 			"loc": {

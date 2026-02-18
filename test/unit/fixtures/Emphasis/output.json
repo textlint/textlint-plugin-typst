@@ -164,36 +164,20 @@
 					"range": [12, 21],
 					"raw": "_ a b c _",
 					"type": "Emphasis"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 0,
-							"line": 4
-						},
-						"start": {
-							"column": 9,
-							"line": 3
-						}
-					},
-					"range": [21, 22],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
 				}
 			],
 			"loc": {
 				"end": {
-					"column": 0,
-					"line": 4
+					"column": 9,
+					"line": 3
 				},
 				"start": {
 					"column": 0,
 					"line": 3
 				}
 			},
-			"range": [12, 22],
-			"raw": "_ a b c _\n",
+			"range": [12, 21],
+			"raw": "_ a b c _",
 			"type": "Paragraph"
 		},
 		{

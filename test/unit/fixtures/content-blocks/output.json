@@ -37,22 +37,6 @@
 							"value": "{"
 						},
 						{
-							"loc": {
-								"end": {
-									"column": 2,
-									"line": 2
-								},
-								"start": {
-									"column": 2,
-									"line": 1
-								}
-							},
-							"range": [2, 3],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
-						},
-						{
 							"children": [
 								{
 									"children": [
@@ -199,22 +183,6 @@
 									"range": [5, 19],
 									"raw": "let a = [from]",
 									"type": "Marked::LetBinding"
-								},
-								{
-									"loc": {
-										"end": {
-											"column": 2,
-											"line": 3
-										},
-										"start": {
-											"column": 16,
-											"line": 2
-										}
-									},
-									"range": [19, 20],
-									"raw": "\n",
-									"type": "Str",
-									"value": "\n"
 								},
 								{
 									"children": [
@@ -412,22 +380,6 @@
 									"type": "Marked::LetBinding"
 								},
 								{
-									"loc": {
-										"end": {
-											"column": 2,
-											"line": 4
-										},
-										"start": {
-											"column": 19,
-											"line": 3
-										}
-									},
-									"range": [39, 40],
-									"raw": "\n",
-									"type": "Str",
-									"value": "\n"
-								},
-								{
 									"children": [
 										{
 											"loc": {
@@ -459,22 +411,6 @@
 									"range": [43, 48],
 									"raw": "hello",
 									"type": "Paragraph"
-								},
-								{
-									"loc": {
-										"end": {
-											"column": 2,
-											"line": 5
-										},
-										"start": {
-											"column": 10,
-											"line": 4
-										}
-									},
-									"range": [50, 51],
-									"raw": "\n",
-									"type": "Str",
-									"value": "\n"
 								},
 								{
 									"children": [
@@ -685,22 +621,6 @@
 							"range": [5, 68],
 							"raw": "let a = [from]\n  let b = [*world*]\n  [hello ]\n  a + [ the ] + b",
 							"type": "Marked::Code"
-						},
-						{
-							"loc": {
-								"end": {
-									"column": 0,
-									"line": 6
-								},
-								"start": {
-									"column": 17,
-									"line": 5
-								}
-							},
-							"range": [68, 69],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
 						},
 						{
 							"loc": {

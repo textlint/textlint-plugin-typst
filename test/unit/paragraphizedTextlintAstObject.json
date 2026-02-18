@@ -325,22 +325,6 @@
 			"type": "Marked::SetRule"
 		},
 		{
-			"type": "Str",
-			"raw": "\n",
-			"value": "\n",
-			"range": [36, 37],
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 36
-				},
-				"end": {
-					"line": 2,
-					"column": 0
-				}
-			}
-		},
-		{
 			"value": "#",
 			"raw": "#",
 			"range": [37, 38],
@@ -650,36 +634,8 @@
 			"type": "Header"
 		},
 		{
-			"loc": {
-				"start": {
-					"line": 4,
-					"column": 20
-				},
-				"end": {
-					"line": 7,
-					"column": 42
-				}
-			},
-			"range": [88, 224],
-			"raw": "\nThe Fibonacci sequence is defined through the\nrecurrence relation $F_n = F_(n-1) + F_(n-2)$.\nIt can also be expressed in _closed form:_",
 			"type": "Paragraph",
 			"children": [
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [88, 89],
-					"loc": {
-						"start": {
-							"line": 4,
-							"column": 20
-						},
-						"end": {
-							"line": 5,
-							"column": 0
-						}
-					}
-				},
 				{
 					"value": "The Fibonacci sequence is defined through the",
 					"raw": "The Fibonacci sequence is defined through the",
@@ -695,22 +651,6 @@
 						}
 					},
 					"type": "Str"
-				},
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [134, 135],
-					"loc": {
-						"start": {
-							"line": 5,
-							"column": 45
-						},
-						"end": {
-							"line": 6,
-							"column": 0
-						}
-					}
 				},
 				{
 					"value": "recurrence relation",
@@ -775,22 +715,6 @@
 						}
 					},
 					"type": "Str"
-				},
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [181, 182],
-					"loc": {
-						"start": {
-							"line": 6,
-							"column": 46
-						},
-						"end": {
-							"line": 7,
-							"column": 0
-						}
-					}
 				},
 				{
 					"value": "It can also be expressed in",
@@ -889,7 +813,19 @@
 					},
 					"type": "Emphasis"
 				}
-			]
+			],
+			"loc": {
+				"start": {
+					"line": 5,
+					"column": 0
+				},
+				"end": {
+					"line": 7,
+					"column": 42
+				}
+			},
+			"range": [89, 224],
+			"raw": "The Fibonacci sequence is defined through therecurrence relation $F_n = F_(n-1) + F_(n-2)$.It can also be expressed in _closed form:_"
 		},
 		{
 			"value": "\n\n",
@@ -1083,22 +1019,6 @@
 				}
 			},
 			"type": "Marked::LetBinding"
-		},
-		{
-			"type": "Str",
-			"raw": "\n",
-			"value": "\n",
-			"range": [316, 317],
-			"loc": {
-				"start": {
-					"line": 12,
-					"column": 14
-				},
-				"end": {
-					"line": 13,
-					"column": 0
-				}
-			}
 		},
 		{
 			"value": "#",
@@ -1457,22 +1377,6 @@
 			"type": "Marked::LetBinding"
 		},
 		{
-			"type": "Str",
-			"raw": "\n",
-			"value": "\n",
-			"range": [348, 349],
-			"loc": {
-				"start": {
-					"line": 13,
-					"column": 31
-				},
-				"end": {
-					"line": 14,
-					"column": 0
-				}
-			}
-		},
-		{
 			"value": "#",
 			"raw": "#",
 			"range": [349, 350],
@@ -1670,22 +1574,6 @@
 										}
 									},
 									"type": "Punc::LeftParen"
-								},
-								{
-									"type": "Str",
-									"raw": "\n",
-									"value": "\n",
-									"range": [364, 365],
-									"loc": {
-										"start": {
-											"line": 14,
-											"column": 15
-										},
-										"end": {
-											"line": 15,
-											"column": 2
-										}
-									}
 								},
 								{
 									"children": [
@@ -1947,22 +1835,6 @@
 												}
 											},
 											"type": "Marked::CodeBlock"
-										},
-										{
-											"type": "Str",
-											"raw": "\n",
-											"value": "\n",
-											"range": [382, 383],
-											"loc": {
-												"start": {
-													"line": 15,
-													"column": 17
-												},
-												"end": {
-													"line": 16,
-													"column": 2
-												}
-											}
 										},
 										{
 											"value": "else",
@@ -2533,22 +2405,6 @@
 									"type": "Marked::Conditional"
 								},
 								{
-									"type": "Str",
-									"raw": "\n",
-									"value": "\n",
-									"range": [417, 418],
-									"loc": {
-										"start": {
-											"line": 16,
-											"column": 34
-										},
-										"end": {
-											"line": 17,
-											"column": 0
-										}
-									}
-								},
-								{
 									"value": ")",
 									"raw": ")",
 									"range": [418, 419],
@@ -2626,18 +2482,6 @@
 			"type": "Break"
 		},
 		{
-			"loc": {
-				"start": {
-					"line": 19,
-					"column": 0
-				},
-				"end": {
-					"line": 19,
-					"column": 45
-				}
-			},
-			"range": [421, 466],
-			"raw": "The first #count numbers of the sequence are:",
 			"type": "Paragraph",
 			"children": [
 				{
@@ -2752,7 +2596,19 @@
 					},
 					"type": "Str"
 				}
-			]
+			],
+			"loc": {
+				"start": {
+					"line": 19,
+					"column": 0
+				},
+				"end": {
+					"line": 19,
+					"column": 45
+				}
+			},
+			"range": [421, 466],
+			"raw": "The first #count numbers of the sequence are:"
 		},
 		{
 			"value": "\n\n",
@@ -2907,22 +2763,6 @@
 											"type": "Punc::LeftParen"
 										},
 										{
-											"type": "Str",
-											"raw": "\n",
-											"value": "\n",
-											"range": [489, 490],
-											"loc": {
-												"start": {
-													"line": 21,
-													"column": 21
-												},
-												"end": {
-													"line": 22,
-													"column": 2
-												}
-											}
-										},
-										{
 											"children": [
 												{
 													"value": "columns",
@@ -3018,22 +2858,6 @@
 												}
 											},
 											"type": "Punc::Comma"
-										},
-										{
-											"type": "Str",
-											"raw": "\n",
-											"value": "\n",
-											"range": [507, 508],
-											"loc": {
-												"start": {
-													"line": 22,
-													"column": 17
-												},
-												"end": {
-													"line": 23,
-													"column": 2
-												}
-											}
 										},
 										{
 											"children": [
@@ -3328,22 +3152,6 @@
 												}
 											},
 											"type": "Punc::Comma"
-										},
-										{
-											"type": "Str",
-											"raw": "\n",
-											"value": "\n",
-											"range": [534, 535],
-											"loc": {
-												"start": {
-													"line": 23,
-													"column": 26
-												},
-												"end": {
-													"line": 24,
-													"column": 2
-												}
-											}
 										},
 										{
 											"children": [
@@ -3804,22 +3612,6 @@
 											"type": "Punc::Comma"
 										},
 										{
-											"type": "Str",
-											"raw": "\n",
-											"value": "\n",
-											"range": [566, 567],
-											"loc": {
-												"start": {
-													"line": 24,
-													"column": 31
-												},
-												"end": {
-													"line": 25,
-													"column": 0
-												}
-											}
-										},
-										{
 											"value": ")",
 											"raw": ")",
 											"range": [567, 568],
@@ -3928,18 +3720,6 @@
 			"type": "Break"
 		},
 		{
-			"loc": {
-				"start": {
-					"line": 27,
-					"column": 0
-				},
-				"end": {
-					"line": 27,
-					"column": 53
-				}
-			},
-			"range": [571, 624],
-			"raw": "// https://github.com/typst/typst/blob/main/README.md",
 			"type": "Paragraph",
 			"children": [
 				{
@@ -3958,7 +3738,19 @@
 					},
 					"type": "Comment"
 				}
-			]
+			],
+			"loc": {
+				"start": {
+					"line": 27,
+					"column": 0
+				},
+				"end": {
+					"line": 27,
+					"column": 53
+				}
+			},
+			"range": [571, 624],
+			"raw": "// https://github.com/typst/typst/blob/main/README.md"
 		}
 	],
 	"raw": "#set page(width: 10cm, height: auto)\n#set heading(numbering: \"1.\")\n\n= Fibonacci sequence\nThe Fibonacci sequence is defined through the\nrecurrence relation $F_n = F_(n-1) + F_(n-2)$.\nIt can also be expressed in _closed form:_\n\n$ F_n = round(1 / sqrt(5) phi.alt^n), quad\n  phi.alt = (1 + sqrt(5)) / 2 $\n\n#let count = 8\n#let nums = range(1, count + 1)\n#let fib(n) = (\n  if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }\n)\n\nThe first #count numbers of the sequence are:\n\n#align(center, table(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n))\n\n// https://github.com/typst/typst/blob/main/README.md",
