@@ -651,6 +651,22 @@
 						{
 							"loc": {
 								"end": {
+									"column": 2,
+									"line": 11
+								},
+								"start": {
+									"column": 31,
+									"line": 10
+								}
+							},
+							"range": [88, 89],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
 									"column": 31,
 									"line": 11
 								},

@@ -181,6 +181,22 @@
 				{
 					"loc": {
 						"end": {
+							"column": 0,
+							"line": 2
+						},
+						"start": {
+							"column": 33,
+							"line": 1
+						}
+					},
+					"range": [33, 34],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
 							"column": 33,
 							"line": 2
 						},
@@ -193,6 +209,22 @@
 					"raw": "lengths of right-angled triangle.",
 					"type": "Str",
 					"value": "lengths of right-angled triangle."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 3
+						},
+						"start": {
+							"column": 33,
+							"line": 2
+						}
+					},
+					"range": [67, 68],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
 				},
 				{
 					"loc": {
@@ -225,20 +257,36 @@
 					"raw": ":",
 					"type": "Str",
 					"value": ":"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 4
+						},
+						"start": {
+							"column": 19,
+							"line": 3
+						}
+					},
+					"range": [87, 88],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
 				}
 			],
 			"loc": {
 				"end": {
-					"column": 19,
-					"line": 3
+					"column": 0,
+					"line": 4
 				},
 				"start": {
 					"column": 0,
 					"line": 1
 				}
 			},
-			"range": [0, 87],
-			"raw": "Let $a$, $b$, and $c$ be the sidelengths of right-angled triangle.Then, we know that:",
+			"range": [0, 88],
+			"raw": "Let $a$, $b$, and $c$ be the side\nlengths of right-angled triangle.\nThen, we know that:\n",
 			"type": "Paragraph"
 		},
 		{
@@ -306,20 +354,36 @@
 					"raw": ":",
 					"type": "Str",
 					"value": ":"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 7
+						},
+						"start": {
+							"column": 19,
+							"line": 6
+						}
+					},
+					"range": [128, 129],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
 				}
 			],
 			"loc": {
 				"end": {
-					"column": 19,
-					"line": 6
+					"column": 0,
+					"line": 7
 				},
 				"start": {
 					"column": 0,
 					"line": 6
 				}
 			},
-			"range": [109, 128],
-			"raw": "Prove by induction:",
+			"range": [109, 129],
+			"raw": "Prove by induction:\n",
 			"type": "Paragraph"
 		},
 		{

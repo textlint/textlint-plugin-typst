@@ -360,8 +360,7 @@ describe("linting", () => {
 				).toBe(1);
 			});
 
-			// Skip this test because term list not yet supported
-			it.skip("should detect violations in term lists", async () => {
+			it("should detect violations in term lists", async () => {
 				const result = await lintFile("term_list_invalid.typ");
 				const violations = getViolations(result);
 				expect(

@@ -316,6 +316,22 @@
 						{
 							"loc": {
 								"end": {
+									"column": 2,
+									"line": 5
+								},
+								"start": {
+									"column": 31,
+									"line": 4
+								}
+							},
+							"range": [75, 76],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
 									"column": 31,
 									"line": 5
 								},

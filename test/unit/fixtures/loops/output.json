@@ -406,6 +406,22 @@
 		{
 			"loc": {
 				"end": {
+					"column": 0,
+					"line": 6
+				},
+				"start": {
+					"column": 10,
+					"line": 5
+				}
+			},
+			"range": [49, 50],
+			"raw": "\n",
+			"type": "Str",
+			"value": "\n"
+		},
+		{
+			"loc": {
+				"end": {
 					"column": 1,
 					"line": 6
 				},
@@ -583,6 +599,22 @@
 							"raw": "{",
 							"type": "Punc::LeftBrace",
 							"value": "{"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 7
+								},
+								"start": {
+									"column": 15,
+									"line": 6
+								}
+							},
+							"range": [65, 66],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
 						},
 						{
 							"children": [
@@ -895,6 +927,22 @@
 									"type": "Marked::Binary"
 								},
 								{
+									"loc": {
+										"end": {
+											"column": 2,
+											"line": 8
+										},
+										"start": {
+											"column": 17,
+											"line": 7
+										}
+									},
+									"range": [83, 84],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
 									"children": [
 										{
 											"loc": {
@@ -989,6 +1037,22 @@
 							"range": [68, 90],
 							"raw": "n = (n * 2) - 1\n  (n,)",
 							"type": "Marked::Code"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 0,
+									"line": 9
+								},
+								"start": {
+									"column": 6,
+									"line": 8
+								}
+							},
+							"range": [90, 91],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
 						},
 						{
 							"loc": {

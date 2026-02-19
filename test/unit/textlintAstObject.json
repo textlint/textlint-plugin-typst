@@ -325,6 +325,22 @@
 			"type": "Marked::SetRule"
 		},
 		{
+			"type": "Str",
+			"raw": "\n",
+			"value": "\n",
+			"range": [36, 37],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 36
+				},
+				"end": {
+					"line": 2,
+					"column": 0
+				}
+			}
+		},
+		{
 			"value": "#",
 			"raw": "#",
 			"range": [37, 38],
@@ -634,6 +650,22 @@
 			"type": "Header"
 		},
 		{
+			"type": "Str",
+			"raw": "\n",
+			"value": "\n",
+			"range": [88, 89],
+			"loc": {
+				"start": {
+					"line": 4,
+					"column": 20
+				},
+				"end": {
+					"line": 5,
+					"column": 0
+				}
+			}
+		},
+		{
 			"value": "The Fibonacci sequence is defined through the",
 			"raw": "The Fibonacci sequence is defined through the",
 			"range": [89, 134],
@@ -648,6 +680,22 @@
 				}
 			},
 			"type": "Str"
+		},
+		{
+			"type": "Str",
+			"raw": "\n",
+			"value": "\n",
+			"range": [134, 135],
+			"loc": {
+				"start": {
+					"line": 5,
+					"column": 45
+				},
+				"end": {
+					"line": 6,
+					"column": 0
+				}
+			}
 		},
 		{
 			"value": "recurrence relation",
@@ -712,6 +760,22 @@
 				}
 			},
 			"type": "Str"
+		},
+		{
+			"type": "Str",
+			"raw": "\n",
+			"value": "\n",
+			"range": [181, 182],
+			"loc": {
+				"start": {
+					"line": 6,
+					"column": 46
+				},
+				"end": {
+					"line": 7,
+					"column": 0
+				}
+			}
 		},
 		{
 			"value": "It can also be expressed in",
@@ -1002,6 +1066,22 @@
 				}
 			},
 			"type": "Marked::LetBinding"
+		},
+		{
+			"type": "Str",
+			"raw": "\n",
+			"value": "\n",
+			"range": [316, 317],
+			"loc": {
+				"start": {
+					"line": 12,
+					"column": 14
+				},
+				"end": {
+					"line": 13,
+					"column": 0
+				}
+			}
 		},
 		{
 			"value": "#",
@@ -1360,6 +1440,22 @@
 			"type": "Marked::LetBinding"
 		},
 		{
+			"type": "Str",
+			"raw": "\n",
+			"value": "\n",
+			"range": [348, 349],
+			"loc": {
+				"start": {
+					"line": 13,
+					"column": 31
+				},
+				"end": {
+					"line": 14,
+					"column": 0
+				}
+			}
+		},
+		{
 			"value": "#",
 			"raw": "#",
 			"range": [349, 350],
@@ -1557,6 +1653,22 @@
 										}
 									},
 									"type": "Punc::LeftParen"
+								},
+								{
+									"type": "Str",
+									"raw": "\n",
+									"value": "\n",
+									"range": [364, 365],
+									"loc": {
+										"start": {
+											"line": 14,
+											"column": 15
+										},
+										"end": {
+											"line": 15,
+											"column": 2
+										}
+									}
 								},
 								{
 									"children": [
@@ -1818,6 +1930,22 @@
 												}
 											},
 											"type": "Marked::CodeBlock"
+										},
+										{
+											"type": "Str",
+											"raw": "\n",
+											"value": "\n",
+											"range": [382, 383],
+											"loc": {
+												"start": {
+													"line": 15,
+													"column": 17
+												},
+												"end": {
+													"line": 16,
+													"column": 2
+												}
+											}
 										},
 										{
 											"value": "else",
@@ -2388,6 +2516,22 @@
 									"type": "Marked::Conditional"
 								},
 								{
+									"type": "Str",
+									"raw": "\n",
+									"value": "\n",
+									"range": [417, 418],
+									"loc": {
+										"start": {
+											"line": 16,
+											"column": 34
+										},
+										"end": {
+											"line": 17,
+											"column": 0
+										}
+									}
+								},
+								{
 									"value": ")",
 									"raw": ")",
 									"range": [418, 419],
@@ -2729,6 +2873,22 @@
 											"type": "Punc::LeftParen"
 										},
 										{
+											"type": "Str",
+											"raw": "\n",
+											"value": "\n",
+											"range": [489, 490],
+											"loc": {
+												"start": {
+													"line": 21,
+													"column": 21
+												},
+												"end": {
+													"line": 22,
+													"column": 2
+												}
+											}
+										},
+										{
 											"children": [
 												{
 													"value": "columns",
@@ -2824,6 +2984,22 @@
 												}
 											},
 											"type": "Punc::Comma"
+										},
+										{
+											"type": "Str",
+											"raw": "\n",
+											"value": "\n",
+											"range": [507, 508],
+											"loc": {
+												"start": {
+													"line": 22,
+													"column": 17
+												},
+												"end": {
+													"line": 23,
+													"column": 2
+												}
+											}
 										},
 										{
 											"children": [
@@ -3118,6 +3294,22 @@
 												}
 											},
 											"type": "Punc::Comma"
+										},
+										{
+											"type": "Str",
+											"raw": "\n",
+											"value": "\n",
+											"range": [534, 535],
+											"loc": {
+												"start": {
+													"line": 23,
+													"column": 26
+												},
+												"end": {
+													"line": 24,
+													"column": 2
+												}
+											}
 										},
 										{
 											"children": [
@@ -3576,6 +3768,22 @@
 												}
 											},
 											"type": "Punc::Comma"
+										},
+										{
+											"type": "Str",
+											"raw": "\n",
+											"value": "\n",
+											"range": [566, 567],
+											"loc": {
+												"start": {
+													"line": 24,
+													"column": 31
+												},
+												"end": {
+													"line": 25,
+													"column": 0
+												}
+											}
 										},
 										{
 											"value": ")",

@@ -156,14 +156,6 @@ const isAstNode = (value: unknown): value is AstNode => {
 	);
 };
 
-const isInlineAstNode = (node: AstNode): boolean =>
-	node.type === ASTNodeTypes.Str ||
-	node.type === ASTNodeTypes.Link ||
-	node.type === ASTNodeTypes.Code ||
-	node.type === ASTNodeTypes.Delete ||
-	node.type === ASTNodeTypes.Emphasis ||
-	node.type === ASTNodeTypes.Strong;
-
 const extractFirstTextValue = (node: AstNode): string | undefined => {
 	if (hasValue(node)) {
 		return node.value;
@@ -443,9 +435,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 					if (
 						currentEndLine !== nextStartLine &&
 						child.type !== ASTNodeTypes.Break &&
-						nextChild.type !== ASTNodeTypes.Break &&
-						isInlineAstNode(child) &&
-						isInlineAstNode(nextChild)
+						nextChild.type !== ASTNodeTypes.Break
 					) {
 						const breakNode: AstNode = {
 							type: "Str",
@@ -534,44 +524,19 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 					);
 
 					if (validTextContent.length > 0) {
-						let paragraphChildren: Content[] = [];
-						for (const child of validTextContent) {
-							if (isInlineAstNode(child)) {
-								paragraphChildren.push(child);
-								continue;
-							}
-							if (paragraphChildren.length > 0) {
-								const firstChild = paragraphChildren[0];
-								const lastChild =
-									paragraphChildren[paragraphChildren.length - 1];
-								processedChildren.push({
-									type: ASTNodeTypes.Paragraph,
-									children: paragraphChildren,
-									loc: {
-										start: firstChild.loc.start,
-										end: lastChild.loc.end,
-									},
-									range: [firstChild.range[0], lastChild.range[1]],
-									raw: paragraphChildren.map((c) => c.raw).join(""),
-								} as Content);
-								paragraphChildren = [];
-							}
-							processedChildren.push(child);
-						}
-						if (paragraphChildren.length > 0) {
-							const firstChild = paragraphChildren[0];
-							const lastChild = paragraphChildren[paragraphChildren.length - 1];
-							processedChildren.push({
-								type: ASTNodeTypes.Paragraph,
-								children: paragraphChildren,
-								loc: {
-									start: firstChild.loc.start,
-									end: lastChild.loc.end,
-								},
-								range: [firstChild.range[0], lastChild.range[1]],
-								raw: paragraphChildren.map((c) => c.raw).join(""),
-							} as Content);
-						}
+						const firstChild = validTextContent[0];
+						const lastChild = validTextContent[validTextContent.length - 1];
+
+						processedChildren.push({
+							type: ASTNodeTypes.Paragraph,
+							children: validTextContent,
+							loc: {
+								start: firstChild.loc.start,
+								end: lastChild.loc.end,
+							},
+							range: [firstChild.range[0], lastChild.range[1]],
+							raw: validTextContent.map((c) => c.raw).join(""),
+						} as Content);
 					}
 				}
 
@@ -1345,41 +1310,5 @@ export const convertTypstSourceToTextlintAstObject = async (
 	);
 	const paragraphizedTextlintAstObject =
 		paragraphizeTextlintAstObject(textlintAstObject);
-
-	if (process.env.DEBUG) {
-		const fs = await import("node:fs/promises");
-		const isPrimitive = (value: object): boolean =>
-			value === null ||
-			typeof value === "string" ||
-			typeof value === "number" ||
-			typeof value === "boolean";
-		const stripLoc = (obj: object): object =>
-			isPrimitive(obj)
-				? obj
-				: Object.fromEntries(
-						Object.entries(obj).map(([key, value]) => {
-							if (key === "loc") {
-								return [key, undefined];
-							}
-							if (Array.isArray(value)) {
-								return [key, value.map((item) => stripLoc(item))];
-							}
-							if (typeof value === "object" && value !== null) {
-								return [key, stripLoc(value)];
-							}
-							return [key, value];
-						}),
-					);
-		await fs.writeFile("typst-ast.yaml", rawTypstAstString);
-		await fs.writeFile(
-			"textlint-ast.json",
-			JSON.stringify(textlintAstObject, null, 2),
-		);
-		await fs.writeFile(
-			"textlint-ast-paragraphized.json",
-			JSON.stringify(stripLoc(paragraphizedTextlintAstObject), null, 2),
-		);
-	}
-
 	return paragraphizedTextlintAstObject as TxtDocumentNode;
 };
