@@ -114,40 +114,39 @@
 					"raw": " ",
 					"type": "Str",
 					"value": " "
-				}
-			],
-			"loc": {
-				"end": {
-					"column": 19,
-					"line": 1
 				},
-				"start": {
-					"column": 0,
-					"line": 1
-				}
-			},
-			"range": [0, 19],
-			"raw": "*Date:* 26.12.2022 ",
-			"type": "Paragraph"
-		},
-		{
-			"loc": {
-				"end": {
-					"column": 20,
-					"line": 1
+				{
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 1
+						},
+						"start": {
+							"column": 19,
+							"line": 1
+						}
+					},
+					"range": [19, 20],
+					"raw": "\\",
+					"type": "Str",
+					"value": "\\"
 				},
-				"start": {
-					"column": 19,
-					"line": 1
-				}
-			},
-			"range": [19, 20],
-			"raw": "\\",
-			"type": "Break",
-			"value": "\\"
-		},
-		{
-			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 2
+						},
+						"start": {
+							"column": 20,
+							"line": 1
+						}
+					},
+					"range": [20, 21],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
 				{
 					"children": [
 						{
@@ -260,40 +259,39 @@
 					"raw": " ",
 					"type": "Str",
 					"value": " "
-				}
-			],
-			"loc": {
-				"end": {
-					"column": 29,
-					"line": 2
 				},
-				"start": {
-					"column": 0,
-					"line": 2
-				}
-			},
-			"range": [21, 50],
-			"raw": "*Topic:* Infrastructure Test ",
-			"type": "Paragraph"
-		},
-		{
-			"loc": {
-				"end": {
-					"column": 30,
-					"line": 2
+				{
+					"loc": {
+						"end": {
+							"column": 30,
+							"line": 2
+						},
+						"start": {
+							"column": 29,
+							"line": 2
+						}
+					},
+					"range": [50, 51],
+					"raw": "\\",
+					"type": "Str",
+					"value": "\\"
 				},
-				"start": {
-					"column": 29,
-					"line": 2
-				}
-			},
-			"range": [50, 51],
-			"raw": "\\",
-			"type": "Break",
-			"value": "\\"
-		},
-		{
-			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 3
+						},
+						"start": {
+							"column": 30,
+							"line": 2
+						}
+					},
+					"range": [51, 52],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
 				{
 					"children": [
 						{
@@ -406,37 +404,37 @@
 					"raw": " ",
 					"type": "Str",
 					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 3
+						},
+						"start": {
+							"column": 17,
+							"line": 3
+						}
+					},
+					"range": [69, 70],
+					"raw": "\\",
+					"type": "Str",
+					"value": "\\"
 				}
 			],
-			"loc": {
-				"end": {
-					"column": 17,
-					"line": 3
-				},
-				"start": {
-					"column": 0,
-					"line": 3
-				}
-			},
-			"range": [52, 69],
-			"raw": "*Severity:* High ",
-			"type": "Paragraph"
-		},
-		{
 			"loc": {
 				"end": {
 					"column": 18,
 					"line": 3
 				},
 				"start": {
-					"column": 17,
-					"line": 3
+					"column": 0,
+					"line": 1
 				}
 			},
-			"range": [69, 70],
-			"raw": "\\",
-			"type": "Break",
-			"value": "\\"
+			"range": [0, 70],
+			"raw": "*Date:* 26.12.2022 \\\n*Topic:* Infrastructure Test \\\n*Severity:* High \\",
+			"type": "Paragraph"
 		}
 	],
 	"loc": {

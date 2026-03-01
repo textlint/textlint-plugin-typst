@@ -650,36 +650,8 @@
 			"type": "Header"
 		},
 		{
-			"loc": {
-				"start": {
-					"line": 4,
-					"column": 20
-				},
-				"end": {
-					"line": 7,
-					"column": 42
-				}
-			},
-			"range": [88, 224],
-			"raw": "\nThe Fibonacci sequence is defined through the\nrecurrence relation $F_n = F_(n-1) + F_(n-2)$.\nIt can also be expressed in _closed form:_",
 			"type": "Paragraph",
 			"children": [
-				{
-					"type": "Str",
-					"raw": "\n",
-					"value": "\n",
-					"range": [88, 89],
-					"loc": {
-						"start": {
-							"line": 4,
-							"column": 20
-						},
-						"end": {
-							"line": 5,
-							"column": 0
-						}
-					}
-				},
 				{
 					"value": "The Fibonacci sequence is defined through the",
 					"raw": "The Fibonacci sequence is defined through the",
@@ -889,7 +861,19 @@
 					},
 					"type": "Emphasis"
 				}
-			]
+			],
+			"loc": {
+				"start": {
+					"line": 5,
+					"column": 0
+				},
+				"end": {
+					"line": 7,
+					"column": 42
+				}
+			},
+			"range": [89, 224],
+			"raw": "The Fibonacci sequence is defined through the\nrecurrence relation $F_n = F_(n-1) + F_(n-2)$.\nIt can also be expressed in _closed form:_"
 		},
 		{
 			"value": "\n\n",
@@ -2626,18 +2610,6 @@
 			"type": "Break"
 		},
 		{
-			"loc": {
-				"start": {
-					"line": 19,
-					"column": 0
-				},
-				"end": {
-					"line": 19,
-					"column": 45
-				}
-			},
-			"range": [421, 466],
-			"raw": "The first #count numbers of the sequence are:",
 			"type": "Paragraph",
 			"children": [
 				{
@@ -2752,7 +2724,19 @@
 					},
 					"type": "Str"
 				}
-			]
+			],
+			"loc": {
+				"start": {
+					"line": 19,
+					"column": 0
+				},
+				"end": {
+					"line": 19,
+					"column": 45
+				}
+			},
+			"range": [421, 466],
+			"raw": "The first #count numbers of the sequence are:"
 		},
 		{
 			"value": "\n\n",
@@ -3928,18 +3912,6 @@
 			"type": "Break"
 		},
 		{
-			"loc": {
-				"start": {
-					"line": 27,
-					"column": 0
-				},
-				"end": {
-					"line": 27,
-					"column": 53
-				}
-			},
-			"range": [571, 624],
-			"raw": "// https://github.com/typst/typst/blob/main/README.md",
 			"type": "Paragraph",
 			"children": [
 				{
@@ -3958,7 +3930,19 @@
 					},
 					"type": "Comment"
 				}
-			]
+			],
+			"loc": {
+				"start": {
+					"line": 27,
+					"column": 0
+				},
+				"end": {
+					"line": 27,
+					"column": 53
+				}
+			},
+			"range": [571, 624],
+			"raw": "// https://github.com/typst/typst/blob/main/README.md"
 		}
 	],
 	"raw": "#set page(width: 10cm, height: auto)\n#set heading(numbering: \"1.\")\n\n= Fibonacci sequence\nThe Fibonacci sequence is defined through the\nrecurrence relation $F_n = F_(n-1) + F_(n-2)$.\nIt can also be expressed in _closed form:_\n\n$ F_n = round(1 / sqrt(5) phi.alt^n), quad\n  phi.alt = (1 + sqrt(5)) / 2 $\n\n#let count = 8\n#let nums = range(1, count + 1)\n#let fib(n) = (\n  if n <= 2 { 1 }\n  else { fib(n - 1) + fib(n - 2) }\n)\n\nThe first #count numbers of the sequence are:\n\n#align(center, table(\n  columns: count,\n  ..nums.map(n => $F_#n$),\n  ..nums.map(n => str(fib(n))),\n))\n\n// https://github.com/typst/typst/blob/main/README.md",

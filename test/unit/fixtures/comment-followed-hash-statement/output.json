@@ -1,0 +1,504 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 22],
+					"raw": "// Single line comment",
+					"type": "Comment",
+					"value": "Single line comment"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 22,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 22],
+			"raw": "// Single line comment",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 2
+				}
+			},
+			"range": [23, 24],
+			"raw": "#",
+			"type": "Kw::Hash",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 2
+						},
+						"start": {
+							"column": 1,
+							"line": 2
+						}
+					},
+					"range": [24, 27],
+					"raw": "let",
+					"type": "Kw::Let",
+					"value": "let"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 5,
+							"line": 2
+						},
+						"start": {
+							"column": 4,
+							"line": 2
+						}
+					},
+					"range": [27, 28],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 2
+						},
+						"start": {
+							"column": 5,
+							"line": 2
+						}
+					},
+					"range": [28, 40],
+					"raw": "some_element",
+					"type": "Marked::(Ident: &quot;some_element&quot;)",
+					"value": "some_element"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 2
+						},
+						"start": {
+							"column": 17,
+							"line": 2
+						}
+					},
+					"range": [40, 41],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 19,
+							"line": 2
+						},
+						"start": {
+							"column": 18,
+							"line": 2
+						}
+					},
+					"range": [41, 42],
+					"raw": "=",
+					"type": "Op::Eq",
+					"value": "="
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 20,
+							"line": 2
+						},
+						"start": {
+							"column": 19,
+							"line": 2
+						}
+					},
+					"range": [42, 43],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"children": [
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 21,
+											"line": 2
+										},
+										"start": {
+											"column": 20,
+											"line": 2
+										}
+									},
+									"range": [43, 44],
+									"raw": "_",
+									"type": "Marked::Underscore",
+									"value": "_"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 21,
+									"line": 2
+								},
+								"start": {
+									"column": 20,
+									"line": 2
+								}
+							},
+							"range": [43, 44],
+							"raw": "_",
+							"type": "Marked::Params"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 22,
+									"line": 2
+								},
+								"start": {
+									"column": 21,
+									"line": 2
+								}
+							},
+							"range": [44, 45],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 24,
+									"line": 2
+								},
+								"start": {
+									"column": 22,
+									"line": 2
+								}
+							},
+							"range": [45, 47],
+							"raw": "=>",
+							"type": "Op::Arrow",
+							"value": "=>"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 25,
+									"line": 2
+								},
+								"start": {
+									"column": 24,
+									"line": 2
+								}
+							},
+							"range": [47, 48],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 26,
+											"line": 2
+										},
+										"start": {
+											"column": 25,
+											"line": 2
+										}
+									},
+									"range": [48, 49],
+									"raw": "{",
+									"type": "Punc::LeftBrace",
+									"value": "{"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 2,
+											"line": 3
+										},
+										"start": {
+											"column": 26,
+											"line": 2
+										}
+									},
+									"range": [49, 50],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
+									"children": [
+										{
+											"children": [
+												{
+													"loc": {
+														"end": {
+															"column": 5,
+															"line": 3
+														},
+														"start": {
+															"column": 2,
+															"line": 3
+														}
+													},
+													"range": [52, 55],
+													"raw": "let",
+													"type": "Kw::Let",
+													"value": "let"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 6,
+															"line": 3
+														},
+														"start": {
+															"column": 5,
+															"line": 3
+														}
+													},
+													"range": [55, 56],
+													"raw": " ",
+													"type": "Str",
+													"value": " "
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 24,
+															"line": 3
+														},
+														"start": {
+															"column": 6,
+															"line": 3
+														}
+													},
+													"range": [56, 74],
+													"raw": "this_means_nothing",
+													"type": "Marked::(Ident: &quot;this_means_nothing&quot;)",
+													"value": "this_means_nothing"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 25,
+															"line": 3
+														},
+														"start": {
+															"column": 24,
+															"line": 3
+														}
+													},
+													"range": [74, 75],
+													"raw": " ",
+													"type": "Str",
+													"value": " "
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 26,
+															"line": 3
+														},
+														"start": {
+															"column": 25,
+															"line": 3
+														}
+													},
+													"range": [75, 76],
+													"raw": "=",
+													"type": "Op::Eq",
+													"value": "="
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 27,
+															"line": 3
+														},
+														"start": {
+															"column": 26,
+															"line": 3
+														}
+													},
+													"range": [76, 77],
+													"raw": " ",
+													"type": "Str",
+													"value": " "
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 33,
+															"line": 3
+														},
+														"start": {
+															"column": 27,
+															"line": 3
+														}
+													},
+													"range": [77, 83],
+													"raw": "\"Fake\"",
+													"type": "Str(&quot;Fake&quot;)",
+													"value": "\"Fake\""
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 33,
+													"line": 3
+												},
+												"start": {
+													"column": 2,
+													"line": 3
+												}
+											},
+											"range": [52, 83],
+											"raw": "let this_means_nothing = \"Fake\"",
+											"type": "Marked::LetBinding"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 33,
+											"line": 3
+										},
+										"start": {
+											"column": 2,
+											"line": 3
+										}
+									},
+									"range": [52, 83],
+									"raw": "let this_means_nothing = \"Fake\"",
+									"type": "Marked::Code"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 0,
+											"line": 4
+										},
+										"start": {
+											"column": 33,
+											"line": 3
+										}
+									},
+									"range": [83, 84],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 1,
+											"line": 4
+										},
+										"start": {
+											"column": 0,
+											"line": 4
+										}
+									},
+									"range": [84, 85],
+									"raw": "}",
+									"type": "Punc::RightBrace",
+									"value": "}"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 4
+								},
+								"start": {
+									"column": 25,
+									"line": 2
+								}
+							},
+							"range": [48, 85],
+							"raw": "{\n  let this_means_nothing = \"Fake\"\n}",
+							"type": "Marked::CodeBlock"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 4
+						},
+						"start": {
+							"column": 20,
+							"line": 2
+						}
+					},
+					"range": [43, 85],
+					"raw": "_ => {\n  let this_means_nothing = \"Fake\"\n}",
+					"type": "Marked::Closure"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 4
+				},
+				"start": {
+					"column": 1,
+					"line": 2
+				}
+			},
+			"range": [24, 85],
+			"raw": "let some_element = _ => {\n  let this_means_nothing = \"Fake\"\n}",
+			"type": "Marked::LetBinding"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 1,
+			"line": 4
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 85],
+	"raw": "// Single line comment\n#let some_element = _ => {\n  let this_means_nothing = \"Fake\"\n}",
+	"type": "Document"
+}

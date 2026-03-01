@@ -1,0 +1,114 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 6,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 6],
+					"raw": "Before",
+					"type": "Str",
+					"value": "Before"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 1
+						},
+						"start": {
+							"column": 6,
+							"line": 1
+						}
+					},
+					"range": [6, 7],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 1
+						},
+						"start": {
+							"column": 9,
+							"line": 1
+						}
+					},
+					"range": [9, 23],
+					"raw": "inline content",
+					"type": "Str",
+					"value": "inline content"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 25,
+							"line": 1
+						},
+						"start": {
+							"column": 24,
+							"line": 1
+						}
+					},
+					"range": [24, 25],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 31,
+							"line": 1
+						},
+						"start": {
+							"column": 25,
+							"line": 1
+						}
+					},
+					"range": [25, 31],
+					"raw": "after.",
+					"type": "Str",
+					"value": "after."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 31,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 31],
+			"raw": "Before inline content after.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 31,
+			"line": 1
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 31],
+	"raw": "Before #[inline content] after.",
+	"type": "Document"
+}

@@ -1,0 +1,194 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 27,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 27],
+					"raw": "Reference target label here",
+					"type": "Str",
+					"value": "Reference target label here"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 28,
+							"line": 1
+						},
+						"start": {
+							"column": 27,
+							"line": 1
+						}
+					},
+					"range": [27, 28],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 36,
+							"line": 1
+						},
+						"start": {
+							"column": 28,
+							"line": 1
+						}
+					},
+					"range": [28, 36],
+					"raw": "<target>",
+					"type": "Code",
+					"value": "<target>"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 37,
+							"line": 1
+						},
+						"start": {
+							"column": 36,
+							"line": 1
+						}
+					},
+					"range": [36, 37],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 2
+						},
+						"start": {
+							"column": 37,
+							"line": 1
+						}
+					},
+					"range": [37, 38],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 2
+						}
+					},
+					"range": [38, 41],
+					"raw": "Use",
+					"type": "Str",
+					"value": "Use"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 4,
+							"line": 2
+						},
+						"start": {
+							"column": 3,
+							"line": 2
+						}
+					},
+					"range": [41, 42],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 2
+						},
+						"start": {
+							"column": 4,
+							"line": 2
+						}
+					},
+					"range": [42, 49],
+					"raw": "@target",
+					"type": "Code",
+					"value": "@target"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 2
+						},
+						"start": {
+							"column": 11,
+							"line": 2
+						}
+					},
+					"range": [49, 50],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 34,
+							"line": 2
+						},
+						"start": {
+							"column": 12,
+							"line": 2
+						}
+					},
+					"range": [50, 72],
+					"raw": "in the same paragraph.",
+					"type": "Str",
+					"value": "in the same paragraph."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 34,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 72],
+			"raw": "Reference target label here <target>.\nUse @target in the same paragraph.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 34,
+			"line": 2
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 72],
+	"raw": "Reference target label here <target>.\nUse @target in the same paragraph.",
+	"type": "Document"
+}

@@ -1,0 +1,2079 @@
+{
+	"children": [
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 1],
+			"raw": "\n",
+			"type": "Break",
+			"value": "\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 2
+				}
+			},
+			"range": [1, 2],
+			"raw": "#",
+			"type": "Fn::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 2
+						},
+						"start": {
+							"column": 1,
+							"line": 2
+						}
+					},
+					"range": [2, 8],
+					"raw": "figure",
+					"type": "Fn::(Ident: &quot;figure&quot;)",
+					"value": "figure"
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 2
+								},
+								"start": {
+									"column": 7,
+									"line": 2
+								}
+							},
+							"range": [8, 9],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 3
+								},
+								"start": {
+									"column": 8,
+									"line": 2
+								}
+							},
+							"range": [9, 10],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 7,
+											"line": 3
+										},
+										"start": {
+											"column": 2,
+											"line": 3
+										}
+									},
+									"range": [12, 17],
+									"raw": "align",
+									"type": "Fn::(Ident: &quot;align&quot;)",
+									"value": "align"
+								},
+								{
+									"children": [
+										{
+											"loc": {
+												"end": {
+													"column": 8,
+													"line": 3
+												},
+												"start": {
+													"column": 7,
+													"line": 3
+												}
+											},
+											"range": [17, 18],
+											"raw": "(",
+											"type": "Punc::LeftParen",
+											"value": "("
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 14,
+													"line": 3
+												},
+												"start": {
+													"column": 8,
+													"line": 3
+												}
+											},
+											"range": [18, 24],
+											"raw": "center",
+											"type": "Marked::(Ident: &quot;center&quot;)",
+											"value": "center"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 15,
+													"line": 3
+												},
+												"start": {
+													"column": 14,
+													"line": 3
+												}
+											},
+											"range": [24, 25],
+											"raw": ")",
+											"type": "Punc::RightParen",
+											"value": ")"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 5,
+													"line": 4
+												},
+												"start": {
+													"column": 4,
+													"line": 4
+												}
+											},
+											"range": [31, 32],
+											"raw": "#",
+											"type": "Fn::(Hash: &quot;#&quot;)",
+											"value": "#"
+										},
+										{
+											"children": [
+												{
+													"loc": {
+														"end": {
+															"column": 10,
+															"line": 4
+														},
+														"start": {
+															"column": 5,
+															"line": 4
+														}
+													},
+													"range": [32, 37],
+													"raw": "table",
+													"type": "Fn::(Ident: &quot;table&quot;)",
+													"value": "table"
+												},
+												{
+													"children": [
+														{
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 4
+																},
+																"start": {
+																	"column": 10,
+																	"line": 4
+																}
+															},
+															"range": [37, 38],
+															"raw": "(",
+															"type": "Punc::LeftParen",
+															"value": "("
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 5
+																},
+																"start": {
+																	"column": 11,
+																	"line": 4
+																}
+															},
+															"range": [38, 39],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 13,
+																			"line": 5
+																		},
+																		"start": {
+																			"column": 6,
+																			"line": 5
+																		}
+																	},
+																	"range": [45, 52],
+																	"raw": "columns",
+																	"type": "Marked::(Ident: &quot;columns&quot;)",
+																	"value": "columns"
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 14,
+																			"line": 5
+																		},
+																		"start": {
+																			"column": 13,
+																			"line": 5
+																		}
+																	},
+																	"range": [52, 53],
+																	"raw": ":",
+																	"type": "Punc::Colon",
+																	"value": ":"
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 15,
+																			"line": 5
+																		},
+																		"start": {
+																			"column": 14,
+																			"line": 5
+																		}
+																	},
+																	"range": [53, 54],
+																	"raw": " ",
+																	"type": "Str",
+																	"value": " "
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 16,
+																			"line": 5
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 5
+																		}
+																	},
+																	"range": [54, 55],
+																	"raw": "2",
+																	"type": "Num(Int, 2)",
+																	"value": "2"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 16,
+																	"line": 5
+																},
+																"start": {
+																	"column": 6,
+																	"line": 5
+																}
+															},
+															"range": [45, 55],
+															"raw": "columns: 2",
+															"type": "Marked::Named"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 17,
+																	"line": 5
+																},
+																"start": {
+																	"column": 16,
+																	"line": 5
+																}
+															},
+															"range": [55, 56],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 6
+																},
+																"start": {
+																	"column": 17,
+																	"line": 5
+																}
+															},
+															"range": [56, 57],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"children": [
+																		{
+																			"loc": {
+																				"end": {
+																					"column": 8,
+																					"line": 6
+																				},
+																				"start": {
+																					"column": 7,
+																					"line": 6
+																				}
+																			},
+																			"range": [64, 65],
+																			"raw": "*",
+																			"type": "Marked::Star",
+																			"value": "*"
+																		},
+																		{
+																			"loc": {
+																				"end": {
+																					"column": 14,
+																					"line": 6
+																				},
+																				"start": {
+																					"column": 8,
+																					"line": 6
+																				}
+																			},
+																			"range": [65, 71],
+																			"raw": "Amount",
+																			"type": "Str",
+																			"value": "Amount"
+																		},
+																		{
+																			"loc": {
+																				"end": {
+																					"column": 15,
+																					"line": 6
+																				},
+																				"start": {
+																					"column": 14,
+																					"line": 6
+																				}
+																			},
+																			"range": [71, 72],
+																			"raw": "*",
+																			"type": "Marked::Star",
+																			"value": "*"
+																		}
+																	],
+																	"loc": {
+																		"end": {
+																			"column": 15,
+																			"line": 6
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 6
+																		}
+																	},
+																	"range": [64, 72],
+																	"raw": "*Amount*",
+																	"type": "Strong"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 15,
+																	"line": 6
+																},
+																"start": {
+																	"column": 7,
+																	"line": 6
+																}
+															},
+															"range": [64, 72],
+															"raw": "*Amount*",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 17,
+																	"line": 6
+																},
+																"start": {
+																	"column": 16,
+																	"line": 6
+																}
+															},
+															"range": [73, 74],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 18,
+																	"line": 6
+																},
+																"start": {
+																	"column": 17,
+																	"line": 6
+																}
+															},
+															"range": [74, 75],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"children": [
+																		{
+																			"loc": {
+																				"end": {
+																					"column": 20,
+																					"line": 6
+																				},
+																				"start": {
+																					"column": 19,
+																					"line": 6
+																				}
+																			},
+																			"range": [76, 77],
+																			"raw": "*",
+																			"type": "Marked::Star",
+																			"value": "*"
+																		},
+																		{
+																			"loc": {
+																				"end": {
+																					"column": 30,
+																					"line": 6
+																				},
+																				"start": {
+																					"column": 20,
+																					"line": 6
+																				}
+																			},
+																			"range": [77, 87],
+																			"raw": "Ingredient",
+																			"type": "Str",
+																			"value": "Ingredient"
+																		},
+																		{
+																			"loc": {
+																				"end": {
+																					"column": 31,
+																					"line": 6
+																				},
+																				"start": {
+																					"column": 30,
+																					"line": 6
+																				}
+																			},
+																			"range": [87, 88],
+																			"raw": "*",
+																			"type": "Marked::Star",
+																			"value": "*"
+																		}
+																	],
+																	"loc": {
+																		"end": {
+																			"column": 31,
+																			"line": 6
+																		},
+																		"start": {
+																			"column": 19,
+																			"line": 6
+																		}
+																	},
+																	"range": [76, 88],
+																	"raw": "*Ingredient*",
+																	"type": "Strong"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 31,
+																	"line": 6
+																},
+																"start": {
+																	"column": 19,
+																	"line": 6
+																}
+															},
+															"range": [76, 88],
+															"raw": "*Ingredient*",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 33,
+																	"line": 6
+																},
+																"start": {
+																	"column": 32,
+																	"line": 6
+																}
+															},
+															"range": [89, 90],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 7
+																},
+																"start": {
+																	"column": 33,
+																	"line": 6
+																}
+															},
+															"range": [90, 91],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 11,
+																			"line": 7
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 7
+																		}
+																	},
+																	"range": [98, 102],
+																	"raw": "360g",
+																	"type": "Str",
+																	"value": "360g"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 7
+																},
+																"start": {
+																	"column": 7,
+																	"line": 7
+																}
+															},
+															"range": [98, 102],
+															"raw": "360g",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 13,
+																	"line": 7
+																},
+																"start": {
+																	"column": 12,
+																	"line": 7
+																}
+															},
+															"range": [103, 104],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 7
+																},
+																"start": {
+																	"column": 13,
+																	"line": 7
+																}
+															},
+															"range": [104, 105],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 27,
+																			"line": 7
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 7
+																		}
+																	},
+																	"range": [106, 118],
+																	"raw": "Baking flour",
+																	"type": "Str",
+																	"value": "Baking flour"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 27,
+																	"line": 7
+																},
+																"start": {
+																	"column": 15,
+																	"line": 7
+																}
+															},
+															"range": [106, 118],
+															"raw": "Baking flour",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 29,
+																	"line": 7
+																},
+																"start": {
+																	"column": 28,
+																	"line": 7
+																}
+															},
+															"range": [119, 120],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 8
+																},
+																"start": {
+																	"column": 29,
+																	"line": 7
+																}
+															},
+															"range": [120, 121],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 11,
+																			"line": 8
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 8
+																		}
+																	},
+																	"range": [128, 132],
+																	"raw": "250g",
+																	"type": "Str",
+																	"value": "250g"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 8
+																},
+																"start": {
+																	"column": 7,
+																	"line": 8
+																}
+															},
+															"range": [128, 132],
+															"raw": "250g",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 13,
+																	"line": 8
+																},
+																"start": {
+																	"column": 12,
+																	"line": 8
+																}
+															},
+															"range": [133, 134],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 8
+																},
+																"start": {
+																	"column": 13,
+																	"line": 8
+																}
+															},
+															"range": [134, 135],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 21,
+																			"line": 8
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 8
+																		}
+																	},
+																	"range": [136, 142],
+																	"raw": "Butter",
+																	"type": "Str",
+																	"value": "Butter"
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 22,
+																			"line": 8
+																		},
+																		"start": {
+																			"column": 21,
+																			"line": 8
+																		}
+																	},
+																	"range": [142, 143],
+																	"raw": " ",
+																	"type": "Str",
+																	"value": " "
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 34,
+																			"line": 8
+																		},
+																		"start": {
+																			"column": 22,
+																			"line": 8
+																		}
+																	},
+																	"range": [143, 155],
+																	"raw": "(room temp.)",
+																	"type": "Str",
+																	"value": "(room temp.)"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 34,
+																	"line": 8
+																},
+																"start": {
+																	"column": 15,
+																	"line": 8
+																}
+															},
+															"range": [136, 155],
+															"raw": "Butter (room temp.)",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 36,
+																	"line": 8
+																},
+																"start": {
+																	"column": 35,
+																	"line": 8
+																}
+															},
+															"range": [156, 157],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 9
+																},
+																"start": {
+																	"column": 36,
+																	"line": 8
+																}
+															},
+															"range": [157, 158],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 11,
+																			"line": 9
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 9
+																		}
+																	},
+																	"range": [165, 169],
+																	"raw": "150g",
+																	"type": "Str",
+																	"value": "150g"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 9
+																},
+																"start": {
+																	"column": 7,
+																	"line": 9
+																}
+															},
+															"range": [165, 169],
+															"raw": "150g",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 13,
+																	"line": 9
+																},
+																"start": {
+																	"column": 12,
+																	"line": 9
+																}
+															},
+															"range": [170, 171],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 9
+																},
+																"start": {
+																	"column": 13,
+																	"line": 9
+																}
+															},
+															"range": [171, 172],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 26,
+																			"line": 9
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 9
+																		}
+																	},
+																	"range": [173, 184],
+																	"raw": "Brown sugar",
+																	"type": "Str",
+																	"value": "Brown sugar"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 26,
+																	"line": 9
+																},
+																"start": {
+																	"column": 15,
+																	"line": 9
+																}
+															},
+															"range": [173, 184],
+															"raw": "Brown sugar",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 28,
+																	"line": 9
+																},
+																"start": {
+																	"column": 27,
+																	"line": 9
+																}
+															},
+															"range": [185, 186],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 10
+																},
+																"start": {
+																	"column": 28,
+																	"line": 9
+																}
+															},
+															"range": [186, 187],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 11,
+																			"line": 10
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 10
+																		}
+																	},
+																	"range": [194, 198],
+																	"raw": "100g",
+																	"type": "Str",
+																	"value": "100g"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 10
+																},
+																"start": {
+																	"column": 7,
+																	"line": 10
+																}
+															},
+															"range": [194, 198],
+															"raw": "100g",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 13,
+																	"line": 10
+																},
+																"start": {
+																	"column": 12,
+																	"line": 10
+																}
+															},
+															"range": [199, 200],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 10
+																},
+																"start": {
+																	"column": 13,
+																	"line": 10
+																}
+															},
+															"range": [200, 201],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 25,
+																			"line": 10
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 10
+																		}
+																	},
+																	"range": [202, 212],
+																	"raw": "Cane sugar",
+																	"type": "Str",
+																	"value": "Cane sugar"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 25,
+																	"line": 10
+																},
+																"start": {
+																	"column": 15,
+																	"line": 10
+																}
+															},
+															"range": [202, 212],
+															"raw": "Cane sugar",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 27,
+																	"line": 10
+																},
+																"start": {
+																	"column": 26,
+																	"line": 10
+																}
+															},
+															"range": [213, 214],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 11
+																},
+																"start": {
+																	"column": 27,
+																	"line": 10
+																}
+															},
+															"range": [214, 215],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 11,
+																			"line": 11
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 11
+																		}
+																	},
+																	"range": [222, 226],
+																	"raw": "100g",
+																	"type": "Str",
+																	"value": "100g"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 11
+																},
+																"start": {
+																	"column": 7,
+																	"line": 11
+																}
+															},
+															"range": [222, 226],
+															"raw": "100g",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 13,
+																	"line": 11
+																},
+																"start": {
+																	"column": 12,
+																	"line": 11
+																}
+															},
+															"range": [227, 228],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 11
+																},
+																"start": {
+																	"column": 13,
+																	"line": 11
+																}
+															},
+															"range": [228, 229],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 34,
+																			"line": 11
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 11
+																		}
+																	},
+																	"range": [230, 249],
+																	"raw": "70% cocoa chocolate",
+																	"type": "Str",
+																	"value": "70% cocoa chocolate"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 34,
+																	"line": 11
+																},
+																"start": {
+																	"column": 15,
+																	"line": 11
+																}
+															},
+															"range": [230, 249],
+															"raw": "70% cocoa chocolate",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 36,
+																	"line": 11
+																},
+																"start": {
+																	"column": 35,
+																	"line": 11
+																}
+															},
+															"range": [250, 251],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 12
+																},
+																"start": {
+																	"column": 36,
+																	"line": 11
+																}
+															},
+															"range": [251, 252],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 11,
+																			"line": 12
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 12
+																		}
+																	},
+																	"range": [259, 263],
+																	"raw": "100g",
+																	"type": "Str",
+																	"value": "100g"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 12
+																},
+																"start": {
+																	"column": 7,
+																	"line": 12
+																}
+															},
+															"range": [259, 263],
+															"raw": "100g",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 13,
+																	"line": 12
+																},
+																"start": {
+																	"column": 12,
+																	"line": 12
+																}
+															},
+															"range": [264, 265],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 12
+																},
+																"start": {
+																	"column": 13,
+																	"line": 12
+																}
+															},
+															"range": [265, 266],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 37,
+																			"line": 12
+																		},
+																		"start": {
+																			"column": 15,
+																			"line": 12
+																		}
+																	},
+																	"range": [267, 289],
+																	"raw": "35-40% cocoa chocolate",
+																	"type": "Str",
+																	"value": "35-40% cocoa chocolate"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 37,
+																	"line": 12
+																},
+																"start": {
+																	"column": 15,
+																	"line": 12
+																}
+															},
+															"range": [267, 289],
+															"raw": "35-40% cocoa chocolate",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 39,
+																	"line": 12
+																},
+																"start": {
+																	"column": 38,
+																	"line": 12
+																}
+															},
+															"range": [290, 291],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 13
+																},
+																"start": {
+																	"column": 39,
+																	"line": 12
+																}
+															},
+															"range": [291, 292],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 8,
+																			"line": 13
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 13
+																		}
+																	},
+																	"range": [299, 300],
+																	"raw": "2",
+																	"type": "Str",
+																	"value": "2"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 8,
+																	"line": 13
+																},
+																"start": {
+																	"column": 7,
+																	"line": 13
+																}
+															},
+															"range": [299, 300],
+															"raw": "2",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 10,
+																	"line": 13
+																},
+																"start": {
+																	"column": 9,
+																	"line": 13
+																}
+															},
+															"range": [301, 302],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 11,
+																	"line": 13
+																},
+																"start": {
+																	"column": 10,
+																	"line": 13
+																}
+															},
+															"range": [302, 303],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 16,
+																			"line": 13
+																		},
+																		"start": {
+																			"column": 12,
+																			"line": 13
+																		}
+																	},
+																	"range": [304, 308],
+																	"raw": "Eggs",
+																	"type": "Str",
+																	"value": "Eggs"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 16,
+																	"line": 13
+																},
+																"start": {
+																	"column": 12,
+																	"line": 13
+																}
+															},
+															"range": [304, 308],
+															"raw": "Eggs",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 18,
+																	"line": 13
+																},
+																"start": {
+																	"column": 17,
+																	"line": 13
+																}
+															},
+															"range": [309, 310],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 14
+																},
+																"start": {
+																	"column": 18,
+																	"line": 13
+																}
+															},
+															"range": [310, 311],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 12,
+																			"line": 14
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 14
+																		}
+																	},
+																	"range": [318, 323],
+																	"raw": "Pinch",
+																	"type": "Str",
+																	"value": "Pinch"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 12,
+																	"line": 14
+																},
+																"start": {
+																	"column": 7,
+																	"line": 14
+																}
+															},
+															"range": [318, 323],
+															"raw": "Pinch",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 14
+																},
+																"start": {
+																	"column": 13,
+																	"line": 14
+																}
+															},
+															"range": [324, 325],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 15,
+																	"line": 14
+																},
+																"start": {
+																	"column": 14,
+																	"line": 14
+																}
+															},
+															"range": [325, 326],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 20,
+																			"line": 14
+																		},
+																		"start": {
+																			"column": 16,
+																			"line": 14
+																		}
+																	},
+																	"range": [327, 331],
+																	"raw": "Salt",
+																	"type": "Str",
+																	"value": "Salt"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 20,
+																	"line": 14
+																},
+																"start": {
+																	"column": 16,
+																	"line": 14
+																}
+															},
+															"range": [327, 331],
+															"raw": "Salt",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 22,
+																	"line": 14
+																},
+																"start": {
+																	"column": 21,
+																	"line": 14
+																}
+															},
+															"range": [332, 333],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 6,
+																	"line": 15
+																},
+																"start": {
+																	"column": 22,
+																	"line": 14
+																}
+															},
+															"range": [333, 334],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 14,
+																			"line": 15
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 15
+																		}
+																	},
+																	"range": [341, 348],
+																	"raw": "Drizzle",
+																	"type": "Str",
+																	"value": "Drizzle"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 14,
+																	"line": 15
+																},
+																"start": {
+																	"column": 7,
+																	"line": 15
+																}
+															},
+															"range": [341, 348],
+															"raw": "Drizzle",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 16,
+																	"line": 15
+																},
+																"start": {
+																	"column": 15,
+																	"line": 15
+																}
+															},
+															"range": [349, 350],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 17,
+																	"line": 15
+																},
+																"start": {
+																	"column": 16,
+																	"line": 15
+																}
+															},
+															"range": [350, 351],
+															"raw": " ",
+															"type": "Str",
+															"value": " "
+														},
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 33,
+																			"line": 15
+																		},
+																		"start": {
+																			"column": 18,
+																			"line": 15
+																		}
+																	},
+																	"range": [352, 367],
+																	"raw": "Vanilla extract",
+																	"type": "Str",
+																	"value": "Vanilla extract"
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 33,
+																	"line": 15
+																},
+																"start": {
+																	"column": 18,
+																	"line": 15
+																}
+															},
+															"range": [352, 367],
+															"raw": "Vanilla extract",
+															"type": "Paragraph"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 35,
+																	"line": 15
+																},
+																"start": {
+																	"column": 34,
+																	"line": 15
+																}
+															},
+															"range": [368, 369],
+															"raw": ",",
+															"type": "Punc::Comma",
+															"value": ","
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 4,
+																	"line": 16
+																},
+																"start": {
+																	"column": 35,
+																	"line": 15
+																}
+															},
+															"range": [369, 370],
+															"raw": "\n",
+															"type": "Str",
+															"value": "\n"
+														},
+														{
+															"loc": {
+																"end": {
+																	"column": 5,
+																	"line": 16
+																},
+																"start": {
+																	"column": 4,
+																	"line": 16
+																}
+															},
+															"range": [374, 375],
+															"raw": ")",
+															"type": "Punc::RightParen",
+															"value": ")"
+														}
+													],
+													"loc": {
+														"end": {
+															"column": 5,
+															"line": 16
+														},
+														"start": {
+															"column": 10,
+															"line": 4
+														}
+													},
+													"range": [37, 375],
+													"raw": "(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )",
+													"type": "Marked::Args"
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 5,
+													"line": 16
+												},
+												"start": {
+													"column": 5,
+													"line": 4
+												}
+											},
+											"range": [32, 375],
+											"raw": "table(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )",
+											"type": "Marked::FuncCall"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 16
+										},
+										"start": {
+											"column": 7,
+											"line": 3
+										}
+									},
+									"range": [17, 376],
+									"raw": "(center)[\n    #table(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )]",
+									"type": "Marked::Args"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 16
+								},
+								"start": {
+									"column": 2,
+									"line": 3
+								}
+							},
+							"range": [12, 376],
+							"raw": "align(center)[\n    #table(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )]",
+							"type": "Marked::FuncCall"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 7,
+									"line": 16
+								},
+								"start": {
+									"column": 6,
+									"line": 16
+								}
+							},
+							"range": [376, 377],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 17
+								},
+								"start": {
+									"column": 7,
+									"line": 16
+								}
+							},
+							"range": [377, 378],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 9,
+											"line": 17
+										},
+										"start": {
+											"column": 2,
+											"line": 17
+										}
+									},
+									"range": [380, 387],
+									"raw": "caption",
+									"type": "Marked::(Ident: &quot;caption&quot;)",
+									"value": "caption"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 10,
+											"line": 17
+										},
+										"start": {
+											"column": 9,
+											"line": 17
+										}
+									},
+									"range": [387, 388],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 17
+										},
+										"start": {
+											"column": 10,
+											"line": 17
+										}
+									},
+									"range": [388, 389],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 51,
+											"line": 17
+										},
+										"start": {
+											"column": 11,
+											"line": 17
+										}
+									},
+									"range": [389, 429],
+									"raw": "\"Ingredients for chocolate chip cookies\"",
+									"type": "Str(&quot;Ingredients for chocolate chip cookies&quot;)",
+									"value": "\"Ingredients for chocolate chip cookies\""
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 51,
+									"line": 17
+								},
+								"start": {
+									"column": 2,
+									"line": 17
+								}
+							},
+							"range": [380, 429],
+							"raw": "caption: \"Ingredients for chocolate chip cookies\"",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 52,
+									"line": 17
+								},
+								"start": {
+									"column": 51,
+									"line": 17
+								}
+							},
+							"range": [429, 430],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 0,
+									"line": 18
+								},
+								"start": {
+									"column": 52,
+									"line": 17
+								}
+							},
+							"range": [430, 431],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 18
+								},
+								"start": {
+									"column": 0,
+									"line": 18
+								}
+							},
+							"range": [431, 432],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 18
+						},
+						"start": {
+							"column": 7,
+							"line": 2
+						}
+					},
+					"range": [8, 432],
+					"raw": "(\n  align(center)[\n    #table(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )],\n  caption: \"Ingredients for chocolate chip cookies\",\n)",
+					"type": "Marked::Args"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 1,
+					"line": 18
+				},
+				"start": {
+					"column": 1,
+					"line": 2
+				}
+			},
+			"range": [2, 432],
+			"raw": "figure(\n  align(center)[\n    #table(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )],\n  caption: \"Ingredients for chocolate chip cookies\",\n)",
+			"type": "Marked::FuncCall"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 2,
+					"line": 18
+				},
+				"start": {
+					"column": 1,
+					"line": 18
+				}
+			},
+			"range": [432, 433],
+			"raw": " ",
+			"type": "Str",
+			"value": " "
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 32,
+					"line": 18
+				},
+				"start": {
+					"column": 2,
+					"line": 18
+				}
+			},
+			"range": [433, 463],
+			"raw": "<table-chocolate-chip-cookies>",
+			"type": "Code",
+			"value": "<table-chocolate-chip-cookies>"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 32,
+			"line": 18
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 463],
+	"raw": "\n#figure(\n  align(center)[\n    #table(\n      columns: 2,\n      [*Amount*], [*Ingredient*],\n      [360g], [Baking flour],\n      [250g], [Butter (room temp.)],\n      [150g], [Brown sugar],\n      [100g], [Cane sugar],\n      [100g], [70% cocoa chocolate],\n      [100g], [35-40% cocoa chocolate],\n      [2], [Eggs],\n      [Pinch], [Salt],\n      [Drizzle], [Vanilla extract],\n    )],\n  caption: \"Ingredients for chocolate chip cookies\",\n) <table-chocolate-chip-cookies>",
+	"type": "Document"
+}

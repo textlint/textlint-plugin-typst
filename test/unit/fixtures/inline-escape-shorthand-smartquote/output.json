@@ -1,0 +1,434 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 12],
+					"raw": "Escaped hash",
+					"type": "Str",
+					"value": "Escaped hash"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 1
+						},
+						"start": {
+							"column": 12,
+							"line": 1
+						}
+					},
+					"range": [12, 13],
+					"raw": ":",
+					"type": "Str",
+					"value": ":"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 1
+						},
+						"start": {
+							"column": 13,
+							"line": 1
+						}
+					},
+					"range": [13, 14],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 16,
+							"line": 1
+						},
+						"start": {
+							"column": 14,
+							"line": 1
+						}
+					},
+					"range": [14, 16],
+					"raw": "\\#",
+					"type": "Escape::Escape &lt;1:14~1:16&gt;",
+					"value": "\\#"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 1
+						},
+						"start": {
+							"column": 16,
+							"line": 1
+						}
+					},
+					"range": [16, 17],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 2
+						},
+						"start": {
+							"column": 17,
+							"line": 1
+						}
+					},
+					"range": [17, 18],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 2
+						}
+					},
+					"range": [18, 39],
+					"raw": "Shorthand nonbreaking",
+					"type": "Str",
+					"value": "Shorthand nonbreaking"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 2
+						},
+						"start": {
+							"column": 21,
+							"line": 2
+						}
+					},
+					"range": [39, 40],
+					"raw": "~",
+					"type": "Escape::Shorthand &lt;2:21~2:22&gt;",
+					"value": "~"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 34,
+							"line": 2
+						},
+						"start": {
+							"column": 22,
+							"line": 2
+						}
+					},
+					"range": [40, 52],
+					"raw": "space and en",
+					"type": "Str",
+					"value": "space and en"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 36,
+							"line": 2
+						},
+						"start": {
+							"column": 34,
+							"line": 2
+						}
+					},
+					"range": [52, 54],
+					"raw": "--",
+					"type": "Escape::Shorthand &lt;2:34~2:36&gt;",
+					"value": "--"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 41,
+							"line": 2
+						},
+						"start": {
+							"column": 36,
+							"line": 2
+						}
+					},
+					"range": [54, 59],
+					"raw": "dash.",
+					"type": "Str",
+					"value": "dash."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 3
+						},
+						"start": {
+							"column": 41,
+							"line": 2
+						}
+					},
+					"range": [59, 60],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 12,
+							"line": 3
+						},
+						"start": {
+							"column": 0,
+							"line": 3
+						}
+					},
+					"range": [60, 72],
+					"raw": "Smart quotes",
+					"type": "Str",
+					"value": "Smart quotes"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 13,
+							"line": 3
+						},
+						"start": {
+							"column": 12,
+							"line": 3
+						}
+					},
+					"range": [72, 73],
+					"raw": ":",
+					"type": "Str",
+					"value": ":"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 3
+						},
+						"start": {
+							"column": 13,
+							"line": 3
+						}
+					},
+					"range": [73, 74],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 3
+						},
+						"start": {
+							"column": 14,
+							"line": 3
+						}
+					},
+					"range": [74, 75],
+					"raw": "\"",
+					"type": "Marked::SmartQuote",
+					"value": "\""
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 21,
+							"line": 3
+						},
+						"start": {
+							"column": 15,
+							"line": 3
+						}
+					},
+					"range": [75, 81],
+					"raw": "double",
+					"type": "Str",
+					"value": "double"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 22,
+							"line": 3
+						},
+						"start": {
+							"column": 21,
+							"line": 3
+						}
+					},
+					"range": [81, 82],
+					"raw": "\"",
+					"type": "Marked::SmartQuote",
+					"value": "\""
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 23,
+							"line": 3
+						},
+						"start": {
+							"column": 22,
+							"line": 3
+						}
+					},
+					"range": [82, 83],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 26,
+							"line": 3
+						},
+						"start": {
+							"column": 23,
+							"line": 3
+						}
+					},
+					"range": [83, 86],
+					"raw": "and",
+					"type": "Str",
+					"value": "and"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 27,
+							"line": 3
+						},
+						"start": {
+							"column": 26,
+							"line": 3
+						}
+					},
+					"range": [86, 87],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 28,
+							"line": 3
+						},
+						"start": {
+							"column": 27,
+							"line": 3
+						}
+					},
+					"range": [87, 88],
+					"raw": "'",
+					"type": "Marked::SmartQuote",
+					"value": "'"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 34,
+							"line": 3
+						},
+						"start": {
+							"column": 28,
+							"line": 3
+						}
+					},
+					"range": [88, 94],
+					"raw": "single",
+					"type": "Str",
+					"value": "single"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 35,
+							"line": 3
+						},
+						"start": {
+							"column": 34,
+							"line": 3
+						}
+					},
+					"range": [94, 95],
+					"raw": "'",
+					"type": "Marked::SmartQuote",
+					"value": "'"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 36,
+							"line": 3
+						},
+						"start": {
+							"column": 35,
+							"line": 3
+						}
+					},
+					"range": [95, 96],
+					"raw": ".",
+					"type": "Str",
+					"value": "."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 36,
+					"line": 3
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 96],
+			"raw": "Escaped hash: \\#.\nShorthand nonbreaking~space and en--dash.\nSmart quotes: \"double\" and 'single'.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 36,
+			"line": 3
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 96],
+	"raw": "Escaped hash: \\#.\nShorthand nonbreaking~space and en--dash.\nSmart quotes: \"double\" and 'single'.",
+	"type": "Document"
+}

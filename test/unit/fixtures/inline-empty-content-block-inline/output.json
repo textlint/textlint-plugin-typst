@@ -1,0 +1,98 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 6,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 6],
+					"raw": "Before",
+					"type": "Str",
+					"value": "Before"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 1
+						},
+						"start": {
+							"column": 6,
+							"line": 1
+						}
+					},
+					"range": [6, 7],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 1
+						},
+						"start": {
+							"column": 10,
+							"line": 1
+						}
+					},
+					"range": [10, 11],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 1
+						},
+						"start": {
+							"column": 11,
+							"line": 1
+						}
+					},
+					"range": [11, 17],
+					"raw": "after.",
+					"type": "Str",
+					"value": "after."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 17,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 17],
+			"raw": "Before  after.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 17,
+			"line": 1
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 17],
+	"raw": "Before #[] after.",
+	"type": "Document"
+}

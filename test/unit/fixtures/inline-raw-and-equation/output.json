@@ -1,0 +1,178 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 10,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 10],
+					"raw": "Inline raw",
+					"type": "Str",
+					"value": "Inline raw"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 11,
+							"line": 1
+						},
+						"start": {
+							"column": 10,
+							"line": 1
+						}
+					},
+					"range": [10, 11],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 17,
+							"line": 1
+						},
+						"start": {
+							"column": 11,
+							"line": 1
+						}
+					},
+					"range": [11, 17],
+					"raw": "`code`",
+					"type": "Code",
+					"value": "code"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 18,
+							"line": 1
+						},
+						"start": {
+							"column": 17,
+							"line": 1
+						}
+					},
+					"range": [17, 18],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 37,
+							"line": 1
+						},
+						"start": {
+							"column": 18,
+							"line": 1
+						}
+					},
+					"range": [18, 37],
+					"raw": "and inline equation",
+					"type": "Str",
+					"value": "and inline equation"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 38,
+							"line": 1
+						},
+						"start": {
+							"column": 37,
+							"line": 1
+						}
+					},
+					"range": [37, 38],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 45,
+							"line": 1
+						},
+						"start": {
+							"column": 38,
+							"line": 1
+						}
+					},
+					"range": [38, 45],
+					"raw": "$x + y$",
+					"type": "Code",
+					"value": "x + y"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 46,
+							"line": 1
+						},
+						"start": {
+							"column": 45,
+							"line": 1
+						}
+					},
+					"range": [45, 46],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 58,
+							"line": 1
+						},
+						"start": {
+							"column": 46,
+							"line": 1
+						}
+					},
+					"range": [46, 58],
+					"raw": "stay inline.",
+					"type": "Str",
+					"value": "stay inline."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 58,
+					"line": 1
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 58],
+			"raw": "Inline raw `code` and inline equation $x + y$ stay inline.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 58,
+			"line": 1
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 58],
+	"raw": "Inline raw `code` and inline equation $x + y$ stay inline.",
+	"type": "Document"
+}

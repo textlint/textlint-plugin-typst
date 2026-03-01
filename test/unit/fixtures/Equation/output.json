@@ -257,36 +257,20 @@
 					"raw": ":",
 					"type": "Str",
 					"value": ":"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 0,
-							"line": 4
-						},
-						"start": {
-							"column": 19,
-							"line": 3
-						}
-					},
-					"range": [87, 88],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
 				}
 			],
 			"loc": {
 				"end": {
-					"column": 0,
-					"line": 4
+					"column": 19,
+					"line": 3
 				},
 				"start": {
 					"column": 0,
 					"line": 1
 				}
 			},
-			"range": [0, 88],
-			"raw": "Let $a$, $b$, and $c$ be the side\nlengths of right-angled triangle.\nThen, we know that:\n",
+			"range": [0, 87],
+			"raw": "Let $a$, $b$, and $c$ be the side\nlengths of right-angled triangle.\nThen, we know that:",
 			"type": "Paragraph"
 		},
 		{
@@ -354,36 +338,20 @@
 					"raw": ":",
 					"type": "Str",
 					"value": ":"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 0,
-							"line": 7
-						},
-						"start": {
-							"column": 19,
-							"line": 6
-						}
-					},
-					"range": [128, 129],
-					"raw": "\n",
-					"type": "Str",
-					"value": "\n"
 				}
 			],
 			"loc": {
 				"end": {
-					"column": 0,
-					"line": 7
+					"column": 19,
+					"line": 6
 				},
 				"start": {
 					"column": 0,
 					"line": 6
 				}
 			},
-			"range": [109, 129],
-			"raw": "Prove by induction:\n",
+			"range": [109, 128],
+			"raw": "Prove by induction:",
 			"type": "Paragraph"
 		},
 		{

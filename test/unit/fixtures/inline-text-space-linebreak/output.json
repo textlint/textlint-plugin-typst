@@ -1,0 +1,98 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 29,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 29],
+					"raw": "Text with spaces and a forced",
+					"type": "Str",
+					"value": "Text with spaces and a forced"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 30,
+							"line": 1
+						},
+						"start": {
+							"column": 29,
+							"line": 1
+						}
+					},
+					"range": [29, 30],
+					"raw": "\\",
+					"type": "Str",
+					"value": "\\"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 2
+						},
+						"start": {
+							"column": 30,
+							"line": 1
+						}
+					},
+					"range": [30, 31],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 28,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 2
+						}
+					},
+					"range": [31, 59],
+					"raw": "line break in one paragraph.",
+					"type": "Str",
+					"value": "line break in one paragraph."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 28,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 59],
+			"raw": "Text with spaces and a forced\\\nline break in one paragraph.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 28,
+			"line": 2
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 59],
+	"raw": "Text with spaces and a forced\\\nline break in one paragraph.",
+	"type": "Document"
+}

@@ -179,7 +179,7 @@
 					},
 					"range": [28, 43],
 					"raw": "A merged glyph.",
-					"type": "Marked::Markup"
+					"type": "Paragraph"
 				}
 			],
 			"loc": {
@@ -357,8 +357,8 @@
 						}
 					},
 					"range": [55, 107],
-					"raw": "A spacing adjustment\n  between two adjacent letters.",
-					"type": "Marked::Markup"
+					"raw": "A spacing adjustment\nbetween two adjacent letters.",
+					"type": "Paragraph"
 				}
 			],
 			"loc": {
@@ -603,7 +603,7 @@
 					},
 					"range": [152, 167],
 					"raw": "A merged glyph.",
-					"type": "Marked::Markup"
+					"type": "Paragraph"
 				}
 			],
 			"loc": {
@@ -750,7 +750,7 @@
 					},
 					"range": [179, 229],
 					"raw": "A spacing adjustment between two adjacent letters.",
-					"type": "Marked::Markup"
+					"type": "Paragraph"
 				}
 			],
 			"loc": {
