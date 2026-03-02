@@ -370,8 +370,18 @@ const splitNodesByUnsupportedParagraphContent = (
 	return results;
 };
 
-const mergeAdjacentParagraphNodes = (nodes: Content[]): Content[] => {
+const mergeAdjacentParagraphNodes = (
+	nodes: Content[],
+	sourceRaw: string,
+	sourceRangeStart: number,
+): Content[] => {
 	const merged: Content[] = [];
+
+	const offsetToLoc = (offset: number): TxtNodePosition => {
+		const text = sourceRaw.slice(0, offset - sourceRangeStart);
+		const lines = text.split("\n");
+		return { line: lines.length, column: lines[lines.length - 1].length };
+	};
 
 	for (const node of nodes) {
 		const previous = merged[merged.length - 1];
@@ -386,28 +396,35 @@ const mergeAdjacentParagraphNodes = (nodes: Content[]): Content[] => {
 		) {
 			const previousLastChild = previous.children[previous.children.length - 1];
 			const currentFirstChild = node.children[0];
-			const needsSeparator =
+			const gapStart = previousLastChild.range[1];
+			const gapEnd = currentFirstChild.range[0];
+			const gapText = sourceRaw.slice(
+				gapStart - sourceRangeStart,
+				gapEnd - sourceRangeStart,
+			);
+
+			const trailingWsMatch = gapText.match(/(\s+)$/);
+			const separatorNode: Content[] =
 				previous.children.length > 0 &&
 				node.children.length > 0 &&
-				!previousLastChild.raw.endsWith(" ") &&
-				!previousLastChild.raw.endsWith("\n") &&
-				!currentFirstChild.raw.startsWith(" ") &&
-				!currentFirstChild.raw.startsWith("\n");
-
-			const separatorNode: Content[] = needsSeparator
-				? [
-						{
-							type: ASTNodeTypes.Str,
-							raw: " ",
-							value: " ",
-							loc: {
-								start: previousLastChild.loc.end,
-								end: currentFirstChild.loc.start,
-							},
-							range: [previousLastChild.range[1], currentFirstChild.range[0]],
-						} as Content,
-					]
-				: [];
+				trailingWsMatch
+					? (() => {
+							const ws = trailingWsMatch[1];
+							const wsOffset = gapEnd - ws.length;
+							return [
+								{
+									type: ASTNodeTypes.Str,
+									raw: ws,
+									value: ws,
+									loc: {
+										start: offsetToLoc(wsOffset),
+										end: currentFirstChild.loc.start,
+									},
+									range: [wsOffset, gapEnd],
+								} as Content,
+							];
+						})()
+					: [];
 
 			merged[merged.length - 1] = createParagraphNode([
 				...previous.children,
@@ -1715,7 +1732,14 @@ export const paragraphizeTextlintAstObject = (
 		}
 	}
 
-	return { ...rootNode, children: mergeAdjacentParagraphNodes(children) };
+	return {
+		...rootNode,
+		children: mergeAdjacentParagraphNodes(
+			children,
+			rootNode.raw,
+			rootNode.range[0],
+		),
+	};
 };
 
 /**

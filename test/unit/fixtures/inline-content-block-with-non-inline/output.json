@@ -382,11 +382,11 @@
 							"line": 8
 						},
 						"start": {
-							"column": 15,
-							"line": 7
+							"column": 1,
+							"line": 8
 						}
 					},
-					"range": [81, 84],
+					"range": [83, 84],
 					"raw": " ",
 					"type": "Str",
 					"value": " "
