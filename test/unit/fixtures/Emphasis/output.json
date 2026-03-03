@@ -194,7 +194,7 @@
 					},
 					"range": [22, 23],
 					"raw": "\\",
-					"type": "Str",
+					"type": "Break",
 					"value": "\\"
 				},
 				{

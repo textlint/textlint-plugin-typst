@@ -653,7 +653,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 					// soft breaks
 					if (
 						currentEndLine !== nextStartLine &&
-						child.type !== ASTNodeTypes.Break &&
+						!(child.type === ASTNodeTypes.Break && child.raw?.includes("\n")) &&
 						nextChild.type !== ASTNodeTypes.Break
 					) {
 						const breakNode: AstNode = {
@@ -702,7 +702,7 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 			node.type = ASTNodeTypes.Break;
 		}
 		if (/^Escape::Linebreak/.test(node.type)) {
-			node.type = ASTNodeTypes.Str;
+			node.type = ASTNodeTypes.Break;
 		}
 		if (/^Escape::/.test(node.type)) {
 			node.type = ASTNodeTypes.Code;

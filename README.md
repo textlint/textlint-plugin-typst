@@ -63,7 +63,7 @@ Legend for syntax support:
 | Numbered list | List / ListItem | ✅ | 🚫 |
 | Term list | List / ListItem | ⚠️ | 🚫 |
 | Math | Code / CodeBlock | ✅ | 🚫 |
-| Line break | Str | ✅ | 🚫 |
+| Line break | Break | ✅ | 🚫 |
 | Smart quote | | 🚫 | 🚫 |
 | Symbol shorthand | Code | ✅ | 🚫 |
 | Code expression | | ✅ | ✅ |
