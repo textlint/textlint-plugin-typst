@@ -1198,8 +1198,13 @@ export const paragraphizeTextlintAstObject = (
 		for (let index = 0; index < paragraphNode.children.length; index++) {
 			const currentNode = paragraphNode.children[index];
 
-			if (currentNode.type === ASTNodeTypes.Break) {
+			if (isParagraphBoundaryBreakNode(currentNode)) {
 				flushParagraph();
+				continue;
+			}
+
+			if (isInlineBreakNode(currentNode)) {
+				paragraphBuffer.push(currentNode);
 				continue;
 			}
 
