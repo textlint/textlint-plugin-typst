@@ -52,40 +52,59 @@
 		{
 			"children": [
 				{
-					"loc": {
-						"end": {
-							"column": 1,
-							"line": 3
-						},
-						"start": {
-							"column": 0,
-							"line": 3
-						}
-					},
-					"range": [16, 17],
-					"raw": "/",
-					"type": "Marked::TermMarker",
-					"value": "/"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 2,
-							"line": 3
-						},
-						"start": {
-							"column": 1,
-							"line": 3
-						}
-					},
-					"range": [17, 18],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
+					"checked": null,
 					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 3
+								},
+								"start": {
+									"column": 0,
+									"line": 3
+								}
+							},
+							"range": [16, 17],
+							"raw": "/",
+							"type": "Marked::TermMarker",
+							"value": "/"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 3
+								},
+								"start": {
+									"column": 1,
+									"line": 3
+								}
+							},
+							"range": [17, 18],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 10,
+											"line": 3
+										},
+										"start": {
+											"column": 2,
+											"line": 3
+										}
+									},
+									"range": [18, 26],
+									"raw": "Ligature",
+									"type": "Str",
+									"value": "Ligature"
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 10,
@@ -98,59 +117,59 @@
 							},
 							"range": [18, 26],
 							"raw": "Ligature",
-							"type": "Str",
-							"value": "Ligature"
-						}
-					],
-					"loc": {
-						"end": {
-							"column": 10,
-							"line": 3
+							"type": "Marked::Markup"
 						},
-						"start": {
-							"column": 2,
-							"line": 3
-						}
-					},
-					"range": [18, 26],
-					"raw": "Ligature",
-					"type": "Marked::Markup"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 11,
-							"line": 3
-						},
-						"start": {
-							"column": 10,
-							"line": 3
-						}
-					},
-					"range": [26, 27],
-					"raw": ":",
-					"type": "Punc::Colon",
-					"value": ":"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 12,
-							"line": 3
-						},
-						"start": {
-							"column": 11,
-							"line": 3
-						}
-					},
-					"range": [27, 28],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 3
+								},
+								"start": {
+									"column": 10,
+									"line": 3
+								}
+							},
+							"range": [26, 27],
+							"raw": ":",
+							"type": "Punc::Colon",
+							"value": ":"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 3
+								},
+								"start": {
+									"column": 11,
+									"line": 3
+								}
+							},
+							"range": [27, 28],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 27,
+											"line": 3
+										},
+										"start": {
+											"column": 12,
+											"line": 3
+										}
+									},
+									"range": [28, 43],
+									"raw": "A merged glyph.",
+									"type": "Str",
+									"value": "A merged glyph."
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 27,
@@ -163,8 +182,7 @@
 							},
 							"range": [28, 43],
 							"raw": "A merged glyph.",
-							"type": "Str",
-							"value": "A merged glyph."
+							"type": "Paragraph"
 						}
 					],
 					"loc": {
@@ -173,66 +191,69 @@
 							"line": 3
 						},
 						"start": {
-							"column": 12,
+							"column": 0,
 							"line": 3
 						}
 					},
-					"range": [28, 43],
-					"raw": "A merged glyph.",
-					"type": "Paragraph"
-				}
-			],
-			"loc": {
-				"end": {
-					"column": 27,
-					"line": 3
-				},
-				"start": {
-					"column": 0,
-					"line": 3
-				}
-			},
-			"range": [16, 43],
-			"raw": "/ Ligature: A merged glyph.",
-			"type": "Marked::TermItem"
-		},
-		{
-			"children": [
-				{
-					"loc": {
-						"end": {
-							"column": 1,
-							"line": 4
-						},
-						"start": {
-							"column": 0,
-							"line": 4
-						}
-					},
-					"range": [44, 45],
-					"raw": "/",
-					"type": "Marked::TermMarker",
-					"value": "/"
+					"range": [16, 43],
+					"raw": "/ Ligature: A merged glyph.",
+					"spread": false,
+					"type": "ListItem"
 				},
 				{
-					"loc": {
-						"end": {
-							"column": 2,
-							"line": 4
-						},
-						"start": {
-							"column": 1,
-							"line": 4
-						}
-					},
-					"range": [45, 46],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
+					"checked": null,
 					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 4
+								},
+								"start": {
+									"column": 0,
+									"line": 4
+								}
+							},
+							"range": [44, 45],
+							"raw": "/",
+							"type": "Marked::TermMarker",
+							"value": "/"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 4
+								},
+								"start": {
+									"column": 1,
+									"line": 4
+								}
+							},
+							"range": [45, 46],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 9,
+											"line": 4
+										},
+										"start": {
+											"column": 2,
+											"line": 4
+										}
+									},
+									"range": [46, 53],
+									"raw": "Kerning",
+									"type": "Str",
+									"value": "Kerning"
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 9,
@@ -245,105 +266,104 @@
 							},
 							"range": [46, 53],
 							"raw": "Kerning",
-							"type": "Str",
-							"value": "Kerning"
-						}
-					],
-					"loc": {
-						"end": {
-							"column": 9,
-							"line": 4
+							"type": "Marked::Markup"
 						},
-						"start": {
-							"column": 2,
-							"line": 4
-						}
-					},
-					"range": [46, 53],
-					"raw": "Kerning",
-					"type": "Marked::Markup"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 10,
-							"line": 4
-						},
-						"start": {
-							"column": 9,
-							"line": 4
-						}
-					},
-					"range": [53, 54],
-					"raw": ":",
-					"type": "Punc::Colon",
-					"value": ":"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 11,
-							"line": 4
-						},
-						"start": {
-							"column": 10,
-							"line": 4
-						}
-					},
-					"range": [54, 55],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"children": [
 						{
 							"loc": {
 								"end": {
-									"column": 31,
+									"column": 10,
 									"line": 4
+								},
+								"start": {
+									"column": 9,
+									"line": 4
+								}
+							},
+							"range": [53, 54],
+							"raw": ":",
+							"type": "Punc::Colon",
+							"value": ":"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 4
+								},
+								"start": {
+									"column": 10,
+									"line": 4
+								}
+							},
+							"range": [54, 55],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 31,
+											"line": 4
+										},
+										"start": {
+											"column": 11,
+											"line": 4
+										}
+									},
+									"range": [55, 75],
+									"raw": "A spacing adjustment",
+									"type": "Str",
+									"value": "A spacing adjustment"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 2,
+											"line": 5
+										},
+										"start": {
+											"column": 31,
+											"line": 4
+										}
+									},
+									"range": [75, 76],
+									"raw": "\n",
+									"type": "Str",
+									"value": "\n"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 31,
+											"line": 5
+										},
+										"start": {
+											"column": 2,
+											"line": 5
+										}
+									},
+									"range": [78, 107],
+									"raw": "between two adjacent letters.",
+									"type": "Str",
+									"value": "between two adjacent letters."
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 31,
+									"line": 5
 								},
 								"start": {
 									"column": 11,
 									"line": 4
 								}
 							},
-							"range": [55, 75],
-							"raw": "A spacing adjustment",
-							"type": "Str",
-							"value": "A spacing adjustment"
-						},
-						{
-							"loc": {
-								"end": {
-									"column": 2,
-									"line": 5
-								},
-								"start": {
-									"column": 31,
-									"line": 4
-								}
-							},
-							"range": [75, 76],
-							"raw": "\n",
-							"type": "Str",
-							"value": "\n"
-						},
-						{
-							"loc": {
-								"end": {
-									"column": 31,
-									"line": 5
-								},
-								"start": {
-									"column": 2,
-									"line": 5
-								}
-							},
-							"range": [78, 107],
-							"raw": "between two adjacent letters.",
-							"type": "Str",
-							"value": "between two adjacent letters."
+							"range": [55, 107],
+							"raw": "A spacing adjustment\nbetween two adjacent letters.",
+							"type": "Paragraph"
 						}
 					],
 					"loc": {
@@ -352,13 +372,14 @@
 							"line": 5
 						},
 						"start": {
-							"column": 11,
+							"column": 0,
 							"line": 4
 						}
 					},
-					"range": [55, 107],
-					"raw": "A spacing adjustment\nbetween two adjacent letters.",
-					"type": "Paragraph"
+					"range": [44, 107],
+					"raw": "/ Kerning: A spacing adjustment\n  between two adjacent letters.",
+					"spread": false,
+					"type": "ListItem"
 				}
 			],
 			"loc": {
@@ -368,12 +389,15 @@
 				},
 				"start": {
 					"column": 0,
-					"line": 4
+					"line": 3
 				}
 			},
-			"range": [44, 107],
-			"raw": "/ Kerning: A spacing adjustment\n  between two adjacent letters.",
-			"type": "Marked::TermItem"
+			"ordered": false,
+			"range": [16, 107],
+			"raw": "/ Ligature: A merged glyph.\n/ Kerning: A spacing adjustment\n  between two adjacent letters.",
+			"spread": false,
+			"start": null,
+			"type": "List"
 		},
 		{
 			"loc": {
@@ -476,40 +500,59 @@
 		{
 			"children": [
 				{
-					"loc": {
-						"end": {
-							"column": 1,
-							"line": 10
-						},
-						"start": {
-							"column": 0,
-							"line": 10
-						}
-					},
-					"range": [140, 141],
-					"raw": "/",
-					"type": "Marked::TermMarker",
-					"value": "/"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 2,
-							"line": 10
-						},
-						"start": {
-							"column": 1,
-							"line": 10
-						}
-					},
-					"range": [141, 142],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
+					"checked": null,
 					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 10
+								},
+								"start": {
+									"column": 0,
+									"line": 10
+								}
+							},
+							"range": [140, 141],
+							"raw": "/",
+							"type": "Marked::TermMarker",
+							"value": "/"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 10
+								},
+								"start": {
+									"column": 1,
+									"line": 10
+								}
+							},
+							"range": [141, 142],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 10,
+											"line": 10
+										},
+										"start": {
+											"column": 2,
+											"line": 10
+										}
+									},
+									"range": [142, 150],
+									"raw": "Ligature",
+									"type": "Str",
+									"value": "Ligature"
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 10,
@@ -522,59 +565,59 @@
 							},
 							"range": [142, 150],
 							"raw": "Ligature",
-							"type": "Str",
-							"value": "Ligature"
-						}
-					],
-					"loc": {
-						"end": {
-							"column": 10,
-							"line": 10
+							"type": "Marked::Markup"
 						},
-						"start": {
-							"column": 2,
-							"line": 10
-						}
-					},
-					"range": [142, 150],
-					"raw": "Ligature",
-					"type": "Marked::Markup"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 11,
-							"line": 10
-						},
-						"start": {
-							"column": 10,
-							"line": 10
-						}
-					},
-					"range": [150, 151],
-					"raw": ":",
-					"type": "Punc::Colon",
-					"value": ":"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 12,
-							"line": 10
-						},
-						"start": {
-							"column": 11,
-							"line": 10
-						}
-					},
-					"range": [151, 152],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 10
+								},
+								"start": {
+									"column": 10,
+									"line": 10
+								}
+							},
+							"range": [150, 151],
+							"raw": ":",
+							"type": "Punc::Colon",
+							"value": ":"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 12,
+									"line": 10
+								},
+								"start": {
+									"column": 11,
+									"line": 10
+								}
+							},
+							"range": [151, 152],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 27,
+											"line": 10
+										},
+										"start": {
+											"column": 12,
+											"line": 10
+										}
+									},
+									"range": [152, 167],
+									"raw": "A merged glyph.",
+									"type": "Str",
+									"value": "A merged glyph."
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 27,
@@ -587,8 +630,7 @@
 							},
 							"range": [152, 167],
 							"raw": "A merged glyph.",
-							"type": "Str",
-							"value": "A merged glyph."
+							"type": "Paragraph"
 						}
 					],
 					"loc": {
@@ -597,66 +639,69 @@
 							"line": 10
 						},
 						"start": {
-							"column": 12,
+							"column": 0,
 							"line": 10
 						}
 					},
-					"range": [152, 167],
-					"raw": "A merged glyph.",
-					"type": "Paragraph"
-				}
-			],
-			"loc": {
-				"end": {
-					"column": 27,
-					"line": 10
-				},
-				"start": {
-					"column": 0,
-					"line": 10
-				}
-			},
-			"range": [140, 167],
-			"raw": "/ Ligature: A merged glyph.",
-			"type": "Marked::TermItem"
-		},
-		{
-			"children": [
-				{
-					"loc": {
-						"end": {
-							"column": 1,
-							"line": 11
-						},
-						"start": {
-							"column": 0,
-							"line": 11
-						}
-					},
-					"range": [168, 169],
-					"raw": "/",
-					"type": "Marked::TermMarker",
-					"value": "/"
+					"range": [140, 167],
+					"raw": "/ Ligature: A merged glyph.",
+					"spread": false,
+					"type": "ListItem"
 				},
 				{
-					"loc": {
-						"end": {
-							"column": 2,
-							"line": 11
-						},
-						"start": {
-							"column": 1,
-							"line": 11
-						}
-					},
-					"range": [169, 170],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
+					"checked": null,
 					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 1,
+									"line": 11
+								},
+								"start": {
+									"column": 0,
+									"line": 11
+								}
+							},
+							"range": [168, 169],
+							"raw": "/",
+							"type": "Marked::TermMarker",
+							"value": "/"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 11
+								},
+								"start": {
+									"column": 1,
+									"line": 11
+								}
+							},
+							"range": [169, 170],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 9,
+											"line": 11
+										},
+										"start": {
+											"column": 2,
+											"line": 11
+										}
+									},
+									"range": [170, 177],
+									"raw": "Kerning",
+									"type": "Str",
+									"value": "Kerning"
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 9,
@@ -669,59 +714,59 @@
 							},
 							"range": [170, 177],
 							"raw": "Kerning",
-							"type": "Str",
-							"value": "Kerning"
-						}
-					],
-					"loc": {
-						"end": {
-							"column": 9,
-							"line": 11
+							"type": "Marked::Markup"
 						},
-						"start": {
-							"column": 2,
-							"line": 11
-						}
-					},
-					"range": [170, 177],
-					"raw": "Kerning",
-					"type": "Marked::Markup"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 10,
-							"line": 11
-						},
-						"start": {
-							"column": 9,
-							"line": 11
-						}
-					},
-					"range": [177, 178],
-					"raw": ":",
-					"type": "Punc::Colon",
-					"value": ":"
-				},
-				{
-					"loc": {
-						"end": {
-							"column": 11,
-							"line": 11
-						},
-						"start": {
-							"column": 10,
-							"line": 11
-						}
-					},
-					"range": [178, 179],
-					"raw": " ",
-					"type": "Str",
-					"value": " "
-				},
-				{
-					"children": [
 						{
+							"loc": {
+								"end": {
+									"column": 10,
+									"line": 11
+								},
+								"start": {
+									"column": 9,
+									"line": 11
+								}
+							},
+							"range": [177, 178],
+							"raw": ":",
+							"type": "Punc::Colon",
+							"value": ":"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 11,
+									"line": 11
+								},
+								"start": {
+									"column": 10,
+									"line": 11
+								}
+							},
+							"range": [178, 179],
+							"raw": " ",
+							"type": "Str",
+							"value": " "
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 61,
+											"line": 11
+										},
+										"start": {
+											"column": 11,
+											"line": 11
+										}
+									},
+									"range": [179, 229],
+									"raw": "A spacing adjustment between two adjacent letters.",
+									"type": "Str",
+									"value": "A spacing adjustment between two adjacent letters."
+								}
+							],
 							"loc": {
 								"end": {
 									"column": 61,
@@ -734,8 +779,7 @@
 							},
 							"range": [179, 229],
 							"raw": "A spacing adjustment between two adjacent letters.",
-							"type": "Str",
-							"value": "A spacing adjustment between two adjacent letters."
+							"type": "Paragraph"
 						}
 					],
 					"loc": {
@@ -744,13 +788,14 @@
 							"line": 11
 						},
 						"start": {
-							"column": 11,
+							"column": 0,
 							"line": 11
 						}
 					},
-					"range": [179, 229],
-					"raw": "A spacing adjustment between two adjacent letters.",
-					"type": "Paragraph"
+					"range": [168, 229],
+					"raw": "/ Kerning: A spacing adjustment between two adjacent letters.",
+					"spread": false,
+					"type": "ListItem"
 				}
 			],
 			"loc": {
@@ -760,12 +805,15 @@
 				},
 				"start": {
 					"column": 0,
-					"line": 11
+					"line": 10
 				}
 			},
-			"range": [168, 229],
-			"raw": "/ Kerning: A spacing adjustment between two adjacent letters.",
-			"type": "Marked::TermItem"
+			"ordered": false,
+			"range": [140, 229],
+			"raw": "/ Ligature: A merged glyph.\n/ Kerning: A spacing adjustment between two adjacent letters.",
+			"spread": false,
+			"start": null,
+			"type": "List"
 		},
 		{
 			"children": [

@@ -704,6 +704,13 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		if (/^Escape::Linebreak/.test(node.type)) {
 			node.type = ASTNodeTypes.Str;
 		}
+		if (/^Escape::/.test(node.type)) {
+			node.type = ASTNodeTypes.Code;
+			node.value = node.raw;
+			if (hasChildren(node)) {
+				Reflect.deleteProperty(node, "children");
+			}
+		}
 		if (/^Marked::(ListItem|EnumItem)$/.test(node.type)) {
 			node.type = ASTNodeTypes.ListItem;
 			node.spread = false;
@@ -1304,6 +1311,9 @@ export const paragraphizeTextlintAstObject = (
 		const paragraphNode = createParagraph(clonedBodyNodes);
 		return {
 			...termItemNode,
+			type: ASTNodeTypes.ListItem,
+			spread: false,
+			checked: null,
 			children: [...prefixNodes, paragraphNode],
 		} as Content;
 	};
@@ -1357,7 +1367,22 @@ export const paragraphizeTextlintAstObject = (
 		const results: Content[] = [];
 		for (const seg of segments) {
 			if (seg.isTerm) {
-				results.push(...seg.nodes);
+				const termItems = seg.nodes.map(normalizeTermItem);
+				const firstItem = termItems[0];
+				const lastItem = termItems[termItems.length - 1];
+				results.push({
+					type: ASTNodeTypes.List,
+					ordered: false,
+					start: null,
+					spread: false,
+					children: termItems,
+					loc: {
+						start: firstItem.loc.start,
+						end: lastItem.loc.end,
+					},
+					range: [firstItem.range[0], lastItem.range[1]],
+					raw: termItems.map((item) => item.raw).join("\n"),
+				} as Content);
 				continue;
 			}
 
@@ -1423,7 +1448,22 @@ export const paragraphizeTextlintAstObject = (
 				sourceChildren,
 				i,
 			);
-			children.push(...nodes.map(normalizeTermItem));
+			const termItems = nodes.map(normalizeTermItem);
+			const firstItem = termItems[0];
+			const lastItem = termItems[termItems.length - 1];
+			children.push({
+				type: ASTNodeTypes.List,
+				ordered: false,
+				start: null,
+				spread: false,
+				children: termItems,
+				loc: {
+					start: firstItem.loc.start,
+					end: lastItem.loc.end,
+				},
+				range: [firstItem.range[0], lastItem.range[1]],
+				raw: termItems.map((item) => item.raw).join("\n"),
+			} as Content);
 			i = nextIndex;
 			continue;
 		}

@@ -63,7 +63,7 @@
 					},
 					"range": [14, 16],
 					"raw": "\\#",
-					"type": "Escape::Escape &lt;1:14~1:16&gt;",
+					"type": "Code",
 					"value": "\\#"
 				},
 				{
@@ -127,7 +127,7 @@
 					},
 					"range": [39, 40],
 					"raw": "~",
-					"type": "Escape::Shorthand &lt;2:21~2:22&gt;",
+					"type": "Code",
 					"value": "~"
 				},
 				{
@@ -159,7 +159,7 @@
 					},
 					"range": [52, 54],
 					"raw": "--",
-					"type": "Escape::Shorthand &lt;2:34~2:36&gt;",
+					"type": "Code",
 					"value": "--"
 				},
 				{
