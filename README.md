@@ -56,18 +56,18 @@ Legend for syntax support:
 | Emphasis | Emphasis | ✅ | 🚫 |
 | Raw text | Code / CodeBlock | ✅ | 🚫 |
 | Link | Link | ✅ | 🚫 |
-| Label | | 🚫 | 🚫 |
-| Reference | | 🚫 | 🚫 |
+| Label | Code | ✅ | 🚫 |
+| Reference | Code | ✅ | 🚫 |
 | Heading | Header | ✅ | 🚫 |
 | Bullet list | List / ListItem | ✅ | 🚫 |
 | Numbered list | List / ListItem | ✅ | 🚫 |
-| Term list | | 🚫 | 🚫 |
+| Term list | List / ListItem | ⚠️ | 🚫 |
 | Math | Code / CodeBlock | ✅ | 🚫 |
-| Line break | Break | ✅ | 🚫 |
+| Line break | Str | ✅ | 🚫 |
 | Smart quote | | 🚫 | 🚫 |
-| Symbol shorthand | | 🚫 | 🚫 |
+| Symbol shorthand | Code | ✅ | 🚫 |
 | Code expression | | ✅ | ✅ |
-| Character escape | | 🚫 | 🚫 |
+| Character escape | Code | ✅ | 🚫 |
 | Comment | Comment | ✅ | 🚫 |
 
 ## Examples
