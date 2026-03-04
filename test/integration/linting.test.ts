@@ -314,16 +314,13 @@ describe("linting", () => {
 			});
 
 			// see: https://github.com/textlint/textlint-plugin-typst/pull/31
-			it.fails(
-				"should handle elements immediately below comments",
-				async () => {
-					const result = await lintFile(
-						"element_immediately_below_comment_valid.typ",
-					);
-					const violations = getViolations(result);
-					expect(violations).toEqual([]);
-				},
-			);
+			it("should handle elements immediately below comments", async () => {
+				const result = await lintFile(
+					"element_immediately_below_comment_valid.typ",
+				);
+				const violations = getViolations(result);
+				expect(violations).toEqual([]);
+			});
 
 			it("should handle term lists", async () => {
 				const result = await lintFile("term_list_valid.typ");
@@ -332,7 +329,7 @@ describe("linting", () => {
 			});
 
 			// see: https://github.com/textlint/textlint-plugin-typst/pull/31
-			it.fails("should handle nested lists", async () => {
+			it("should handle nested lists", async () => {
 				const result = await lintFile("nested_list_valid.typ");
 				const violations = getViolations(result);
 				expect(violations).toEqual([]);
@@ -366,7 +363,7 @@ describe("linting", () => {
 			});
 
 			// see: https://github.com/textlint/textlint-plugin-typst/pull/31
-			it.fails("should detect violations in term lists", async () => {
+			it("should detect violations in term lists", async () => {
 				const result = await lintFile("term_list_invalid.typ");
 				const violations = getViolations(result);
 				expect(

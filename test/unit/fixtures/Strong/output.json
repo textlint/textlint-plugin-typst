@@ -180,40 +180,39 @@
 					"raw": "\n",
 					"type": "Str",
 					"value": "\n"
-				}
-			],
-			"loc": {
-				"end": {
-					"column": 0,
-					"line": 4
 				},
-				"start": {
-					"column": 0,
-					"line": 3
-				}
-			},
-			"range": [10, 20],
-			"raw": "* a b c *\n",
-			"type": "Paragraph"
-		},
-		{
-			"loc": {
-				"end": {
-					"column": 1,
-					"line": 4
+				{
+					"loc": {
+						"end": {
+							"column": 1,
+							"line": 4
+						},
+						"start": {
+							"column": 0,
+							"line": 4
+						}
+					},
+					"range": [20, 21],
+					"raw": "\\",
+					"type": "Break",
+					"value": "\\"
 				},
-				"start": {
-					"column": 0,
-					"line": 4
-				}
-			},
-			"range": [20, 21],
-			"raw": "\\",
-			"type": "Break",
-			"value": "\\"
-		},
-		{
-			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 0,
+							"line": 5
+						},
+						"start": {
+							"column": 1,
+							"line": 4
+						}
+					},
+					"range": [21, 22],
+					"raw": "\n",
+					"type": "Str",
+					"value": "\n"
+				},
 				{
 					"loc": {
 						"end": {
@@ -335,11 +334,11 @@
 				},
 				"start": {
 					"column": 0,
-					"line": 5
+					"line": 3
 				}
 			},
-			"range": [22, 39],
-			"raw": "This is *strong*.",
+			"range": [10, 39],
+			"raw": "* a b c *\n\\\nThis is *strong*.",
 			"type": "Paragraph"
 		}
 	],

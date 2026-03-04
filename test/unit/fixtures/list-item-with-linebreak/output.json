@@ -1,0 +1,173 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"checked": null,
+					"children": [
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 7,
+											"line": 1
+										},
+										"start": {
+											"column": 2,
+											"line": 1
+										}
+									},
+									"range": [2, 7],
+									"raw": "item1",
+									"type": "Str",
+									"value": "item1"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 9,
+											"line": 1
+										},
+										"start": {
+											"column": 8,
+											"line": 1
+										}
+									},
+									"range": [8, 9],
+									"raw": "\\",
+									"type": "Break",
+									"value": "\\"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 2
+										},
+										"start": {
+											"column": 2,
+											"line": 2
+										}
+									},
+									"range": [12, 24],
+									"raw": "continuation",
+									"type": "Str",
+									"value": "continuation"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 2
+								},
+								"start": {
+									"column": 2,
+									"line": 1
+								}
+							},
+							"range": [2, 24],
+							"raw": "item1\\continuation",
+							"type": "Paragraph"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 14,
+							"line": 2
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 24],
+					"raw": "- item1 \\\n  continuation",
+					"spread": false,
+					"type": "ListItem"
+				},
+				{
+					"checked": null,
+					"children": [
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 7,
+											"line": 3
+										},
+										"start": {
+											"column": 2,
+											"line": 3
+										}
+									},
+									"range": [27, 32],
+									"raw": "item2",
+									"type": "Str",
+									"value": "item2"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 7,
+									"line": 3
+								},
+								"start": {
+									"column": 2,
+									"line": 3
+								}
+							},
+							"range": [27, 32],
+							"raw": "item2",
+							"type": "Paragraph"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 3
+						},
+						"start": {
+							"column": 0,
+							"line": 3
+						}
+					},
+					"range": [25, 32],
+					"raw": "- item2",
+					"spread": false,
+					"type": "ListItem"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 7,
+					"line": 3
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"ordered": false,
+			"range": [0, 32],
+			"raw": "- item1 \\\n  continuation\n- item2",
+			"spread": false,
+			"start": null,
+			"type": "List"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 7,
+			"line": 3
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 32],
+	"raw": "- item1 \\\n  continuation\n- item2",
+	"type": "Document"
+}

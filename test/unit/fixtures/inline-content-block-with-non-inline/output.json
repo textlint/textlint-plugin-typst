@@ -1,0 +1,439 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 6,
+							"line": 1
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 6],
+					"raw": "Before",
+					"type": "Str",
+					"value": "Before"
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 7,
+							"line": 1
+						},
+						"start": {
+							"column": 6,
+							"line": 1
+						}
+					},
+					"range": [6, 7],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 16,
+							"line": 2
+						},
+						"start": {
+							"column": 2,
+							"line": 2
+						}
+					},
+					"range": [12, 26],
+					"raw": "inline before.",
+					"type": "Str",
+					"value": "inline before."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 16,
+					"line": 2
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"range": [0, 26],
+			"raw": "Before inline before.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 3
+				},
+				"start": {
+					"column": 2,
+					"line": 3
+				}
+			},
+			"range": [29, 30],
+			"raw": "#",
+			"type": "Fn::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 3
+						},
+						"start": {
+							"column": 3,
+							"line": 3
+						}
+					},
+					"range": [30, 35],
+					"raw": "table",
+					"type": "Fn::(Ident: &quot;table&quot;)",
+					"value": "table"
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 3
+								},
+								"start": {
+									"column": 8,
+									"line": 3
+								}
+							},
+							"range": [35, 36],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 4
+								},
+								"start": {
+									"column": 9,
+									"line": 3
+								}
+							},
+							"range": [36, 37],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 4
+										},
+										"start": {
+											"column": 4,
+											"line": 4
+										}
+									},
+									"range": [41, 48],
+									"raw": "columns",
+									"type": "Marked::(Ident: &quot;columns&quot;)",
+									"value": "columns"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 12,
+											"line": 4
+										},
+										"start": {
+											"column": 11,
+											"line": 4
+										}
+									},
+									"range": [48, 49],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 13,
+											"line": 4
+										},
+										"start": {
+											"column": 12,
+											"line": 4
+										}
+									},
+									"range": [49, 50],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 4
+										},
+										"start": {
+											"column": 13,
+											"line": 4
+										}
+									},
+									"range": [50, 51],
+									"raw": "1",
+									"type": "Num(Int, 1)",
+									"value": "1"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 4
+								},
+								"start": {
+									"column": 4,
+									"line": 4
+								}
+							},
+							"range": [41, 51],
+							"raw": "columns: 1",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 4
+								},
+								"start": {
+									"column": 14,
+									"line": 4
+								}
+							},
+							"range": [51, 52],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 5
+								},
+								"start": {
+									"column": 15,
+									"line": 4
+								}
+							},
+							"range": [52, 53],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 5
+										},
+										"start": {
+											"column": 5,
+											"line": 5
+										}
+									},
+									"range": [58, 59],
+									"raw": "x",
+									"type": "Str",
+									"value": "x"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 5
+								},
+								"start": {
+									"column": 5,
+									"line": 5
+								}
+							},
+							"range": [58, 59],
+							"raw": "x",
+							"type": "Paragraph"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 5
+								},
+								"start": {
+									"column": 7,
+									"line": 5
+								}
+							},
+							"range": [60, 61],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 6
+								},
+								"start": {
+									"column": 8,
+									"line": 5
+								}
+							},
+							"range": [61, 62],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 6
+								},
+								"start": {
+									"column": 2,
+									"line": 6
+								}
+							},
+							"range": [64, 65],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 6
+						},
+						"start": {
+							"column": 8,
+							"line": 3
+						}
+					},
+					"range": [35, 65],
+					"raw": "(\n    columns: 1,\n    [x],\n  )",
+					"type": "Marked::Args"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 6
+				},
+				"start": {
+					"column": 3,
+					"line": 3
+				}
+			},
+			"range": [30, 65],
+			"raw": "table(\n    columns: 1,\n    [x],\n  )",
+			"type": "Marked::FuncCall"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 15,
+							"line": 7
+						},
+						"start": {
+							"column": 2,
+							"line": 7
+						}
+					},
+					"range": [68, 81],
+					"raw": "inline after.",
+					"type": "Str",
+					"value": "inline after."
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 2,
+							"line": 8
+						},
+						"start": {
+							"column": 1,
+							"line": 8
+						}
+					},
+					"range": [83, 84],
+					"raw": " ",
+					"type": "Str",
+					"value": " "
+				},
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 8
+						},
+						"start": {
+							"column": 2,
+							"line": 8
+						}
+					},
+					"range": [84, 90],
+					"raw": "after.",
+					"type": "Str",
+					"value": "after."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 8,
+					"line": 8
+				},
+				"start": {
+					"column": 2,
+					"line": 7
+				}
+			},
+			"range": [68, 90],
+			"raw": "inline after. after.",
+			"type": "Paragraph"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 8,
+			"line": 8
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 90],
+	"raw": "Before #[\n  inline before.\n  #table(\n    columns: 1,\n    [x],\n  )\n  inline after.\n] after.",
+	"type": "Document"
+}

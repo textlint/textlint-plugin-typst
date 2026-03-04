@@ -1,0 +1,1024 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 25,
+							"line": 2
+						},
+						"start": {
+							"column": 2,
+							"line": 2
+						}
+					},
+					"range": [5, 28],
+					"raw": "paragraph before table.",
+					"type": "Str",
+					"value": "paragraph before table."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 25,
+					"line": 2
+				},
+				"start": {
+					"column": 2,
+					"line": 2
+				}
+			},
+			"range": [5, 28],
+			"raw": "paragraph before table.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 3
+				},
+				"start": {
+					"column": 2,
+					"line": 3
+				}
+			},
+			"range": [31, 32],
+			"raw": "#",
+			"type": "Fn::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 3
+						},
+						"start": {
+							"column": 3,
+							"line": 3
+						}
+					},
+					"range": [32, 37],
+					"raw": "table",
+					"type": "Fn::(Ident: &quot;table&quot;)",
+					"value": "table"
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 3
+								},
+								"start": {
+									"column": 8,
+									"line": 3
+								}
+							},
+							"range": [37, 38],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 4
+								},
+								"start": {
+									"column": 9,
+									"line": 3
+								}
+							},
+							"range": [38, 39],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 4
+										},
+										"start": {
+											"column": 4,
+											"line": 4
+										}
+									},
+									"range": [43, 50],
+									"raw": "columns",
+									"type": "Marked::(Ident: &quot;columns&quot;)",
+									"value": "columns"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 12,
+											"line": 4
+										},
+										"start": {
+											"column": 11,
+											"line": 4
+										}
+									},
+									"range": [50, 51],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 13,
+											"line": 4
+										},
+										"start": {
+											"column": 12,
+											"line": 4
+										}
+									},
+									"range": [51, 52],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 4
+										},
+										"start": {
+											"column": 13,
+											"line": 4
+										}
+									},
+									"range": [52, 53],
+									"raw": "1",
+									"type": "Num(Int, 1)",
+									"value": "1"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 4
+								},
+								"start": {
+									"column": 4,
+									"line": 4
+								}
+							},
+							"range": [43, 53],
+							"raw": "columns: 1",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 4
+								},
+								"start": {
+									"column": 14,
+									"line": 4
+								}
+							},
+							"range": [53, 54],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 5
+								},
+								"start": {
+									"column": 15,
+									"line": 4
+								}
+							},
+							"range": [54, 55],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 5
+										},
+										"start": {
+											"column": 5,
+											"line": 5
+										}
+									},
+									"range": [60, 61],
+									"raw": "a",
+									"type": "Str",
+									"value": "a"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 5
+								},
+								"start": {
+									"column": 5,
+									"line": 5
+								}
+							},
+							"range": [60, 61],
+							"raw": "a",
+							"type": "Paragraph"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 5
+								},
+								"start": {
+									"column": 7,
+									"line": 5
+								}
+							},
+							"range": [62, 63],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 6
+								},
+								"start": {
+									"column": 8,
+									"line": 5
+								}
+							},
+							"range": [63, 64],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 6
+								},
+								"start": {
+									"column": 2,
+									"line": 6
+								}
+							},
+							"range": [66, 67],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 6
+						},
+						"start": {
+							"column": 8,
+							"line": 3
+						}
+					},
+					"range": [37, 67],
+					"raw": "(\n    columns: 1,\n    [a],\n  )",
+					"type": "Marked::Args"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 6
+				},
+				"start": {
+					"column": 3,
+					"line": 3
+				}
+			},
+			"range": [32, 67],
+			"raw": "table(\n    columns: 1,\n    [a],\n  )",
+			"type": "Marked::FuncCall"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 24,
+							"line": 7
+						},
+						"start": {
+							"column": 2,
+							"line": 7
+						}
+					},
+					"range": [70, 92],
+					"raw": "paragraph after table.",
+					"type": "Str",
+					"value": "paragraph after table."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 24,
+					"line": 7
+				},
+				"start": {
+					"column": 2,
+					"line": 7
+				}
+			},
+			"range": [70, 92],
+			"raw": "paragraph after table.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 10
+				},
+				"start": {
+					"column": 1,
+					"line": 8
+				}
+			},
+			"range": [94, 96],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 30,
+							"line": 11
+						},
+						"start": {
+							"column": 2,
+							"line": 11
+						}
+					},
+					"range": [101, 129],
+					"raw": "keep only leading paragraph.",
+					"type": "Str",
+					"value": "keep only leading paragraph."
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 30,
+					"line": 11
+				},
+				"start": {
+					"column": 2,
+					"line": 11
+				}
+			},
+			"range": [101, 129],
+			"raw": "keep only leading paragraph.",
+			"type": "Paragraph"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 12
+				},
+				"start": {
+					"column": 2,
+					"line": 12
+				}
+			},
+			"range": [132, 133],
+			"raw": "#",
+			"type": "Fn::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 12
+						},
+						"start": {
+							"column": 3,
+							"line": 12
+						}
+					},
+					"range": [133, 138],
+					"raw": "table",
+					"type": "Fn::(Ident: &quot;table&quot;)",
+					"value": "table"
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 12
+								},
+								"start": {
+									"column": 8,
+									"line": 12
+								}
+							},
+							"range": [138, 139],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 13
+								},
+								"start": {
+									"column": 9,
+									"line": 12
+								}
+							},
+							"range": [139, 140],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 13
+										},
+										"start": {
+											"column": 4,
+											"line": 13
+										}
+									},
+									"range": [144, 151],
+									"raw": "columns",
+									"type": "Marked::(Ident: &quot;columns&quot;)",
+									"value": "columns"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 12,
+											"line": 13
+										},
+										"start": {
+											"column": 11,
+											"line": 13
+										}
+									},
+									"range": [151, 152],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 13,
+											"line": 13
+										},
+										"start": {
+											"column": 12,
+											"line": 13
+										}
+									},
+									"range": [152, 153],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 13
+										},
+										"start": {
+											"column": 13,
+											"line": 13
+										}
+									},
+									"range": [153, 154],
+									"raw": "1",
+									"type": "Num(Int, 1)",
+									"value": "1"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 13
+								},
+								"start": {
+									"column": 4,
+									"line": 13
+								}
+							},
+							"range": [144, 154],
+							"raw": "columns: 1",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 13
+								},
+								"start": {
+									"column": 14,
+									"line": 13
+								}
+							},
+							"range": [154, 155],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 14
+								},
+								"start": {
+									"column": 15,
+									"line": 13
+								}
+							},
+							"range": [155, 156],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 14
+										},
+										"start": {
+											"column": 5,
+											"line": 14
+										}
+									},
+									"range": [161, 162],
+									"raw": "b",
+									"type": "Str",
+									"value": "b"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 14
+								},
+								"start": {
+									"column": 5,
+									"line": 14
+								}
+							},
+							"range": [161, 162],
+							"raw": "b",
+							"type": "Paragraph"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 14
+								},
+								"start": {
+									"column": 7,
+									"line": 14
+								}
+							},
+							"range": [163, 164],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 15
+								},
+								"start": {
+									"column": 8,
+									"line": 14
+								}
+							},
+							"range": [164, 165],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 15
+								},
+								"start": {
+									"column": 2,
+									"line": 15
+								}
+							},
+							"range": [167, 168],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 15
+						},
+						"start": {
+							"column": 8,
+							"line": 12
+						}
+					},
+					"range": [138, 168],
+					"raw": "(\n    columns: 1,\n    [b],\n  )",
+					"type": "Marked::Args"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 15
+				},
+				"start": {
+					"column": 3,
+					"line": 12
+				}
+			},
+			"range": [133, 168],
+			"raw": "table(\n    columns: 1,\n    [b],\n  )",
+			"type": "Marked::FuncCall"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 0,
+					"line": 18
+				},
+				"start": {
+					"column": 1,
+					"line": 16
+				}
+			},
+			"range": [170, 172],
+			"raw": "\n\n",
+			"type": "Break",
+			"value": "\n\n"
+		},
+		{
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 19
+				},
+				"start": {
+					"column": 2,
+					"line": 19
+				}
+			},
+			"range": [177, 178],
+			"raw": "#",
+			"type": "Fn::(Hash: &quot;#&quot;)",
+			"value": "#"
+		},
+		{
+			"children": [
+				{
+					"loc": {
+						"end": {
+							"column": 8,
+							"line": 19
+						},
+						"start": {
+							"column": 3,
+							"line": 19
+						}
+					},
+					"range": [178, 183],
+					"raw": "table",
+					"type": "Fn::(Ident: &quot;table&quot;)",
+					"value": "table"
+				},
+				{
+					"children": [
+						{
+							"loc": {
+								"end": {
+									"column": 9,
+									"line": 19
+								},
+								"start": {
+									"column": 8,
+									"line": 19
+								}
+							},
+							"range": [183, 184],
+							"raw": "(",
+							"type": "Punc::LeftParen",
+							"value": "("
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 20
+								},
+								"start": {
+									"column": 9,
+									"line": 19
+								}
+							},
+							"range": [184, 185],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 11,
+											"line": 20
+										},
+										"start": {
+											"column": 4,
+											"line": 20
+										}
+									},
+									"range": [189, 196],
+									"raw": "columns",
+									"type": "Marked::(Ident: &quot;columns&quot;)",
+									"value": "columns"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 12,
+											"line": 20
+										},
+										"start": {
+											"column": 11,
+											"line": 20
+										}
+									},
+									"range": [196, 197],
+									"raw": ":",
+									"type": "Punc::Colon",
+									"value": ":"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 13,
+											"line": 20
+										},
+										"start": {
+											"column": 12,
+											"line": 20
+										}
+									},
+									"range": [197, 198],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 14,
+											"line": 20
+										},
+										"start": {
+											"column": 13,
+											"line": 20
+										}
+									},
+									"range": [198, 199],
+									"raw": "1",
+									"type": "Num(Int, 1)",
+									"value": "1"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 14,
+									"line": 20
+								},
+								"start": {
+									"column": 4,
+									"line": 20
+								}
+							},
+							"range": [189, 199],
+							"raw": "columns: 1",
+							"type": "Marked::Named"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 15,
+									"line": 20
+								},
+								"start": {
+									"column": 14,
+									"line": 20
+								}
+							},
+							"range": [199, 200],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 4,
+									"line": 21
+								},
+								"start": {
+									"column": 15,
+									"line": 20
+								}
+							},
+							"range": [200, 201],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 21
+										},
+										"start": {
+											"column": 5,
+											"line": 21
+										}
+									},
+									"range": [206, 207],
+									"raw": "c",
+									"type": "Str",
+									"value": "c"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 21
+								},
+								"start": {
+									"column": 5,
+									"line": 21
+								}
+							},
+							"range": [206, 207],
+							"raw": "c",
+							"type": "Paragraph"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 8,
+									"line": 21
+								},
+								"start": {
+									"column": 7,
+									"line": 21
+								}
+							},
+							"range": [208, 209],
+							"raw": ",",
+							"type": "Punc::Comma",
+							"value": ","
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 2,
+									"line": 22
+								},
+								"start": {
+									"column": 8,
+									"line": 21
+								}
+							},
+							"range": [209, 210],
+							"raw": "\n",
+							"type": "Str",
+							"value": "\n"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 22
+								},
+								"start": {
+									"column": 2,
+									"line": 22
+								}
+							},
+							"range": [212, 213],
+							"raw": ")",
+							"type": "Punc::RightParen",
+							"value": ")"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 22
+						},
+						"start": {
+							"column": 8,
+							"line": 19
+						}
+					},
+					"range": [183, 213],
+					"raw": "(\n    columns: 1,\n    [c],\n  )",
+					"type": "Marked::Args"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 22
+				},
+				"start": {
+					"column": 3,
+					"line": 19
+				}
+			},
+			"range": [178, 213],
+			"raw": "table(\n    columns: 1,\n    [c],\n  )",
+			"type": "Marked::FuncCall"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 1,
+			"line": 23
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 215],
+	"raw": "#[\n  paragraph before table.\n  #table(\n    columns: 1,\n    [a],\n  )\n  paragraph after table.\n]\n\n#[\n  keep only leading paragraph.\n  #table(\n    columns: 1,\n    [b],\n  )\n]\n\n#[\n  #table(\n    columns: 1,\n    [c],\n  )\n]",
+	"type": "Document"
+}

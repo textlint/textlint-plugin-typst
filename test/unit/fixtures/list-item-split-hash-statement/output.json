@@ -1,0 +1,543 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"checked": null,
+					"children": [
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 1
+										},
+										"start": {
+											"column": 2,
+											"line": 1
+										}
+									},
+									"range": [2, 6],
+									"raw": "Item",
+									"type": "Str",
+									"value": "Item"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 6,
+									"line": 1
+								},
+								"start": {
+									"column": 2,
+									"line": 1
+								}
+							},
+							"range": [2, 6],
+							"raw": "Item",
+							"type": "Paragraph"
+						},
+						{
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 3
+								},
+								"start": {
+									"column": 2,
+									"line": 3
+								}
+							},
+							"range": [10, 11],
+							"raw": "#",
+							"type": "Kw::Hash",
+							"value": "#"
+						},
+						{
+							"children": [
+								{
+									"loc": {
+										"end": {
+											"column": 6,
+											"line": 3
+										},
+										"start": {
+											"column": 3,
+											"line": 3
+										}
+									},
+									"range": [11, 14],
+									"raw": "let",
+									"type": "Kw::Let",
+									"value": "let"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 7,
+											"line": 3
+										},
+										"start": {
+											"column": 6,
+											"line": 3
+										}
+									},
+									"range": [14, 15],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 19,
+											"line": 3
+										},
+										"start": {
+											"column": 7,
+											"line": 3
+										}
+									},
+									"range": [15, 27],
+									"raw": "some_element",
+									"type": "Marked::(Ident: &quot;some_element&quot;)",
+									"value": "some_element"
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 20,
+											"line": 3
+										},
+										"start": {
+											"column": 19,
+											"line": 3
+										}
+									},
+									"range": [27, 28],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 21,
+											"line": 3
+										},
+										"start": {
+											"column": 20,
+											"line": 3
+										}
+									},
+									"range": [28, 29],
+									"raw": "=",
+									"type": "Op::Eq",
+									"value": "="
+								},
+								{
+									"loc": {
+										"end": {
+											"column": 22,
+											"line": 3
+										},
+										"start": {
+											"column": 21,
+											"line": 3
+										}
+									},
+									"range": [29, 30],
+									"raw": " ",
+									"type": "Str",
+									"value": " "
+								},
+								{
+									"children": [
+										{
+											"children": [
+												{
+													"loc": {
+														"end": {
+															"column": 23,
+															"line": 3
+														},
+														"start": {
+															"column": 22,
+															"line": 3
+														}
+													},
+													"range": [30, 31],
+													"raw": "_",
+													"type": "Marked::Underscore",
+													"value": "_"
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 23,
+													"line": 3
+												},
+												"start": {
+													"column": 22,
+													"line": 3
+												}
+											},
+											"range": [30, 31],
+											"raw": "_",
+											"type": "Marked::Params"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 24,
+													"line": 3
+												},
+												"start": {
+													"column": 23,
+													"line": 3
+												}
+											},
+											"range": [31, 32],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 26,
+													"line": 3
+												},
+												"start": {
+													"column": 24,
+													"line": 3
+												}
+											},
+											"range": [32, 34],
+											"raw": "=>",
+											"type": "Op::Arrow",
+											"value": "=>"
+										},
+										{
+											"loc": {
+												"end": {
+													"column": 27,
+													"line": 3
+												},
+												"start": {
+													"column": 26,
+													"line": 3
+												}
+											},
+											"range": [34, 35],
+											"raw": " ",
+											"type": "Str",
+											"value": " "
+										},
+										{
+											"children": [
+												{
+													"loc": {
+														"end": {
+															"column": 28,
+															"line": 3
+														},
+														"start": {
+															"column": 27,
+															"line": 3
+														}
+													},
+													"range": [35, 36],
+													"raw": "{",
+													"type": "Punc::LeftBrace",
+													"value": "{"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 4,
+															"line": 4
+														},
+														"start": {
+															"column": 28,
+															"line": 3
+														}
+													},
+													"range": [36, 37],
+													"raw": "\n",
+													"type": "Str",
+													"value": "\n"
+												},
+												{
+													"children": [
+														{
+															"children": [
+																{
+																	"loc": {
+																		"end": {
+																			"column": 7,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 4,
+																			"line": 4
+																		}
+																	},
+																	"range": [41, 44],
+																	"raw": "let",
+																	"type": "Kw::Let",
+																	"value": "let"
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 8,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 7,
+																			"line": 4
+																		}
+																	},
+																	"range": [44, 45],
+																	"raw": " ",
+																	"type": "Str",
+																	"value": " "
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 26,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 8,
+																			"line": 4
+																		}
+																	},
+																	"range": [45, 63],
+																	"raw": "this_means_nothing",
+																	"type": "Marked::(Ident: &quot;this_means_nothing&quot;)",
+																	"value": "this_means_nothing"
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 27,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 26,
+																			"line": 4
+																		}
+																	},
+																	"range": [63, 64],
+																	"raw": " ",
+																	"type": "Str",
+																	"value": " "
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 28,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 27,
+																			"line": 4
+																		}
+																	},
+																	"range": [64, 65],
+																	"raw": "=",
+																	"type": "Op::Eq",
+																	"value": "="
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 29,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 28,
+																			"line": 4
+																		}
+																	},
+																	"range": [65, 66],
+																	"raw": " ",
+																	"type": "Str",
+																	"value": " "
+																},
+																{
+																	"loc": {
+																		"end": {
+																			"column": 35,
+																			"line": 4
+																		},
+																		"start": {
+																			"column": 29,
+																			"line": 4
+																		}
+																	},
+																	"range": [66, 72],
+																	"raw": "\"Fake\"",
+																	"type": "Str(&quot;Fake&quot;)",
+																	"value": "\"Fake\""
+																}
+															],
+															"loc": {
+																"end": {
+																	"column": 35,
+																	"line": 4
+																},
+																"start": {
+																	"column": 4,
+																	"line": 4
+																}
+															},
+															"range": [41, 72],
+															"raw": "let this_means_nothing = \"Fake\"",
+															"type": "Marked::LetBinding"
+														}
+													],
+													"loc": {
+														"end": {
+															"column": 35,
+															"line": 4
+														},
+														"start": {
+															"column": 4,
+															"line": 4
+														}
+													},
+													"range": [41, 72],
+													"raw": "let this_means_nothing = \"Fake\"",
+													"type": "Marked::Code"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 2,
+															"line": 5
+														},
+														"start": {
+															"column": 35,
+															"line": 4
+														}
+													},
+													"range": [72, 73],
+													"raw": "\n",
+													"type": "Str",
+													"value": "\n"
+												},
+												{
+													"loc": {
+														"end": {
+															"column": 3,
+															"line": 5
+														},
+														"start": {
+															"column": 2,
+															"line": 5
+														}
+													},
+													"range": [75, 76],
+													"raw": "}",
+													"type": "Punc::RightBrace",
+													"value": "}"
+												}
+											],
+											"loc": {
+												"end": {
+													"column": 3,
+													"line": 5
+												},
+												"start": {
+													"column": 27,
+													"line": 3
+												}
+											},
+											"range": [35, 76],
+											"raw": "{\n    let this_means_nothing = \"Fake\"\n  }",
+											"type": "Marked::CodeBlock"
+										}
+									],
+									"loc": {
+										"end": {
+											"column": 3,
+											"line": 5
+										},
+										"start": {
+											"column": 22,
+											"line": 3
+										}
+									},
+									"range": [30, 76],
+									"raw": "_ => {\n    let this_means_nothing = \"Fake\"\n  }",
+									"type": "Marked::Closure"
+								}
+							],
+							"loc": {
+								"end": {
+									"column": 3,
+									"line": 5
+								},
+								"start": {
+									"column": 3,
+									"line": 3
+								}
+							},
+							"range": [11, 76],
+							"raw": "let some_element = _ => {\n    let this_means_nothing = \"Fake\"\n  }",
+							"type": "Marked::LetBinding"
+						}
+					],
+					"loc": {
+						"end": {
+							"column": 3,
+							"line": 5
+						},
+						"start": {
+							"column": 0,
+							"line": 1
+						}
+					},
+					"range": [0, 76],
+					"raw": "- Item\n\n  #let some_element = _ => {\n    let this_means_nothing = \"Fake\"\n  }",
+					"spread": false,
+					"type": "ListItem"
+				}
+			],
+			"loc": {
+				"end": {
+					"column": 3,
+					"line": 5
+				},
+				"start": {
+					"column": 0,
+					"line": 1
+				}
+			},
+			"ordered": false,
+			"range": [0, 76],
+			"raw": "- Item\n\n  #let some_element = _ => {\n    let this_means_nothing = \"Fake\"\n  }",
+			"spread": false,
+			"start": null,
+			"type": "List"
+		}
+	],
+	"loc": {
+		"end": {
+			"column": 3,
+			"line": 5
+		},
+		"start": {
+			"column": 0,
+			"line": 1
+		}
+	},
+	"range": [0, 76],
+	"raw": "- Item\n\n  #let some_element = _ => {\n    let this_means_nothing = \"Fake\"\n  }",
+	"type": "Document"
+}
