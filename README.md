@@ -64,7 +64,7 @@ Legend for syntax support:
 | Term list | List / ListItem | ⚠️ | 🚫 |
 | Math | Code / CodeBlock | ✅ | 🚫 |
 | Line break | Break | ✅ | 🚫 |
-| Smart quote | | 🚫 | 🚫 |
+| Smart quote | Str | ✅ | 🚫 |
 | Symbol shorthand | Code | ✅ | 🚫 |
 | Code expression | | ✅ | ✅ |
 | Character escape | Code | ✅ | 🚫 |
