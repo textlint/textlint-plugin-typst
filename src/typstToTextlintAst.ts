@@ -272,7 +272,7 @@ const isInlineEscapeNode = (node: Content): boolean => {
 };
 
 const isInlineMarkedNode = (node: Content): boolean => {
-	return ["Marked::Ref", "Marked::SmartQuote"].includes(node.type);
+	return ["Marked::Ref"].includes(node.type);
 };
 
 const isParagraphInlineLikeNode = (node: Content): boolean => {
@@ -697,6 +697,10 @@ export const convertRawTypstAstObjectToTextlintAstObject = (
 		}
 		if (/^Marked::Text/.test(node.type)) {
 			node.type = ASTNodeTypes.Str;
+		}
+		if (/^Marked::SmartQuote$/.test(node.type)) {
+			node.type = ASTNodeTypes.Str;
+			node.value = node.raw;
 		}
 		if (/^Marked::Parbreak/.test(node.type)) {
 			node.type = ASTNodeTypes.Break;

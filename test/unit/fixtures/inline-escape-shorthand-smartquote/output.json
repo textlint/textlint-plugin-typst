@@ -255,7 +255,7 @@
 					},
 					"range": [74, 75],
 					"raw": "\"",
-					"type": "Marked::SmartQuote",
+					"type": "Str",
 					"value": "\""
 				},
 				{
@@ -287,7 +287,7 @@
 					},
 					"range": [81, 82],
 					"raw": "\"",
-					"type": "Marked::SmartQuote",
+					"type": "Str",
 					"value": "\""
 				},
 				{
@@ -351,7 +351,7 @@
 					},
 					"range": [87, 88],
 					"raw": "'",
-					"type": "Marked::SmartQuote",
+					"type": "Str",
 					"value": "'"
 				},
 				{
@@ -383,7 +383,7 @@
 					},
 					"range": [94, 95],
 					"raw": "'",
-					"type": "Marked::SmartQuote",
+					"type": "Str",
 					"value": "'"
 				},
 				{
